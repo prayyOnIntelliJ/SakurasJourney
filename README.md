@@ -1,5 +1,10 @@
 # 🌸 Sakura’s Journey – Temples of Corruption
 
+[![Engine](https://img.shields.io/badge/Engine-Godot%204.3-478cbf)](https://godotengine.org)
+[![Role](https://img.shields.io/badge/Role-Lead%20Game%20Engineer-blue)](https://www.jannikkluge.com/about)
+[![Language](https://img.shields.io/badge/Language-GDScript-355570)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
+[![Project](https://img.shields.io/badge/Project-Playable%20on%20itch.io-orange)](https://s4g.itch.io/sakuras-journey)
+
 ![Cover Image](githubdocs/CoverImage.png)
 
 [Watch the Trailer](https://www.youtube.com/watch?v=ZSyVVhhGdMc)
