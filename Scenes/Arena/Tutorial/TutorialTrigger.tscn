@@ -1,0 +1,84 @@
+[gd_scene load_steps=15 format=3 uid="uid://dbytfxyu67583"]
+
+[ext_resource type="Script" path="res://Scenes/Arenas/Tutorial/TutorialTrigger.gd" id="1_0nali"]
+[ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://Assets/VFX/simpleparticles.tres" id="2_sxhcc"]
+[ext_resource type="Texture2D" uid="uid://b6r7y831hrsqv" path="res://Assets/Projectiles/New/Flare00.PNG" id="3_axq0p"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_r8mih"]
+radius = 0.985367
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2ne5b"]
+render_priority = 0
+shader = ExtResource("2_sxhcc")
+shader_parameter/MainTex = ExtResource("3_axq0p")
+
+[sub_resource type="Curve" id="Curve_erk45"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_p0vf1"]
+curve = SubResource("Curve_erk45")
+
+[sub_resource type="Curve" id="Curve_3yjed"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.99999, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_cde4d"]
+curve = SubResource("Curve_3yjed")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vlen1"]
+emission_shape = 6
+emission_ring_axis = Vector3(0, 1, 0)
+emission_ring_height = 0.0
+emission_ring_radius = 1.0
+emission_ring_inner_radius = 1.0
+gravity = Vector3(0, 10, 0)
+scale_min = 0.7
+scale_max = 1.2
+scale_curve = SubResource("CurveTexture_cde4d")
+color = Color(2, 2, 2, 1)
+alpha_curve = SubResource("CurveTexture_p0vf1")
+
+[sub_resource type="QuadMesh" id="QuadMesh_fi5l5"]
+
+[sub_resource type="Curve" id="Curve_d80u4"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_2gqdl"]
+curve = SubResource("Curve_d80u4")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rveau"]
+emission_shape = 6
+emission_ring_axis = Vector3(0, 1, 0)
+emission_ring_height = 0.0
+emission_ring_radius = 1.0
+emission_ring_inner_radius = 1.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.7
+scale_max = 0.7
+color = Color(2, 2, 2, 1)
+alpha_curve = SubResource("CurveTexture_2gqdl")
+
+[node name="TutorialTrigger" type="Area3D"]
+collision_layer = 0
+script = ExtResource("1_0nali")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_r8mih")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+material_override = SubResource("ShaderMaterial_2ne5b")
+amount = 50
+process_material = SubResource("ParticleProcessMaterial_vlen1")
+draw_pass_1 = SubResource("QuadMesh_fi5l5")
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+material_override = SubResource("ShaderMaterial_2ne5b")
+amount = 60
+process_material = SubResource("ParticleProcessMaterial_rveau")
+draw_pass_1 = SubResource("QuadMesh_fi5l5")
+
+[connection signal="body_entered" from="." to="." method="on_body_entered"]

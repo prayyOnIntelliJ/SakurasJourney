@@ -1,8 +1,8 @@
 [gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://c5mph6ywd7eiy"]
 
-[ext_resource type="FontFile" uid="uid://bu3b5tnpvahhq" path="res://PermanentMarker-Regular.ttf" id="1_bxrgs"]
+[ext_resource type="FontFile" uid="uid://ba0hga7l4oi0n" path="res://Assets/Fonts/PermanentMarker-Regular.ttf" id="1_ayhv0"]
 
 [resource]
-font = ExtResource("1_bxrgs")
+font = ExtResource("1_ayhv0")
 font_size = 36
 font_color = Color(0, 0, 0, 1)

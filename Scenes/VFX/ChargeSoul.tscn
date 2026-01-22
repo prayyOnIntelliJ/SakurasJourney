@@ -1,9 +1,9 @@
 [gd_scene load_steps=14 format=3 uid="uid://cpfgo6phjvavs"]
 
-[ext_resource type="Shader" uid="uid://dqraealp8lmdy" path="res://Fire.tres" id="1_dbgn3"]
-[ext_resource type="Script" path="res://ChargeSoul.gd" id="1_oplfm"]
-[ext_resource type="Texture2D" uid="uid://ct4nbrxsp5nqd" path="res://Projectiles/VFX/New/Voronoi01.png" id="2_vswwn"]
-[ext_resource type="Texture2D" uid="uid://b80wluldo4c1v" path="res://Projectiles/VFX/New/Flame02.png" id="3_il6ff"]
+[ext_resource type="Shader" uid="uid://dqraealp8lmdy" path="res://Assets/VFX/Fire.tres" id="1_dbgn3"]
+[ext_resource type="Script" path="res://Scripts/VFX/ChargeSoul.gd" id="1_oplfm"]
+[ext_resource type="Texture2D" uid="uid://bsthjit2hqb8f" path="res://Assets/Projectiles/New/Voronoi01.png" id="2_vswwn"]
+[ext_resource type="Texture2D" uid="uid://ciqx5ti363nxt" path="res://Assets/Projectiles/New/Flame02.png" id="3_il6ff"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_l4cqo"]
 

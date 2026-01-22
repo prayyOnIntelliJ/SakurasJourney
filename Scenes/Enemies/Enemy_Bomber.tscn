@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://dyrcobtrjqia3"]
 
-[ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Enemies/Scenes/enemy.tscn" id="1_cf0hl"]
-[ext_resource type="Script" path="res://Enemies/Scripts/EnemyBomber.gd" id="2_bt5f2"]
-[ext_resource type="Texture2D" uid="uid://5vb71vtib18m" path="res://Enemies/Assets/char_enemy_Sogenbi_w_115x115px.png.png" id="3_wavoh"]
+[ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Scenes/Enemies/enemy.tscn" id="1_cf0hl"]
+[ext_resource type="Script" path="res://Scripts/Enemies/EnemyBomber.gd" id="2_bt5f2"]
+[ext_resource type="Texture2D" uid="uid://5vb71vtib18m" path="res://Assets/Enemies/char_enemy_Sogenbi_w_115x115px.png.png" id="3_wavoh"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_2tqyp"]
 viewport_path = NodePath("Sprite3D/SubViewport")

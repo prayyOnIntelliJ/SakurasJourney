@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://btmjroxtaogpl"]
 
-[ext_resource type="Script" path="res://Projectiles/Script/projectile.gd" id="1_q74h5"]
-[ext_resource type="Texture2D" uid="uid://cjcqt3nerxe0x" path="res://Enemies/Shader/tex_gradient_enemy_red.tres" id="2_5okdm"]
-[ext_resource type="PackedScene" uid="uid://dbhcqxhipce5e" path="res://Projectiles/VFX/New/vfx_projectile_divine.tscn" id="2_yg86r"]
-[ext_resource type="AudioStream" uid="uid://dj3xbjwch3fqh" path="res://Sounds/hitsound.wav" id="3_sus67"]
+[ext_resource type="Script" path="res://Scripts/Projectiles/projectile.gd" id="1_q74h5"]
+[ext_resource type="Texture2D" uid="uid://cjcqt3nerxe0x" path="res://Assets/Enemies/Shader/tex_gradient_enemy_red.tres" id="2_5okdm"]
+[ext_resource type="PackedScene" uid="uid://dbhcqxhipce5e" path="res://Assets/Projectiles/New/vfx_projectile_divine.tscn" id="2_yg86r"]
+[ext_resource type="AudioStream" uid="uid://dj3xbjwch3fqh" path="res://Audio/hitsound.wav" id="3_sus67"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_krkji"]
 

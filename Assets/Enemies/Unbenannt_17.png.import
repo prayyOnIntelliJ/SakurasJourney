@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1vqcbx66lmbq"
-path.s3tc="res://.godot/imported/Unbenannt_17.png-a6d006b4f5a57ed1afcbb9c9b3bbb463.s3tc.ctex"
+path.s3tc="res://.godot/imported/Unbenannt_17.png-7e6d74d055ebae20a07befcdceaeef8f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Enemies/Assets/Unbenannt_17.png"
-dest_files=["res://.godot/imported/Unbenannt_17.png-a6d006b4f5a57ed1afcbb9c9b3bbb463.s3tc.ctex"]
+source_file="res://Assets/Enemies/Unbenannt_17.png"
+dest_files=["res://.godot/imported/Unbenannt_17.png-7e6d74d055ebae20a07befcdceaeef8f.s3tc.ctex"]
 
 [params]
 

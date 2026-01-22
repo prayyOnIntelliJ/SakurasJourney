@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cwu4rumv41eah"
-path="res://.godot/imported/shockwave.wav-d73552eedd3ac378f577f69b38401a6b.sample"
+path="res://.godot/imported/shockwave.wav-8c7ceb38dc9dff02c8901ce4bf3de506.sample"
 
 [deps]
 
-source_file="res://Sounds/shockwave.wav"
-dest_files=["res://.godot/imported/shockwave.wav-d73552eedd3ac378f577f69b38401a6b.sample"]
+source_file="res://Audio/shockwave.wav"
+dest_files=["res://.godot/imported/shockwave.wav-8c7ceb38dc9dff02c8901ce4bf3de506.sample"]
 
 [params]
 

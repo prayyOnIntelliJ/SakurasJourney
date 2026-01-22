@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cc6weljic4fin"
+path="res://.godot/imported/Whisper Out Of Nowhere 005.wav-3c0785d8e93dd851e0b0f8654f423016.sample"
+
+[deps]
+
+source_file="res://Audio/Whisper Out Of Nowhere 005.wav"
+dest_files=["res://.godot/imported/Whisper Out Of Nowhere 005.wav-3c0785d8e93dd851e0b0f8654f423016.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

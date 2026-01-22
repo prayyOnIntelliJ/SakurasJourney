@@ -6,7 +6,7 @@ signal enemyDeath(enemyPosition)
 @export var shootingRange: float = 5.0
 @export var fireRate: float = 0.5
 @export var projectileSpeed: float = 10.0
-var projectileScene: PackedScene = preload("res://Projectiles/Scene/EnemyProjectile.tscn")
+var projectileScene: PackedScene = preload("res://Scenes/Projectiles/EnemyProjectile.tscn")
 var canShoot: bool = true
 var hasTarget: bool = false
 

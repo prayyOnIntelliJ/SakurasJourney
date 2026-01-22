@@ -10,7 +10,7 @@ signal pauseGame
 signal retryGame
 
 # -------------------NODES-------------------
-@onready var playerScene = preload("res://Player/Scenes/player.tscn")
+@onready var playerScene = preload("res://Scenes/Player/player.tscn")
 @onready var UI = $UI
 @onready var player = $Player
 @onready var levels = $Levels
@@ -22,11 +22,11 @@ signal retryGame
 @export var battleMusic : Array[AudioStreamWAV]
 
 # -------------------LEVELS-------------------
-var level1 = preload("res://Arenas/Arena_01/Arena_01.tscn")
-var level2 = preload("res://Arenas/Arena_02/Arena_02.tscn")
-var level3 = preload("res://Arenas/Arena_03/Arena_03.tscn")
-var level4 = preload("res://Arenas/Arena_04/Arena_04.tscn")
-var tutorialLevel = preload("res://Arenas/Tutorial/Tutorial.tscn")
+var level1 = preload("res://Scenes/Arena/Arena_01.tscn")
+var level2 = preload("res://Scenes/Arena/Arena_02.tscn")
+var level3 = preload("res://Scenes/Arena/Arena_03.tscn")
+var level4 = preload("res://Scenes/Arena/Arena_04.tscn")
+var tutorialLevel = preload("res://Scenes/Arena/Tutorial/Tutorial.tscn")
 var levelArray = [level1, level2, level3, level4]
 
 # -------------------GAME STATE-------------------

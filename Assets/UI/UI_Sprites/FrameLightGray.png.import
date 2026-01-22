@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ctutfip8lp5eb"
-path="res://.godot/imported/FrameLightGray.png-90ca7d8fcf2a9ae56fc327a8964e1485.ctex"
+path="res://.godot/imported/FrameLightGray.png-df117fb664eece470930df97b59a75ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/FrameLightGray.png"
-dest_files=["res://.godot/imported/FrameLightGray.png-90ca7d8fcf2a9ae56fc327a8964e1485.ctex"]
+source_file="res://Assets/UI/UI_Sprites/FrameLightGray.png"
+dest_files=["res://.godot/imported/FrameLightGray.png-df117fb664eece470930df97b59a75ed.ctex"]
 
 [params]
 

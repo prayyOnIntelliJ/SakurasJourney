@@ -1,10 +1,10 @@
 [gd_scene load_steps=17 format=3 uid="uid://2mflwds6i31h"]
 
-[ext_resource type="Shader" uid="uid://dqraealp8lmdy" path="res://Fire.tres" id="1_1w24y"]
-[ext_resource type="Texture2D" uid="uid://ct4nbrxsp5nqd" path="res://Projectiles/VFX/New/Voronoi01.png" id="2_n33wx"]
-[ext_resource type="Texture2D" uid="uid://b80wluldo4c1v" path="res://Projectiles/VFX/New/Flame02.png" id="3_sr33s"]
-[ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://simpleparticles.tres" id="4_2ybrd"]
-[ext_resource type="Texture2D" uid="uid://dsmgkqa1172xf" path="res://Projectiles/VFX/New/Flare00.PNG" id="5_xxnpy"]
+[ext_resource type="Shader" uid="uid://dqraealp8lmdy" path="res://Assets/VFX/Fire.tres" id="1_1w24y"]
+[ext_resource type="Texture2D" uid="uid://bsthjit2hqb8f" path="res://Assets/Projectiles/New/Voronoi01.png" id="2_n33wx"]
+[ext_resource type="Texture2D" uid="uid://ciqx5ti363nxt" path="res://Assets/Projectiles/New/Flame02.png" id="3_sr33s"]
+[ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://Assets/VFX/simpleparticles.tres" id="4_2ybrd"]
+[ext_resource type="Texture2D" uid="uid://b6r7y831hrsqv" path="res://Assets/Projectiles/New/Flare00.PNG" id="5_xxnpy"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ttcj3"]
 render_priority = 0

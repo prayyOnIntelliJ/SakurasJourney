@@ -2,9 +2,9 @@ extends Path3D
 
 #----------------------PRELOAD SCENES----------------------
 # [ ? ] Preload enemy scenes for different types of enemies
-@onready var enemyBomberScene = preload("res://Enemies/Scenes/NewEnemies/Enemy_Bomber.tscn")
-@onready var enemyMeleeScene = preload("res://Enemies/Scenes/NewEnemies/Enemy_Melee.tscn")
-@onready var enemyShooterScene = preload("res://Enemies/Scenes/NewEnemies/Enemy_Shooter.tscn")
+@onready var enemyBomberScene = preload("res://Scenes/Enemies/Enemy_Bomber.tscn")
+@onready var enemyMeleeScene = preload("res://Scenes/Enemies/Enemy_Melee.tscn")
+@onready var enemyShooterScene = preload("res://Scenes/Enemies/Enemy_Shooter.tscn")
 @onready var pathFollow = $enemySpawnerFollow
 @onready var firstSpawnTimer = $firstSpawmTimer
 @onready var spawnIntervalTimer = $spawnIntervalTimer

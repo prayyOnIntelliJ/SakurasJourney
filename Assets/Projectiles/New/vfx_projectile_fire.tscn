@@ -1,7 +1,7 @@
 [gd_scene load_steps=39 format=3 uid="uid://ddq1okud4tq11"]
 
-[ext_resource type="Texture2D" uid="uid://xs451b7o4o48" path="res://Projectiles/VFX/New/tex_pixel_vfx.png" id="1_enyr4"]
-[ext_resource type="Texture2D" uid="uid://dufxqwksygw3x" path="res://Projectiles/VFX/New/vfx_projectile_ofuda.png" id="2_q31es"]
+[ext_resource type="Texture2D" uid="uid://dbcbt8lkpx8ba" path="res://Assets/Projectiles/New/tex_pixel_vfx.png" id="1_enyr4"]
+[ext_resource type="Texture2D" uid="uid://dy45ke4h5dhld" path="res://Assets/Projectiles/New/vfx_projectile_ofuda.png" id="2_q31es"]
 
 [sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_hajo4"]
 expanded_output_ports = [0]

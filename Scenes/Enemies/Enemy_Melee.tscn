@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bssnq7p47wudg"]
 
-[ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Enemies/Scenes/enemy.tscn" id="1_sq8yk"]
-[ext_resource type="Script" path="res://Enemies/Scripts/EnemyMeelee.gd" id="2_h0mck"]
-[ext_resource type="Texture2D" uid="uid://dmglbdhx6b4y2" path="res://Enemies/Assets/char_enemy_Kanibozu_115x115px.png" id="3_676ci"]
+[ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Scenes/Enemies/enemy.tscn" id="1_sq8yk"]
+[ext_resource type="Script" path="res://Scripts/Enemies/EnemyMeelee.gd" id="2_h0mck"]
+[ext_resource type="Texture2D" uid="uid://bp361njf4iibo" path="res://Assets/Enemies/char_enemy_Kanibozu_115x115px.png" id="3_676ci"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_lyru6"]
 viewport_path = NodePath("Sprite3D/SubViewport")

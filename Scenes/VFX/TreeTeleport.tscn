@@ -1,7 +1,7 @@
 [gd_scene load_steps=31 format=3 uid="uid://b5psuedrnymyv"]
 
-[ext_resource type="Texture2D" uid="uid://dxxx4cda1g2my" path="res://Projectiles/VFX/New/tex_cloud_noise_vfx.png" id="1_kkxne"]
-[ext_resource type="Texture2D" uid="uid://qfj2ydbaiu0a" path="res://Projectiles/VFX/New/Flame01.png" id="2_o8kng"]
+[ext_resource type="Texture2D" uid="uid://cdye02bqb434w" path="res://Assets/Projectiles/New/tex_cloud_noise_vfx.png" id="1_kkxne"]
+[ext_resource type="Texture2D" uid="uid://dq6u4qv7kbh1" path="res://Assets/Projectiles/New/Flame01.png" id="2_o8kng"]
 
 [sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_46g6f"]
 source = 5

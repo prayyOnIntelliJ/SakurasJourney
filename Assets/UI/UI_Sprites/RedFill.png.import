@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p7stukn8sxc8"
-path="res://.godot/imported/RedFill.png-dab70a288bae3c98dbeb4dbeaebdebdd.ctex"
+path="res://.godot/imported/RedFill.png-df5031b54d395b35af956ff9f76fe4fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/RedFill.png"
-dest_files=["res://.godot/imported/RedFill.png-dab70a288bae3c98dbeb4dbeaebdebdd.ctex"]
+source_file="res://Assets/UI/UI_Sprites/RedFill.png"
+dest_files=["res://.godot/imported/RedFill.png-df5031b54d395b35af956ff9f76fe4fc.ctex"]
 
 [params]
 

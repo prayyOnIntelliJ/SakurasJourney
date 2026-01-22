@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d267jsectwh4l"
-path="res://.godot/imported/ArrowBtnPlaceholderWhite_90.png-369797b0e9d6f2aa1f1760a31e448409.ctex"
+path="res://.godot/imported/ArrowBtnPlaceholderWhite_90.png-669445b450ca9140b6ff4533e80af599.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/ArrowBtnPlaceholderWhite_90.png"
-dest_files=["res://.godot/imported/ArrowBtnPlaceholderWhite_90.png-369797b0e9d6f2aa1f1760a31e448409.ctex"]
+source_file="res://Assets/UI/UI_Sprites/ArrowBtnPlaceholderWhite_90.png"
+dest_files=["res://.godot/imported/ArrowBtnPlaceholderWhite_90.png-669445b450ca9140b6ff4533e80af599.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cg607iq3oqs08"]
 
-[ext_resource type="Script" path="res://Enemies/Scripts/DefenderParentSmallBoss.gd" id="1_n1i1f"]
-[ext_resource type="PackedScene" uid="uid://br47su0xkssjs" path="res://Enemies/Scenes/NewEnemies/Enemy_Defender.tscn" id="2_ebwku"]
+[ext_resource type="Script" path="res://Scripts/Enemies/DefenderParentSmallBoss.gd" id="1_n1i1f"]
+[ext_resource type="PackedScene" uid="uid://br47su0xkssjs" path="res://Scenes/Enemies/NewEnemies/Enemy_Defender.tscn" id="2_ebwku"]
 
 [node name="DefenderParentSmallParent" type="Node3D"]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)

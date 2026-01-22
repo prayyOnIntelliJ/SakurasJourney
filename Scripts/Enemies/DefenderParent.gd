@@ -2,7 +2,7 @@ extends Node3D
 
 
 #----------------------VARIABLES----------------------
-var enemyDefenderScene = preload("res://Enemies/Scenes/NewEnemies/Enemy_Defender.tscn")
+var enemyDefenderScene = preload("res://Scenes/Enemies/Enemy_Defender.tscn")
 var enemy
 var target
 var spawnObject

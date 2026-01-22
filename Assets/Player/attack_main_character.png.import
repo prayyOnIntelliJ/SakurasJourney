@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b15a71vv0q47c"
-path.s3tc="res://.godot/imported/attack_main_character.png-25116a1719c3e712cf0e0f36bf541c92.s3tc.ctex"
+path.s3tc="res://.godot/imported/attack_main_character.png-ab428f6a6b59db421517314c06da7188.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Player/Assets/attack_main_character.png"
-dest_files=["res://.godot/imported/attack_main_character.png-25116a1719c3e712cf0e0f36bf541c92.s3tc.ctex"]
+source_file="res://Assets/Player/attack_main_character.png"
+dest_files=["res://.godot/imported/attack_main_character.png-ab428f6a6b59db421517314c06da7188.s3tc.ctex"]
 
 [params]
 

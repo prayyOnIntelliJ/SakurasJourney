@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drywfob1ftbml"
-path.s3tc="res://.godot/imported/gate_ghj.png-d7ad6db4d4046ab00ff3d194818064dc.s3tc.ctex"
+path.s3tc="res://.godot/imported/gate_ghj.png-5a32b4f11a40673ae5d975325eb7455b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://3D_Props/Fences_and_Walls/GlbFiles/gate_ghj.png"
-dest_files=["res://.godot/imported/gate_ghj.png-d7ad6db4d4046ab00ff3d194818064dc.s3tc.ctex"]
+source_file="res://Assets/Environment/FencesWalls/GlbFiles/gate_ghj.png"
+dest_files=["res://.godot/imported/gate_ghj.png-5a32b4f11a40673ae5d975325eb7455b.s3tc.ctex"]
 
 [params]
 

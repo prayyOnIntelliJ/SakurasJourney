@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxxu0vm8h2on"
-path.s3tc="res://.godot/imported/TranspBall.png-fc267420f43942bdcda6dce9636cb5e4.s3tc.ctex"
+path.s3tc="res://.godot/imported/TranspBall.png-3722b76e5d31f09e892dd01f59c16f29.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Projectiles/VFX/Materials/TranspBall.png"
-dest_files=["res://.godot/imported/TranspBall.png-fc267420f43942bdcda6dce9636cb5e4.s3tc.ctex"]
+source_file="res://Assets/Projectiles/Materials/TranspBall.png"
+dest_files=["res://.godot/imported/TranspBall.png-3722b76e5d31f09e892dd01f59c16f29.s3tc.ctex"]
 
 [params]
 

@@ -1,9 +1,9 @@
 [gd_scene load_steps=37 format=3 uid="uid://coqeoboncxis5"]
 
-[ext_resource type="Texture2D" uid="uid://dl5qi2ivd7wm4" path="res://Projectiles/VFX/New/tex_cloud_noise_vfx.png" id="1_k08my"]
-[ext_resource type="Texture2D" uid="uid://xs451b7o4o48" path="res://Projectiles/VFX/New/tex_pixel_vfx.png" id="1_xr8q8"]
-[ext_resource type="Texture2D" uid="uid://d20tfp60n485t" path="res://Projectiles/VFX/New/tex_bullet_vfx.png" id="2_vm72p"]
-[ext_resource type="Texture2D" uid="uid://dufxqwksygw3x" path="res://Projectiles/VFX/New/vfx_projectile_ofuda.png" id="4_tjbiw"]
+[ext_resource type="Texture2D" uid="uid://cdye02bqb434w" path="res://Assets/Projectiles/New/tex_cloud_noise_vfx.png" id="1_k08my"]
+[ext_resource type="Texture2D" uid="uid://dbcbt8lkpx8ba" path="res://Assets/Projectiles/New/tex_pixel_vfx.png" id="1_xr8q8"]
+[ext_resource type="Texture2D" uid="uid://pm3hmtjmuxj6" path="res://Assets/Projectiles/New/tex_bullet_vfx.png" id="2_vm72p"]
+[ext_resource type="Texture2D" uid="uid://dy45ke4h5dhld" path="res://Assets/Projectiles/New/vfx_projectile_ofuda.png" id="4_tjbiw"]
 
 [sub_resource type="VisualShaderNodeTexture" id="VisualShaderNodeTexture_138u7"]
 expanded_output_ports = [0]

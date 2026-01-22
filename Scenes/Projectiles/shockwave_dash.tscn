@@ -1,12 +1,12 @@
 [gd_scene load_steps=21 format=3 uid="uid://dyp2d20iw7jmd"]
 
-[ext_resource type="Script" path="res://Projectiles/Script/shockwave_dash.gd" id="1_c2ar8"]
-[ext_resource type="Shader" uid="uid://bauiv0pk8smjw" path="res://Projectiles/VFX/New/vfx_projectile_static_shader.tres" id="2_dd2qu"]
-[ext_resource type="Texture2D" uid="uid://dvypfhmagpx4m" path="res://Projectiles/VFX/New/tex_cloud_noise_vfx.png" id="3_wyix2"]
-[ext_resource type="Texture2D" uid="uid://cb4svbb8yjjhm" path="res://Projectiles/VFX/New/ShockwaveTextureSmall.png" id="4_v8ehp"]
-[ext_resource type="Texture2D" uid="uid://bc5es1xkdjnku" path="res://Projectiles/VFX/New/tex_pixel_vfx.png" id="5_wadce"]
-[ext_resource type="Texture2D" uid="uid://b6is7uik4k6ph" path="res://Projectiles/VFX/Materials/T_Icon_ElectroSpark_White.png" id="6_7f61p"]
-[ext_resource type="AudioStream" uid="uid://cwu4rumv41eah" path="res://Sounds/shockwave.wav" id="7_rghbw"]
+[ext_resource type="Script" path="res://Scripts/Projectiles/shockwave_dash.gd" id="1_c2ar8"]
+[ext_resource type="Shader" uid="uid://bauiv0pk8smjw" path="res://Assets/Projectiles/New/vfx_projectile_static_shader.tres" id="2_dd2qu"]
+[ext_resource type="Texture2D" uid="uid://cdye02bqb434w" path="res://Assets/Projectiles/New/tex_cloud_noise_vfx.png" id="3_wyix2"]
+[ext_resource type="Texture2D" uid="uid://b2m7c5k6ww5tg" path="res://Assets/Projectiles/New/ShockwaveTextureSmall.png" id="4_v8ehp"]
+[ext_resource type="Texture2D" uid="uid://dbcbt8lkpx8ba" path="res://Assets/Projectiles/New/tex_pixel_vfx.png" id="5_wadce"]
+[ext_resource type="Texture2D" uid="uid://dfyvb7t18ttv8" path="res://Assets/Projectiles/Materials/T_Icon_ElectroSpark_White.png" id="6_7f61p"]
+[ext_resource type="AudioStream" uid="uid://cwu4rumv41eah" path="res://Audio/shockwave.wav" id="7_rghbw"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_1h51c"]
 

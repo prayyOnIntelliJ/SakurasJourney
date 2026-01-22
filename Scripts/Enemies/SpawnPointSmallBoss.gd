@@ -2,7 +2,7 @@ extends Node3D
 
 #----------------------VARIABLES----------------------
 # [ ? ] Scene for the small boss object to be loaded
-var smallBossScene = preload("res://3D_Props/smallBossTree.tscn") 
+var smallBossScene = preload("res://Scenes/Boss/smallBossTree.tscn") 
 # [ ? ] The small boss instance to be spawned
 var smallBoss
 # [ ? ] The target the small boss will follow or interact with

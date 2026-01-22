@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://v08y8h70ywq7"
-path="res://.godot/imported/Ofuda_Fire.png-097188afe0e5fa83d548e17542f91b1d.ctex"
+path="res://.godot/imported/Ofuda_Fire.png-719951da58edd3058bc9f6a92ac90f5f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/Ofuda_Fire.png"
-dest_files=["res://.godot/imported/Ofuda_Fire.png-097188afe0e5fa83d548e17542f91b1d.ctex"]
+source_file="res://Assets/UI/UI_Sprites/Ofuda_Fire.png"
+dest_files=["res://.godot/imported/Ofuda_Fire.png-719951da58edd3058bc9f6a92ac90f5f.ctex"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyq3276mgqvp"
-path.s3tc="res://.godot/imported/env_small_rock_stone_wxz copy.jpg-88ec83035e9382199b024fd1e1d8d7c2.s3tc.ctex"
+path.s3tc="res://.godot/imported/env_small_rock_stone_wxz copy.jpg-ffc9fc3d467939d98d5545c28b02fa53.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://3D_Props/Stones/Meshes_Textures_and_Materials/env_small_rock_stone_wxz copy.jpg"
-dest_files=["res://.godot/imported/env_small_rock_stone_wxz copy.jpg-88ec83035e9382199b024fd1e1d8d7c2.s3tc.ctex"]
+source_file="res://Assets/Environment/Stones/Meshes_Textures_and_Materials/env_small_rock_stone_wxz copy.jpg"
+dest_files=["res://.godot/imported/env_small_rock_stone_wxz copy.jpg-ffc9fc3d467939d98d5545c28b02fa53.s3tc.ctex"]
 
 [params]
 

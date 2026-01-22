@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0ccegbxmaan3"]
 
-[ext_resource type="Script" path="res://Enemies/Scripts/DefenderParent.gd" id="1_adtaq"]
-[ext_resource type="PackedScene" uid="uid://br47su0xkssjs" path="res://Enemies/Scenes/NewEnemies/Enemy_Defender.tscn" id="2_o3bga"]
+[ext_resource type="Script" path="res://Scripts/Enemies/DefenderParent.gd" id="1_adtaq"]
+[ext_resource type="PackedScene" uid="uid://br47su0xkssjs" path="res://Scenes/Enemies/NewEnemies/Enemy_Defender.tscn" id="2_o3bga"]
 
 [node name="DefenderParent" type="Node3D"]
 script = ExtResource("1_adtaq")

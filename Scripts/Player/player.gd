@@ -84,10 +84,10 @@ var tween
 @onready var dashModifier := [0, 1, 2, 3, 4]
 
 # ---------------------- SCENE REFERENCES ----------------------
-var projectileScene_red = preload("res://Projectiles/Scene/projectile_red.tscn")
-var projectileScene_blue = preload("res://Projectiles/Scene/projectile_blue.tscn")
-var shockwaveScene = preload("res://Projectiles/Scene/shockwave.tscn")
-var shockwaveDashScene = preload("res://Projectiles/Scene/shockwave_dash.tscn")
+var projectileScene_red = preload("res://Scenes/Projectiles/projectile_red.tscn")
+var projectileScene_blue = preload("res://Scenes/Projectiles/projectile_blue.tscn")
+var shockwaveScene = preload("res://Scenes/Projectiles/shockwave.tscn")
+var shockwaveDashScene = preload("res://Scenes/Projectiles/shockwave_dash.tscn")
 
 # ---------------------- NODE REFERENCES ----------------------
 @onready var playerAnimation = $AnimationPlayer/playerAnimationPlayer

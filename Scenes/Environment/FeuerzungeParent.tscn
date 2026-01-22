@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://5acpkx2stm4y"]
 
-[ext_resource type="Script" path="res://3D_Props/FeuerzungeParent.gd" id="1_d11xf"]
+[ext_resource type="Script" path="res://Scripts/Environment/FeuerzungeParent.gd" id="1_d11xf"]
 
 [node name="FeuerzungeParent" type="Node3D"]
 script = ExtResource("1_d11xf")

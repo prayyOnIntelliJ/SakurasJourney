@@ -27,10 +27,10 @@ var percentageArray: Array
 var canHaveStats: bool
 var difficultyLevel: int
 
-var smallBossTreeScene = preload("res://3D_Props/smallBossTree.tscn")
+var smallBossTreeScene = preload("res://Scenes/Boss/smallBossTree.tscn")
 var smallBossTree
 var spawnPointArray: Array
-var indicatorScene = preload("res://BossIndicator.tscn")
+var indicatorScene = preload("res://Scenes/Boss/BossIndicator.tscn")
 var arrowPointer
 
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfant8tdsh1f5"
-path="res://.godot/imported/GoldenCircle_100x100.png-efa0f60d34ef489e20be8c7e5188d10d.ctex"
+path="res://.godot/imported/GoldenCircle_100x100.png-3497f7936a432c7c26f2f86430c3b4b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/GoldenCircle_100x100.png"
-dest_files=["res://.godot/imported/GoldenCircle_100x100.png-efa0f60d34ef489e20be8c7e5188d10d.ctex"]
+source_file="res://Assets/UI/UI_Sprites/GoldenCircle_100x100.png"
+dest_files=["res://.godot/imported/GoldenCircle_100x100.png-3497f7936a432c7c26f2f86430c3b4b7.ctex"]
 
 [params]
 

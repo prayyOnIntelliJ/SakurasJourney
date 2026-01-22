@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://wnds11tbium1"]
 
-[ext_resource type="Script" path="res://GameModes/Scripts/gamemodeSurvival.gd" id="1_0a8wp"]
+[ext_resource type="Script" path="res://Scripts/GameModes/gamemodeSurvival.gd" id="1_0a8wp"]
 
 [node name="gamemodeSurvival" type="Node3D"]
 script = ExtResource("1_0a8wp")

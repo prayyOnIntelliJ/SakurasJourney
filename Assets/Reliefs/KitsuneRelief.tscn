@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cakiikv4l7c3m"]
 
-[ext_resource type="Texture2D" uid="uid://buxkavjp0lx22" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone_512x512_dark.png" id="1_avnrw"]
-[ext_resource type="Texture2D" uid="uid://cadw7awoyex7f" path="res://UI/UI_Sprites/Masks/Kitsune_mask_gray_relief.png" id="2_0hjcc"]
+[ext_resource type="Texture2D" uid="uid://baei6djoa11pg" path="res://Assets/GroundTextures/Stone/GroundTexture_Stone_512x512_dark.png" id="1_avnrw"]
+[ext_resource type="Texture2D" uid="uid://ctclo7wt0lkue" path="res://Assets/UI/UI_Sprites/Masks/Kitsune_mask_gray_relief.png" id="2_0hjcc"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j07qy"]
 albedo_color = Color(0.884256, 0.807771, 0.785003, 1)

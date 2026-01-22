@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cphq0e13wovt3"
-path="res://.godot/imported/env_small_rock_stone.glb-29bd5134bc0ba6d0cdd8694108b5dcb6.scn"
+valid=false
 
 [deps]
 
-source_file="res://3D_Props/Stones/Meshes_Textures_and_Materials/env_small_rock_stone.glb"
-dest_files=["res://.godot/imported/env_small_rock_stone.glb-29bd5134bc0ba6d0cdd8694108b5dcb6.scn"]
+source_file="res://Assets/Environment/Stones/Meshes_Textures_and_Materials/env_small_rock_stone.glb"
 
 [params]
 

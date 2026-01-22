@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dn5phlk2cn86o"]
 
 [ext_resource type="Script" path="res://Cloudspawner1.gd" id="1_im1eg"]
-[ext_resource type="Script" path="res://Cloudspawner.gd" id="1_yges7"]
-[ext_resource type="PackedScene" uid="uid://bfmsfav1dacj4" path="res://Clouds.tscn" id="2_oeko3"]
+[ext_resource type="Script" path="res://Scripts/UI/Cloudspawner.gd" id="1_yges7"]
+[ext_resource type="PackedScene" uid="uid://bfmsfav1dacj4" path="res://Scenes/VFX/Clouds.tscn" id="2_oeko3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7x6np"]
 transparency = 1

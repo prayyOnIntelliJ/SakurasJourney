@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://co6rg5p88gp54"
-path="res://.godot/imported/Ofuda_Ice.png-bdc9af33512b4c90b57bcd418f5f6991.ctex"
+path="res://.godot/imported/Ofuda_Ice.png-41e967b5a2936967e17279885355ac1c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/Ofuda_Ice.png"
-dest_files=["res://.godot/imported/Ofuda_Ice.png-bdc9af33512b4c90b57bcd418f5f6991.ctex"]
+source_file="res://Assets/UI/UI_Sprites/Ofuda_Ice.png"
+dest_files=["res://.godot/imported/Ofuda_Ice.png-41e967b5a2936967e17279885355ac1c.ctex"]
 
 [params]
 

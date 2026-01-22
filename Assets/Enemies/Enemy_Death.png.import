@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cymnb55gsd2ib"
-path.s3tc="res://.godot/imported/Enemy_Death.png-2f937fbbaff32416ddde09241d9fc1d5.s3tc.ctex"
+path.s3tc="res://.godot/imported/Enemy_Death.png-0231f4420612d05b57fbf03c13e78769.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Enemies/Assets/Enemy_Death.png"
-dest_files=["res://.godot/imported/Enemy_Death.png-2f937fbbaff32416ddde09241d9fc1d5.s3tc.ctex"]
+source_file="res://Assets/Enemies/Enemy_Death.png"
+dest_files=["res://.godot/imported/Enemy_Death.png-0231f4420612d05b57fbf03c13e78769.s3tc.ctex"]
 
 [params]
 

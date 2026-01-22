@@ -1,10 +1,10 @@
 [gd_scene load_steps=12 format=3 uid="uid://bt6kihi4qb3gv"]
 
-[ext_resource type="Script" path="res://3D_Props/BossTree.gd" id="1_qy8gq"]
-[ext_resource type="Texture2D" uid="uid://bxi56mkeaegpx" path="res://3D_Props/char_Boss_Jubokko_512x512.png" id="2_cr3gv"]
-[ext_resource type="ArrayMesh" uid="uid://dphylhvy7ivik" path="res://3D_Props/TreeElements/Meshes_and_Materials/JubbokkoHousing.res" id="3_hviip"]
-[ext_resource type="AudioStream" uid="uid://cljcfomxoekdq" path="res://Sounds/Sakura_Hit_Sound.wav" id="4_2q7r1"]
-[ext_resource type="PackedScene" uid="uid://x3wikg5ufr1d" path="res://Shield.tscn" id="5_u36ro"]
+[ext_resource type="Script" path="res://Scripts/Boss/BossTree.gd" id="1_qy8gq"]
+[ext_resource type="Texture2D" uid="uid://r20ytjke2inv" path="res://Assets/UI/char_Boss_Jubokko_512x512.png" id="2_cr3gv"]
+[ext_resource type="ArrayMesh" uid="uid://dphylhvy7ivik" path="res://Assets/Environment/TreeElements/Meshes_and_Materials/JubbokkoHousing.res" id="3_hviip"]
+[ext_resource type="AudioStream" uid="uid://8ucvk2ithrvk" path="res://Audio/Sakura_Hit_Sound.wav" id="4_2q7r1"]
+[ext_resource type="PackedScene" uid="uid://x3wikg5ufr1d" path="res://Scenes/Boss/Shield.tscn" id="5_u36ro"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_y7kce"]
 height = 4.0

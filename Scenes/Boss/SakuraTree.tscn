@@ -1,13 +1,13 @@
 [gd_scene load_steps=80 format=3 uid="uid://cvvu1bykcei1y"]
 
-[ext_resource type="Script" path="res://3D_Props/SakuraTree.gd" id="1_ynwcd"]
-[ext_resource type="Texture2D" uid="uid://d10qp0arffdtb" path="res://3D_Props/SakuraTree_01.png" id="2_85ko0"]
-[ext_resource type="ArrayMesh" uid="uid://bt8l8bwtx1v64" path="res://3D_Props/TreeElements/Meshes_and_Materials/SakuraHousing.res" id="3_bf7ru"]
-[ext_resource type="AudioStream" uid="uid://cljcfomxoekdq" path="res://Sounds/Sakura_Hit_Sound.wav" id="4_8k24r"]
-[ext_resource type="Texture2D" uid="uid://wlarcn4upbvj" path="res://UI/ui_hud_sakura_hit_vignette_1920x1080px.png" id="5_ko0px"]
-[ext_resource type="Texture2D" uid="uid://beuakksrut415" path="res://Projectiles/VFX/New/tex_cloud_noise_vfx.png" id="6_rxwtg"]
-[ext_resource type="Texture2D" uid="uid://cj376yls566dx" path="res://Projectiles/VFX/New/Flare00.PNG" id="7_ol68y"]
-[ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://simpleparticles.tres" id="8_5oyai"]
+[ext_resource type="Script" path="res://Scripts/Boss/SakuraTree.gd" id="1_ynwcd"]
+[ext_resource type="Texture2D" uid="uid://dx62ae4ecs50y" path="res://Assets/UI/SakuraTree_01.png" id="2_85ko0"]
+[ext_resource type="ArrayMesh" uid="uid://bt8l8bwtx1v64" path="res://Assets/Environment/TreeElements/Meshes_and_Materials/SakuraHousing.res" id="3_bf7ru"]
+[ext_resource type="AudioStream" uid="uid://8ucvk2ithrvk" path="res://Audio/Sakura_Hit_Sound.wav" id="4_8k24r"]
+[ext_resource type="Texture2D" uid="uid://bbvyj5ski88bn" path="res://Assets/UI/ui_hud_sakura_hit_vignette_1920x1080px.png" id="5_ko0px"]
+[ext_resource type="Texture2D" uid="uid://cdye02bqb434w" path="res://Assets/Projectiles/New/tex_cloud_noise_vfx.png" id="6_rxwtg"]
+[ext_resource type="Texture2D" uid="uid://b6r7y831hrsqv" path="res://Assets/Projectiles/New/Flare00.PNG" id="7_ol68y"]
+[ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://Assets/VFX/simpleparticles.tres" id="8_5oyai"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_y7kce"]
 height = 4.0

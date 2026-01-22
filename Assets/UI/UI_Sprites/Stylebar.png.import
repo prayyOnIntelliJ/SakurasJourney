@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd16f30fl642t"
-path="res://.godot/imported/Stylebar.png-5154c26a8bd2a69d011165f0600f886d.ctex"
+path="res://.godot/imported/Stylebar.png-8555d06f98434d36425379839a5877f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/Stylebar.png"
-dest_files=["res://.godot/imported/Stylebar.png-5154c26a8bd2a69d011165f0600f886d.ctex"]
+source_file="res://Assets/UI/UI_Sprites/Stylebar.png"
+dest_files=["res://.godot/imported/Stylebar.png-8555d06f98434d36425379839a5877f9.ctex"]
 
 [params]
 

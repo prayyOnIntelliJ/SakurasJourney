@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://ctjpq10f6xoow"]
 
-[ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Enemies/Scenes/enemy.tscn" id="1_mn6u1"]
-[ext_resource type="Script" path="res://Enemies/Scripts/EnemyShooter.gd" id="2_b6dbn"]
-[ext_resource type="Texture2D" uid="uid://cr58hn46pynli" path="res://Enemies/Assets/Enemy_Attack_blue.png" id="3_6wsdo"]
-[ext_resource type="Texture2D" uid="uid://bn8c3ovl8mgnb" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_16.png" id="3_d88vh"]
+[ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Scenes/Enemies/enemy.tscn" id="1_mn6u1"]
+[ext_resource type="Script" path="res://Scripts/Enemies/EnemyShooter.gd" id="2_b6dbn"]
+[ext_resource type="Texture2D" uid="uid://cr58hn46pynli" path="res://Assets/Enemies/Enemy_Attack_blue.png" id="3_6wsdo"]
+[ext_resource type="Texture2D" uid="uid://2umxeh0x03x0" path="res://Assets/Enemies/Animations/Ao Bozu (shooter)/Armature_shooting_animation_16.png" id="3_d88vh"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ihed2"]
 viewport_path = NodePath("Sprite3D/SubViewport")

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ry84rwxip77e"
-path="res://.godot/imported/GoldenBar.png-b0fe4140b4b4e812ae236672d1f2c3d7.ctex"
+path="res://.godot/imported/GoldenBar.png-d8156b9335dd137170f4719be90914cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/GoldenBar.png"
-dest_files=["res://.godot/imported/GoldenBar.png-b0fe4140b4b4e812ae236672d1f2c3d7.ctex"]
+source_file="res://Assets/UI/UI_Sprites/GoldenBar.png"
+dest_files=["res://.godot/imported/GoldenBar.png-d8156b9335dd137170f4719be90914cb.ctex"]
 
 [params]
 

@@ -22,8 +22,8 @@ enum EnemyVulnerability {
 var enemyVulnerability : EnemyVulnerability
 
 # [ ? ] Shaders for red and blue vulnerability
-var redShader : ShaderMaterial = preload("res://Enemies/Shader/shader_enemy_fire.tres")
-var blueShader : ShaderMaterial = preload("res://Enemies/Shader/shader_enemy_Spiritual.tres")
+var redShader : ShaderMaterial = preload("res://Assets/Enemies/Shader/shader_enemy_fire.tres")
+var blueShader : ShaderMaterial = preload("res://Assets/Enemies/Shader/shader_enemy_Spiritual.tres")
 
 # [ ? ] Randomized properties for the enemy
 var randomEnemyType
@@ -33,15 +33,15 @@ var randomEnemyColor
 var spawnObject
 
 # [ ? ] Particle effect for enemy spawn
-var spawnParticleEffect = preload("res://Projectiles/VFX/SpawnParticles.tscn")
+var spawnParticleEffect = preload("res://Assets/Projectiles/SpawnParticles.tscn")
 
 # [ ? ] Textures for the gradient based on vulnerability
-var blueGradient : GradientTexture1D = preload("res://Enemies/Shader/tex_gradient_enemy_spiritual.tres")
-var redGradient : GradientTexture1D = preload("res://Enemies/Shader/tex_gradient_enemy_red.tres")
+var blueGradient : GradientTexture1D = preload("res://Assets/Shader/tex_gradient_enemy_spiritual.tres")
+var redGradient : GradientTexture1D = preload("res://Assets/Shader/tex_gradient_enemy_red.tres")
 var gradient
 
 # [ ? ] Charge soul object for when the enemy dies
-var chargeSoul = preload("res://ChargeSoul.tscn")
+var chargeSoul = preload("res://Scenes/VFX/ChargeSoul.tscn")
 
 
 #----------------------UPGRADESYSTEM----------------------

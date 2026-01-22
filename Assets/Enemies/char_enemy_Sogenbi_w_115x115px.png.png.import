@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5vb71vtib18m"
-path.s3tc="res://.godot/imported/char_enemy_Sogenbi_w_115x115px.png.png-3dee470db05b42dc53ea5711ed56c5c8.s3tc.ctex"
+path.s3tc="res://.godot/imported/char_enemy_Sogenbi_w_115x115px.png.png-67d999043328156f7404dff9b18be5e3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Enemies/Assets/char_enemy_Sogenbi_w_115x115px.png.png"
-dest_files=["res://.godot/imported/char_enemy_Sogenbi_w_115x115px.png.png-3dee470db05b42dc53ea5711ed56c5c8.s3tc.ctex"]
+source_file="res://Assets/Enemies/char_enemy_Sogenbi_w_115x115px.png.png"
+dest_files=["res://.godot/imported/char_enemy_Sogenbi_w_115x115px.png.png-67d999043328156f7404dff9b18be5e3.s3tc.ctex"]
 
 [params]
 

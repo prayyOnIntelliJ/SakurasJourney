@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://otf7ddo6pf05"]
 
-[ext_resource type="Script" path="res://GameModes/Scripts/gamemodeDefend.gd" id="1_ye143"]
+[ext_resource type="Script" path="res://Scripts/GameModes/gamemodeDefend.gd" id="1_ye143"]
 
 [node name="gamemodeDefend" type="Node3D"]
 script = ExtResource("1_ye143")

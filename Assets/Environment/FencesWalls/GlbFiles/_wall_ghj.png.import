@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjwro2dj7ewt4"
-path.s3tc="res://.godot/imported/_wall_ghj.png-76d92f47158676ea0fb6e1aaa79bba92.s3tc.ctex"
+path.s3tc="res://.godot/imported/_wall_ghj.png-5c9868dbdba7af9bf6e3a62d25726b1d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://3D_Props/Fences_and_Walls/GlbFiles/_wall_ghj.png"
-dest_files=["res://.godot/imported/_wall_ghj.png-76d92f47158676ea0fb6e1aaa79bba92.s3tc.ctex"]
+source_file="res://Assets/Environment/FencesWalls/GlbFiles/_wall_ghj.png"
+dest_files=["res://.godot/imported/_wall_ghj.png-5c9868dbdba7af9bf6e3a62d25726b1d.s3tc.ctex"]
 
 [params]
 

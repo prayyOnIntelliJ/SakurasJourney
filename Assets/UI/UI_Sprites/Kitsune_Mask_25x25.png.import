@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dksadh0qkgljh"
-path="res://.godot/imported/Kitsune_Mask_25x25.png-884f89283c3e45b4aed3b6f12f608d91.ctex"
+path="res://.godot/imported/Kitsune_Mask_25x25.png-de27d4e71c5e613443e6242b417a434a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/Kitsune_Mask_25x25.png"
-dest_files=["res://.godot/imported/Kitsune_Mask_25x25.png-884f89283c3e45b4aed3b6f12f608d91.ctex"]
+source_file="res://Assets/UI/UI_Sprites/Kitsune_Mask_25x25.png"
+dest_files=["res://.godot/imported/Kitsune_Mask_25x25.png-de27d4e71c5e613443e6242b417a434a.ctex"]
 
 [params]
 

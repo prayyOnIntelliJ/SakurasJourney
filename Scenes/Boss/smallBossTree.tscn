@@ -1,11 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://g7ghhhpvvl7n"]
 
-[ext_resource type="Script" path="res://3D_Props/smallBossTree.gd" id="1_sacju"]
-[ext_resource type="Texture2D" uid="uid://erapnx01qccs" path="res://2D_Assets/Jubokko_Small.png" id="2_8u50i"]
-[ext_resource type="ArrayMesh" uid="uid://dphylhvy7ivik" path="res://3D_Props/TreeElements/Meshes_and_Materials/JubbokkoHousing.res" id="3_bwi12"]
-[ext_resource type="AudioStream" uid="uid://cljcfomxoekdq" path="res://Sounds/Sakura_Hit_Sound.wav" id="4_sj513"]
-[ext_resource type="PackedScene" uid="uid://cg607iq3oqs08" path="res://Enemies/Scenes/DefenderParentSmallBoss.tscn" id="5_464sd"]
-[ext_resource type="Texture2D" uid="uid://cymnb55gsd2ib" path="res://Enemies/Assets/Enemy_Death.png" id="6_hriep"]
+[ext_resource type="Script" path="res://Scripts/Boss/smallBossTree.gd" id="1_sacju"]
+[ext_resource type="Texture2D" uid="uid://dl577v61ppcmu" path="res://Assets/UI/Boss/Jubokko_Small.png" id="2_8u50i"]
+[ext_resource type="ArrayMesh" uid="uid://dphylhvy7ivik" path="res://Assets/Environment/TreeElements/Meshes_and_Materials/JubbokkoHousing.res" id="3_bwi12"]
+[ext_resource type="AudioStream" uid="uid://8ucvk2ithrvk" path="res://Audio/Sakura_Hit_Sound.wav" id="4_sj513"]
+[ext_resource type="PackedScene" uid="uid://cg607iq3oqs08" path="res://Scenes/Enemies/DefenderParentSmallBoss.tscn" id="5_464sd"]
+[ext_resource type="Texture2D" uid="uid://cymnb55gsd2ib" path="res://Assets/Enemies/Enemy_Death.png" id="6_hriep"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_y7kce"]
 height = 4.0

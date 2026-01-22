@@ -7,7 +7,7 @@ var shockwaveDamage
 var shockwaveRange
 var shockwaveModifier
 var spawnObject
-var shockwaveDashScene = preload("res://Projectiles/Scene/shockwave_dash.tscn")
+var shockwaveDashScene = preload("res://Scenes/Projectiles/shockwave_dash.tscn")
 
 #----------------------READY FUNCTION----------------------
 func _ready() -> void:

@@ -1,7 +1,7 @@
 [gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://bq2mswbihxxrp"]
 
-[ext_resource type="Texture2D" uid="uid://mmwefa52s36k" path="res://Enemies/Shader/tex_gradient_enemy_spiritual.tres" id="1_lf5ag"]
-[ext_resource type="Texture2D" uid="uid://dwp4uu66h5o5g" path="res://Enemies/Shader/tex_noise_enemy_spiritual.tres" id="2_e45ih"]
+[ext_resource type="Texture2D" uid="uid://mmwefa52s36k" path="res://Assets/Shader/tex_gradient_enemy_spiritual.tres" id="1_lf5ag"]
+[ext_resource type="Texture2D" uid="uid://dwp4uu66h5o5g" path="res://Assets/Enemies/Shader/tex_noise_enemy_spiritual.tres" id="2_e45ih"]
 
 [sub_resource type="Shader" id="Shader_jv36d"]
 code = "shader_type canvas_item;

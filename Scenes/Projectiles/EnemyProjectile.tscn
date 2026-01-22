@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bf05rh2ytmipg"]
 
-[ext_resource type="Texture2D" uid="uid://c5mk7calx5ft4" path="res://Projectiles/VFX/Materials/Enemy_projectile.png" id="1_2uac1"]
-[ext_resource type="Script" path="res://Projectiles/Script/EnemyProjectile.gd" id="1_adgcn"]
+[ext_resource type="Texture2D" uid="uid://cbkcwpk3u21wy" path="res://Assets/Projectiles/Materials/Enemy_projectile.png" id="1_2uac1"]
+[ext_resource type="Script" path="res://Scripts/Projectiles/EnemyProjectile.gd" id="1_adgcn"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_u8pua"]
 radius = 0.237289

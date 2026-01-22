@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vowiran0hw3i"
-path="res://.godot/imported/mouse_cursor_ghost_frame1.png-a85de8cae545c74f2f0395602315079a.ctex"
+path="res://.godot/imported/mouse_cursor_ghost_frame1.png-126bb791da194443d66d2d9cb12d2da2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://2D_Assets/MouseCursor/mouse_cursor_ghost_frame1.png"
-dest_files=["res://.godot/imported/mouse_cursor_ghost_frame1.png-a85de8cae545c74f2f0395602315079a.ctex"]
+source_file="res://Assets/MouseCursor/mouse_cursor_ghost_frame1.png"
+dest_files=["res://.godot/imported/mouse_cursor_ghost_frame1.png-126bb791da194443d66d2d9cb12d2da2.ctex"]
 
 [params]
 

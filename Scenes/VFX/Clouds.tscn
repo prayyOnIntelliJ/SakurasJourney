@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bfmsfav1dacj4"]
 
-[ext_resource type="Texture2D" uid="uid://b44rcbtxqbks1" path="res://Projectiles/VFX/New/FX_CloudAlpha04.png" id="1_uurcm"]
+[ext_resource type="Texture2D" uid="uid://cinos3nu4vluu" path="res://Assets/Projectiles/New/FX_CloudAlpha04.png" id="1_uurcm"]
 
 [sub_resource type="Curve" id="Curve_d5fim"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0942029, 0.120879), 0.0, 0.0, 0, 0, Vector2(0.891304, 0.131868), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]

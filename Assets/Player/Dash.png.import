@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1hfnjsu3gt65"
-path.s3tc="res://.godot/imported/Dash.png-0ad8bb5ba5be99cbb436d14b724df5ff.s3tc.ctex"
+path.s3tc="res://.godot/imported/Dash.png-0ced4ee11fc504f68e0fb3110ffe654e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Player/Assets/Dash.png"
-dest_files=["res://.godot/imported/Dash.png-0ad8bb5ba5be99cbb436d14b724df5ff.s3tc.ctex"]
+source_file="res://Assets/Player/Dash.png"
+dest_files=["res://.godot/imported/Dash.png-0ced4ee11fc504f68e0fb3110ffe654e.s3tc.ctex"]
 
 [params]
 

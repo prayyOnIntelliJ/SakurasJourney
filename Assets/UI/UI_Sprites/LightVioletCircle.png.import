@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b71wc7u8nctd1"
-path="res://.godot/imported/LightVioletCircle.png-9df3a069299c8c3554cb8a30cc33c5d8.ctex"
+path="res://.godot/imported/LightVioletCircle.png-f0af5c66cbddacd9bf7f203445b75bc1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/UI_Sprites/LightVioletCircle.png"
-dest_files=["res://.godot/imported/LightVioletCircle.png-9df3a069299c8c3554cb8a30cc33c5d8.ctex"]
+source_file="res://Assets/UI/UI_Sprites/LightVioletCircle.png"
+dest_files=["res://.godot/imported/LightVioletCircle.png-f0af5c66cbddacd9bf7f203445b75bc1.ctex"]
 
 [params]
 

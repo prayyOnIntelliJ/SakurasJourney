@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2jflvhmgkp30"
-path="res://.godot/imported/GlowingOrb_double_glow.png-f2919d8395a7a02654c5383eae9c4ab7.ctex"
+path="res://.godot/imported/GlowingOrb_double_glow.png-de11923f0c3b50a6f6469cc9cecb1107.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/Assets/GlowingOrb_double_glow.png"
-dest_files=["res://.godot/imported/GlowingOrb_double_glow.png-f2919d8395a7a02654c5383eae9c4ab7.ctex"]
+source_file="res://Assets/Player/GlowingOrb_double_glow.png"
+dest_files=["res://.godot/imported/GlowingOrb_double_glow.png-de11923f0c3b50a6f6469cc9cecb1107.ctex"]
 
 [params]
 

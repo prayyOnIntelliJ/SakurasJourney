@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b73rr72de3kk7"
-path="res://.godot/imported/+wall.glb-3349f5e9ad3d43fc0b944dcf35fd1228.scn"
+valid=false
 
 [deps]
 
-source_file="res://3D_Props/Fences_and_Walls/GlbFiles/+wall.glb"
-dest_files=["res://.godot/imported/+wall.glb-3349f5e9ad3d43fc0b944dcf35fd1228.scn"]
+source_file="res://Assets/Environment/FencesWalls/GlbFiles/+wall.glb"
 
 [params]
 

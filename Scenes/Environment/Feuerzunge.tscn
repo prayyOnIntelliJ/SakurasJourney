@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://815yprhw2pu1"]
 
-[ext_resource type="Script" path="res://3D_Props/Feuerzunge.gd" id="1_73fss"]
-[ext_resource type="Texture2D" uid="uid://cyrw1voyfpu80" path="res://Projectiles/VFX/New/T_smoke_b7.png" id="1_yvne3"]
+[ext_resource type="Script" path="res://Scripts/Environment/Feuerzunge.gd" id="1_73fss"]
+[ext_resource type="Texture2D" uid="uid://b1osxcxi3bi3m" path="res://Assets/Projectiles/New/T_smoke_b7.png" id="1_yvne3"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wo0co"]
 transparency = 1

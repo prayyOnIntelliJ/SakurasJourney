@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://iusd77kckciq"]
 
-[ext_resource type="Texture2D" uid="uid://ehxgica2c7h8" path="res://Projectiles/VFX/Materials/T_Icon_Fireball_White.png" id="1_0yj5n"]
-[ext_resource type="Script" path="res://Projectiles/VFX/ShootParticles.gd" id="1_nkutb"]
+[ext_resource type="Texture2D" uid="uid://blhnm1j3uy1ds" path="res://Assets/Projectiles/Materials/T_Icon_Fireball_White.png" id="1_0yj5n"]
+[ext_resource type="Script" path="res://Assets/Projectiles/ShootParticles.gd" id="1_nkutb"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_mi5pr"]
 viewport_path = NodePath("SubViewport")

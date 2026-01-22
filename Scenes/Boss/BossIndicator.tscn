@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://dam2di4d000vr"]
 
-[ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://simpleparticles.tres" id="1_fslkf"]
-[ext_resource type="Script" path="res://BossIndicator.gd" id="1_rg7jj"]
-[ext_resource type="Texture2D" uid="uid://dsmgkqa1172xf" path="res://Projectiles/VFX/New/Flare00.PNG" id="2_ioko0"]
+[ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://Assets/VFX/simpleparticles.tres" id="1_fslkf"]
+[ext_resource type="Script" path="res://Scripts/Boss/BossIndicator.gd" id="1_rg7jj"]
+[ext_resource type="Texture2D" uid="uid://b6r7y831hrsqv" path="res://Assets/Projectiles/New/Flare00.PNG" id="2_ioko0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bl0e7"]
 render_priority = 0

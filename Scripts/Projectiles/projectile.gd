@@ -9,8 +9,8 @@ const QUEUE_FREE_TIME : float = 2.0
 var weaponType
 var spawnObject
 var player
-var shootParticle = preload("res://Projectiles/VFX/ShootParticles.tscn")
-var impactParticle = preload("res://Projectiles/VFX/ImpactParticles.tscn")
+var shootParticle = preload("res://Assets/Projectiles/ShootParticles.tscn")
+var impactParticle = preload("res://Assets/Projectiles/ImpactParticles.tscn")
 
 #----------------------READY FUNCTION----------------------
 func _ready() -> void:

@@ -10,7 +10,7 @@ extends Baseenemy
 # [ ? ] Flag to indicate whether the enemy can shoot
 var canShoot: bool = false 
 # [ ? ] The projectile scene to be instantiated
-var projectileScene = preload("res://Projectiles/Scene/EnemyProjectile.tscn") 
+var projectileScene = preload("res://Scenes/Projectiles/EnemyProjectile.tscn") 
 
 
 #----------------------INITIALIZATION----------------------

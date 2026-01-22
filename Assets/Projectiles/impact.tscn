@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://cxdqdoewew17b"]
 
-[ext_resource type="Material" uid="uid://dlk7c66ptwylv" path="res://Projectiles/VFX/Materials/Impact.tres" id="1_gxe45"]
-[ext_resource type="Script" path="res://Projectiles/VFX/impact.gd" id="1_vwh6v"]
-[ext_resource type="Texture2D" uid="uid://bj5s2wgna5wjw" path="res://Projectiles/VFX/TranspBall.png" id="2_n2t8e"]
-[ext_resource type="AudioStream" uid="uid://shqn4k2t1655" path="res://Sounds/hitsound.wav" id="4_tqj0u"]
+[ext_resource type="Material" uid="uid://dlk7c66ptwylv" path="res://Assets/Projectiles/Materials/Impact.tres" id="1_gxe45"]
+[ext_resource type="Script" path="res://Assets/Projectiles/impact.gd" id="1_vwh6v"]
+[ext_resource type="Texture2D" uid="uid://bj5s2wgna5wjw" path="res://Assets/Projectiles/TranspBall.png" id="2_n2t8e"]
+[ext_resource type="AudioStream" uid="uid://dj3xbjwch3fqh" path="res://Audio/hitsound.wav" id="4_tqj0u"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_21nf7"]
 viewport_path = NodePath("SubViewport")
