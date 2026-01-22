@@ -1,0 +1,42 @@
+[gd_scene load_steps=9 format=3 uid="uid://dam2di4d000vr"]
+
+[ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://simpleparticles.tres" id="1_fslkf"]
+[ext_resource type="Script" path="res://BossIndicator.gd" id="1_rg7jj"]
+[ext_resource type="Texture2D" uid="uid://dsmgkqa1172xf" path="res://Projectiles/VFX/New/Flare00.PNG" id="2_ioko0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bl0e7"]
+render_priority = 0
+shader = ExtResource("1_fslkf")
+shader_parameter/MainTex = ExtResource("2_ioko0")
+
+[sub_resource type="Curve" id="Curve_ilsyl"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_hklao"]
+curve = SubResource("Curve_ilsyl")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_u202m"]
+emission_shape = 1
+emission_sphere_radius = 2.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("CurveTexture_hklao")
+color = Color(2, 1, 2, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_cvn06"]
+
+[node name="Boss Indicator" type="Node3D"]
+script = ExtResource("1_rg7jj")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.64841, 0)
+material_override = SubResource("ShaderMaterial_bl0e7")
+emitting = false
+amount = 40
+lifetime = 0.2
+process_material = SubResource("ParticleProcessMaterial_u202m")
+draw_pass_1 = SubResource("QuadMesh_cvn06")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="onTimerTimeout"]

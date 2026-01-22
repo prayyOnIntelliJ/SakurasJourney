@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cs8ix88ic0t6w"]
+
+[ext_resource type="FontFile" uid="uid://u07bm4bnyh1u" path="res://PermanentMarker-Regular.ttf" id="1_csupc"]
+
+[resource]
+font = ExtResource("1_csupc")
+font_size = 36
+outline_size = 12
+outline_color = Color(0, 0, 0, 1)

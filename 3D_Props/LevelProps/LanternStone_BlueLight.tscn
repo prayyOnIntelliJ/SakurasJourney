@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhtlmcsgnfapj"]
+
+[ext_resource type="ArrayMesh" uid="uid://cfo2it513xrbl" path="res://3D_Props/LevelProps/Meshes_and_Materials/LanternStoneRedBlack.res" id="1_qpfl1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bcjqq"]
+size = Vector3(2.18, 15.5, 2.25)
+
+[node name="LanternStone_BlueLight" type="StaticBody3D"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+collision_layer = 9
+
+[node name="LanternMesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_qpfl1")
+
+[node name="LanternObstacle" type="NavigationObstacle3D" parent="LanternMesh"]
+
+[node name="LanternCollider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00311279, 7.66927, 0.0267334)
+shape = SubResource("BoxShape3D_bcjqq")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 13.0057, 0)
+light_color = Color(0.565921, 0.853363, 1, 1)
+light_energy = 5.0

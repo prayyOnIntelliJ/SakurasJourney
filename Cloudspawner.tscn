@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dn5phlk2cn86o"]
+
+[ext_resource type="Script" path="res://Cloudspawner1.gd" id="1_im1eg"]
+[ext_resource type="Script" path="res://Cloudspawner.gd" id="1_yges7"]
+[ext_resource type="PackedScene" uid="uid://bfmsfav1dacj4" path="res://Clouds.tscn" id="2_oeko3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7x6np"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(1, 1, 1, 0)
+
+[node name="Cloudspawner" type="Node3D"]
+script = ExtResource("1_im1eg")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.831787, 0)
+size = Vector3(150, 0, 150)
+material = SubResource("StandardMaterial3D_7x6np")
+script = ExtResource("1_yges7")
+cloudsToSpawn = 200
+cloud = ExtResource("2_oeko3")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="CSGBox3D" method="onTimerTimeout"]

@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://cakiikv4l7c3m"]
+
+[ext_resource type="Texture2D" uid="uid://buxkavjp0lx22" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone_512x512_dark.png" id="1_avnrw"]
+[ext_resource type="Texture2D" uid="uid://cadw7awoyex7f" path="res://UI/UI_Sprites/Masks/Kitsune_mask_gray_relief.png" id="2_0hjcc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j07qy"]
+albedo_color = Color(0.884256, 0.807771, 0.785003, 1)
+albedo_texture = ExtResource("1_avnrw")
+metallic = 0.52
+metallic_specular = 1.0
+roughness = 0.53
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nuul1"]
+material = SubResource("StandardMaterial3D_j07qy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8lihu"]
+albedo_color = Color(0.972043, 0.963512, 0.99963, 1)
+albedo_texture = ExtResource("2_0hjcc")
+metallic = 0.8
+metallic_specular = 0.9
+roughness = 0.7
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_p2kr8"]
+material = SubResource("StandardMaterial3D_8lihu")
+size = Vector2(1, 1)
+
+[node name="KitsuneRelief" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_nuul1")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.005, 0)
+mesh = SubResource("PlaneMesh_p2kr8")

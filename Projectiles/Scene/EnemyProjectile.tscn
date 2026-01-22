@@ -1,0 +1,87 @@
+[gd_scene load_steps=8 format=3 uid="uid://bf05rh2ytmipg"]
+
+[ext_resource type="Texture2D" uid="uid://c5mk7calx5ft4" path="res://Projectiles/VFX/Materials/Enemy_projectile.png" id="1_2uac1"]
+[ext_resource type="Script" path="res://Projectiles/Script/EnemyProjectile.gd" id="1_adgcn"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_u8pua"]
+radius = 0.237289
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_3u473"]
+viewport_path = NodePath("CollisionShape3D/Sprite3D/SubViewport")
+
+[sub_resource type="Animation" id="Animation_jqe7d"]
+resource_name = "Idle"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape3D/Sprite3D/SubViewport/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 7]
+}
+
+[sub_resource type="Animation" id="Animation_vi3us"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape3D/Sprite3D/SubViewport/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_57xtb"]
+_data = {
+"Idle": SubResource("Animation_jqe7d"),
+"RESET": SubResource("Animation_vi3us")
+}
+
+[node name="EnemyProjectile" type="RigidBody3D"]
+collision_layer = 16
+collision_mask = 5
+gravity_scale = 0.0
+contact_monitor = true
+max_contacts_reported = 1
+script = ExtResource("1_adgcn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+shape = SubResource("SphereShape3D_u8pua")
+
+[node name="Sprite3D" type="Sprite3D" parent="CollisionShape3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+texture = SubResource("ViewportTexture_3u473")
+
+[node name="SubViewport" type="SubViewport" parent="CollisionShape3D/Sprite3D"]
+transparent_bg = true
+size = Vector2i(64, 64)
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape3D/Sprite3D/SubViewport"]
+position = Vector2(32, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("1_2uac1")
+hframes = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_57xtb")
+}
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="onProjectileBodyEntered"]
+[connection signal="timeout" from="Timer" to="." method="onTimerTimeout"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="on_visible_on_screen_notifier_3d_screen_exited"]

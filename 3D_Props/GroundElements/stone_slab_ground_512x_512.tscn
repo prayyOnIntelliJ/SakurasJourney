@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://b88tv0ps3wc64"]
+
+[ext_resource type="Texture2D" uid="uid://b1bw7b1pp377x" path="res://2D_Assets/GroundTextures/GroundTexture_Stone...512x512_6.png" id="1_tly5o"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wdpp5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c03xm"]
+albedo_texture = ExtResource("1_tly5o")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3tq0s"]
+size = Vector3(2, 0.01, 2)
+
+[node name="StoneSlabGround_512x512" type="StaticBody3D"]
+
+[node name="StonePlane" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_wdpp5")
+surface_material_override/0 = SubResource("StandardMaterial3D_c03xm")
+
+[node name="StonePlaneCollider" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_3tq0s")

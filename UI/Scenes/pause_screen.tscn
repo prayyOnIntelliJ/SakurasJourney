@@ -1,0 +1,156 @@
+[gd_scene load_steps=24 format=3 uid="uid://ql6oxnky6tdx"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/PauseScreen.gd" id="1_qbjps"]
+[ext_resource type="Texture2D" uid="uid://cnt8oggotvnps" path="res://UI/UI_Sprites/ArenaFrames/UI_Earth_Tempel_decoration.png" id="2_ne1rq"]
+[ext_resource type="Texture2D" uid="uid://qtk53pc6bfp6" path="res://UI/UI_Sprites/ArenaFrames/UI_Water_Tempel_decoration.png" id="3_jnljd"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="4_1vor8"]
+[ext_resource type="Texture2D" uid="uid://c7kpnr2y0qg2d" path="res://UI/UI_Sprites/UI_Button.png" id="4_bk6t1"]
+[ext_resource type="Texture2D" uid="uid://jjrur05tj5p2" path="res://UI/UI_Sprites/ArenaFrames/UI_Fire_Tempel_decoration.png" id="4_t65wh"]
+[ext_resource type="Texture2D" uid="uid://2drctoy4rjf3" path="res://UI/UI_Sprites/UI_Button_pressed.png" id="5_0eym1"]
+[ext_resource type="Texture2D" uid="uid://dml8inrg2kclk" path="res://UI/UI_Sprites/ArenaFrames/UI_Wind_Tempel_decoration.png" id="5_hnp2j"]
+[ext_resource type="Texture2D" uid="uid://m3qkinyq5rsm" path="res://UI/UI_Sprites/Buttons/UI_Button_earth.png" id="6_06xp7"]
+[ext_resource type="Texture2D" uid="uid://c8ae7bhve3f5v" path="res://UI/UI_Sprites/UI_Button_hover.png" id="6_iy5cn"]
+[ext_resource type="Texture2D" uid="uid://cnkumeeo30x24" path="res://UI/UI_Sprites/Buttons/UI_Button_water.png" id="7_stvrd"]
+[ext_resource type="Texture2D" uid="uid://cp7v1mo8blenh" path="res://UI/UI_Sprites/Buttons/UI_Button_fire.png" id="8_j3ipg"]
+[ext_resource type="Texture2D" uid="uid://cmnvf8hviaavg" path="res://UI/UI_Sprites/Buttons/UI_Button_wind.png" id="9_81k2c"]
+[ext_resource type="Texture2D" uid="uid://n72m54txv5od" path="res://UI/UI_Sprites/Buttons/UI_Button_pressed_earth.png" id="10_qv56b"]
+[ext_resource type="Texture2D" uid="uid://bqlcd0rbrukb8" path="res://UI/UI_Sprites/Buttons/UI_Button_pressed_water.png" id="11_1v0cj"]
+[ext_resource type="Texture2D" uid="uid://d26ielhia0wdr" path="res://UI/UI_Sprites/Buttons/UI_Button_pressed_fire.png" id="12_6qfl7"]
+[ext_resource type="Texture2D" uid="uid://bvvby078rk7d8" path="res://UI/UI_Sprites/Buttons/UI_Button_pressed_wind.png" id="13_nfxbl"]
+[ext_resource type="Texture2D" uid="uid://b4t8qt4gyekli" path="res://UI/UI_Sprites/Buttons/UI_Button_hover_earth.png" id="14_g6f53"]
+[ext_resource type="Texture2D" uid="uid://cvsdenuojgd24" path="res://UI/UI_Sprites/Buttons/UI_Button_hover_water.png" id="15_533ih"]
+[ext_resource type="Texture2D" uid="uid://qpt8ydof842m" path="res://UI/UI_Sprites/Buttons/UI_Button_hover_fire.png" id="16_a66sh"]
+[ext_resource type="Texture2D" uid="uid://brme1femc1kwt" path="res://UI/UI_Sprites/Buttons/UI_Button_hover_wind.png" id="17_ik34w"]
+[ext_resource type="Texture2D" uid="uid://mpukn2tra6ni" path="res://UI/UI_Sprites/UI Arena/Plain_MenuScreen.png" id="18_ox85h"]
+[ext_resource type="Texture2D" uid="uid://0g7hcbv8qpyj" path="res://UI/UI_Sprites/ArenaFrames/UI_Tempel_Frame.png" id="19_ec478"]
+
+[node name="PauseScreen" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qbjps")
+frameArray = Array[Texture2D]([ExtResource("2_ne1rq"), ExtResource("3_jnljd"), ExtResource("4_t65wh"), ExtResource("5_hnp2j")])
+buttonNormalArray = Array[Texture2D]([ExtResource("6_06xp7"), ExtResource("7_stvrd"), ExtResource("8_j3ipg"), ExtResource("9_81k2c")])
+buttonPressedArray = Array[Texture2D]([ExtResource("10_qv56b"), ExtResource("11_1v0cj"), ExtResource("12_6qfl7"), ExtResource("13_nfxbl")])
+buttonHoverArray = Array[Texture2D]([ExtResource("14_g6f53"), ExtResource("15_533ih"), ExtResource("16_a66sh"), ExtResource("17_ik34w")])
+
+[node name="WinOverlayPanel" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 150.0
+offset_right = 1500.0
+offset_bottom = 950.0
+texture = ExtResource("18_ox85h")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="WinOverlayPanel"]
+layout_mode = 0
+offset_left = -110.0
+offset_top = -121.0
+offset_right = 1240.0
+offset_bottom = 899.0
+texture = ExtResource("19_ec478")
+
+[node name="Decoration" type="TextureRect" parent="WinOverlayPanel/TextureRect"]
+layout_mode = 0
+offset_right = 1350.0
+offset_bottom = 1020.0
+texture = ExtResource("2_ne1rq")
+
+[node name="PausemenuLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -264.0
+offset_right = 1.0
+offset_bottom = -264.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Pause Menu"
+label_settings = ExtResource("4_1vor8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResumeButton" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 748.0
+offset_top = 300.0
+offset_right = 1148.0
+offset_bottom = 450.0
+texture_normal = ExtResource("4_bk6t1")
+texture_pressed = ExtResource("5_0eym1")
+texture_hover = ExtResource("6_iy5cn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ResumeLabel" type="Label" parent="ResumeButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Resume"
+label_settings = ExtResource("4_1vor8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsButton" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 753.0
+offset_top = 464.0
+offset_right = 1153.0
+offset_bottom = 614.0
+texture_normal = ExtResource("4_bk6t1")
+texture_pressed = ExtResource("5_0eym1")
+texture_hover = ExtResource("6_iy5cn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SettingsLabel" type="Label" parent="SettingsButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Settings"
+label_settings = ExtResource("4_1vor8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackToMenuButton" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 751.0
+offset_top = 641.0
+offset_right = 1151.0
+offset_bottom = 791.0
+texture_normal = ExtResource("4_bk6t1")
+texture_pressed = ExtResource("5_0eym1")
+texture_hover = ExtResource("6_iy5cn")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="BackToMenuLabel" type="Label" parent="BackToMenuButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Main Menu"
+label_settings = ExtResource("4_1vor8")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="ResumeButton" to="." method="onResumeButtonPressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="onSettingsButtonPressed"]
+[connection signal="pressed" from="BackToMenuButton" to="." method="onBackButtonPressed"]

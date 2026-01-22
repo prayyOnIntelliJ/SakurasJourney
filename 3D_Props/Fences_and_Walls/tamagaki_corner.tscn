@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b53fh0q57fqku"]
+
+[ext_resource type="ArrayMesh" uid="uid://dxs1alryptax5" path="res://3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiCorner.res" id="1_mvqqa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ya075"]
+size = Vector3(1, 5, 18.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w1rvn"]
+size = Vector3(19.5, 5, 1)
+
+[node name="TamagakiCorner" type="StaticBody3D"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+collision_layer = 8
+
+[node name="CornerMesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_mvqqa")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="CornerMesh"]
+
+[node name="CornerCollider_01" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.475, -9.525)
+shape = SubResource("BoxShape3D_ya075")
+
+[node name="CornerCollider_02" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 2.425, 0)
+shape = SubResource("BoxShape3D_w1rvn")

@@ -1,0 +1,365 @@
+[gd_scene load_steps=25 format=3 uid="uid://cgvdwxg4vpyvq"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/hud.gd" id="1_16hku"]
+[ext_resource type="Texture2D" uid="uid://xp7wbbfp7pin" path="res://UI/UI_Sprites/HUD/ui_hud_char_healthbar_empty_393x48px.png" id="2_qg8el"]
+[ext_resource type="Texture2D" uid="uid://bofshu1chupqa" path="res://UI/ui_hud_char_healthbar_filled_393x50px.png" id="3_y5siq"]
+[ext_resource type="Texture2D" uid="uid://dsm7u2r8y6mk5" path="res://UI/UI_Sprites/HUD/ui_hud_sakura_healthbar_empty.png" id="4_773mh"]
+[ext_resource type="Texture2D" uid="uid://cq7gakfjnbvs4" path="res://UI/UI_Sprites/HUD/ui_hud_sakura_healthbar_filled.png" id="5_jc1pa"]
+[ext_resource type="Texture2D" uid="uid://dqhebibc76b8e" path="res://UI/UI_Sprites/HUD/ui_hud_char_icon_200x200px.png" id="6_b23pw"]
+[ext_resource type="Material" uid="uid://cwwdcea3ajxl3" path="res://Enemies/Shader/Energyshader.tres" id="7_lcxjs"]
+[ext_resource type="Texture2D" uid="uid://b14h6bnebs52b" path="res://UI/UI_Sprites/HUD/Final/ui_hud_weapons_shockwave_empty__v2.png" id="8_csba8"]
+[ext_resource type="Texture2D" uid="uid://doagmi0ybtgqw" path="res://UI/UI_Sprites/HUD/Final/ui_hud_weapons_shockwave_filled_v2.png" id="9_nx6hf"]
+[ext_resource type="Texture2D" uid="uid://hk8m3jpy34ur" path="res://UI/UI_Sprites/HUD/Final/ui_hud_weapons_shockwave_shader_359x345px.png" id="10_wfyy4"]
+[ext_resource type="Texture2D" uid="uid://qs0l413jlibd" path="res://UI/UI_Sprites/HUD/Final/ui_hud_weapons_ofuda_fire_105x142px.png" id="11_k5bwr"]
+[ext_resource type="Texture2D" uid="uid://baa2btxgpb86i" path="res://UI/UI_Sprites/HUD/Final/ui_hud_weapons_ofuda_spiritual_105x142px.png" id="12_2g633"]
+[ext_resource type="Texture2D" uid="uid://be3yvekmx1cxp" path="res://UI/UI_Sprites/HUD/Final/ui_hud_char_dash_icon_empty_v2.png" id="13_fjohx"]
+[ext_resource type="Texture2D" uid="uid://cvnwbpm6ra7ue" path="res://UI/UI_Sprites/HUD/ui_hud_enemy_empty_393x50px.png" id="13_igudb"]
+[ext_resource type="Texture2D" uid="uid://bfol7jiabwfg" path="res://UI/UI_Sprites/HUD/ui_hud_enemy_filled_393x50px.png" id="14_ek1r1"]
+[ext_resource type="Texture2D" uid="uid://dpoesni1d4ar1" path="res://UI/UI_Sprites/HUD/Final/ui_hud_char_dash_icon_filled_v2.png" id="14_iaubw"]
+[ext_resource type="Texture2D" uid="uid://dkbqjdhig5d3r" path="res://UI/ui_hud_sakura_icon_empty.png" id="14_uf5wi"]
+[ext_resource type="Texture2D" uid="uid://mwlhg0jknhom" path="res://UI/UI_Sprites/HUD/ui_hud_enemy_icon_215x199px.png" id="15_6r30i"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="15_beg0t"]
+[ext_resource type="Texture2D" uid="uid://b4esgad76a0ht" path="res://UI/ui_hud_sakura_icon_filled.png" id="15_uja67"]
+[ext_resource type="LabelSettings" uid="uid://cn1a1tk4nbruc" path="res://FlashTextSettings.tres" id="17_hoy1d"]
+
+[sub_resource type="Animation" id="Animation_r61m3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerUI/WeaponUI/Ofuda_Fire:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(90, 70)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerUI/WeaponUI/Ofuda_Ice:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(90, 60)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PlayerUI/WeaponUI/Ofuda_Fire:z_index")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerUI/WeaponUI/Ofuda_Ice:z_index")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PlayerUI/WeaponUI/Ofuda_Fire:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.3]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PlayerUI/WeaponUI/Ofuda_Ice:modulate:a")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_rm86r"]
+resource_name = "switch_weapontype"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerUI/WeaponUI/Ofuda_Fire:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(90, 70), Vector2(60, 70), Vector2(90, 70)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("PlayerUI/WeaponUI/Ofuda_Fire:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.3, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("PlayerUI/WeaponUI/Ofuda_Ice:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(90, 60), Vector2(120, 60), Vector2(90, 60)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("PlayerUI/WeaponUI/Ofuda_Ice:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.3]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("PlayerUI/WeaponUI/Ofuda_Fire:z_index")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("PlayerUI/WeaponUI/Ofuda_Ice:z_index")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [1, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fyvg4"]
+_data = {
+"RESET": SubResource("Animation_r61m3"),
+"switch_weapontype": SubResource("Animation_rm86r")
+}
+
+[node name="Hud" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_16hku")
+shockwaveshader = ExtResource("7_lcxjs")
+flashFontDefaultColor = Color(1, 1, 1, 1)
+
+[node name="PlayerUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 116.0
+offset_top = 935.0
+offset_right = 541.0
+offset_bottom = 1050.0
+
+[node name="PlayerHealthBar" type="TextureProgressBar" parent="PlayerUI"]
+layout_mode = 0
+offset_left = 86.0
+offset_top = 63.0
+offset_right = 484.0
+offset_bottom = 113.0
+value = 100.0
+texture_under = ExtResource("2_qg8el")
+texture_progress = ExtResource("3_y5siq")
+texture_progress_offset = Vector2(15, 0)
+
+[node name="SakuraHealthBar" type="TextureProgressBar" parent="PlayerUI"]
+visible = false
+layout_mode = 0
+offset_left = 1585.0
+offset_top = 98.0
+offset_right = 1985.0
+offset_bottom = 148.0
+rotation = 3.14159
+value = 100.0
+texture_under = ExtResource("4_773mh")
+texture_progress = ExtResource("5_jc1pa")
+texture_progress_offset = Vector2(8, -1)
+
+[node name="CharacterIconBackground" type="Sprite2D" parent="PlayerUI"]
+position = Vector2(42, 21)
+texture = ExtResource("6_b23pw")
+
+[node name="WeaponUI" type="Control" parent="PlayerUI"]
+anchors_preset = 0
+offset_left = 825.0
+offset_top = -35.0
+offset_right = 1050.0
+offset_bottom = 105.0
+
+[node name="ChargeProgressCircle" type="TextureProgressBar" parent="PlayerUI/WeaponUI"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 0
+offset_left = -100.0
+offset_top = -125.0
+offset_right = 128.0
+offset_bottom = 102.0
+rotation = 3.14159
+pivot_offset = Vector2(150, 150)
+value = 100.0
+fill_mode = 8
+texture_under = ExtResource("8_csba8")
+texture_progress = ExtResource("9_nx6hf")
+texture_progress_offset = Vector2(0, 8)
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerUI/WeaponUI/ChargeProgressCircle"]
+visible = false
+material = ExtResource("7_lcxjs")
+position = Vector2(114, 114)
+texture = ExtResource("10_wfyy4")
+
+[node name="Ofuda_Fire" type="Sprite2D" parent="PlayerUI/WeaponUI"]
+modulate = Color(1, 1, 1, 0.3)
+position = Vector2(90, 70)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("11_k5bwr")
+
+[node name="Ofuda_Ice" type="Sprite2D" parent="PlayerUI/WeaponUI"]
+position = Vector2(90, 60)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("12_2g633")
+
+[node name="DashUI" type="Control" parent="PlayerUI"]
+anchors_preset = 0
+offset_left = 143.0
+offset_top = -40.0
+offset_right = 443.0
+offset_bottom = 60.0
+
+[node name="DashAvailabiltyProgress" type="TextureProgressBar" parent="PlayerUI/DashUI"]
+layout_mode = 0
+offset_left = -9.0
+offset_top = -33.0
+offset_right = 139.0
+offset_bottom = 115.0
+max_value = 10.0
+value = 10.0
+fill_mode = 3
+texture_under = ExtResource("13_fjohx")
+texture_progress = ExtResource("14_iaubw")
+texture_progress_offset = Vector2(16, 17)
+
+[node name="DashStackCounter" type="Label" parent="PlayerUI/DashUI"]
+layout_mode = 0
+offset_left = 125.0
+offset_top = 47.0
+offset_right = 180.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 32
+text = "1"
+label_settings = ExtResource("15_beg0t")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BossUI" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_left = 1441.0
+offset_top = 44.0
+offset_right = 1888.0
+offset_bottom = 188.0
+
+[node name="BossHealthBar" type="TextureProgressBar" parent="BossUI"]
+layout_mode = 0
+offset_left = -113.0
+offset_top = 27.0
+offset_right = 287.0
+offset_bottom = 77.0
+value = 100.0
+fill_mode = 1
+texture_under = ExtResource("13_igudb")
+texture_progress = ExtResource("14_ek1r1")
+texture_progress_offset = Vector2(15, 0)
+
+[node name="BossIconBackground" type="Sprite2D" parent="BossUI"]
+position = Vector2(350, 79)
+texture = ExtResource("15_6r30i")
+
+[node name="FlashText" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 694.0
+offset_top = 57.095
+offset_right = 1294.0
+offset_bottom = 357.095
+
+[node name="FlashMessage" type="Label" parent="FlashText"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 120.0
+offset_right = 636.0
+offset_bottom = 420.0
+label_settings = ExtResource("17_hoy1d")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="FlashTextTimer" type="Timer" parent="FlashText"]
+one_shot = true
+
+[node name="ArenaTimerUI" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1495.0
+offset_top = 686.0
+offset_right = 1850.0
+offset_bottom = 809.0
+
+[node name="ArenaTimerProgressCircle" type="TextureProgressBar" parent="ArenaTimerUI"]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 157.0
+offset_right = 356.0
+offset_bottom = 357.0
+value = 100.0
+fill_mode = 3
+texture_under = ExtResource("14_uf5wi")
+texture_progress = ExtResource("15_uja67")
+texture_progress_offset = Vector2(12, 6)
+
+[node name="weaponSwitchAnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fyvg4")
+}
+
+[connection signal="timeout" from="FlashText/FlashTextTimer" to="." method="onFlashTextTimerTimeout"]

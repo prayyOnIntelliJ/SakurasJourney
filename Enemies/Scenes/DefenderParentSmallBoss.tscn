@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://cg607iq3oqs08"]
+
+[ext_resource type="Script" path="res://Enemies/Scripts/DefenderParentSmallBoss.gd" id="1_n1i1f"]
+[ext_resource type="PackedScene" uid="uid://br47su0xkssjs" path="res://Enemies/Scenes/NewEnemies/Enemy_Defender.tscn" id="2_ebwku"]
+
+[node name="DefenderParentSmallParent" type="Node3D"]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
+script = ExtResource("1_n1i1f")
+
+[node name="Enemy_Defender" parent="." instance=ExtResource("2_ebwku")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 0)
+shootingRange = 6.5
+projectileSpeed = 7.5
+maxHealth = 50.0
+
+[node name="Enemy_Defender2" parent="." instance=ExtResource("2_ebwku")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3)
+shootingRange = 6.5
+projectileSpeed = 7.5
+maxHealth = 50.0
+
+[node name="Enemy_Defender3" parent="." instance=ExtResource("2_ebwku")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -4)
+shootingRange = 6.5
+projectileSpeed = 7.5
+maxHealth = 50.0
+
+[node name="Enemy_Defender4" parent="." instance=ExtResource("2_ebwku")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 0)
+shootingRange = 6.5
+projectileSpeed = 7.5
+maxHealth = 50.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="on_timer_timeout"]

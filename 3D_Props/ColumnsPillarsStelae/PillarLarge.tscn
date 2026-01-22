@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cskxj2b7wxpdy"]
+
+[ext_resource type="ArrayMesh" uid="uid://bpjys5btqckgs" path="res://3D_Props/ColumnsPillarsStelae/Meshes_and_Materials/PillarLarge.res" id="1_aanc5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nhoj8"]
+size = Vector3(2.25, 2.5, 2.25)
+
+[node name="PillarLarge" type="StaticBody3D"]
+collision_layer = 56
+
+[node name="PillarMesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_aanc5")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="PillarMesh"]
+
+[node name="PillarCollider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.335138, 0)
+shape = SubResource("BoxShape3D_nhoj8")

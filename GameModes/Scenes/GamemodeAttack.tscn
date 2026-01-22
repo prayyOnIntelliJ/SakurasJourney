@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bi6cxbnvhc1bt"]
+
+[ext_resource type="Script" path="res://GameModes/Scripts/GamemodeAttack.gd" id="1_uyboc"]
+
+[node name="gamemodeAttack" type="Node3D"]
+script = ExtResource("1_uyboc")

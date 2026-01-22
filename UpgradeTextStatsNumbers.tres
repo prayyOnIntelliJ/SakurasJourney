@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bvarq0q2v6t5n"]
+
+[ext_resource type="FontFile" uid="uid://cjkbrt2xe62kl" path="res://PermanentMarker-Regular.ttf" id="1_cmyox"]
+
+[resource]
+font = ExtResource("1_cmyox")
+font_size = 25
+font_color = Color(0.768627, 0.427451, 0.490196, 1)

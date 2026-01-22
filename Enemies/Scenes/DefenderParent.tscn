@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0ccegbxmaan3"]
+
+[ext_resource type="Script" path="res://Enemies/Scripts/DefenderParent.gd" id="1_adtaq"]
+[ext_resource type="PackedScene" uid="uid://br47su0xkssjs" path="res://Enemies/Scenes/NewEnemies/Enemy_Defender.tscn" id="2_o3bga"]
+
+[node name="DefenderParent" type="Node3D"]
+script = ExtResource("1_adtaq")
+
+[node name="Enemy_Defender" parent="." instance=ExtResource("2_o3bga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.82125, 2, 0)
+shootingRange = 5.0
+projectileSpeed = 10.0
+
+[node name="Enemy_Defender2" parent="." instance=ExtResource("2_o3bga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 4.65491)
+shootingRange = 5.0
+projectileSpeed = 10.0
+
+[node name="Enemy_Defender3" parent="." instance=ExtResource("2_o3bga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -4.44582)
+shootingRange = 5.0
+projectileSpeed = 10.0
+
+[node name="Enemy_Defender4" parent="." instance=ExtResource("2_o3bga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.01113, 2, 0)
+shootingRange = 5.0
+projectileSpeed = 10.0
+
+[node name="Enemy_Defender5" parent="." instance=ExtResource("2_o3bga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, 3.81166)
+shootingRange = 5.0
+projectileSpeed = 10.0
+
+[node name="Enemy_Defender6" parent="." instance=ExtResource("2_o3bga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2, -3)
+shootingRange = 5.0
+projectileSpeed = 10.0
+
+[node name="Enemy_Defender7" parent="." instance=ExtResource("2_o3bga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 3.63163)
+shootingRange = 5.0
+projectileSpeed = 10.0
+
+[node name="Enemy_Defender8" parent="." instance=ExtResource("2_o3bga")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, -3)
+shootingRange = 5.0
+projectileSpeed = 10.0
+
+[node name="respawnTimer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="timeout" from="respawnTimer" to="." method="onRespawnTimerTimeout"]

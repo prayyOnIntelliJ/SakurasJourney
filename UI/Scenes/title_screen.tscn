@@ -1,0 +1,389 @@
+[gd_scene load_steps=24 format=3 uid="uid://dmi2xqyooxes2"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/TitleScreen.gd" id="1_1s52h"]
+[ext_resource type="Texture2D" uid="uid://nqhr7vknxvi0" path="res://UI/MenuScreen.png" id="2_ms81h"]
+[ext_resource type="FontFile" uid="uid://cjkbrt2xe62kl" path="res://PermanentMarker-Regular.ttf" id="3_xyqyj"]
+[ext_resource type="Texture2D" uid="uid://rhv811xwhtoh" path="res://UI/UI_Sprites/Kitsune Productions_Name_Frame.png" id="4_ueprj"]
+[ext_resource type="Texture2D" uid="uid://bwllvvkgarmik" path="res://UI/UI_Sprites/Kitsune Productions_Logo.png" id="5_uj7wk"]
+[ext_resource type="Texture2D" uid="uid://dtsbsay5is0jx" path="res://UI/UI_Sprites/UI_Button.png" id="7_ixnyg"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="7_taorg"]
+[ext_resource type="Texture2D" uid="uid://bm7myvt1ga85q" path="res://UI/UI_Sprites/UI_Button_pressed.png" id="8_pma3p"]
+[ext_resource type="Texture2D" uid="uid://crpgsi1ufsilg" path="res://UI/UI_Sprites/UI_Button_hover.png" id="9_0j0bv"]
+[ext_resource type="Script" path="res://UI/Scenes/Button_Wobbel.gd" id="9_ckn6h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nw3n3"]
+font = ExtResource("3_xyqyj")
+font_size = 80
+font_color = Color(0, 0, 0, 1)
+outline_size = 20
+outline_color = Color(0.996186, 0.678005, 0.730216, 1)
+
+[sub_resource type="Animation" id="Animation_rmyr5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_8gu0r"]
+resource_name = "Wobbel"
+length = 0.5
+step = 0.025
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_03o31"]
+_data = {
+"RESET": SubResource("Animation_rmyr5"),
+"Wobbel": SubResource("Animation_8gu0r")
+}
+
+[sub_resource type="Animation" id="Animation_qipiw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ylrf6"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_425rs"]
+_data = {
+"RESET": SubResource("Animation_qipiw"),
+"Wobbel": SubResource("Animation_ylrf6")
+}
+
+[sub_resource type="Animation" id="Animation_fmxiw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_giujv"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4vaj2"]
+_data = {
+"RESET": SubResource("Animation_fmxiw"),
+"Wobbel": SubResource("Animation_giujv")
+}
+
+[sub_resource type="Animation" id="Animation_31pvm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_n304t"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0v03m"]
+_data = {
+"RESET": SubResource("Animation_31pvm"),
+"Wobbel": SubResource("Animation_n304t")
+}
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1s52h")
+
+[node name="TitleScreenImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ms81h")
+expand_mode = 1
+
+[node name="GameTitle" type="Label" parent="TitleScreenImage"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1260.0
+offset_top = 150.0
+offset_right = -660.0
+offset_bottom = 250.0
+grow_horizontal = 0
+text = "Sakura's Journey"
+label_settings = SubResource("LabelSettings_nw3n3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TeamIcon" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1700.0
+offset_top = 895.0
+offset_right = 1850.0
+offset_bottom = 1045.0
+
+[node name="TeamIconBackground" type="TextureRect" parent="TeamIcon"]
+layout_mode = 0
+offset_left = -298.0
+offset_top = -37.0
+offset_right = 202.0
+offset_bottom = 63.0
+texture = ExtResource("4_ueprj")
+expand_mode = 1
+
+[node name="KitsuneIcon" type="TextureRect" parent="TeamIcon/TeamIconBackground"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -646.0
+offset_top = -230.0
+offset_right = -396.0
+offset_bottom = 70.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(128, 128)
+texture = ExtResource("5_uj7wk")
+expand_mode = 1
+
+[node name="TeamNameLabel" type="Label" parent="TeamIcon/TeamIconBackground"]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 21.0
+offset_right = 434.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 18
+text = "Kitsune Productions"
+label_settings = ExtResource("7_taorg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NewGameButton" type="TextureButton" parent="."]
+self_modulate = Color(0.960784, 0.960784, 0.960784, 1)
+layout_mode = 2
+offset_left = 736.0
+offset_top = 303.0
+offset_right = 1136.0
+offset_bottom = 453.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("7_ixnyg")
+texture_pressed = ExtResource("8_pma3p")
+texture_hover = ExtResource("9_0j0bv")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("9_ckn6h")
+
+[node name="NewGameLabel" type="Label" parent="NewGameButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -3.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "New Game"
+label_settings = ExtResource("7_taorg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="NewGameButton"]
+libraries = {
+"": SubResource("AnimationLibrary_03o31")
+}
+
+[node name="SettingsButton" type="TextureButton" parent="."]
+self_modulate = Color(0.960784, 0.960784, 0.960784, 1)
+layout_mode = 2
+offset_left = 739.0
+offset_top = 453.0
+offset_right = 1139.0
+offset_bottom = 603.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("7_ixnyg")
+texture_pressed = ExtResource("8_pma3p")
+texture_hover = ExtResource("9_0j0bv")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("9_ckn6h")
+
+[node name="SettingsLabel" type="Label" parent="SettingsButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Settings"
+label_settings = ExtResource("7_taorg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SettingsButton"]
+libraries = {
+"": SubResource("AnimationLibrary_425rs")
+}
+
+[node name="CreditsButton" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 738.0
+offset_top = 604.0
+offset_right = 1138.0
+offset_bottom = 754.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("7_ixnyg")
+texture_pressed = ExtResource("8_pma3p")
+texture_hover = ExtResource("9_0j0bv")
+texture_disabled = ExtResource("8_pma3p")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("9_ckn6h")
+
+[node name="CreditsLabel" type="Label" parent="CreditsButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Credits"
+label_settings = ExtResource("7_taorg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CreditsButton"]
+libraries = {
+"": SubResource("AnimationLibrary_4vaj2")
+}
+
+[node name="QuitGameButton" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 739.0
+offset_top = 772.0
+offset_right = 1139.0
+offset_bottom = 922.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("7_ixnyg")
+texture_pressed = ExtResource("8_pma3p")
+texture_hover = ExtResource("9_0j0bv")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("9_ckn6h")
+
+[node name="QuitGameLabel" type="Label" parent="QuitGameButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Quit Game"
+label_settings = ExtResource("7_taorg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="QuitGameButton"]
+libraries = {
+"": SubResource("AnimationLibrary_0v03m")
+}
+
+[connection signal="pressed" from="NewGameButton" to="." method="onNewGameButtonPressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="onSettingsButtonPressed"]
+[connection signal="pressed" from="CreditsButton" to="." method="onCreditsButtonPressed"]
+[connection signal="pressed" from="QuitGameButton" to="." method="onQuitGameButtonPressed"]

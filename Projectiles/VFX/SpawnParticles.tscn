@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://bg1d13jx6d3bx"]
+
+[ext_resource type="Script" path="res://Projectiles/VFX/ShootParticles.gd" id="1_ncmvl"]
+[ext_resource type="Texture2D" uid="uid://ehxgica2c7h8" path="res://Projectiles/VFX/Materials/T_Icon_Fireball_White.png" id="2_nx3gv"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_mi5pr"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="Curve" id="Curve_o1lfc"]
+_data = [Vector2(0, 0.296703), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_4u3pq"]
+curve = SubResource("Curve_o1lfc")
+
+[sub_resource type="Curve" id="Curve_t07qb"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_m3gak"]
+curve = SubResource("Curve_t07qb")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fuesy"]
+particle_flag_disable_z = true
+angle_min = -180.0
+angle_max = 180.0
+direction = Vector3(-1, 0, 0)
+spread = 180.0
+initial_velocity_min = 200.0
+initial_velocity_max = 300.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.1
+scale_max = 0.2
+scale_curve = SubResource("CurveTexture_m3gak")
+alpha_curve = SubResource("CurveTexture_4u3pq")
+
+[node name="SpawnParticles" type="Sprite3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+billboard = 1
+texture = SubResource("ViewportTexture_mi5pr")
+script = ExtResource("1_ncmvl")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="SubViewport"]
+position = Vector2(256, 256)
+emitting = false
+amount = 30
+process_material = SubResource("ParticleProcessMaterial_fuesy")
+texture = ExtResource("2_nx3gv")
+one_shot = true
+explosiveness = 1.0
+
+[node name="queueFreeTimer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="queueFreeTimer" to="." method="onQueueFreeTimerTimeout"]

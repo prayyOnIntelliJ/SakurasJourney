@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://517y61d7g5x2"]
+
+[ext_resource type="Texture2D" uid="uid://cjwro2dj7ewt4" path="res://3D_Props/Fences_and_Walls/GlbFiles/_wall_ghj.png" id="1_m83yu"]
+
+[resource]
+resource_name = "Material.007"
+cull_mode = 2
+albedo_texture = ExtResource("1_m83yu")

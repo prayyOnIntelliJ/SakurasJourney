@@ -1,0 +1,712 @@
+[gd_scene load_steps=40 format=3 uid="uid://cv0bdrkbkjvey"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/ArenaSelectionScreen.gd" id="1_osdhq"]
+[ext_resource type="Texture2D" uid="uid://5whpwsrtxgf7" path="res://UI/MenuScreen.png" id="2_gq6ph"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="2_jbq48"]
+[ext_resource type="Texture2D" uid="uid://dxrfvnjbyr5bs" path="res://UI/UI_Sprites/UI_Button.png" id="4_vs5ab"]
+[ext_resource type="Script" path="res://UI/Scenes/Button_Wobbel.gd" id="5_bnupq"]
+[ext_resource type="Texture2D" uid="uid://caushtsm66kyq" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel_hover.png" id="5_qqgu6"]
+[ext_resource type="Texture2D" uid="uid://c3kgl6dddi55h" path="res://UI/UI_Sprites/UI_Button_pressed.png" id="5_yxyv5"]
+[ext_resource type="Texture2D" uid="uid://dcqe5pp0ix0rj" path="res://UI/UI_Sprites/UI_Button_hover.png" id="6_0qhev"]
+[ext_resource type="Texture2D" uid="uid://boeqersqn8yrq" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel.png" id="7_tbi0u"]
+[ext_resource type="LabelSettings" uid="uid://bnbe2hbj6habt" path="res://Descriptionfont.tres" id="8_d224n"]
+[ext_resource type="Texture2D" uid="uid://dn7tyot6sa8q1" path="res://UI/UI_Sprites/UI Arena/UI_Water_Tempel_hover.png" id="9_3quah"]
+[ext_resource type="Texture2D" uid="uid://dxwcikhlt5oyg" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel.png" id="9_exfoc"]
+[ext_resource type="Texture2D" uid="uid://c34pd8qqum3ga" path="res://UI/UI_Sprites/UI Arena/UI_Water_Tempel.png" id="9_hh4m2"]
+[ext_resource type="Texture2D" uid="uid://ctsku446aktpi" path="res://UI/UI_Sprites/UI Arena/UI_Wind_Tempel.png" id="10_b0nfm"]
+[ext_resource type="Texture2D" uid="uid://dcn2f8dfb0hwy" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel_hover.png" id="11_0pcu4"]
+[ext_resource type="Texture2D" uid="uid://dqhebibc76b8e" path="res://UI/UI_Sprites/HUD/ui_hud_char_icon_200x200px.png" id="12_vymhd"]
+[ext_resource type="Texture2D" uid="uid://da80a1loi2n7x" path="res://UI/UI_Sprites/UI Arena/UI_Wind_Tempel_hover.png" id="13_v0cwj"]
+
+[sub_resource type="Animation" id="Animation_8w3cy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_3fv3a"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cthlx"]
+_data = {
+"RESET": SubResource("Animation_8w3cy"),
+"Wobbel": SubResource("Animation_3fv3a")
+}
+
+[sub_resource type="Animation" id="Animation_x5xu5"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_fo0ov"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3670n"]
+_data = {
+"RESET": SubResource("Animation_x5xu5"),
+"Wobbel": SubResource("Animation_fo0ov")
+}
+
+[sub_resource type="Animation" id="Animation_2oa2r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gwo8k"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n77nc"]
+_data = {
+"RESET": SubResource("Animation_2oa2r"),
+"Wobbel": SubResource("Animation_gwo8k")
+}
+
+[sub_resource type="Animation" id="Animation_446ly"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_1i7a4"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3nn3d"]
+_data = {
+"RESET": SubResource("Animation_446ly"),
+"Wobbel": SubResource("Animation_1i7a4")
+}
+
+[sub_resource type="Animation" id="Animation_fk45q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ghhix"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gmngm"]
+_data = {
+"RESET": SubResource("Animation_fk45q"),
+"Wobbel": SubResource("Animation_ghhix")
+}
+
+[sub_resource type="Theme" id="Theme_itdl2"]
+
+[sub_resource type="Animation" id="Animation_0lhx7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_50b26"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_04wvb"]
+_data = {
+"RESET": SubResource("Animation_0lhx7"),
+"Wobbel": SubResource("Animation_50b26")
+}
+
+[sub_resource type="Animation" id="Animation_f1y5c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_fj6se"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ogq1n"]
+_data = {
+"RESET": SubResource("Animation_f1y5c"),
+"Wobbel": SubResource("Animation_fj6se")
+}
+
+[node name="ArenaSelectionScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_osdhq")
+
+[node name="BackgroundImagePlaceholder" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_gq6ph")
+
+[node name="ScreenTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 764.0
+offset_top = 55.0
+offset_right = 1167.0
+offset_bottom = 115.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 32
+text = "Temples of Corruption"
+label_settings = ExtResource("2_jbq48")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 80.0
+offset_right = 1900.0
+offset_bottom = 1160.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 450
+alignment = 1
+
+[node name="ArenaFrame" type="Control" parent="Control/HBoxContainer"]
+layout_mode = 2
+
+[node name="ArenaFrame1Button" type="TextureButton" parent="Control/HBoxContainer/ArenaFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -240.0
+offset_right = 200.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(200, 250)
+texture_normal = ExtResource("7_tbi0u")
+texture_hover = ExtResource("5_qqgu6")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_bnupq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/HBoxContainer/ArenaFrame/ArenaFrame1Button"]
+libraries = {
+"": SubResource("AnimationLibrary_cthlx")
+}
+
+[node name="Description Label" type="Label" parent="Control/HBoxContainer/ArenaFrame/ArenaFrame1Button"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 300.0
+offset_right = 250.0
+offset_bottom = 360.0
+text = "Survive"
+label_settings = ExtResource("8_d224n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DescriptionFrame" type="Control" parent="Control/HBoxContainer/ArenaFrame"]
+anchors_preset = 0
+offset_left = 85.0
+offset_top = 35.0
+offset_right = 345.0
+offset_bottom = 175.0
+
+[node name="ArenaDescription" type="Control" parent="Control/HBoxContainer/ArenaFrame/DescriptionFrame"]
+anchors_preset = 0
+offset_left = 45.0
+offset_top = 35.0
+offset_right = 225.0
+offset_bottom = 100.0
+
+[node name="ArenaTitle" type="Label" parent="Control/HBoxContainer/ArenaFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -290.0
+offset_right = 200.0
+offset_bottom = -230.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Temple of Earth"
+label_settings = ExtResource("2_jbq48")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArenaFrame_02" type="Control" parent="Control/HBoxContainer"]
+layout_mode = 2
+
+[node name="ArenaFrame2Button" type="TextureButton" parent="Control/HBoxContainer/ArenaFrame_02"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -240.0
+offset_right = 200.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(200, 250)
+texture_normal = ExtResource("9_hh4m2")
+texture_hover = ExtResource("9_3quah")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_bnupq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/HBoxContainer/ArenaFrame_02/ArenaFrame2Button"]
+libraries = {
+"": SubResource("AnimationLibrary_3670n")
+}
+
+[node name="Description Label" type="Label" parent="Control/HBoxContainer/ArenaFrame_02/ArenaFrame2Button"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 300.0
+offset_right = 250.0
+offset_bottom = 360.0
+text = "Defend"
+label_settings = ExtResource("8_d224n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DescriptionFrame" type="Control" parent="Control/HBoxContainer/ArenaFrame_02"]
+anchors_preset = 0
+offset_left = 85.0
+offset_top = 35.0
+offset_right = 345.0
+offset_bottom = 175.0
+
+[node name="ArenaDescription" type="Control" parent="Control/HBoxContainer/ArenaFrame_02/DescriptionFrame"]
+anchors_preset = 0
+offset_left = 45.0
+offset_top = 35.0
+offset_right = 225.0
+offset_bottom = 100.0
+
+[node name="ArenaTitle" type="Label" parent="Control/HBoxContainer/ArenaFrame_02"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 250.0
+offset_right = 200.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Temple of Water"
+label_settings = ExtResource("2_jbq48")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArenaFrame_03" type="Control" parent="Control/HBoxContainer"]
+layout_mode = 2
+
+[node name="ArenaFrame3Button" type="TextureButton" parent="Control/HBoxContainer/ArenaFrame_03"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 300.0
+offset_right = 200.0
+offset_bottom = 800.0
+pivot_offset = Vector2(200, 250)
+texture_normal = ExtResource("9_exfoc")
+texture_hover = ExtResource("11_0pcu4")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_bnupq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/HBoxContainer/ArenaFrame_03/ArenaFrame3Button"]
+libraries = {
+"": SubResource("AnimationLibrary_n77nc")
+}
+
+[node name="Description Label" type="Label" parent="Control/HBoxContainer/ArenaFrame_03/ArenaFrame3Button"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 300.0
+offset_right = 250.0
+offset_bottom = 360.0
+text = "Attack"
+label_settings = ExtResource("8_d224n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DescriptionFrame" type="Control" parent="Control/HBoxContainer/ArenaFrame_03"]
+anchors_preset = 0
+offset_left = 85.0
+offset_top = 35.0
+offset_right = 345.0
+offset_bottom = 175.0
+
+[node name="ArenaDescription" type="Control" parent="Control/HBoxContainer/ArenaFrame_03/DescriptionFrame"]
+anchors_preset = 0
+offset_left = 45.0
+offset_top = 35.0
+offset_right = 225.0
+offset_bottom = 100.0
+
+[node name="ArenaTitle" type="Label" parent="Control/HBoxContainer/ArenaFrame_03"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 250.0
+offset_right = 200.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Temple of Fire"
+label_settings = ExtResource("2_jbq48")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArenaFrame_04" type="Control" parent="Control/HBoxContainer"]
+layout_mode = 2
+
+[node name="ArenaFrame_04_Button" type="TextureButton" parent="Control/HBoxContainer/ArenaFrame_04"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 300.0
+offset_right = 200.0
+offset_bottom = 800.0
+pivot_offset = Vector2(200, 250)
+texture_normal = ExtResource("10_b0nfm")
+texture_hover = ExtResource("13_v0cwj")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_bnupq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/HBoxContainer/ArenaFrame_04/ArenaFrame_04_Button"]
+libraries = {
+"": SubResource("AnimationLibrary_3nn3d")
+}
+
+[node name="Description Label" type="Label" parent="Control/HBoxContainer/ArenaFrame_04/ArenaFrame_04_Button"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 300.0
+offset_right = 250.0
+offset_bottom = 411.0
+text = "Attack
+and
+Defend"
+label_settings = ExtResource("8_d224n")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DescriptionFrame" type="Control" parent="Control/HBoxContainer/ArenaFrame_04"]
+anchors_preset = 0
+offset_left = 85.0
+offset_top = 35.0
+offset_right = 345.0
+offset_bottom = 175.0
+
+[node name="ArenaDescription" type="Control" parent="Control/HBoxContainer/ArenaFrame_04/DescriptionFrame"]
+anchors_preset = 0
+offset_left = 45.0
+offset_top = 35.0
+offset_right = 225.0
+offset_bottom = 100.0
+
+[node name="ArenaTitle" type="Label" parent="Control/HBoxContainer/ArenaFrame_04"]
+layout_mode = 0
+offset_left = -200.0
+offset_top = 250.0
+offset_right = 200.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Temple of Wind"
+label_settings = ExtResource("2_jbq48")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenuFrame" type="Control" parent="."]
+anchors_preset = 0
+offset_top = 975.0
+offset_right = 400.0
+offset_bottom = 1075.0
+
+[node name="BackToTitleButton" type="TextureButton" parent="MainMenuFrame"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = -61.0
+offset_right = 482.0
+offset_bottom = 89.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("4_vs5ab")
+texture_pressed = ExtResource("5_yxyv5")
+texture_hover = ExtResource("6_0qhev")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_bnupq")
+
+[node name="Label" type="Label" parent="MainMenuFrame/BackToTitleButton"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Back"
+label_settings = ExtResource("2_jbq48")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MainMenuFrame/BackToTitleButton"]
+libraries = {
+"": SubResource("AnimationLibrary_gmngm")
+}
+
+[node name="ArenaFrame_05" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 1161.0
+offset_top = 78.0
+offset_right = 1161.0
+offset_bottom = 78.0
+
+[node name="TextureButton" type="TextureButton" parent="ArenaFrame_05"]
+layout_mode = 0
+offset_left = -1068.0
+offset_top = 23.0
+offset_right = -668.0
+offset_bottom = 173.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("4_vs5ab")
+texture_pressed = ExtResource("5_yxyv5")
+texture_hover = ExtResource("6_0qhev")
+texture_disabled = ExtResource("5_yxyv5")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_bnupq")
+
+[node name="ArenaDescriptionLabel" type="Label" parent="ArenaFrame_05/TextureButton"]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 42.0
+offset_right = 310.0
+offset_bottom = 106.0
+text = "Tutorial"
+label_settings = ExtResource("2_jbq48")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArenaLogo" type="TextureRect" parent="ArenaFrame_05/TextureButton"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 49.0
+offset_right = 129.0
+offset_bottom = 99.0
+theme = SubResource("Theme_itdl2")
+texture = ExtResource("12_vymhd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ArenaFrame_05/TextureButton"]
+libraries = {
+"": SubResource("AnimationLibrary_04wvb")
+}
+
+[node name="UpgradeMenuFrame" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1445.0
+offset_top = 933.0
+offset_right = 1845.0
+offset_bottom = 1133.0
+
+[node name="UpgradeMenuButton" type="TextureButton" parent="UpgradeMenuFrame"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -13.0
+offset_right = 406.0
+offset_bottom = 137.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("4_vs5ab")
+texture_pressed = ExtResource("5_yxyv5")
+texture_hover = ExtResource("6_0qhev")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_bnupq")
+
+[node name="UpgradeLabel" type="Label" parent="UpgradeMenuFrame/UpgradeMenuButton"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Upgrade
+"
+label_settings = ExtResource("2_jbq48")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UpgradeMenuFrame/UpgradeMenuButton"]
+libraries = {
+"": SubResource("AnimationLibrary_ogq1n")
+}
+
+[connection signal="pressed" from="Control/HBoxContainer/ArenaFrame/ArenaFrame1Button" to="." method="onArenaFrame1ButtonPressed"]
+[connection signal="pressed" from="Control/HBoxContainer/ArenaFrame_02/ArenaFrame2Button" to="." method="onArenaFrame2ButtonPressed"]
+[connection signal="pressed" from="Control/HBoxContainer/ArenaFrame_03/ArenaFrame3Button" to="." method="onArenaFrame3ButtonPressed"]
+[connection signal="pressed" from="Control/HBoxContainer/ArenaFrame_04/ArenaFrame_04_Button" to="." method="on_arena_frame_04_button_pressed"]
+[connection signal="pressed" from="MainMenuFrame/BackToTitleButton" to="." method="onBackToTitleButtonPressed"]
+[connection signal="pressed" from="ArenaFrame_05/TextureButton" to="." method="onTextureButtonPressed"]
+[connection signal="pressed" from="UpgradeMenuFrame/UpgradeMenuButton" to="." method="onUpgrademenuNavigationButtonPressed"]

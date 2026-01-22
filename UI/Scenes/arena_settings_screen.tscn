@@ -1,0 +1,649 @@
+[gd_scene load_steps=65 format=3 uid="uid://bch45lu64j0nd"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/ArenaSettingsScreen.gd" id="1_1ik3b"]
+[ext_resource type="Texture2D" uid="uid://dtifhbwb7a18v" path="res://UI/MenuScreen.png" id="2_vly71"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="3_32pxl"]
+[ext_resource type="Texture2D" uid="uid://chtj8e2k4uokf" path="res://UI/UI_Sprites/UI Arena/UI_Water_Tempel.png" id="3_tu0hw"]
+[ext_resource type="Texture2D" uid="uid://drgdatt2js7cp" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel.png" id="4_0s6hj"]
+[ext_resource type="Texture2D" uid="uid://dl4aetf2134pu" path="res://UI/UI_Sprites/UI Arena/UI_Wind_Tempel.png" id="5_toxtb"]
+[ext_resource type="LabelSettings" uid="uid://bnbe2hbj6habt" path="res://Descriptionfont.tres" id="6_2kh7y"]
+[ext_resource type="Texture2D" uid="uid://bmmquxejt6a46" path="res://UI/UI_Sprites/UI Arena/UI_Water_Tempel_pfeil.png" id="7_6wkue"]
+[ext_resource type="Texture2D" uid="uid://bh5g7fg6jvwhg" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil.png" id="8_86ner"]
+[ext_resource type="Texture2D" uid="uid://jpe3x1dgctl6" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil.png" id="8_bdi7j"]
+[ext_resource type="Texture2D" uid="uid://c8cy5xd28u18g" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil_pressed.png" id="9_c6uk7"]
+[ext_resource type="Texture2D" uid="uid://b1mjftsnye0y7" path="res://UI/UI_Sprites/UI Arena/UI_Wind_Tempel_pfeil.png" id="9_tjlqm"]
+[ext_resource type="Texture2D" uid="uid://ym56b5pwtc1f" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil_hover.png" id="10_l4lym"]
+[ext_resource type="Texture2D" uid="uid://djwak1yo5gh7" path="res://UI/UI_Sprites/UI Arena/UI_Water_Tempel_pfeil_hover.png" id="11_iaus3"]
+[ext_resource type="Texture2D" uid="uid://c7kpnr2y0qg2d" path="res://UI/UI_Sprites/UI_Button.png" id="11_kcjk4"]
+[ext_resource type="Texture2D" uid="uid://c3m88kb4dynnh" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil_hover.png" id="12_gi1rm"]
+[ext_resource type="Texture2D" uid="uid://2drctoy4rjf3" path="res://UI/UI_Sprites/UI_Button_pressed.png" id="12_gsnre"]
+[ext_resource type="Texture2D" uid="uid://c8ae7bhve3f5v" path="res://UI/UI_Sprites/UI_Button_hover.png" id="13_q8uh4"]
+[ext_resource type="Texture2D" uid="uid://djslucwfb4a3t" path="res://UI/UI_Sprites/UI Arena/UI_Wind_Tempel_pfeil_hover.png" id="13_ulecb"]
+[ext_resource type="Texture2D" uid="uid://dimqe4tbethxg" path="res://UI/UI_Sprites/UI Arena/UI_Water_Tempel_pfeil_pressed.png" id="15_j3a87"]
+[ext_resource type="Texture2D" uid="uid://laxapqmjewg7" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil_pressed.png" id="16_qbktu"]
+[ext_resource type="Texture2D" uid="uid://c2p5cm67it1t3" path="res://UI/UI_Sprites/UI Arena/UI_Wind_Tempel_pfeil_pressed.png" id="17_7u307"]
+[ext_resource type="VideoStream" path="res://UI/UI_Sprites/UI Arena/Video/Survive.ogv" id="18_kk11t"]
+[ext_resource type="VideoStream" path="res://UI/UI_Sprites/UI Arena/Video/Defend.ogv" id="19_8gjrm"]
+[ext_resource type="VideoStream" path="res://UI/UI_Sprites/UI Arena/Video/Attack.ogv" id="20_sl72o"]
+[ext_resource type="VideoStream" path="res://UI/UI_Sprites/UI Arena/Video/Attack&Defend.ogv" id="21_0tvme"]
+[ext_resource type="Texture2D" uid="uid://7cy7jaeqnctc" path="res://UI/UI_Sprites/UI Arena/UI_Window_with_Yokai_Water_Tempel.png" id="23_fnmi0"]
+[ext_resource type="Texture2D" uid="uid://fqn46nnd07jd" path="res://UI/UI_Sprites/UI Arena/UI_Window_with_Yokai_Fire_Tempel.png" id="24_1e1f4"]
+[ext_resource type="Texture2D" uid="uid://cefuvmdw25ydj" path="res://UI/UI_Sprites/UI Arena/UI_Window_with_Yokai_Wind_Tempel.png" id="25_xp5dy"]
+[ext_resource type="Texture2D" uid="uid://cwvwqoywntm3v" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel.png" id="26_6tkmx"]
+[ext_resource type="Texture2D" uid="uid://husryj2p1n4d" path="res://UI/UI_Sprites/UI Arena/UI_Window_with_Yokai_Earth_Tempel.png" id="26_acqy7"]
+[ext_resource type="Texture2D" uid="uid://bujeurohpn3ot" path="res://UI/UI_Sprites/UI Arena/UI_Checkmark.png" id="27_1syfk"]
+[ext_resource type="Texture2D" uid="uid://b8l78djnjf5tq" path="res://UI/UI_Sprites/UI Arena/MenuScreen_Earth.png" id="30_1gbv7"]
+[ext_resource type="Texture2D" uid="uid://cnt8oggotvnps" path="res://UI/UI_Sprites/ArenaFrames/UI_Earth_Tempel_decoration.png" id="30_xydi1"]
+[ext_resource type="Texture2D" uid="uid://qtk53pc6bfp6" path="res://UI/UI_Sprites/ArenaFrames/UI_Water_Tempel_decoration.png" id="31_7k544"]
+[ext_resource type="Texture2D" uid="uid://dm7nhe5uyjydu" path="res://UI/UI_Sprites/UI Arena/MenuScreen_Water.png" id="31_ibc8e"]
+[ext_resource type="Texture2D" uid="uid://bsveajl7u8cla" path="res://UI/UI_Sprites/UI Arena/MenuScreen_Fire.png" id="32_pe2pb"]
+[ext_resource type="Texture2D" uid="uid://jjrur05tj5p2" path="res://UI/UI_Sprites/ArenaFrames/UI_Fire_Tempel_decoration.png" id="32_t7w7y"]
+[ext_resource type="Texture2D" uid="uid://dml8inrg2kclk" path="res://UI/UI_Sprites/ArenaFrames/UI_Wind_Tempel_decoration.png" id="33_21am3"]
+[ext_resource type="Texture2D" uid="uid://cof8nj8iwvlq2" path="res://UI/UI_Sprites/UI Arena/MenuScreen_Wind.png" id="33_abov0"]
+[ext_resource type="Script" path="res://UI/Scenes/Button_Wobbel.gd" id="34_r1lqe"]
+[ext_resource type="FontFile" uid="uid://dfoo0o8fyablw" path="res://PermanentMarker-Regular.ttf" id="37_htdj5"]
+[ext_resource type="Texture2D" uid="uid://dwfeuc6xstfeg" path="res://UI/UI_Sprites/ArenaFrames/Description_Arena_Setting.png" id="40_75qkw"]
+[ext_resource type="Texture2D" uid="uid://0g7hcbv8qpyj" path="res://UI/UI_Sprites/ArenaFrames/UI_Tempel_Frame.png" id="40_wmbct"]
+[ext_resource type="Texture2D" uid="uid://bgieukyteun8q" path="res://UI/UI_Sprites/ArenaFrames/ui_arena_settings_shield.png" id="43_b1xo2"]
+
+[sub_resource type="Theme" id="Theme_d0wdn"]
+default_font = ExtResource("37_htdj5")
+
+[sub_resource type="Animation" id="Animation_n6uoe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_oehrj"]
+resource_name = "Wobbel"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.3, 1.3), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a3qmo"]
+_data = {
+"RESET": SubResource("Animation_n6uoe"),
+"Wobbel": SubResource("Animation_oehrj")
+}
+
+[sub_resource type="Animation" id="Animation_8hicb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_v2fgl"]
+resource_name = "Wobbel"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.3, 1.3), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kojpt"]
+_data = {
+"RESET": SubResource("Animation_8hicb"),
+"Wobbel": SubResource("Animation_v2fgl")
+}
+
+[sub_resource type="Animation" id="Animation_5reov"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_k4kxh"]
+resource_name = "Wobbel"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.3, 1.3), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6dx72"]
+_data = {
+"RESET": SubResource("Animation_5reov"),
+"Wobbel": SubResource("Animation_k4kxh")
+}
+
+[sub_resource type="Animation" id="Animation_io5v2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_kiqct"]
+resource_name = "Wobbel"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.3, 1.3), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pqse5"]
+_data = {
+"RESET": SubResource("Animation_io5v2"),
+"Wobbel": SubResource("Animation_kiqct")
+}
+
+[sub_resource type="Animation" id="Animation_mp5kp"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rvnbl"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vqkky"]
+_data = {
+"RESET": SubResource("Animation_mp5kp"),
+"Wobbel": SubResource("Animation_rvnbl")
+}
+
+[sub_resource type="Animation" id="Animation_1ijgy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_18v8m"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_53qx3"]
+_data = {
+"RESET": SubResource("Animation_1ijgy"),
+"Wobbel": SubResource("Animation_18v8m")
+}
+
+[node name="ArenaSettingsScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1ik3b")
+templeSpritesArray = Array[Texture2D]([ExtResource("26_6tkmx"), ExtResource("3_tu0hw"), ExtResource("4_0s6hj"), ExtResource("5_toxtb")])
+arrowSpriteArray = Array[Texture2D]([ExtResource("8_bdi7j"), ExtResource("7_6wkue"), ExtResource("8_86ner"), ExtResource("9_tjlqm")])
+hoveredSpriteArray = Array[Texture2D]([ExtResource("10_l4lym"), ExtResource("11_iaus3"), ExtResource("12_gi1rm"), ExtResource("13_ulecb")])
+pressedSpriteArray = Array[Texture2D]([ExtResource("9_c6uk7"), ExtResource("15_j3a87"), ExtResource("16_qbktu"), ExtResource("17_7u307")])
+videoArray = Array[VideoStream]([ExtResource("18_kk11t"), ExtResource("19_8gjrm"), ExtResource("20_sl72o"), ExtResource("21_0tvme")])
+discriptionArray = Array[String](["Fight for your life till the Timer runs out", "Defend the holy tree until the area is cleansed", "Destroy the evil tree, but watch your life", "Destroy the evil tree and defend the holy tree"])
+yokaiArray = Array[Texture2D]([ExtResource("26_acqy7"), ExtResource("23_fnmi0"), ExtResource("24_1e1f4"), ExtResource("25_xp5dy")])
+arenaFrame = Array[Texture2D]([ExtResource("40_75qkw"), ExtResource("40_75qkw"), ExtResource("40_75qkw"), ExtResource("40_75qkw")])
+arenaFrameDecoration = Array[Texture2D]([ExtResource("30_xydi1"), ExtResource("31_7k544"), ExtResource("32_t7w7y"), ExtResource("33_21am3")])
+arenaName = Array[String](["Temple of Earth", "Temple of Water", "Temple of Fire", "Temple of Wind"])
+arenaBackgrounds = Array[Texture2D]([ExtResource("30_1gbv7"), ExtResource("31_ibc8e"), ExtResource("32_pe2pb"), ExtResource("33_abov0")])
+
+[node name="BackgroundImagePlaceholder" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_vly71")
+
+[node name="ArenaTitleSection" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 513.0
+offset_top = 50.0
+offset_right = 913.0
+offset_bottom = 350.0
+
+[node name="ArenaTitleLabel" type="Label" parent="ArenaTitleSection"]
+layout_mode = 0
+offset_left = 310.0
+offset_top = 9.0
+offset_right = 710.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Arena Name"
+label_settings = ExtResource("3_32pxl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ArenaPreviewImage" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 353.0
+offset_right = 910.0
+offset_bottom = 653.0
+autoplay = true
+loop = true
+
+[node name="ArenaDescriptionArea" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 215.0
+offset_top = 618.0
+offset_right = 715.0
+offset_bottom = 918.0
+
+[node name="ArenaDescriptionBGImage" type="TextureRect" parent="ArenaDescriptionArea"]
+layout_mode = 0
+offset_left = -221.0
+offset_top = -96.0
+offset_right = 679.0
+offset_bottom = 704.0
+texture = ExtResource("40_75qkw")
+stretch_mode = 2
+
+[node name="ArenaFrame" type="TextureRect" parent="ArenaDescriptionArea/ArenaDescriptionBGImage"]
+z_index = 4
+layout_mode = 0
+offset_left = 70.0
+offset_top = -487.0
+offset_right = 864.0
+offset_bottom = 95.0
+texture = ExtResource("30_xydi1")
+expand_mode = 1
+
+[node name="Frame" type="TextureRect" parent="ArenaDescriptionArea/ArenaDescriptionBGImage"]
+z_index = 2
+layout_mode = 0
+offset_left = 70.0
+offset_top = -487.0
+offset_right = 864.0
+offset_bottom = 95.0
+texture = ExtResource("40_wmbct")
+expand_mode = 1
+
+[node name="ArenaDescriptionText" type="Label" parent="ArenaDescriptionArea"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 69.0
+offset_right = 474.0
+offset_bottom = 359.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 14
+text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+label_settings = ExtResource("6_2kh7y")
+horizontal_alignment = 1
+autowrap_mode = 2
+text_overrun_behavior = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ArenaDescriptionArea"]
+z_index = 1
+layout_mode = 0
+offset_left = -80.0
+offset_top = -468.0
+offset_right = 560.0
+offset_bottom = -108.0
+autoplay = true
+loop = true
+
+[node name="ArenaSettingsArea" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1019.0
+offset_top = 354.0
+offset_right = 1419.0
+offset_bottom = 1004.0
+
+[node name="SettingsStyleFrame" type="TextureRect" parent="ArenaSettingsArea"]
+modulate = Color(0.784314, 0.784314, 0.784314, 1)
+layout_mode = 0
+offset_left = -202.0
+offset_top = -314.0
+offset_right = 598.0
+offset_bottom = 686.0
+texture = ExtResource("26_6tkmx")
+expand_mode = 1
+
+[node name="SettingsDescriptionText" type="Label" parent="ArenaSettingsArea/SettingsStyleFrame"]
+layout_mode = 0
+offset_left = 291.0
+offset_top = 570.0
+offset_right = 511.0
+offset_bottom = 820.0
+theme = SubResource("Theme_d0wdn")
+text = "Enemybonus
+Health: 
+Movement: 
+Damage: "
+label_settings = ExtResource("6_2kh7y")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="YokaiIconContainer" type="Control" parent="ArenaSettingsArea"]
+anchors_preset = 0
+offset_left = 25.0
+offset_top = 55.0
+offset_right = 375.0
+offset_bottom = 115.0
+
+[node name="YokaiIcon" type="TextureRect" parent="ArenaSettingsArea/YokaiIconContainer"]
+layout_mode = 2
+offset_left = 15.0
+offset_top = -6.0
+offset_right = 75.0
+offset_bottom = 54.0
+pivot_offset = Vector2(30, 30)
+size_flags_horizontal = 3
+texture = ExtResource("26_acqy7")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ArenaSettingsArea/YokaiIconContainer/YokaiIcon"]
+libraries = {
+"": SubResource("AnimationLibrary_a3qmo")
+}
+
+[node name="YokaiIcon2" type="TextureRect" parent="ArenaSettingsArea/YokaiIconContainer"]
+layout_mode = 2
+offset_left = 98.0
+offset_top = -6.0
+offset_right = 158.0
+offset_bottom = 54.0
+pivot_offset = Vector2(30, 30)
+size_flags_horizontal = 3
+texture = ExtResource("26_acqy7")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ArenaSettingsArea/YokaiIconContainer/YokaiIcon2"]
+libraries = {
+"": SubResource("AnimationLibrary_kojpt")
+}
+
+[node name="YokaiIcon3" type="TextureRect" parent="ArenaSettingsArea/YokaiIconContainer"]
+layout_mode = 2
+offset_left = 189.0
+offset_top = -5.0
+offset_right = 249.0
+offset_bottom = 55.0
+pivot_offset = Vector2(30, 30)
+size_flags_horizontal = 3
+texture = ExtResource("26_acqy7")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ArenaSettingsArea/YokaiIconContainer/YokaiIcon3"]
+libraries = {
+"": SubResource("AnimationLibrary_6dx72")
+}
+
+[node name="YokaiIcon4" type="TextureRect" parent="ArenaSettingsArea/YokaiIconContainer"]
+layout_mode = 2
+offset_left = 272.0
+offset_top = -6.0
+offset_right = 332.0
+offset_bottom = 54.0
+pivot_offset = Vector2(30, 30)
+size_flags_horizontal = 3
+texture = ExtResource("26_acqy7")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ArenaSettingsArea/YokaiIconContainer/YokaiIcon4"]
+libraries = {
+"": SubResource("AnimationLibrary_pqse5")
+}
+
+[node name="DifficultyDisplay" type="Control" parent="ArenaSettingsArea"]
+anchors_preset = 0
+offset_left = -3.0
+offset_top = -102.0
+offset_right = 397.0
+offset_bottom = -22.0
+
+[node name="DifficultyFrame" type="TextureRect" parent="ArenaSettingsArea/DifficultyDisplay"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 17.0
+offset_right = 272.0
+offset_bottom = 67.0
+texture = ExtResource("43_b1xo2")
+expand_mode = 1
+
+[node name="DifficultyLabel" type="Label" parent="ArenaSettingsArea/DifficultyDisplay/DifficultyFrame"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 5.0
+offset_right = 139.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Normal"
+label_settings = ExtResource("6_2kh7y")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReduceDifficultyBtn" type="TextureButton" parent="ArenaSettingsArea/DifficultyDisplay"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = -49.0
+offset_right = 113.0
+offset_bottom = 51.0
+scale = Vector2(1.8, 1.8)
+texture_normal = ExtResource("8_bdi7j")
+texture_pressed = ExtResource("9_c6uk7")
+texture_hover = ExtResource("10_l4lym")
+
+[node name="IncreaseDifficultyBtn" type="TextureButton" parent="ArenaSettingsArea/DifficultyDisplay"]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 132.0
+offset_right = 492.0
+offset_bottom = 232.0
+rotation = 3.14159
+scale = Vector2(1.8, 1.8)
+texture_normal = ExtResource("8_bdi7j")
+texture_pressed = ExtResource("9_c6uk7")
+texture_hover = ExtResource("10_l4lym")
+
+[node name="CheckmarkContainer" type="Control" parent="ArenaSettingsArea"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Horror_Checkmark" type="TextureRect" parent="ArenaSettingsArea/CheckmarkContainer"]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 49.0
+offset_right = 357.0
+offset_bottom = 109.0
+texture = ExtResource("27_1syfk")
+expand_mode = 1
+
+[node name="VeryHard_Checkmark" type="TextureRect" parent="ArenaSettingsArea/CheckmarkContainer"]
+layout_mode = 0
+offset_left = 214.0
+offset_top = 50.0
+offset_right = 274.0
+offset_bottom = 110.0
+texture = ExtResource("27_1syfk")
+expand_mode = 1
+
+[node name="Hard_Checkmark" type="TextureRect" parent="ArenaSettingsArea/CheckmarkContainer"]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 49.0
+offset_right = 183.0
+offset_bottom = 109.0
+texture = ExtResource("27_1syfk")
+expand_mode = 1
+
+[node name="Normal_Checkmark" type="TextureRect" parent="ArenaSettingsArea/CheckmarkContainer"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 49.0
+offset_right = 100.0
+offset_bottom = 109.0
+texture = ExtResource("27_1syfk")
+expand_mode = 1
+
+[node name="startButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1469.0
+offset_top = 909.0
+offset_right = 1869.0
+offset_bottom = 1059.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("11_kcjk4")
+texture_pressed = ExtResource("12_gsnre")
+texture_hover = ExtResource("13_q8uh4")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("34_r1lqe")
+
+[node name="Label" type="Label" parent="startButton"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Start"
+label_settings = ExtResource("3_32pxl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="startButton"]
+libraries = {
+"": SubResource("AnimationLibrary_vqkky")
+}
+
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 915.0
+offset_right = 452.0
+offset_bottom = 1065.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("11_kcjk4")
+texture_pressed = ExtResource("12_gsnre")
+texture_hover = ExtResource("13_q8uh4")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("34_r1lqe")
+
+[node name="Label" type="Label" parent="BackButton"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Back"
+label_settings = ExtResource("3_32pxl")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BackButton"]
+libraries = {
+"": SubResource("AnimationLibrary_53qx3")
+}
+
+[connection signal="pressed" from="ArenaSettingsArea/DifficultyDisplay/ReduceDifficultyBtn" to="." method="onReduceDifficultyButtonPressed"]
+[connection signal="pressed" from="ArenaSettingsArea/DifficultyDisplay/IncreaseDifficultyBtn" to="." method="onIncreaseDifficultyButtonPressed"]
+[connection signal="pressed" from="startButton" to="." method="onStartButtonPressed"]
+[connection signal="pressed" from="BackButton" to="." method="onBackButtonPressed"]

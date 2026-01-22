@@ -1,0 +1,663 @@
+[gd_scene load_steps=41 format=3 uid="uid://br47su0xkssjs"]
+
+[ext_resource type="Script" path="res://Enemies/Scripts/EnemyDefender.gd" id="1_0rvpu"]
+[ext_resource type="Texture2D" uid="uid://cymnb55gsd2ib" path="res://Enemies/Assets/Enemy_Death.png" id="3_5kh2s"]
+[ext_resource type="Texture2D" uid="uid://gnp2vlmkyb7v" path="res://Enemies/Assets/char_enemy_Nobiagari_closed_eyes_115x115px.png" id="3_f4cv4"]
+[ext_resource type="Texture2D" uid="uid://cu707xlj8db1r" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_0.png" id="5_f4mf4"]
+[ext_resource type="Texture2D" uid="uid://1t3du5wap2kg" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_1.png" id="6_0k66y"]
+[ext_resource type="Texture2D" uid="uid://bdvaloilj3gmp" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_2.png" id="7_u065c"]
+[ext_resource type="Texture2D" uid="uid://8th5okxvben5" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_3.png" id="8_16lel"]
+[ext_resource type="Texture2D" uid="uid://c6xy7h5v84axe" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_4.png" id="9_o50xl"]
+[ext_resource type="Texture2D" uid="uid://cag77pdtcw36b" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_5.png" id="10_uvcym"]
+[ext_resource type="Texture2D" uid="uid://cycrh72x473f0" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_6.png" id="11_4t4ok"]
+[ext_resource type="Texture2D" uid="uid://cfe1h1xvhp245" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_7.png" id="12_gormx"]
+[ext_resource type="Texture2D" uid="uid://b18dccn22dmug" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_8.png" id="13_wnh0j"]
+[ext_resource type="Texture2D" uid="uid://qrwesc0bu4l0" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_0.png" id="14_eqk0j"]
+[ext_resource type="Texture2D" uid="uid://blg145sekb44y" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_1.png" id="15_iwu67"]
+[ext_resource type="Texture2D" uid="uid://sgpwryy1rev8" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_2.png" id="16_8aoqi"]
+[ext_resource type="Texture2D" uid="uid://d2w67e2w4utsu" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_3.png" id="17_7k18l"]
+[ext_resource type="Texture2D" uid="uid://chlicla1y7q7d" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_4.png" id="18_c05mc"]
+[ext_resource type="Texture2D" uid="uid://x3pgjdbpsryp" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_5.png" id="19_vlivh"]
+[ext_resource type="Texture2D" uid="uid://8xlx30h4vt15" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_6.png" id="20_t44q3"]
+[ext_resource type="AudioStream" uid="uid://bppqsmwaoh2ee" path="res://Sounds/Whisper Out Of Nowhere 001.wav" id="21_nqk8y"]
+[ext_resource type="Texture2D" uid="uid://dl7jf5765ichy" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_7.png" id="21_r6jo2"]
+[ext_resource type="Texture2D" uid="uid://3kn4ea7gtah" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_8.png" id="22_eocid"]
+[ext_resource type="AudioStream" uid="uid://csc0tfh0ucmkl" path="res://Sounds/Whisper Out Of Nowhere 002.wav" id="22_p11au"]
+[ext_resource type="AudioStream" uid="uid://cjjs8obu20l3a" path="res://Sounds/Whisper Out Of Nowhere 003.wav" id="23_jl2me"]
+[ext_resource type="AudioStream" uid="uid://bl0u8ntg1pyuc" path="res://Sounds/Whisper Out Of Nowhere 004.wav" id="24_nbcmi"]
+[ext_resource type="AudioStream" uid="uid://bbxyc0g4j0j2l" path="res://Sounds/Whisper Out Of Nowhere 005.wav" id="25_7astd"]
+[ext_resource type="AudioStream" uid="uid://dj3xbjwch3fqh" path="res://Sounds/hitsound.wav" id="26_wt4op"]
+[ext_resource type="PackedScene" uid="uid://bg1d13jx6d3bx" path="res://Projectiles/VFX/SpawnParticles.tscn" id="27_1f4ej"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yhvgs"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_c412d"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_g4t2c"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="Animation" id="Animation_q8u77"]
+resource_name = "Hit"
+length = 0.1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/Body:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.0, 0.5, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_0dqvr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/Body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(256, 256)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/Body:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_f4cv4")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewport/Body:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewport/Body:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath(".:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("..:collision_layer")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("..:collision_mask")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../Area3D:monitoring")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../AudioStreamPlayer2D:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("SubViewport/Body:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("SubViewport/Body:material")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("SubViewport/Body:modulate:a")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_fgpcn"]
+resource_name = "Spawn"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:collision_layer")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:collision_mask")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 7]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Area3D:monitoring")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SubViewport/Body:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("SubViewport/Body:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_f4cv4")]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("..")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [true],
+"method": &"set_physics_process"
+}]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SubViewport/Body:hframes")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("SubViewport/Body:frame")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.0001),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 0]
+}
+
+[sub_resource type="Animation" id="Animation_ourua"]
+resource_name = "death"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/Body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_5kh2s")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/Body:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [17]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewport/Body:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 12]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [false],
+"method": &"set_physics_process"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Area3D:monitoring")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("..:collision_layer")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("..:collision_mask")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath(".:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(3, 3, 3)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../AudioStreamPlayer2D:playing")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("SubViewport/Body:visible")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1.03333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("SubViewport/Body:material")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+
+[sub_resource type="Animation" id="Animation_mx4e5"]
+resource_name = "defender_idle"
+loop_mode = 1
+step = 0.1111
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/Body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.111111, 0.222222, 0.333333, 0.444444, 0.555556, 0.666667, 0.777778, 0.888889),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("14_eqk0j"), ExtResource("15_iwu67"), ExtResource("16_8aoqi"), ExtResource("17_7k18l"), ExtResource("18_c05mc"), ExtResource("19_vlivh"), ExtResource("20_t44q3"), ExtResource("21_r6jo2"), ExtResource("22_eocid")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/Body:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SubViewport/Body:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_ck2ix"]
+resource_name = "defender_shoot"
+step = 0.1111
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/Body:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(256, 256)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SubViewport/Body:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.111111, 0.222222, 0.333333, 0.444444, 0.555556, 0.666667, 0.777778, 0.888889),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("5_f4mf4"), ExtResource("6_0k66y"), ExtResource("7_u065c"), ExtResource("8_16lel"), ExtResource("9_o50xl"), ExtResource("10_uvcym"), ExtResource("11_4t4ok"), ExtResource("12_gormx"), ExtResource("13_wnh0j")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("SubViewport/Body:hframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SubViewport/Body:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("..")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.555556),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"shoot"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dxrox"]
+_data = {
+"Hit": SubResource("Animation_q8u77"),
+"RESET": SubResource("Animation_0dqvr"),
+"Spawn": SubResource("Animation_fgpcn"),
+"death": SubResource("Animation_ourua"),
+"defender_idle": SubResource("Animation_mx4e5"),
+"defender_shoot": SubResource("Animation_ck2ix")
+}
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_2auiu"]
+streams_count = 5
+stream_0/stream = ExtResource("21_nqk8y")
+stream_1/stream = ExtResource("22_p11au")
+stream_2/stream = ExtResource("23_jl2me")
+stream_3/stream = ExtResource("24_nbcmi")
+stream_4/stream = ExtResource("25_7astd")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_i5mp1"]
+viewport_path = NodePath("SubViewport")
+
+[node name="Enemy_Defender" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_0rvpu")
+shootingRange = 7.5
+projectileSpeed = 7.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_yhvgs")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 1.6, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_c412d")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
+texture = SubResource("ViewportTexture_g4t2c")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+
+[node name="Body" type="Sprite2D" parent="Sprite3D/SubViewport"]
+position = Vector2(256, 256)
+texture = ExtResource("3_f4cv4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite3D"]
+libraries = {
+"": SubResource("AnimationLibrary_dxrox")
+}
+autoplay = "Spawn"
+next/Hit = &"defender_idle"
+next/defender_shoot = &"defender_idle"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_2auiu")
+volume_db = 0.5
+bus = &"soundEffects"
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("26_wt4op")
+bus = &"soundEffects"
+
+[node name="SpawnParticles" parent="." instance=ExtResource("27_1f4ej")]
+texture = SubResource("ViewportTexture_i5mp1")
+
+[node name="fireRateTimer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="Area3D" to="." method="onEnemyBodyEntered"]
+[connection signal="animation_finished" from="Sprite3D/AnimationPlayer" to="." method="on_animation_player_animation_finished"]
+[connection signal="timeout" from="fireRateTimer" to="." method="on_timer_timeout"]

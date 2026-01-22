@@ -1,0 +1,221 @@
+[gd_scene load_steps=21 format=3 uid="uid://c6tbqvp7lqy53"]
+
+[ext_resource type="Script" path="res://Projectiles/Script/shockwave.gd" id="1_l7vxt"]
+[ext_resource type="Shader" uid="uid://bauiv0pk8smjw" path="res://Projectiles/VFX/New/vfx_projectile_static_shader.tres" id="2_4jqng"]
+[ext_resource type="Texture2D" uid="uid://dxxx4cda1g2my" path="res://Projectiles/VFX/New/tex_cloud_noise_vfx.png" id="3_2puig"]
+[ext_resource type="Texture2D" uid="uid://f15l2a6oe1gd" path="res://Projectiles/VFX/New/ShockwaveTextureSmall.png" id="4_h6rbi"]
+[ext_resource type="Texture2D" uid="uid://chu1bj03mtwqv" path="res://Projectiles/VFX/New/tex_pixel_vfx.png" id="5_swjek"]
+[ext_resource type="Texture2D" uid="uid://bcjwd4cjsoi8m" path="res://Projectiles/VFX/Materials/shieldArc.png" id="6_nslnf"]
+[ext_resource type="AudioStream" uid="uid://cwu4rumv41eah" path="res://Sounds/shockwave.wav" id="7_8q6ex"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_1h51c"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_vvvyo"]
+viewport_path = NodePath("Area3D/Sprite3D/SubViewport")
+
+[sub_resource type="Gradient" id="Gradient_m50w8"]
+offsets = PackedFloat32Array(0.172131, 0.286885, 0.352459, 0.459016, 0.655738, 0.770492)
+colors = PackedColorArray(0.145098, 0.717647, 1, 1, 0.694118, 0.180392, 0.188235, 1, 0.493284, 0.742393, 0.965685, 1, 0.92549, 0.2, 0.286275, 1, 0.505882, 0.898039, 0.992157, 1, 0.506, 0.898, 0.992, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mu10n"]
+gradient = SubResource("Gradient_m50w8")
+fill = 1
+fill_from = Vector2(0.5, 0.467742)
+fill_to = Vector2(0.83871, 0.88172)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q0733"]
+shader = ExtResource("2_4jqng")
+shader_parameter/Scale = Vector2(20, 20)
+shader_parameter/Speed = Vector2(1, 1)
+shader_parameter/Texture_1 = ExtResource("3_2puig")
+shader_parameter/Texture_2 = ExtResource("4_h6rbi")
+shader_parameter/Texture_3 = ExtResource("4_h6rbi")
+shader_parameter/Texture_5 = ExtResource("4_h6rbi")
+shader_parameter/Texture_4 = SubResource("GradientTexture2D_mu10n")
+
+[sub_resource type="Gradient" id="Gradient_rxcjo"]
+offsets = PackedFloat32Array(0, 0.229508, 0.491803, 0.663934, 1)
+colors = PackedColorArray(1, 1, 0, 1, 1, 0.432834, 0.287658, 1, 0.858824, 0.603922, 0, 1, 0.905882, 1, 0, 1, 1, 0.51987, 0.437446, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_o040n"]
+gradient = SubResource("Gradient_rxcjo")
+
+[sub_resource type="Curve" id="Curve_c6w1u"]
+_data = [Vector2(0.00666666, 0.505494), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_clmnu"]
+curve = SubResource("Curve_c6w1u")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kapu8"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(1, 1, 0)
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 20.0
+emission_ring_radius = 800.0
+emission_ring_inner_radius = 700.0
+angle_min = -180.0
+angle_max = 180.0
+spread = 180.0
+gravity = Vector3(0, 0, 0)
+scale_max = 1.2
+scale_curve = SubResource("CurveTexture_clmnu")
+color_initial_ramp = SubResource("GradientTexture1D_o040n")
+
+[sub_resource type="Animation" id="Animation_bjdjr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate:a")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.06, 0.06, 0.051)]
+}
+
+[sub_resource type="Animation" id="Animation_ykex7"]
+resource_name = "emit"
+length = 0.5
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(10, 10, 10)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:modulate:a")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.0, 1.0, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.06, 0.06, 0.051)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tmh1w"]
+_data = {
+"RESET": SubResource("Animation_bjdjr"),
+"emit": SubResource("Animation_ykex7")
+}
+
+[node name="shockwave" type="Node3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("1_l7vxt")
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 3
+collision_mask = 18
+priority = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_1h51c")
+
+[node name="Sprite3D" type="Sprite3D" parent="Area3D"]
+transform = Transform3D(0.06, 0, 0, 0, -2.62268e-09, -0.051, 0, 0.06, -2.22928e-09, 0, 0, 0)
+texture = SubResource("ViewportTexture_vvvyo")
+
+[node name="SubViewport" type="SubViewport" parent="Area3D/Sprite3D"]
+transparent_bg = true
+size = Vector2i(2000, 2000)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area3D/Sprite3D/SubViewport"]
+visible = false
+material = SubResource("ShaderMaterial_q0733")
+position = Vector2(1000, 1000)
+scale = Vector2(2000, 2000)
+texture = ExtResource("5_swjek")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Area3D/Sprite3D/SubViewport"]
+position = Vector2(1000, 1000)
+amount = 500
+process_material = SubResource("ParticleProcessMaterial_kapu8")
+texture = ExtResource("6_nslnf")
+lifetime = 0.1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Area3D/Sprite3D")
+libraries = {
+"": SubResource("AnimationLibrary_tmh1w")
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_8q6ex")
+bus = &"soundEffects"
+
+[connection signal="body_entered" from="Area3D" to="." method="onShockwaveBodyEntered"]

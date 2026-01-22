@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgsuygplu8qhn"]
+
+[ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Enemies/Scenes/enemy.tscn" id="1_6cy7p"]
+[ext_resource type="Script" path="res://Enemies/Scripts/EnemyDefender.gd" id="2_e341s"]
+[ext_resource type="Texture2D" uid="uid://bbyfl0nb0rk4f" path="res://Enemies/Assets/char_enemy_Nobiagari_idle_Spritesheet.png" id="3_gclj6"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_o0rf3"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ghbh6"]
+viewport_path = NodePath("SubViewport")
+
+[node name="enemy_defender" instance=ExtResource("1_6cy7p")]
+script = ExtResource("2_e341s")
+shootingRange = 5.0
+fireRate = 0.5
+projectileSpeed = 10.0
+enemyDamage = 20.0
+
+[node name="Sprite3D" parent="." index="3"]
+texture = SubResource("ViewportTexture_o0rf3")
+
+[node name="SubViewport" parent="Sprite3D" index="1"]
+size = Vector2i(300, 300)
+
+[node name="Body" parent="Sprite3D/SubViewport" index="0"]
+position = Vector2(150, 150)
+texture = ExtResource("3_gclj6")
+
+[node name="SpawnParticles" parent="." index="7"]
+texture = SubResource("ViewportTexture_ghbh6")
+
+[connection signal="animation_finished" from="Sprite3D/AnimationPlayer" to="." method="onAnimationPlayerAnimationFinished"]

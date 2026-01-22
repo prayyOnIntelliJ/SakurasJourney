@@ -1,0 +1,298 @@
+[gd_scene load_steps=21 format=3 uid="uid://c82ka48m1dfbp"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/SettingsScreen.gd" id="1_l15a0"]
+[ext_resource type="Texture2D" uid="uid://5whpwsrtxgf7" path="res://UI/MenuScreen.png" id="2_7dgkj"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="2_rgums"]
+[ext_resource type="Texture2D" uid="uid://c3m37fjlh5g4b" path="res://UI/UI_Sprites/ui_setting_slider_75x75px.png" id="6_7j1ov"]
+[ext_resource type="LabelSettings" uid="uid://bnbe2hbj6habt" path="res://Descriptionfont.tres" id="6_ko4sr"]
+[ext_resource type="Texture2D" uid="uid://bn2jjwfgfi30v" path="res://UI/ui_setting_bar_empty_450x75px.png" id="7_pghe6"]
+[ext_resource type="Texture2D" uid="uid://dhoakl2pc3kwh" path="res://UI/ui_setting_bar_filled.png" id="8_fju6v"]
+[ext_resource type="Texture2D" uid="uid://dxrfvnjbyr5bs" path="res://UI/UI_Sprites/UI_Button.png" id="10_cmm05"]
+[ext_resource type="Texture2D" uid="uid://c3kgl6dddi55h" path="res://UI/UI_Sprites/UI_Button_pressed.png" id="11_h3h8h"]
+[ext_resource type="Script" path="res://UI/Scenes/Button_Wobbel.gd" id="11_wpeie"]
+[ext_resource type="Texture2D" uid="uid://dcqe5pp0ix0rj" path="res://UI/UI_Sprites/UI_Button_hover.png" id="12_hlgk3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1lvwk"]
+texture = ExtResource("7_pghe6")
+expand_margin_left = 10.0
+expand_margin_top = 38.0
+expand_margin_bottom = 38.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j3lte"]
+texture = ExtResource("8_fju6v")
+texture_margin_left = 10.0
+expand_margin_top = 38.0
+expand_margin_bottom = 38.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pflal"]
+texture = ExtResource("8_fju6v")
+texture_margin_left = 10.0
+expand_margin_top = 38.0
+expand_margin_bottom = 38.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w38a0"]
+texture = ExtResource("7_pghe6")
+expand_margin_left = 10.0
+expand_margin_top = 38.0
+expand_margin_bottom = 38.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_utfvr"]
+texture = ExtResource("8_fju6v")
+texture_margin_left = 10.0
+expand_margin_top = 38.0
+expand_margin_bottom = 38.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tup0f"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+texture = ExtResource("8_fju6v")
+texture_margin_left = 10.0
+expand_margin_top = 38.0
+expand_margin_bottom = 38.0
+
+[sub_resource type="Animation" id="Animation_h34hm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dlolt"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tud38"]
+_data = {
+"RESET": SubResource("Animation_h34hm"),
+"Wobbel": SubResource("Animation_dlolt")
+}
+
+[node name="SettingsScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l15a0")
+
+[node name="BackgroundImagePlaceholder" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_7dgkj")
+
+[node name="ScreenTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 799.0
+offset_top = 57.0
+offset_right = 1099.0
+offset_bottom = 117.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+label_settings = ExtResource("2_rgums")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 660.0
+offset_top = 296.0
+offset_right = 1260.0
+offset_bottom = 896.0
+
+[node name="TextureRect" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = -296.0
+offset_top = -65.0
+offset_right = 904.0
+offset_bottom = 535.0
+texture = ExtResource("10_cmm05")
+
+[node name="VerticalOptionContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 70.0
+offset_right = 500.0
+offset_bottom = 570.0
+pivot_offset = Vector2(200, 0)
+theme_override_constants/separation = 100
+
+[node name="OptionFrame_Music" type="Control" parent="Panel/VerticalOptionContainer"]
+layout_mode = 2
+
+[node name="SettingTitle" type="Control" parent="Panel/VerticalOptionContainer/OptionFrame_Music"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = 25.0
+offset_right = 125.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingTitle" type="Label" parent="Panel/VerticalOptionContainer/OptionFrame_Music/SettingTitle"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = -17.5
+offset_right = 122.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 14
+text = "Music Volume"
+label_settings = ExtResource("6_ko4sr")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingFrame" type="Control" parent="Panel/VerticalOptionContainer/OptionFrame_Music"]
+anchors_preset = 0
+offset_left = 77.0
+offset_top = 55.0
+offset_right = 327.0
+offset_bottom = 180.0
+
+[node name="musicVolumeSlider" type="HSlider" parent="Panel/VerticalOptionContainer/OptionFrame_Music/SettingFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -62.5
+offset_right = 225.0
+offset_bottom = 12.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/center_grabber = 0
+theme_override_constants/grabber_offset = 0
+theme_override_icons/grabber = ExtResource("6_7j1ov")
+theme_override_icons/grabber_highlight = ExtResource("6_7j1ov")
+theme_override_styles/slider = SubResource("StyleBoxTexture_1lvwk")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_j3lte")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_pflal")
+value = 50.0
+
+[node name="OptionFrame_SFX" type="Control" parent="Panel/VerticalOptionContainer"]
+layout_mode = 2
+
+[node name="SettingTitle" type="Control" parent="Panel/VerticalOptionContainer/OptionFrame_SFX"]
+anchors_preset = 0
+offset_left = 81.0
+offset_top = 17.0
+offset_right = 331.0
+offset_bottom = 47.0
+
+[node name="SettingTitle" type="Label" parent="Panel/VerticalOptionContainer/OptionFrame_SFX/SettingTitle"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -130.0
+offset_top = 33.0
+offset_right = 126.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 14
+text = "Sound Effects Volume"
+label_settings = ExtResource("6_ko4sr")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingFrame" type="Control" parent="Panel/VerticalOptionContainer/OptionFrame_SFX"]
+anchors_preset = 0
+offset_left = 77.0
+offset_top = 55.0
+offset_right = 327.0
+offset_bottom = 180.0
+
+[node name="soundEffectsVolumeSlider" type="HSlider" parent="Panel/VerticalOptionContainer/OptionFrame_SFX/SettingFrame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -4.5
+offset_right = 230.0
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/grabber = ExtResource("6_7j1ov")
+theme_override_icons/grabber_highlight = ExtResource("6_7j1ov")
+theme_override_styles/slider = SubResource("StyleBoxTexture_w38a0")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_utfvr")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_tup0f")
+value = 50.0
+
+[node name="BackBtn" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 917.0
+offset_right = 436.0
+offset_bottom = 1067.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("10_cmm05")
+texture_pressed = ExtResource("11_h3h8h")
+texture_hover = ExtResource("12_hlgk3")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("11_wpeie")
+
+[node name="Label" type="Label" parent="BackBtn"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Back"
+label_settings = ExtResource("2_rgums")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BackBtn"]
+libraries = {
+"": SubResource("AnimationLibrary_tud38")
+}
+
+[connection signal="value_changed" from="Panel/VerticalOptionContainer/OptionFrame_Music/SettingFrame/musicVolumeSlider" to="." method="onVolumeSliderValueChanged"]
+[connection signal="drag_ended" from="Panel/VerticalOptionContainer/OptionFrame_SFX/SettingFrame/soundEffectsVolumeSlider" to="." method="onSoundEffectsVolumeSliderDragEnded"]
+[connection signal="value_changed" from="Panel/VerticalOptionContainer/OptionFrame_SFX/SettingFrame/soundEffectsVolumeSlider" to="." method="onSoundEffectsSliderValueChanged"]
+[connection signal="pressed" from="BackBtn" to="." method="onBackBtnPressed"]

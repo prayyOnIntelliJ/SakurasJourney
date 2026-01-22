@@ -1,0 +1,8 @@
+[gd_resource type="GradientTexture1D" load_steps=2 format=3 uid="uid://ryeboxrboge3"]
+
+[sub_resource type="Gradient" id="Gradient_jv42y"]
+offsets = PackedFloat32Array(0.192133, 0.446294, 0.467474, 0.568835, 0.70348, 0.909228, 1)
+colors = PackedColorArray(0.882, 0.325, 0.055, 0, 0.882353, 0.32549, 0.054902, 1, 0.416641, 0.000367069, 0.000201283, 1, 0.733002, 2.75549e-06, 6.73831e-07, 1, 0.884143, 0.325627, 0.0533775, 1, 1, 0.909804, 0.0313726, 1, 1, 0.944294, 0.505804, 1)
+
+[resource]
+gradient = SubResource("Gradient_jv42y")

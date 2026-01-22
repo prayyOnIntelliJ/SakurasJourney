@@ -1,0 +1,181 @@
+[gd_scene load_steps=24 format=3 uid="uid://djm8aiyoia56v"]
+
+[ext_resource type="Script" path="res://Game/Scripts/game.gd" id="1_3umri"]
+[ext_resource type="Script" path="res://Game/Scripts/ui.gd" id="2_2hofh"]
+[ext_resource type="AudioStream" uid="uid://by3fq5v4a6d0i" path="res://Sounds/battlemusic_Survive.wav" id="2_3imx0"]
+[ext_resource type="PackedScene" uid="uid://cgvdwxg4vpyvq" path="res://UI/Scenes/HUD.tscn" id="3_74t1y"]
+[ext_resource type="PackedScene" uid="uid://ddk8ps2pd2uo2" path="res://Game/Scenes/MouseCursor.tscn" id="3_f1dnf"]
+[ext_resource type="AudioStream" uid="uid://cd06qs4ki03nq" path="res://Sounds/Battlemusic_Defend.wav" id="3_k1dnd"]
+[ext_resource type="AudioStream" uid="uid://bx5p01ux2a4u4" path="res://Sounds/Battlemusic_Attack.wav" id="4_0mrxh"]
+[ext_resource type="PackedScene" uid="uid://cv0bdrkbkjvey" path="res://UI/Scenes/arena_selection_screen.tscn" id="4_ddsw2"]
+[ext_resource type="PackedScene" uid="uid://bch45lu64j0nd" path="res://UI/Scenes/arena_settings_screen.tscn" id="4_q15ws"]
+[ext_resource type="PackedScene" uid="uid://dmi2xqyooxes2" path="res://UI/Scenes/title_screen.tscn" id="5_45p2o"]
+[ext_resource type="PackedScene" uid="uid://di3eu2f3nc8lt" path="res://UI/Scenes/credits_screen.tscn" id="5_ro3g3"]
+[ext_resource type="AudioStream" uid="uid://blj808ugktvvd" path="res://Sounds/Battlemusic_Attack&Defend.wav" id="5_x5cjf"]
+[ext_resource type="PackedScene" uid="uid://cu1wb035d4sm7" path="res://UI/Scenes/fail_screen.tscn" id="6_hgotx"]
+[ext_resource type="PackedScene" uid="uid://dptadntxehinj" path="res://UI/Scenes/load_screen.tscn" id="7_10rfq"]
+[ext_resource type="PackedScene" uid="uid://ql6oxnky6tdx" path="res://UI/Scenes/pause_screen.tscn" id="8_pg6bj"]
+[ext_resource type="PackedScene" uid="uid://c82ka48m1dfbp" path="res://UI/Scenes/settings_screen.tscn" id="9_xt35t"]
+[ext_resource type="PackedScene" uid="uid://deagsh5bm33jl" path="res://UI/Scenes/upgrade_screen.tscn" id="10_qgoj0"]
+[ext_resource type="PackedScene" uid="uid://5yt0pktndouf" path="res://UI/Scenes/win_screen.tscn" id="11_0m7wr"]
+[ext_resource type="Script" path="res://Game/Scripts/levels.gd" id="13_mr4uw"]
+[ext_resource type="PackedScene" uid="uid://csh1ujf7i2gcv" path="res://Player/Scenes/player.tscn" id="16_33i35"]
+[ext_resource type="AudioStream" uid="uid://cc4c4qe60sd3t" path="res://Sounds/SwitchScreen.wav" id="16_oun87"]
+[ext_resource type="AudioStream" uid="uid://bo6khel1gyae8" path="res://Sounds/Buttonclick.wav" id="17_3csfi"]
+[ext_resource type="AudioStream" uid="uid://bn8t5i5gwjsn0" path="res://Sounds/Main.wav" id="18_0jdm0"]
+
+[node name="Game" type="Node3D"]
+process_mode = 1
+script = ExtResource("1_3umri")
+currentSkillPoints = 0
+battleMusic = Array[AudioStreamWAV]([ExtResource("2_3imx0"), ExtResource("3_k1dnd"), ExtResource("4_0mrxh"), ExtResource("5_x5cjf"), null])
+
+[node name="Player" parent="." instance=ExtResource("16_33i35")]
+process_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+dashSpeed = 50
+dashLengthInSeconds = 0.3
+stackResetInSeconds = 10.0
+maxShockwaveChargeBase = 100
+
+[node name="MouseCursor" parent="." instance=ExtResource("3_f1dnf")]
+process_mode = 3
+
+[node name="UI" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_2hofh")
+
+[node name="Hud" parent="UI" instance=ExtResource("3_74t1y")]
+visible = false
+
+[node name="ArenaSettingsScreen" parent="UI" node_paths=PackedStringArray("levelsRef") instance=ExtResource("4_q15ws")]
+visible = false
+layout_mode = 1
+levelsRef = NodePath("../../Levels")
+
+[node name="ArenaSelectionScreen" parent="UI" instance=ExtResource("4_ddsw2")]
+visible = false
+layout_mode = 1
+
+[node name="TitleScreen" parent="UI" instance=ExtResource("5_45p2o")]
+layout_mode = 1
+
+[node name="CreditsScreen" parent="UI" instance=ExtResource("5_ro3g3")]
+visible = false
+layout_mode = 1
+
+[node name="FailScreen" parent="UI" instance=ExtResource("6_hgotx")]
+process_mode = 3
+visible = false
+layout_mode = 1
+
+[node name="LoadScreen" parent="UI" instance=ExtResource("7_10rfq")]
+visible = false
+layout_mode = 1
+
+[node name="PauseScreen" parent="UI" instance=ExtResource("8_pg6bj")]
+visible = false
+layout_mode = 1
+
+[node name="SettingsScreen" parent="UI" instance=ExtResource("9_xt35t")]
+visible = false
+layout_mode = 1
+
+[node name="UpgradeScreen" parent="UI" instance=ExtResource("10_qgoj0")]
+visible = false
+layout_mode = 1
+
+[node name="WinScreen" parent="UI" instance=ExtResource("11_0m7wr")]
+visible = false
+layout_mode = 1
+
+[node name="UI_Audio" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("16_oun87")
+volume_db = -10.0
+bus = &"soundEffects"
+
+[node name="Buttonclick" type="AudioStreamPlayer2D" parent="UI/UI_Audio"]
+stream = ExtResource("17_3csfi")
+bus = &"soundEffects"
+
+[node name="Musicplayer" type="AudioStreamPlayer2D" parent="UI"]
+stream = ExtResource("18_0jdm0")
+volume_db = -10.0
+bus = &"music"
+
+[node name="Battlemusic" type="AudioStreamPlayer2D" parent="UI/Musicplayer"]
+bus = &"music"
+
+[node name="Levels" type="Node3D" parent="."]
+script = ExtResource("13_mr4uw")
+spawnPointArena1 = Vector3(0, 1, 0)
+spawnPointArena2 = Vector3(0, 1, 0)
+spawnPointArena3 = Vector3(0, 1, 0)
+spawnPointArena4 = Vector3(0, 1, 0)
+spawnPointTutorial = Vector3(0, 1, 0)
+
+[node name="ObjectsInGame" type="Node3D" parent="."]
+
+[connection signal="pauseGame" from="." to="UI/PauseScreen" method="onGamePauseGame"]
+[connection signal="retryGame" from="." to="UI/ArenaSettingsScreen" method="onGameRetryGame"]
+[connection signal="dashAvailability" from="Player" to="UI/Hud" method="onPlayerDashAvailabilityChanged"]
+[connection signal="updateCurrentWeapon" from="Player" to="UI/Hud" method="onPlayerUpdateCurrentWeapon"]
+[connection signal="updateDashStacks" from="Player" to="UI/Hud" method="onPlayerUpdateDashStacks"]
+[connection signal="updatePlayerHealth" from="Player" to="UI/Hud" method="onPlayerUpdatePlayerHealth"]
+[connection signal="updateShockwaveCharge" from="Player" to="UI/Hud" method="onPlayerUpdateShockwaveCharge"]
+[connection signal="clearLevel" from="UI" to="Levels" method="onUIClearLevel"]
+[connection signal="changeToArenaSelectionScreen" from="UI/ArenaSettingsScreen" to="UI" method="onChangeToArenaSelectionScreen"]
+[connection signal="startGame" from="UI/ArenaSettingsScreen" to="." method="onStartGame"]
+[connection signal="startGame" from="UI/ArenaSettingsScreen" to="Player" method="onStartGame"]
+[connection signal="startGame" from="UI/ArenaSettingsScreen" to="UI" method="onGameStart"]
+[connection signal="startGame" from="UI/ArenaSettingsScreen" to="UI/Hud" method="onGameStart"]
+[connection signal="changeToArenaSettingsScreen" from="UI/ArenaSelectionScreen" to="UI" method="onChangeToArenaSettingsScreen"]
+[connection signal="changeToTitleScreen" from="UI/ArenaSelectionScreen" to="UI" method="onChangeToTitleScreen"]
+[connection signal="changeToUpgradeMenuScreen" from="UI/ArenaSelectionScreen" to="UI" method="onChangeToUpgradeScreen"]
+[connection signal="setArenaIndex" from="UI/ArenaSelectionScreen" to="." method="onArenaSelectionScreenSetArenaIndex"]
+[connection signal="startTutorialLevel" from="UI/ArenaSelectionScreen" to="." method="onArenaSelectionScreenStartTutorialLevel"]
+[connection signal="startTutorialLevel" from="UI/ArenaSelectionScreen" to="Player" method="onStartGame"]
+[connection signal="startTutorialLevel" from="UI/ArenaSelectionScreen" to="UI/Hud" method="onArenaSelectionScreenStartTutorialLevel"]
+[connection signal="changeToArenaSelectionScreen" from="UI/TitleScreen" to="UI" method="onChangeToArenaSelectionScreen"]
+[connection signal="changeToCreditsScreen" from="UI/TitleScreen" to="UI" method="onChangeToCreditsScreen"]
+[connection signal="changeToSettingsScreen" from="UI/TitleScreen" to="UI" method="onChangeToSettingsScreen"]
+[connection signal="changeToTitleScreen" from="UI/CreditsScreen" to="UI" method="onChangeToTitleScreen"]
+[connection signal="changeToTitleScreen" from="UI/FailScreen" to="Player" method="onChangeToArenaSettingsScreen"]
+[connection signal="changeToTitleScreen" from="UI/FailScreen" to="UI" method="onFailScreenChangeToTitleScreen"]
+[connection signal="changeToTitleScreen" from="UI/FailScreen" to="Levels" method="onFailScreenChangeToTitleScreen"]
+[connection signal="changeToUpgradeScreen" from="UI/FailScreen" to="UI" method="onChangeToUpgradeScreen"]
+[connection signal="tryAgainEmitted" from="UI/FailScreen" to="." method="onFailScreenTryAgainEmitted"]
+[connection signal="changeToHUD" from="UI/PauseScreen" to="UI" method="onChangeToHUD"]
+[connection signal="changeToMainMenu" from="UI/PauseScreen" to="." method="onPauseScreenChangeToMainMenu"]
+[connection signal="changeToMainMenu" from="UI/PauseScreen" to="Player" method="onGameExited"]
+[connection signal="changeToMainMenu" from="UI/PauseScreen" to="UI" method="onPauseScreenChangeToMainMenu"]
+[connection signal="changeToMainMenu" from="UI/PauseScreen" to="UI/Hud" method="onPauseScreenChangeToMainMenu"]
+[connection signal="changeToSettingsMenu" from="UI/PauseScreen" to="UI" method="onChangeToSettingsScreen"]
+[connection signal="changeToPauseScreen" from="UI/SettingsScreen" to="UI" method="onChangeToPauseScreen"]
+[connection signal="changeToTitleScreen" from="UI/SettingsScreen" to="UI" method="onChangeToTitleScreen"]
+[connection signal="playSFXSound" from="UI/SettingsScreen" to="UI" method="onSettingsScreenPlaySFXSound"]
+[connection signal="changeToArenaSelectionScreen" from="UI/UpgradeScreen" to="UI" method="onChangeToArenaSelectionScreen"]
+[connection signal="changeToLoseScreen" from="UI/UpgradeScreen" to="UI" method="onChangeToFailScreen"]
+[connection signal="changeToWinScreen" from="UI/UpgradeScreen" to="UI" method="onUpgradeScreenChangeToWinScreen"]
+[connection signal="changeToArenaSelectionScreen" from="UI/WinScreen" to="Player" method="onGameExited"]
+[connection signal="changeToArenaSelectionScreen" from="UI/WinScreen" to="UI" method="onWinScreenChangeToArenaSelectionScreen"]
+[connection signal="changeToArenaSelectionScreen" from="UI/WinScreen" to="Levels" method="onWinScreenChangeToArenaSelectionScreen"]
+[connection signal="changeToUpgradeScreen" from="UI/WinScreen" to="UI" method="onChangeToUpgradeScreen"]
+[connection signal="flashTextMessage" from="Levels" to="UI/Hud" method="onFlashMessageDisplay"]
+[connection signal="gameOver" from="Levels" to="." method="onLevelsGameOver"]
+[connection signal="gameOver" from="Levels" to="Player" method="onLevelsGameOver"]
+[connection signal="gameOver" from="Levels" to="UI/Hud" method="onLevelsGameOver"]
+[connection signal="gameWon" from="Levels" to="." method="onLevelsGameWon"]
+[connection signal="gameWon" from="Levels" to="UI/Hud" method="onLevelsGameWon"]
+[connection signal="hideTimer" from="Levels" to="UI/Hud" method="onLevelsHideTimer"]
+[connection signal="passMaxGameTime" from="Levels" to="UI/Hud" method="onLevelsPassMaxGameTime"]
+[connection signal="setMaxBossHealth" from="Levels" to="UI/Hud" method="onLevelsSetMaxBossHealth"]
+[connection signal="setMaxSakuraHealth" from="Levels" to="UI/Hud" method="onLevelsSetMaxSakuraHealth"]
+[connection signal="updateBossTreeHP" from="Levels" to="UI/Hud" method="onLevelsUpdateBossTreeHP"]
+[connection signal="updateSakuraTreeHP" from="Levels" to="UI/Hud" method="onLevelsUpdateSakuraTreeHP"]

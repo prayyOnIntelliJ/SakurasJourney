@@ -1,0 +1,294 @@
+[gd_scene load_steps=34 format=3 uid="uid://cu1wb035d4sm7"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/FailScreen.gd" id="1_thcyv"]
+[ext_resource type="Texture2D" uid="uid://cnt8oggotvnps" path="res://UI/UI_Sprites/ArenaFrames/UI_Earth_Tempel_decoration.png" id="2_cvx42"]
+[ext_resource type="Texture2D" uid="uid://qtk53pc6bfp6" path="res://UI/UI_Sprites/ArenaFrames/UI_Water_Tempel_decoration.png" id="3_8fkp8"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="3_egers"]
+[ext_resource type="Texture2D" uid="uid://jjrur05tj5p2" path="res://UI/UI_Sprites/ArenaFrames/UI_Fire_Tempel_decoration.png" id="4_ha142"]
+[ext_resource type="Texture2D" uid="uid://dml8inrg2kclk" path="res://UI/UI_Sprites/ArenaFrames/UI_Wind_Tempel_decoration.png" id="5_mbv5e"]
+[ext_resource type="Texture2D" uid="uid://m3qkinyq5rsm" path="res://UI/UI_Sprites/Buttons/UI_Button_earth.png" id="6_3arxg"]
+[ext_resource type="Texture2D" uid="uid://c7kpnr2y0qg2d" path="res://UI/UI_Sprites/UI_Button.png" id="6_vonr5"]
+[ext_resource type="Texture2D" uid="uid://2drctoy4rjf3" path="res://UI/UI_Sprites/UI_Button_pressed.png" id="7_6pilo"]
+[ext_resource type="Texture2D" uid="uid://cnkumeeo30x24" path="res://UI/UI_Sprites/Buttons/UI_Button_water.png" id="7_vyeyv"]
+[ext_resource type="Texture2D" uid="uid://c8ae7bhve3f5v" path="res://UI/UI_Sprites/UI_Button_hover.png" id="8_1qbvk"]
+[ext_resource type="Script" path="res://UI/Scenes/Button_Wobbel.gd" id="8_ckjh2"]
+[ext_resource type="Texture2D" uid="uid://cp7v1mo8blenh" path="res://UI/UI_Sprites/Buttons/UI_Button_fire.png" id="8_ovgp4"]
+[ext_resource type="Texture2D" uid="uid://cmnvf8hviaavg" path="res://UI/UI_Sprites/Buttons/UI_Button_wind.png" id="9_rq4r1"]
+[ext_resource type="Texture2D" uid="uid://n72m54txv5od" path="res://UI/UI_Sprites/Buttons/UI_Button_pressed_earth.png" id="10_ubfwg"]
+[ext_resource type="Texture2D" uid="uid://bqlcd0rbrukb8" path="res://UI/UI_Sprites/Buttons/UI_Button_pressed_water.png" id="11_a6g72"]
+[ext_resource type="Texture2D" uid="uid://d26ielhia0wdr" path="res://UI/UI_Sprites/Buttons/UI_Button_pressed_fire.png" id="12_k6enh"]
+[ext_resource type="Texture2D" uid="uid://bvvby078rk7d8" path="res://UI/UI_Sprites/Buttons/UI_Button_pressed_wind.png" id="13_uboh6"]
+[ext_resource type="Texture2D" uid="uid://b4t8qt4gyekli" path="res://UI/UI_Sprites/Buttons/UI_Button_hover_earth.png" id="14_y3s37"]
+[ext_resource type="Texture2D" uid="uid://cvsdenuojgd24" path="res://UI/UI_Sprites/Buttons/UI_Button_hover_water.png" id="15_c18ls"]
+[ext_resource type="Texture2D" uid="uid://qpt8ydof842m" path="res://UI/UI_Sprites/Buttons/UI_Button_hover_fire.png" id="16_vbkji"]
+[ext_resource type="Texture2D" uid="uid://brme1femc1kwt" path="res://UI/UI_Sprites/Buttons/UI_Button_hover_wind.png" id="17_y1omb"]
+[ext_resource type="Texture2D" uid="uid://mpukn2tra6ni" path="res://UI/UI_Sprites/UI Arena/Plain_MenuScreen.png" id="18_3piln"]
+[ext_resource type="Texture2D" uid="uid://0g7hcbv8qpyj" path="res://UI/UI_Sprites/ArenaFrames/UI_Tempel_Frame.png" id="19_iv0ac"]
+
+[sub_resource type="Animation" id="Animation_8g4lk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_a6sxi"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pmsch"]
+_data = {
+"RESET": SubResource("Animation_8g4lk"),
+"Wobbel": SubResource("Animation_a6sxi")
+}
+
+[sub_resource type="Animation" id="Animation_bnv5c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2uud8"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_efccs"]
+_data = {
+"RESET": SubResource("Animation_bnv5c"),
+"Wobbel": SubResource("Animation_2uud8")
+}
+
+[sub_resource type="Animation" id="Animation_k3m7w"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_6j0q0"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wrbtr"]
+_data = {
+"RESET": SubResource("Animation_k3m7w"),
+"Wobbel": SubResource("Animation_6j0q0")
+}
+
+[node name="FailScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_thcyv")
+frameArray = Array[Texture2D]([ExtResource("2_cvx42"), ExtResource("3_8fkp8"), ExtResource("4_ha142"), ExtResource("5_mbv5e")])
+buttonNormalArray = Array[Texture2D]([ExtResource("6_3arxg"), ExtResource("7_vyeyv"), ExtResource("8_ovgp4"), ExtResource("9_rq4r1")])
+buttonPressedArray = Array[Texture2D]([ExtResource("10_ubfwg"), ExtResource("11_a6g72"), ExtResource("12_k6enh"), ExtResource("13_uboh6")])
+buttonHoverArray = Array[Texture2D]([ExtResource("14_y3s37"), ExtResource("15_c18ls"), ExtResource("16_vbkji"), ExtResource("17_y1omb")])
+
+[node name="WinOverlayPanel2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 150.0
+offset_right = 1500.0
+offset_bottom = 950.0
+texture = ExtResource("18_3piln")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="WinOverlayPanel2"]
+layout_mode = 0
+offset_left = -110.0
+offset_top = -121.0
+offset_right = 1240.0
+offset_bottom = 899.0
+texture = ExtResource("19_iv0ac")
+
+[node name="Decoration" type="TextureRect" parent="WinOverlayPanel2/TextureRect"]
+layout_mode = 0
+offset_right = 1350.0
+offset_bottom = 1020.0
+texture = ExtResource("2_cvx42")
+
+[node name="FailMessageFrame" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 756.0
+offset_top = 227.0
+offset_right = 1156.0
+offset_bottom = 287.0
+
+[node name="FailMsgLabel" type="Label" parent="FailMessageFrame"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 40.0
+offset_right = 337.0
+offset_bottom = 92.0
+theme_override_font_sizes/font_size = 20
+text = "Oh, no! You lost!"
+label_settings = ExtResource("3_egers")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AchievementsFrame" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 792.0
+offset_top = 368.0
+offset_right = 1192.0
+offset_bottom = 468.0
+
+[node name="EnemyHeadCountInfo" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 792.0
+offset_top = 448.0
+offset_right = 1192.0
+offset_bottom = 548.0
+
+[node name="RetryBtn" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 746.0
+offset_top = 401.0
+offset_right = 1146.0
+offset_bottom = 551.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("6_vonr5")
+texture_pressed = ExtResource("7_6pilo")
+texture_hover = ExtResource("8_1qbvk")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("8_ckjh2")
+
+[node name="Label" type="Label" parent="RetryBtn"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Try Again"
+label_settings = ExtResource("3_egers")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RetryBtn"]
+libraries = {
+"": SubResource("AnimationLibrary_pmsch")
+}
+
+[node name="UpgradeBtn" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 715.0
+offset_right = 875.0
+offset_bottom = 865.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("6_vonr5")
+texture_pressed = ExtResource("7_6pilo")
+texture_hover = ExtResource("8_1qbvk")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("8_ckjh2")
+
+[node name="Label" type="Label" parent="UpgradeBtn"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Upgrade"
+label_settings = ExtResource("3_egers")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="UpgradeBtn"]
+libraries = {
+"": SubResource("AnimationLibrary_efccs")
+}
+
+[node name="BackBtn" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1025.0
+offset_top = 715.0
+offset_right = 1425.0
+offset_bottom = 865.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("6_vonr5")
+texture_pressed = ExtResource("7_6pilo")
+texture_hover = ExtResource("8_1qbvk")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("8_ckjh2")
+
+[node name="Label" type="Label" parent="BackBtn"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Mainmenu"
+label_settings = ExtResource("3_egers")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BackBtn"]
+libraries = {
+"": SubResource("AnimationLibrary_wrbtr")
+}
+
+[connection signal="pressed" from="RetryBtn" to="." method="onRetryButtonPressed"]
+[connection signal="pressed" from="UpgradeBtn" to="." method="onUpgradeButtonPressed"]
+[connection signal="pressed" from="BackBtn" to="." method="onBackButtonPressed"]

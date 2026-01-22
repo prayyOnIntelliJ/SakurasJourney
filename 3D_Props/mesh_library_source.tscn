@@ -1,0 +1,576 @@
+[gd_scene load_steps=66 format=3 uid="uid://bjuefjsx0ccy7"]
+
+[ext_resource type="Texture2D" uid="uid://mp4phdu1p0df" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone_512x512_dark.png" id="1_ajjkg"]
+[ext_resource type="Texture2D" uid="uid://bcp2dfb1517y8" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grass_512x512_2_new.png" id="2_a1nkd"]
+[ext_resource type="Texture2D" uid="uid://cdg5i41mwty3i" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone_details...512x512_1_.png" id="2_tc0wt"]
+[ext_resource type="Texture2D" uid="uid://dbokmheb2l2pg" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_3_.png" id="3_7g4ev"]
+[ext_resource type="Texture2D" uid="uid://boutgpvykah4d" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_4_.png" id="4_s7uuo"]
+[ext_resource type="Texture2D" uid="uid://cqhfigqnxvemu" path="res://2D_Assets/GroundTextures/GroundTexture_Sand_512x512_2.png" id="5_cn6t0"]
+[ext_resource type="Texture2D" uid="uid://cparpa6xfch4r" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_5_.png" id="5_kge1c"]
+[ext_resource type="Texture2D" uid="uid://da73t5lcsqlst" path="res://2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_00.png" id="6_rvk4g"]
+[ext_resource type="Texture2D" uid="uid://cc6hi46np2804" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_6.png" id="6_torul"]
+[ext_resource type="Texture2D" uid="uid://dn4bsd3ue8j1y" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_7.png" id="7_g3dij"]
+[ext_resource type="Texture2D" uid="uid://bmad7q3jhnm4c" path="res://2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_01.png" id="7_m44kb"]
+[ext_resource type="Texture2D" uid="uid://dvdx0awxcfa6x" path="res://2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_02.png" id="8_8otdb"]
+[ext_resource type="Texture2D" uid="uid://2ob5xgo7r3f3" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_Corner_512x512.png" id="8_ix34d"]
+[ext_resource type="Texture2D" uid="uid://bny46xmyv2k2d" path="res://2D_Assets/GroundTextures/WaveTile_512x512_00.png" id="8_yc0qe"]
+[ext_resource type="Texture2D" uid="uid://cqd08trd7ucid" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Corner_Grass_512x512_2_2_darker.png" id="9_cdwuo"]
+[ext_resource type="Texture2D" uid="uid://jyuuy85ylij7" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_512x512.png" id="9_fxv2c"]
+[ext_resource type="Texture2D" uid="uid://bj11mm6ptc3qf" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grass_bad_512x512_00.png" id="9_qxbyx"]
+[ext_resource type="Texture2D" uid="uid://bhmxa7r2l6qxt" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_small_corner_512x512.png" id="10_0xl65"]
+[ext_resource type="Texture2D" uid="uid://baavrv30j22tc" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Border_Grass_dark_512x512.png" id="10_gop7s"]
+[ext_resource type="Texture2D" uid="uid://1dof1jch6ivi" path="res://UI/UI_Sprites/WhiteTexture.png" id="11_d24ot"]
+[ext_resource type="Texture2D" uid="uid://bt1mnry7xs3sb" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_1.png" id="12_hcv1r"]
+[ext_resource type="Texture2D" uid="uid://874ee2uwg5pu" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_2.png" id="13_mrjde"]
+[ext_resource type="Texture2D" uid="uid://c0bkjs3nve1g5" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_3.png" id="14_xs83b"]
+[ext_resource type="Texture2D" uid="uid://dx7rdrh0v1uci" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_4_.png" id="15_4espi"]
+[ext_resource type="Texture2D" uid="uid://b0wpqtcg1iusc" path="res://2D_Assets/GroundTextures/GroundTexture_Water_Waves_512x512.png" id="16_fdkfd"]
+[ext_resource type="Texture2D" uid="uid://jpl1qvsnxw4y" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_5.png" id="16_igtd7"]
+[ext_resource type="Texture2D" uid="uid://diogrc7no2358" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grasswalkway_512x512.png" id="17_dr4tv"]
+[ext_resource type="Texture2D" uid="uid://d24p5guhn0ro7" path="res://2D_Assets/GroundTextures/Grass/GroundTexture_Grasswalkway_details_512x512_2_.png" id="18_5ns4d"]
+[ext_resource type="Texture2D" uid="uid://bubewcts1tbtn" path="res://2D_Assets/GroundTextures/GroundTexture_lava_painterly_monochrome_bg_512x512-90.png" id="28_vri4e"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pbeso"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gu0bc"]
+albedo_texture = ExtResource("1_ajjkg")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lo8j6"]
+size = Vector3(2, 0.1, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_32uf6"]
+albedo_texture = ExtResource("2_tc0wt")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ivwfn"]
+albedo_texture = ExtResource("3_7g4ev")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t35t5"]
+albedo_texture = ExtResource("3_7g4ev")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jpr3e"]
+albedo_texture = ExtResource("4_s7uuo")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_27xlc"]
+albedo_texture = ExtResource("5_kge1c")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dowpo"]
+albedo_texture = ExtResource("6_torul")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqwv7"]
+albedo_texture = ExtResource("7_g3dij")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cdgvn"]
+albedo_texture = ExtResource("8_ix34d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_36v1f"]
+albedo_texture = ExtResource("9_fxv2c")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y3nlk"]
+albedo_texture = ExtResource("10_0xl65")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i27k7"]
+albedo_texture = ExtResource("2_a1nkd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7mmm0"]
+albedo_texture = ExtResource("12_hcv1r")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ibhmn"]
+albedo_texture = ExtResource("13_mrjde")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ncofl"]
+albedo_texture = ExtResource("14_xs83b")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0vqpu"]
+albedo_texture = ExtResource("15_4espi")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pcbb2"]
+albedo_texture = ExtResource("16_igtd7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ta2vk"]
+albedo_texture = ExtResource("17_dr4tv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0f52t"]
+albedo_texture = ExtResource("18_5ns4d")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1y2se"]
+albedo_texture = ExtResource("9_qxbyx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_prbot"]
+albedo_texture = ExtResource("9_cdwuo")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1mlqi"]
+albedo_texture = ExtResource("10_gop7s")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tyf4l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ukbgb"]
+albedo_texture = ExtResource("5_cn6t0")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_flhjj"]
+size = Vector3(2, 0.1, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_glt7h"]
+albedo_texture = ExtResource("6_rvk4g")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w40i1"]
+albedo_texture = ExtResource("7_m44kb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m1diu"]
+albedo_texture = ExtResource("8_8otdb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_35qxd"]
+albedo_texture = ExtResource("8_yc0qe")
+
+[sub_resource type="Shader" id="Shader_cp2wq"]
+code = "// NOTE: Shader automatically converted from Godot Engine 4.3.stable's StandardMaterial3D.
+
+shader_type spatial;
+render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_burley, specular_schlick_ggx;
+
+uniform vec4 albedo : source_color;
+uniform sampler2D texture_albedo : source_color, filter_linear_mipmap, repeat_enable;
+uniform float point_size : hint_range(0.1, 128.0, 0.1);
+
+uniform float roughness : hint_range(0.0, 1.0);
+uniform sampler2D texture_metallic : hint_default_white, filter_linear_mipmap, repeat_enable;
+uniform vec4 metallic_texture_channel;
+uniform sampler2D texture_roughness : hint_roughness_r, filter_linear_mipmap, repeat_enable;
+
+uniform float specular : hint_range(0.0, 1.0, 0.01);
+uniform float metallic : hint_range(0.0, 1.0, 0.01);
+
+uniform vec3 uv1_scale;
+uniform vec3 uv1_offset;
+uniform vec3 uv2_scale;
+uniform vec3 uv2_offset;
+
+uniform vec2 direction;
+uniform float speed;
+uniform float y_speed;
+
+void vertex() {
+	UV = UV * uv1_scale.xy + uv1_offset.xy;
+}
+
+void fragment() {
+	vec2 move = direction * TIME* speed;
+	move.y = sin(TIME)* y_speed;
+	
+	vec2 base_uv = UV;
+
+	vec4 albedo_tex = texture(texture_albedo, base_uv + move);
+	ALBEDO = albedo.rgb * albedo_tex.rgb;
+
+	float metallic_tex = dot(texture(texture_metallic, base_uv), metallic_texture_channel);
+	METALLIC = metallic_tex * metallic;
+	SPECULAR = specular;
+
+	vec4 roughness_texture_channel = vec4(1.0, 0.0, 0.0, 0.0);
+	float roughness_tex = dot(texture(texture_roughness, base_uv), roughness_texture_channel);
+	ROUGHNESS = roughness_tex * roughness;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h6lml"]
+render_priority = 0
+shader = SubResource("Shader_cp2wq")
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 0.12
+shader_parameter/metallic_texture_channel = null
+shader_parameter/specular = 0.5
+shader_parameter/metallic = 0.62
+shader_parameter/uv1_scale = Vector3(1, 1, 1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/direction = Vector2(-0.2, 0)
+shader_parameter/speed = 1.0
+shader_parameter/y_speed = 0.1
+shader_parameter/texture_albedo = ExtResource("16_fdkfd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l6v5f"]
+albedo_color = Color(0.834614, 0.834614, 0.834614, 1)
+albedo_texture = ExtResource("28_vri4e")
+metallic = 0.84
+metallic_specular = 0.73
+roughness = 0.0
+emission_enabled = true
+emission = Color(0.362263, 0.0623496, 0.0136793, 1)
+emission_energy_multiplier = 0.83
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_evw56"]
+albedo_color = Color(0.133659, 0.325543, 0.404608, 1)
+albedo_texture = ExtResource("11_d24ot")
+metallic = 1.0
+metallic_specular = 0.75
+roughness = 0.55
+emission_enabled = true
+emission = Color(0.75782, 0.898646, 0.93317, 1)
+emission_energy_multiplier = 0.6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qg8ss"]
+transparency = 1
+albedo_color = Color(1, 1, 1, 0)
+albedo_texture = ExtResource("11_d24ot")
+
+[node name="MeshLibrarySource" type="Node3D"]
+
+[node name="StoneTexture_00" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_gu0bc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_00"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_00/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_01" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_32uf6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_01"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_01/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_02" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_ivwfn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_02"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_02/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_03" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_t35t5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_03"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_03/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_04" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_jpr3e")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_04"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_04/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_05" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_27xlc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_05"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_05/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_06" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_dowpo")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_06"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_06/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_07" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_aqwv7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_07"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_07/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_Border" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_cdgvn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_Border"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_Border/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_Border_Corner" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_36v1f")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_Border_Corner"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_Border_Corner/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="StoneTexture_Border_SmallCorner" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_y3nlk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="StoneTexture_Border_SmallCorner"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StoneTexture_Border_SmallCorner/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_00" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_i27k7")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_00"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_00/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_01" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_7mmm0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_01"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_01/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_02" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_ibhmn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_02"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_02/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_03" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_ncofl")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_03"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_03/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_04" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_0vqpu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_04"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_04/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_05" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_pcbb2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_05"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_05/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassWalkway" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_ta2vk")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassWalkway"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassWalkway/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassWalkway_Details" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_0f52t")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassWalkway_Details"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassWalkway_Details/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_Bad_00" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_1y2se")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_Bad_00"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_Bad_00/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_Border_Corner" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_prbot")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_Border_Corner"]
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_Border_Corner/StaticBody3D"]
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="GrassTexture_Border_Side" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_pbeso")
+surface_material_override/0 = SubResource("StandardMaterial3D_1mlqi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassTexture_Border_Side"]
+visible = false
+collision_layer = 9
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassTexture_Border_Side/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_lo8j6")
+
+[node name="SandTexture_default" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_tyf4l")
+surface_material_override/0 = SubResource("StandardMaterial3D_ukbgb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SandTexture_default"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SandTexture_default/StaticBody3D"]
+shape = SubResource("BoxShape3D_flhjj")
+
+[node name="SandTexture_00" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_tyf4l")
+skeleton = NodePath("../SandTexture_default")
+surface_material_override/0 = SubResource("StandardMaterial3D_glt7h")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SandTexture_00"]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SandTexture_00/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_flhjj")
+
+[node name="SandTexture_01" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_tyf4l")
+skeleton = NodePath("../SandTexture_00")
+surface_material_override/0 = SubResource("StandardMaterial3D_w40i1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SandTexture_01"]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SandTexture_01/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_flhjj")
+
+[node name="SandTexture_02" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_tyf4l")
+skeleton = NodePath("../SandTexture_00")
+surface_material_override/0 = SubResource("StandardMaterial3D_m1diu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SandTexture_02"]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SandTexture_02/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_flhjj")
+
+[node name="WaterTexture_00" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_tyf4l")
+skeleton = NodePath("../SandTexture_00")
+surface_material_override/0 = SubResource("StandardMaterial3D_35qxd")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WaterTexture_00"]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WaterTexture_00/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_flhjj")
+
+[node name="WaterTexture_01" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_tyf4l")
+skeleton = NodePath("../SandTexture_00")
+surface_material_override/0 = SubResource("ShaderMaterial_h6lml")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="WaterTexture_01"]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WaterTexture_01/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_flhjj")
+
+[node name="LavaTexture_00" type="MeshInstance3D" parent="."]
+visible = false
+layers = 2049
+mesh = SubResource("PlaneMesh_tyf4l")
+skeleton = NodePath("../SandTexture_00")
+surface_material_override/0 = SubResource("StandardMaterial3D_l6v5f")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="LavaTexture_00"]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LavaTexture_00/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_flhjj")
+
+[node name="CloudTexture_00" type="MeshInstance3D" parent="."]
+layers = 2049
+mesh = SubResource("PlaneMesh_tyf4l")
+skeleton = NodePath("../SandTexture_00")
+surface_material_override/0 = SubResource("StandardMaterial3D_evw56")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CloudTexture_00"]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CloudTexture_00/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_flhjj")
+
+[node name="InvisibleTile" type="MeshInstance3D" parent="."]
+visible = false
+mesh = SubResource("PlaneMesh_tyf4l")
+skeleton = NodePath("../SandTexture_00")
+surface_material_override/0 = SubResource("StandardMaterial3D_qg8ss")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="InvisibleTile"]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InvisibleTile/StaticBody3D"]
+visible = false
+shape = SubResource("BoxShape3D_flhjj")

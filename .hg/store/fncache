@@ -1,0 +1,1400 @@
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash-cooldown_1.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_small_corner_512x512.png.d
+data/3D_Props/ColumnsPillarsStelae/StonePillar.tscn.i
+data/3D_Props/Fences_and_Walls/GlbFiles/+wall_ghj.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Upgrades_Icon_Movementspeed_none.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_20.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_04.png.i
+data/Shield.tres.i
+data/UI/UI_Sprites/UI_Button.png.i
+data/Player/Scripts/player.gd.i
+data/2D_Assets/GroundTextures/GroundTexture_clouds_512x512.png.d
+data/Player/Assets/hit-2_main_character.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-damage_3.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash-cooldown_3.png.i
+data/UI/UI_Sprites/UI Arena/UI_Fire_Tempel.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/gate.glb.i
+data/Projectiles/Script/shockwave_dash.gd.i
+data/Projectiles/VFX/SpawnParticles.tscn.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_8.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_4.png.d
+data/UI/UI_Sprites/MenuScreen_0.png.i
+data/TreeTeleport2.tscn.i
+data/UI/UI_Sprites/ArenaFrames/UI_Earth_Tempel_decoration.png.i
+data/Sounds/shockwave.wav.d
+data/3D_Props/LavaLarge.tscn.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_21.png.i
+data/Sounds/Buttonclick.wav.i
+data/2D_Assets/GroundTextures/GroundTexture_Sand_512x512_2.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Health_0.png.i
+data/Player/Scripts/camera.gd.i
+data/Player/Assets/Animations/Idle/Armature_Idle_16.png.i
+data/3D_Props/LevelProps/LanternStone.tscn.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-damage_0.png.i
+data/2D_Assets/GroundTextures/GroundTexture_water_512x512_6_.png.i
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiStraight.res.depren.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_512x512_tiled_2.png.i
+data/Levels/Scripts/main.gd.i
+data/UI/UI_Sprites/Kitsune_Mask.png.import.i
+data/2D_Assets/MouseCursor/mouse_cursor__fire_frame3.png.import.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash_#4.3.png.i
+data/3D_Props/Trees/Meshes_and_Materials/TreeLarge.res.i
+data/Player/Assets/Animations/Walk/Armature_walk_24.png.i
+data/UI/UI_Sprites/GoldenCircle_100x100.png.import.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_22.png.i
+data/Sounds/Shoot_02.wav.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/env_small_rock_stone.glb.import.i
+data/UI/UI_Sprites/ui_hud_shockwave_empty.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_Corner_512x512.png.d
+data/2D_Assets/GroundTexture_Stone...512x512_._.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_01.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_512x512_tiled_90.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_07.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#6.0.png.i
+data/Projectiles/VFX/TranspBall.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash-damage_#4.5.2.png.i
+data/3D_Props/ColumnsPillarsStelae/PillarLarge.tscn.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_pressed_earth.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/Lwall_ghj.png.import.i
+data/UI/UI_Sprites/UI Arena/Video/Attack.ogv.i
+data/UI/UI_Sprites/HUD/Final/ui_hud_char_dash_icon_filled_v2.png.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_10.png.i
+data/UI/UI_Sprites/HUD/ui_hud_shockwave_empty.png.i
+data/Enemies/Scenes/Enemy_Bomber.tscn.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.2.2.png.i
+data/Player/Assets/special-attack_main_character.png.d
+data/3D_Props/Stones/Meshes_Textures_and_Materials/small_rock_00.res.i
+data/Sounds/battlemusic.wav.d
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_6.png.i
+data/Projectiles/Script/3d_projectile.gd.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_01.png.i
+data/icon.ico.i
+data/Levels/Assets/YujiMai-Regular.ttf.d
+data/UI/UI_Sprites/Kitsune Productions_Name_Frame.png.d
+data/GameModes/Scripts/GamemodeAttack.gd.i
+data/Player/Assets/attack_main_character.png.d
+data/Projectiles/VFX/ImpactParticles.tscn.i
+data/Player/Assets/Animations/Dash/Armature_dash_14.png.i
+data/Floor_Mockup_M1.png.import.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_complete_speechbubble_brown.png.d
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_21.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_00.png.i
+data/GameModes/Scenes/gamemode_survival.tscn.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash-damage_3.png.i
+data/UI/UI_Sprites/HUD/ui_hud_weapons_shockwave_empty_200x204px.png.i
+data/UI/UI_Sprites/ArenaMenu.png.i
+data/3D_Props/Fences_and_Walls/-wall_ghj.png.i
+data/Arenas/Tutorial/Tutorial.gd.i
+data/3D_Props/ColumnsPillarsStelae/env_big_piller_abcccc fsfsfs.jpg.i
+data/UI/UI_Scripts/Label-Settings.tres.i
+data/UpgradeTextCat.tres.i
+data/Sounds/battlemusic.wav.i
+data/Sounds/Revived.wav.i
+data/UI/UI_Sprites/ArenaLogo.png.import.i
+data/FireArena3.tscn.i
+data/TreeTeleport.tscn.i
+data/UI/UI_Sprites/ArenaLogo.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Water_Waves_512x512.png.d
+data/UI/UI_Sprites/Masks/kizune mask.jannik.png.d
+data/UI/UI_Sprites/UI Arena/Plain_MenuScreen.png.d
+data/UI/UI_Sprites/ArenaFrames/UI_Button_hover_water.png.i
+data/UI/UI_Sprites/Stylebar.png.import.i
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/outline.002.tres.i
+data/Shield.tscn.i
+data/UI/UI_Sprites/HUD/Final/ui_hud_weapons_ofuda_fire_105x142px.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_24.png.i
+data/Game/Scenes/gamEA09.tmp.i
+data/3D_Props/Fences_and_Walls/Tamagaki_T_Intersection.res.d
+data/UI/UI_Sprites/RedFill.png.import.i
+data/2D_Assets/SakuraRelief.tscn.i
+data/Sounds/battlemusic.wav.import.i
+data/3D_Props/Fences_and_Walls/tamagaki_end_straight.tscn.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash-damage_0.png.i
+data/Enemies/Assets/char_enemy_Ao Bozu_shoot_Spritesheet.png.d
+data/Player/Assets/Animations/Attack/Armature_attack_10.png.i
+data/UI/UI_Sprites/Buttons/UI_Button_hover_water.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_shockwave_range_none.png.i
+data/UI/Scenes/title_screen.tscn.i
+data/3D_Props/Stones/SmallRockProp.tscn.i
+data/UI/Scenes/arena_selection_screen.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_5.png.d
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing.glb.i
+data/2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_01.png.i
+data/Sounds/Battlemusic_Attack&Defend.wav.i
+data/Shadertest/TEST/Flame3.png.import.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_0.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_dash_on.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_09.png.i
+data/3D_Props/Fences_and_Walls/TamagakiEndStraight.res.i
+data/Player/Assets/Animations/Dash/Armature_dash_11.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete.png.i
+data/2D_Assets/GroundTextures/Cloud_Texture_01.jpg.i
+data/UI/UI_Sprites/ui_hud_char_healthbar_empty_393x48px.png.i
+data/UI/UI_Sprites/HUD/ui_hud_char_healthbar_empty_393x48px.png.i
+data/Sounds/Whisper Out Of Nowhere 003.wav.i
+data/3D_Props/Fences_and_Walls/Twall_ghj.png.import.i
+data/Projectiles/VFX/New/Voronoi01.png.i
+data/Player/Assets/hit-1_main_character.png.d
+data/3D_Props/Fences_and_Walls/Torii.res.i
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing_abcccc.jpg.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/env_big_rock_stone.glb.import.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_dash_cooldown_none.png.i
+data/UI/UI_Sprites/IconPlaceHolderDarkGray.png.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_03.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_10.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Damage_1.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_button_left_not_pressed.png.i
+data/Projectiles/VFX/Materials/shot_red.tres.i
+data/Player/Assets/hit-2_main_character.png.import.i
+data/Sounds/Player_Hurt_01.wav.i
+data/Levels/Assets/7ae143ead6e3b509ea7727ba564e20b2.webp.i
+data/3D_Props/ColumnsPillarsStelae/GuardianStelaPlaceholder.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_512x512_tiled_2_90.png.i
+data/export_presets.cfg.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Firerate_0.png.i
+data/2D_Assets/MouseCursor/red/mouse_curser_red_frame3.png.i
+data/GameModes/Scenes/gamemodeSurvival.tscn.i
+data/Arenas/Arena_02/Arena_02.tscn.i
+data/Player/Assets/dash_main_character.png.i
+data/UI/UI_Sprites/Upgrade/ui_hud_sakura_hit_vignette_1920x1080px.png.i
+data/UI/Scenes/fail_screen.tscn.i
+data/Player/Assets/Animations/Attack/Armature_attack_05.png.i
+data/2D_Assets/MouseCursor/mouse_cursor__fire_frame1.png.import.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/env_small_rock_stone_wxz copy.jpg.import.i
+data/UI/UI_Sprites/ButtonPlaceholder_LightBlue.png.i
+data/3D_Props/LevelProps/LanternStone_OrangeLight.tscn.i
+data/UI/UI_Scripts/PauseScreen.gd.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_10.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Upgrades_Icon_Movementspeed_on.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.4.2.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_3.png.d
+data/UI/UI_Sprites/HUD/Final/ui_hud_weapons_shockwave_filled_v2.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_10.png.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/env_big_rock_stone_wxz.jpg.i
+data/Levels/Scenes/mai3D2D.tmp.i
+data/UI/UI_Sprites/Kitsune_Mask_25x25.png.import.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.4.1.png.i
+data/Enemies/Assets/Enemy_Death.png.i
+data/UI/UI_Sprites/UI Arena/UI_Water_Tempel_hover.png.i
+data/UI/UI_Sprites/LightVioletCircle.png.import.i
+data/Shadertest/TEST/Cloud.png.import.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_512x512_2_new.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Wind_Tempel_decoration.png.i
+data/BossIndicator.tscn.i
+data/3D_Props/Fences_and_Walls/_wall_ghj.png.i
+data/3D_Props/Fences_and_Walls/Lwall.glb.i
+data/Player/Assets/Illustration139_1.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_6.png.i
+data/3D_Props/BossTreePlaceholder.tscn.i
+data/Sounds/Sakura_Hit_Sound.wav.d
+data/Cloudspawner.tscn.i
+data/Player/Assets/Animations/Idle/Armature_Idle_21.png.i
+data/2D_Assets/GroundTexture_Stone...512x512_._.png.d
+data/3D_Props/Fences_and_Walls/+wall_ghj.png.i
+data/UI/UI_Sprites/Ka.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_15.png.i
+data/Sounds/Shoot_01.wav.import.i
+data/Projectiles/VFX/Materials/TranspBall.png.import.i
+data/Game/Scripts/game.gd.i
+data/3D_Props/Fences_and_Walls/tamagaki_cross_intersection.tscn.i
+data/3D_Props/Bushes/env_big_bush.glb.i
+data/Projectiles/VFX/Materials/Enemy_projectile.png.i
+data/UI/UI_Sprites/VioletFill.png.import.i
+data/Projectiles/Scene/3d_blue_projectile.tscn.i
+data/UI/UI_Sprites/HUD/ui_hud_enemy_icon_215x199px.png.i
+data/VorlageSpriteKopie.tres.i
+data/FireRedVariant.tscn.i
+data/UI/UI_Sprites/UI Arena/UI_Wind_Tempel_ Description.png.i
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/Material.007.tres.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_fire_range_on.png.i
+data/Player/Assets/GlowingOrb_double_glow.png.i
+data/3D_Props/Trees/env_big_tree.glb.i
+data/Levels/Assets/YujiMai-Regular.ttf.i
+data/UI/UI_Sprites/UI Arena/UI_Wind_Tempel.png.d
+data/3D_Props/LevelProps/Meshes_and_Materials/env_lamp_wood_ghj.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Relief_1024x1024.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#5.3.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_small_corner_512x512.png.i
+data/UI/Scenes/settings_screen.tscn.i
+data/ArrowPointer.tscn.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_dash_on.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.4.3.png.i
+data/Levels/Scenes/mai4B56.tmp.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grasswalkway_512x512.png.d
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_24.png.i
+data/3D_Props/Fences_and_Walls/+wall.glb.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#5.0.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_3.png.i
+data/default_bus_layout.tres.i
+data/UI/UI_Sprites/Upgrade/UI_Upgrades_Icon_Healthpoints_none.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_19.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_8_02.png.d
+data/Enemies/Assets/Unbenannt.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_left_hovered.png.i
+data/UI/UI_Sprites/HUD/ui_hud_sakura_healthbar_filled.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_damage_on.png.i
+data/2D_Assets/GroundTextures/GroundTexture_clouds_512x512.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_7.png.d
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_6.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_10.png.i
+data/Level_1/Assets/YujiMai-Regular.ttf.import.i
+data/Levels/Assets/7ae143ead6e3b509ea7727ba564e20b2.webp.import.i
+data/2D_Assets/MouseCursor/blue/mouse_curser_blue_frame2.png.i
+data/Levels/maiEF2.tmp.i
+data/3D_Props/Fences_and_Walls/GlbFiles/+wall_ghj.png.import.i
+data/UI/ui_setting_bar_filled.png.i
+data/3D_Props/ColumnsPillarsStelae/Statue.tscn.i
+data/Player/Assets/Animations/Attack/Armature_attack_19.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_04.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/_wall_ghj.png.i
+data/UI/UI_Sprites/PanelDarkGray.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_fire_range_on.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_13.png.i
+data/UI/UI_Sprites/HUD/ui_hud_weapons_shockwave_filled_200x204px.png.i
+data/UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil.png.i
+data/Enemies/Assets/char_enemy_Nobiagari_115x115px.png.i
+data/Arenas/Tutorial/Enemies.gd.i
+data/Player/Assets/Animations/Walk/Armature_walk_02.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_details...512x512_2.png.i
+data/Level_1/Scenes/level_1.tscn.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_06.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#1.3.png.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_05.png.i
+data/GameModes/Scripts/gamemodeSurvival.gd.i
+data/Sounds/Whisper Out Of Nowhere 005.wav.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Health_2.png.i
+data/3D_Props/FeuerzungeParent.gd.i
+data/Player/Assets/a6e2f4f0b3cae2c729904187fe213b92.png.import.i
+data/UI/UI_Sprites/Kitsune Productions.png.d
+data/UI/ui_hud_sakura_hit_vignette_1920x1080px.png.d
+data/UI/UI_Sprites/UI Arena/UI_Water_Tempel.png.d
+data/UI/UI_Sprites/UI Arena/Video/Survive.ogv.i
+data/.gitignore.i
+data/UI/UI_Sprites/Buttons/UI_Button_earth.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_512x512_.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_hover_wind.png.i
+data/Projectiles/Scene/shockwave_dash.tscn.i
+data/UI/UI_Sprites/HUD/ui_hud_weapons_ofuda_spiritual.png.i
+data/UI/UI_Sprites/GoldenCircle_100x100.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_08.png.i
+data/Enemies/Scripts/enemy.gd.i
+data/3D_Props/char_Boss_Jubokko_512x512.png.i
+data/Enemies/Scenes/Enemy_Defender.tscn.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_1.png.i
+data/Game/Scripts/levels.gd.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Damage_2.png.i
+data/3D_Props/Stones/env_small_rock_stone_wxz copy.jpg.import.i
+data/Player/Assets/GlowingOrb_double_glow.png.d
+data/3D_Props/Fences_and_Walls/GlbFiles/gate.glb.import.i
+data/Player/Assets/Animations/Attack/Armature_attack_13.png.i
+data/UI/UI_Sprites/Upgrade/UI_Upgrades_Icon_Healthpoints_on.png.i
+data/Projectiles/Scene/shockwave_red.tscn.i
+data/3D_Props/Fences_and_Walls/GlbFiles/gate_ghj.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_4.png.d
+data/UI/UI_Sprites/Upgrade/ui_updates_skillpoint_sprite_250x250px.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_22.png.i
+data/Levels/Assets/image.jpg.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_07.png.i
+data/Projectiles/VFX/New/vfx_projectile_static_shader.tres.i
+data/UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil_hover.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#6.1.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.3.0.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_05.png.i
+data/UI/UI_Sprites/FrameMidGray.png.i
+data/3D_Props/env_grass.glb.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#3.1.png.import.i
+data/Player/Assets/Animations/Dash/Armature_dash_23.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_bad_512x512.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_01.png.i
+data/UI/UI_Sprites/IconPlaceholderWhite.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_15.png.i
+data/UI/UI_Sprites/Masks/kizune mask.steve.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_shockwave_range_none.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_04.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Stone...512x512_6.png.d
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Border_Grass_dark_512x512.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#1.1.png.i
+data/Enemies/Scenes/Enemy_Shooter.tscn.i
+data/UI/UI_Sprites/UI_Button_hover.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_earth.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/_wall.glb.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_02.png.i
+data/Sounds/Battlemusic_Attack.wav.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_512x512_dark.png.i
+data/Levels/Scenes/mai9169.tmp.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_dash_none.png.i
+data/3D_Props/Stones/env_small_rock_stone.glb.i
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing.glb.d
+data/Sounds/shockwave.wav.i
+data/UI/UI_Scripts/WinScreen.gd.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-range_1.png.i
+data/Enemies/Shader/shader_enemy_fire.tres.i
+data/Enemies/Shader/tex_noise_enemy_spiritual.tres.i
+data/Player/Assets/Animations/Idle/Armature_Idle_15.png.i
+data/Sounds/Whisper Out Of Nowhere 003.wav.d
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete.png.d
+data/Enemies/Scenes/NewEnemies/Enemy_Bomber.tscn.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_complete_v3.png.d
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_shockwave_charge_on.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash-damage_1.png.i
+data/Enemies/Assets/char_enemy_Nobiagari_shoot_Spritesheet.png.i
+data/UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil_hover.png.i
+data/Sounds/Whisper Out Of Nowhere 002.wav.d
+data/3D_Props/LevelProps/LanternStone_DoomFire.tscn.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_7.png.i
+data/Sounds/Asian Koto B.wav.d
+data/Levels/Assets/Sakurabaum_Schattiert.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_dash_none.png.i
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/Tamagaki_T_Intersection.res.d
+data/Projectiles/VFX/Materials/generic_button_circle_outline.png.i
+data/UI/UI_Sprites/Ofuda_Fire.png.import.i
+data/Sounds/Shoot_01.wav.d
+data/UI/UI_Sprites/Upgrade/UI_Upgrades_Icon_Movementspeed_on.png.i
+data/3D_Props/Stones/env_big_rock_stone_wxz.jpg.i
+data/2D_Assets/Jubokko_Small.png.i
+data/UI/Scenes/HUD.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_7.png.i
+data/UI/UI_Sprites/Ofuda_Ice.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Movement_0.png.i
+data/3D_Props/SakuraTree.tscn.i
+data/UI/UI_Sprites/Kitsune Productions_Logo.png.d
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-range_2.png.i
+data/Shadertest/TEST/Flame2.png.import.i
+data/3D_Props/Trees/env_small_tree.glb.i
+data/Projectiles/VFX/Materials/shot_blue.tres.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_4_.png.i
+data/catgold.tscn.i
+data/Player/Assets/Animations/Idle/Armature_Idle_23.png.i
+data/Levels/Assets/Layer_11.png.i
+data/Projectiles/Scene/3d_projectile.tscn.i
+data/Sounds/Dashsound.wav.import.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#5.1.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_23.png.i
+data/Projectiles/VFX/New/T_smoke_b7.png.d
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_2.png.i
+data/2D_Assets/GroundTexture_Stone_4x4.png.import.i
+data/UI/UI_Sprites/WhiteTexture.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_pressed_wind.png.i
+data/Sounds/Revived.wav.d
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_512x512_tiled.png.d
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_1.png.i
+data/3D_Props/Fences_and_Walls/Twall.glb.import.i
+data/Arenas/Arena_03/Arena_03.gd.i
+data/Player/Assets/Animations/Dash/Armature_dash_15.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_2.png.d
+data/2D_Assets/GroundTextures/GroundTexture_lava_painterly_monochrome_bg_512x512_90.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_08.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_left_pressed.png.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/env_big_rock_stone.glb.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_shockwave_range_on.png.i
+data/UI/UI_Sprites/HUD/ps_ui_hud_dash_icon_filled.png.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_5.png.d
+data/UI/UI_Sprites/UI Arena/Video/Attack&Defend.ogv.d
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_fire_range_none.png.i
+data/Enemies/Scenes/enemy.tscn.i
+data/Player/Assets/Animations/Attack/Armature_attack_16.png.i
+data/3D_Props/Fences_and_Walls/_wall_ghj.png.import.i
+data/UI/UI_Sprites/HUD/Final/ui_hud_char_dash_icon_empty_v2.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash_1.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash_2.png.i
+data/Arenas/Arena_02/Arena02.tscn.i
+data/3D_Props/GroundElements/GroundTexture02.tscn.i
+data/UI/UI_Sprites/DashIconPlaceholder_100x100.png.i
+data/UI/UI_Sprites/HUD/ui_hud_enemy_empty_393x50px.png.i
+data/3D_Props/Fences_and_Walls/TamagakiCrossIntersection.res.i
+data/UI/UI_Sprites/UI Arena/UI_Wind_Tempel_pfeil.png.i
+data/UI/UI_Sprites/ArenaFrame.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-damage_1.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_17.png.i
+data/UI/UI_Sprites/UI Arena/Video/Attack.ogv.d
+data/3D_Props/Trees/env_big_tree.glb.d
+data/UI/UI_Sprites/UI Arena/UI_Water_Tempel_pfeil_hover.png.i
+data/Projectiles/Scene/3d_red_projectile.tscn.i
+data/Systems/UpgradeSystem.gd.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Firerate_2.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_18.png.i
+data/2D_Assets/MouseCursor/blue/mouse_curser_blue_frame1.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_shockwave_charge_none.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_bad_512x512.png.d
+data/UI/UI_Sprites/Upgrade/ui_upgrades_complete_speechbubble_grey.png.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#4.2.png.i
+data/3D_Props/LevelProps/LanternStone_GhostLight.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_4.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_3.png.i
+data/UI/UI_Sprites/Upgrade/ui_setting_bar_empty_450x75px.png.i
+data/Player/Assets/attack_main_character.png.import.i
+data/Sounds/SwitchScreen.wav.i
+data/UI/Scenes/load_screen.tscn.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_10.png.i
+data/Enemies/Scripts/EnemyMeelee.gd.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_512x512_2_new.png.d
+data/2D_Assets/MouseCursor/mouse_cursor_ghost_frame1.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/-wall.glb.import.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_5.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_bad_512x512_00.png.i
+data/Player/Assets/attack_main_character.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_03.png.i
+data/UI/UI_Sprites/UI Arena/UI_Fire_Tempel_hover.png.i
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing_bad.glb.d
+data/UI/UI_Sprites/VioletCircle.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Water_Tempel_decoration.png.i
+data/3D_Props/SakuraTree.gd.i
+data/UI/UI_Sprites/ArenaFrames/ui_arena_settings_shield.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.2.0.png.i
+data/Enemies/Assets/Unbenannt.png.import.i
+data/Game/Scripts/enemy_spawner.gd.i
+data/UI/UI_Sprites/UI Arena/UI_Window_with_Yokai_Water_Tempel.png.i
+data/3D_Props/Trees/SmallTree.tscn.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_shockwave_charge_on.png.i
+data/UI/UI_Sprites/HUD/ui_hud_sakura_icon.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-cost_0.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash-cooldown_#4.4.0.png.i
+data/UI/ui_hud_char_hit_vignette_1920x1080px.png.d
+data/Projectiles/Script/projectile.gd.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/big_rock_00.res.i
+data/UI/UI_Sprites/ArrowBtnPlaceholderWhite.png.import.i
+data/2D_Assets/GroundTextures/GroundTexture_Lava...512.x512_SumiE.png.d
+data/Player/Assets/hit_vignette.png.i
+data/Levels/Scenes/mai7593.tmp.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_damage_none.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Relief_1024x1024.png.d
+data/Enemies/Assets/char_enemy_Nobiagari_idle_Spritesheet.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Fire_Tempel_Frame_Background.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_01.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_19.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Water_Waves_details_512x512.png.i
+data/Levels/Scripts/die_scene.gd.i
+data/UI/UI_Scripts/UpgradeScreen.gd.i
+data/UI/UI_Sprites/DashIconPlaceholder_100x100.png.import.i
+data/Levels/Scenes/win_scene.gd.i
+data/Player/Assets/Animations/Idle/Armature_Idle_05.png.i
+data/UI/UI_Sprites/ui_hud_shockwave_filled.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_left_not_pressed.png.i
+data/2D_Assets/GroundTexture_Stone_4x4.png.i
+data/Arenas/Arena_03/Arena_03.tscn.i
+data/3D_Props/ColumnsPillarsStelae/env_statue.glb.d
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_16.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_24.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Stone_toGrass...512x512_2_2.png.i
+data/2D_Assets/KitsuneRelief.tscn.i
+data/Projectiles/VFX/Materials/shield1.png.i
+data/UI/UI_Sprites/UI Arena/UI_Window_with_Yokai_Fire_Tempel.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_00.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_13.png.i
+data/UI/UI_Sprites/Kitsune Productions_Logo.png.i
+data/3D_Props/SakuraTreePlaceholder.tscn.i
+data/UI/UI_Sprites/ArrowBtnPlaceholderWhite_90.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_512x512_2_new.png.d
+data/Projectiles/Scene/shockwave.tscn.i
+data/Projectiles/Script/shockwave.gd.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_03.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Corner_Grass_512x512_2_2_darker.png.i
+data/Level_1/Assets/YujiMai-Regular.ttf.d
+data/UI/UI_Sprites/Masks/kizune mask.leander.png.i
+data/Arenas/Arena_04/Arena_04.tscn.i
+data/Projectiles/VFX/Materials/generic_button_circle_fill.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_23.png.i
+data/UI/UI_Sprites/UI Arena/Video/Defend.ogv.i
+data/3D_Props/Fences_and_Walls/Lwall_ghj.png.i
+data/twinkle.tres.i
+data/UI/UI_Sprites/CyanCircleFill.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete_speechbubble_grey.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_16.png.i
+data/UI/UI_Sprites/ArenaMenu.png.import.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Upgrades_Icon_Healthpoints_none.png.i
+data/Enemies/Assets/Enemy_Attack_blue.png.import.i
+data/UI/UI_Sprites/UI Arena/UI_Window_with_Yokai_Earth_Tempel.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_3.png.i
+data/Projectiles/VFX/New/vfx_projectile_fire.tscn.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_07.png.i
+data/Projectiles/Scene/projectile.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_painterly_monochrome_bg_512x512.png.i
+data/3D_Props/LevelProps/Meshes_and_Materials/env_Shimenawa.glb.d
+data/Projectiles/VFX/TranspBall.png.import.i
+data/UI/UI_Scripts/SettingsScreen.gd.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_pearls_empty.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash-cooldown_2.png.i
+data/3D_Props/ColumnsPillarsStelae/Meshes_and_Materials/PillarLarge.res.i
+data/Player/Assets/Illustration138.png.i
+data/Enemies/Shader/tex_gradient_enemy_fire.tres.i
+data/3D_Props/Fences_and_Walls/GlbFiles/+wall.glb.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_17.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_08.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_4_9.png.i
+data/Sounds/Whisper Out Of Nowhere 004.wav.d
+data/Player/Assets/Animations/Dash/Armature_dash_20.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Earth_Tempel_Frame_Background.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete_speechbubble_brown.png.d
+data/Projectiles/VFX/New/tex_cloud_noise_vfx.png.i
+data/UI/UI_Sprites/IconPlaceHolderDarkGray.png.import.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_4_.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_22.png.i
+data/UI/UI_Sprites/Upgrade/ui_hud_sakura_icon_empty.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_13.png.i
+data/UI/UI_Sprites/Masks/kitsune mask.Nefeli.png.i
+data/3D_Props/BossTree.gd.i
+data/2D_Assets/GroundTextures/GroundTexture_Corner_Grass_512x512_2_2_darker.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_16.png.i
+data/UI/UI_Sprites/HUD/ui_hud_char_icon_200x200px.png.i
+data/UI/UI_Sprites/UI Arena/UI_Fire_Tempel.png.d
+data/Player/Assets/GlowingOrb_double_glow.png.import.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_512x512_.png.d
+data/Sounds/Battlemusic_Attack.wav.d
+data/Levels/mai74D6.tmp.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_pressed_fire.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Fire_Tempel_decoration.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_21.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_03.png.i
+data/UI/UI_Sprites/UI Arena/UI_Water_Tempel_pfeil.png.i
+data/UI/UI_Sprites/LightVioletCircle.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_23.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_damage_none.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_512x512_.png.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_7.png.d
+data/Shadertest/TEST/Cloud.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_02.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_14.png.i
+data/3D_Props/BossTreePlaceholder.gd.i
+data/3D_Props/Fences_and_Walls/TamagakiCrossIntersection.res.d
+data/2D_Assets/GroundTextures/GroundTexture_water_512x512_6_.png.d
+data/3D_Props/ColumnsPillarsStelae/Meshes_and_Materials/Statue.res.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#1.0.png.import.i
+data/Arenas/Tutorial/TutorialTrigger.tscn.i
+data/Levels/mai76D9.tmp.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#3.2.png.i
+data/3D_Props/Bushes/env_medium_bush.glb.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_shockwave_charge_none.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#4.3.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_04.png.i
+data/UI/UI_Sprites/UI Arena/UI_Earth_Tempel_ Description.png.i
+data/Enemies/Shader/Energyshader.tres.i
+data/Projectiles/Scene/shockwave_blue.tscn.i
+data/Levels/Assets/Sakurabaum_Schattiert.png.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#6.2.png.i
+data/2D_Assets/GroundTextures/GroundTexture_painterly_lava_512x512.png.i
+data/GameModes/Scenes/GamemodeAttack.tscn.i
+data/2D_Assets/S4G-logo-png.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_07.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_fire_range_none.png.i
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiCrossIntersection.res.d
+data/Enemies/Shader/tex_noise_enemy_fire.tres.i
+data/3D_Props/Fences_and_Walls/+wall.glb.import.i
+data/Game/Scripts/FPS.gd.i
+data/UI/UI_Sprites/ArenaFrames/UI_Wind_Tempel_Frame_Background.png.i
+data/Player/Scenes/PlayerSpawnPoint.tscn.i
+data/Clouds.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_512x512_tiled_90.png.d
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_Corner_512x512.png.i
+data/3D_Props/TreeElements/Meshes_and_Materials/SakuraHousing.res.d
+data/Levels/plaBBB4.tmp.i
+data/Enemies/Shader/tex_gradient_enemy_red.tres.i
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiEndStraight.res.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_complete.png.d
+data/Projectiles/Scene/EnemyProjectile.tscn.i
+data/Enemies/Assets/Enemy_Attack_red.png.import.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_details...512x512_2.png.d
+data/Player/Assets/Animations/Walk/Armature_walk_05.png.i
+data/Arenas/Arena_04/Arena04.gd.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_8.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_14.png.i
+data/UI/Scenes/HUD22CD.tmp.i
+data/UI/UI_Sprites/Kitsune Productions.png.i
+data/UI/UI_Sprites/Upgrade/UI_Upgrade_Icon_Healthpoints_none.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Border_Grass_dark_512x512.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.2.3.png.i
+data/UI/UI_Sprites/HUD/ui_hud_sakura_healthbar_empty.png.i
+data/UI/UI_Sprites/Upgrade/ui_setting_bar_filled.png.i
+data/2D_Assets/GroundTextures/Cloud_Texture_02.jpg.i
+data/Projectiles/VFX/impact.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_3.png.d
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_5.png.i
+data/UI/UI_Scripts/TitleScreen.gd.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_3.png.i
+data/Enemies/Scenes/NewEnemies/Enemy_Shooter.tscn.i
+data/UI/UI_Sprites/Background_01.jpg.d
+data/Sounds/Battlemusic_Defend.wav.d
+data/UI/UI_Sprites/UI Arena/Video/Survive.ogv.d
+data/Game/Scenes/MouseCursor.tscn.i
+data/UI/UI_Sprites/ButtonPlaceholder_LightBlue_300x70.png.i
+data/Player/Assets/walk_main_character.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_13.png.i
+data/3D_Props/Badtree_Placeholder.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_painterly_monochrome_bg_512x512-90.png.d
+data/UI/UI_Sprites/GoldenCircle.png.i
+data/Player/Scenes/player.tscn.i
+data/Player/Assets/a6e2f4f0b3cae2c729904187fe213b92.png.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.2.png.import.i
+data/Shadertest/TEST.tscn.i
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiCorner.res.i
+data/Projectiles/VFX/New/T_smoke_b7.png.i
+data/Sounds/battlemusic_Survive.wav.d
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_2.png.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_00.png.i
+data/UI/UI_Sprites/UI Arena/UI_Wind_Tempel_hover.png.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_09.png.i
+data/Enemies/Scripts/DefenderParentSmallBoss.gd.i
+data/UI/UI_Sprites/Masks/kizune mask.andreea.png.d
+data/UI/UI_Sprites/Buttons/UI_Button_pressed_fire.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_20.png.i
+data/UI/UI_Sprites/Masks/kizune mask.robert.png.d
+data/Projectiles/VFX/New/vfx_projectile_fire.tres.i
+data/UI/UI_Sprites/UI Arena/MenuScreen_Wind.png.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_6.png.d
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_4_.png.d
+data/2D_Assets/GroundTextures/GroundTexture_water_512x512_3_.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_15.png.i
+data/BossIndicator.gd.i
+data/3D_Props/grass.res.i
+data/Player/Assets/ofuda-sarutahiko-wood.jpg.i
+data/2D_Assets/GroundTextures/GroundTexture_Stone_4x4.png.d
+data/3D_Props/mesh_library_source.tscn.i
+data/Sounds/Main.wav.i
+data/Player/Assets/Animations/Idle/Armature_Idle_10.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_04.png.i
+data/Player/Scene/player.tscn.i
+data/Projectiles/VFX/shockwave.tres.i
+data/3D_Props/SJ_mesh_library.tres.orig.i
+data/2D_Assets/Jubokko_Small.png.d
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_2.png.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_3.png.i
+data/project.godot.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_4_9.png.d
+data/UI/UI_Sprites/Upgrade/ui_upgrades_skillpoint_sprite_250x250px_v2.png.i
+data/Arenas/Arena_02/Arena02.gd.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_11.png.i
+data/3D_Props/smallBossTree.tscn.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_09.png.i
+data/UI/UI_Sprites/UI Arena/UI_Earth_Tempel.png.d
+data/Fire.tres.i
+data/UI/UI_Sprites/Masks/kizune mask.jennifer.png.i
+data/Enemies/Assets/Unbenannt_17.png.import.i
+data/2D_Assets/GroundTextures/GroundTexture_Stone_toGrass...-512x512_1.png.i
+data/3D_Props/ColumnsPillarsStelae/Meshes_and_Materials/SmallPillar.res.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_5.png.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_4.png.i
+data/UI/UI_Sprites/Buttons/UI_Button_fire.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_07.png.i
+data/UI/UI_Sprites/Ofuda_Fire.png.i
+data/Arenas/Tutorial/enemy_tutorial.tscn.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_0.png.i
+data/GameModes/Scenes/gamemode_defend.tscn.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_12.png.i
+data/Sounds/Whisper Out Of Nowhere 004.wav.i
+data/Projectiles/VFX/New/FX_CloudAlpha04.png.i
+data/Cloudspawner.gd.i
+data/UI/UI_Sprites/UI Arena/MenuScreen_Fire.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#6.3.png.i
+data/Sounds/die enemy.wav.i
+data/3D_Props/ColumnsPillarsStelae/env_small_piller.glb.i
+data/2D_Assets/MouseCursor/mouse_cursor_ghost_frame3.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_fire.png.i
+data/UI/UI_Sprites/Ofuda_Ice.png.import.i
+data/UI/UI_Sprites/HUD/ui_hud_enemy_filled_393x50px.png.i
+data/UI/ui_setting_bar_empty_450x75px.png.i
+data/Enemies/Assets/char_enemy_Kanibozu_walk_Spritesheet.png.i
+data/UI/Scenes/Button_Wobbel.gd.i
+data/3D_Props/ColumnsPillarsStelae/Meshes_and_Materials/Statue.res.i
+data/UI/UI_Sprites/UI Arena/UI_Wind_Tempel_pfeil_hover.png.i
+data/UI/Scenes/credits_screen.tscn.i
+data/Projectiles/VFX/ShootParticles.gd.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_damage_on.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_00.png.i
+data/3D_Props/Fences_and_Walls/gate.glb.import.i
+data/UI/UI_Sprites/UI Arena/UI_Fire_Tempel_hover.png.d
+data/Player/Assets/Animations/Dash/Armature_dash_18.png.i
+data/Levels/Scenes/win_scene.tscn.i
+data/3D_Props/Fences_and_Walls/gate.glb.i
+data/UI/UI_Sprites/Masks/kitsune mask.Nefeli.png.d
+data/2D_Assets/GroundTextures/GroundTexture_lava_painterly_monochrome_bg_512x512_90.png.d
+data/UI/UI_Sprites/Upgrade/ui_upgrades_complete_speechbubble_grey.png.i
+data/UI/UI_Sprites/UI Arena/UI_Earth_Tempel.png.i
+data/2D_Assets/MouseCursor/mouse_cursor_ghost_frame2.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Health_3.png.i
+data/Projectiles/VFX/New/vfx_projectile_ofuda.png.i
+data/3D_Props/Fences_and_Walls/Lwall_ghj.png.import.i
+data/2D_Assets/GroundTextures/GroundTexture_clouds_512x512_2.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_02.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_1.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_512x512_dark.png.d
+data/Game/Scenes/enemySpawner.tscn.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash-damage_2.png.i
+data/UI/UI_Sprites/WhiteTexture.png.import.i
+data/Enemies/Assets/char_enemy_Kanibozu_115x115px.png.i
+data/3D_Props/Trees/Meshes_and_Materials/TreeLarge.res.d
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_1.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_02.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_14.png.i
+data/UI/UI_Sprites/GreenCircleFill.png.import.i
+data/Levels/Assets/image.jpg.d
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_5.png.d
+data/UI/UI_Sprites/Stylebar.png.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_05.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_12.png.i
+data/Enemies/Shader/shader_enemy_Spiritual.tres.i
+data/2D_Assets/GroundTextures/GroundTexture_Lava_512x512_SumiE_2.png.i
+data/Projectiles/VFX/Materials/T_Icon_ElectroSpark_White.png.i
+data/Sounds/Asian Koto B.wav.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.2.png.i
+data/Player/Assets/dash_main_character.png.import.i
+data/UI/UI_Sprites/RedFill.png.i
+data/Enemies/Shader/tex_gradient_enemy_spiritual.tres.i
+data/UI/UI_Sprites/Masks/Kitsune_mask_gray_relief.png.d
+data/Player/Assets/Animations/Dash/Armature_dash_19.png.i
+data/2D_Assets/MouseCursor/mouse_cursor_ghost_frame1.png.import.i
+data/2D_Assets/GroundTextures/GroundTexture_water_512x512_5_.png.i
+data/UI/UI_Sprites/ui_upgrades_complete.png.d
+data/2D_Assets/GroundTextures/GroundTexture_Lava_512x512_SummiE_3.png.i
+data/UI/UI_Sprites/UI Arena/UI_Earth_Tempel_hover.png.d
+data/3D_Props/Fences_and_Walls/GlbFiles/Twall.glb.i
+data/UI/UI_Sprites/ui_upgrades_complete_speechbubble_grey.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_07.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_01.png.i
+data/3D_Props/SakuraTree_01.png.d
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_6.png.i
+data/Projectiles/VFX/New/tex_flame_vfx_v3.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_07.png.i
+data/Player/Assets/idle_main_character.png.import.i
+data/3D_Props/Fences_and_Walls/GlbFiles/-wall.glb.i
+data/UI/UI_Scripts/ArenaSelectionScreen.gd.i
+data/UI/UI_Sprites/Fu.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_0.png.i
+data/UI/Scenes/upgrade_screen.tscn.i
+data/Player/Assets/Animations/Walk/Armature_walk_07.png.i
+data/2D_Assets/GroundTextures/GroundTexture_water_512x512_5_.png.d
+data/3D_Props/LevelProps/Meshes_and_Materials/LanternWoodRedBlack.res.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_14.png.i
+data/UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil.png.i
+data/UI/UI_Sprites/HUD/Final/ui_hud_weapons_shockwave_empty__v2.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-cost_3.png.i
+data/Level_1/Scripts/level_1.gd.i
+data/3D_Props/Fences_and_Walls/GlbFiles/Twall.glb.import.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash-cooldown_#4.4.1.png.i
+data/UI/UI_Sprites/ui_setting_bar_empty_450x75px.png.i
+data/2D_Assets/GroundTexture_Stone...512x512_6.png.import.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_20.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_14.png.i
+data/Enemies/Assets/char_enemy_Ao Bozu_115x115px.png.i
+data/Projectiles/VFX/impactParticles.gd.i
+data/Projectiles/VFX/New/ShockwaveTextureSmall.png.d
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/Torii.res.i
+data/UI/UI_Scripts/CreditsScreen.gd.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_19.png.i
+data/3D_Props/GroundElements/stone_slab_ground_512x_512.tscn.i
+data/Player/Assets/hit_vignette.png.d
+data/UI/UI_Sprites/Upgrade/Final/UI_Movement_3.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash-damage_#4.5.0.png.i
+data/UI/UI_Sprites/VioletCircle.png.import.i
+data/Projectiles/VFX/Materials/shieldArc.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/-wall_ghj.png.import.i
+data/UI/UI_Sprites/GreenFill.png.import.i
+data/Level_1/Assets/YujiMai-Regular.ttf.i
+data/2D_Assets/GroundTexture_Stone...512x512_._.png.import.i
+data/ChargeSoul.gd.i
+data/3D_Props/Stones/env_small_rock_stone.glb.import.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_right_not_pressed.png.i
+data/ArrowPointer.gd.i
+data/Shadertest/TEST/Flame1.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grasswalkway_512x512.png.i
+data/Enemies/Scripts/SpawnPointSmallBoss.gd.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#1.0.png.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/env_big_rock_stone_wxz.jpg.import.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_pearls_empty.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_8.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_06.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_3_.png.d
+data/UI/UI_Sprites/HUD/Final/ui_hud_weapons_shockwave_shader_359x345px.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_11.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_button_left_pressed.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_22.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_09.png.i
+data/3D_Props/LevelProps/Meshes_and_Materials/env_lamp_wood.glb.i
+data/UI/UI_Sprites/ArenaDescriptionFrame.png.import.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_04.png.i
+data/Sounds/Whisper Out Of Nowhere 001.wav.d
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing_good.glb.i
+data/Player/Assets/idle_main_character.png.d
+data/3D_Props/Fences_and_Walls/+wall_ghj.png.import.i
+data/Projectiles/VFX/Materials/T_Icon_Fireball_White.png.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_painterly_monochrome_bg_512x512.png.d
+data/UI/UI_Sprites/UI Arena/UI_Fire_Tempel_ Description.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_button_right_hovered.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_water.png.i
+data/Arenas/Tutorial/enemy_tutorial.gd.i
+data/Projectiles/VFX/New/Voronoi01.png.d
+data/UI/UI_Sprites/ui_setting_slider_75x75px.png.i
+data/Game/Scripts/ui.gd.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_4.png.i
+data/Enemies/Scripts/EnemyShooter.gd.i
+data/Player/Assets/Animations/Attack/Armature_attack_22.png.i
+data/Enemies/Assets/Unbenannt_17.png.d
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grasswalkway_details_512x512_2_.png.d
+data/Sounds/Battlemusic_Attack&Defend.wav.d
+data/Sounds/die enemy.wav.import.i
+data/Floor_Mockup_M1.png.d
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiStraight.res.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_8_02.png.d
+data/Projectiles/VFX/shot_blue.tres.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash-damage_#4.5.3.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_05.png.i
+data/Projectiles/VFX/New/Flame01.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_18.png.i
+data/UI/UI_Sprites/UI Arena/MenuScreen_Water.png.i
+data/UI/UI_Sprites/UI Arena/UI_Water_Tempel_hover.png.d
+data/Descriptionfont.tres.i
+data/Arenas/Arena_04/Arena_04.gd.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_06.png.i
+data/3D_Props/LevelProps/Meshes_and_Materials/env_Shimenawa_abcccc.jpg.i
+data/Projectiles/Scene/shockwave_both.tscn.i
+data/UI/UI_Sprites/Upgrade/ui_hud_sakura_hit_vignette_1920x1080px.png.d
+data/UI/ui_hud_sakura_icon_filled.png.i
+data/UI/UI_Sprites/IconPlaceholderWhite.png.import.i
+data/UI/UI_Sprites/HUD/ps_ui_hud_dash_icon_empty.png.i
+data/Sounds/shoot.wav.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_dash_cooldown_none.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/_wall_ghj.png.import.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_12.png.i
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/Tamagaki_T_Intersection.res.i
+data/UI/UI_Sprites/UI Arena/UI_Wind_Tempel_hover.png.d
+data/UI/UI_Sprites/UI Arena/UI_Water_Tempel.png.i
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing_bad_abcccc.jpg.i
+data/Projectiles/Scene/projectile_blue.tscn.i
+data/3D_Props/Fences_and_Walls/GlbFiles/Twall_ghj.png.i
+data/Game/Scripts/MouseCursor.gd.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-cost_1.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_pearls_fill.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_5_.png.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_7.png.i
+data/2D_Assets/GroundTextures/WaveTile_512x512_00.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_15.png.i
+data/Enemies/Assets/char_enemy_Nobiagari_closed_eyes_115x115px.png.i
+data/.gitattributes.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/env_small_rock_stone.glb.i
+data/3D_Props/Lava.tscn.i
+data/Player/Assets/Animations/Walk/Armature_walk_03.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_dash_cooldown_on.png.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_2_.jpg.i
+data/2D_Assets/GroundTextures/GroundTexture_clouds_512x512_2.png.d
+data/Shadertest/TEST/Flame2.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_details_512x512_bad_03.png.d
+data/UI/UI_Sprites/HUD/ui_hud_shockwave_filled.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_hover_fire.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#1.2.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_fire_range.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_8_02.png.i
+data/3D_Props/BadtreePlaceholder.gd.i
+data/Arenas/Arena_01/Arena_01.tscn.i
+data/3D_Props/Fences_and_Walls/_wall.glb.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_2.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_18.png.i
+data/3D_Props/Stones/big_rock_00.res.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_toGrass...512x512_2_2.png.i
+data/UI/UI_Sprites/Upgrade/ui_hud_char_hit_vignette_1920x1080px.png.i
+data/Player/Assets/a6e2f4f0b3cae2c729904187fe213b92.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_button_right_not_pressed.png.i
+data/Levels/Scripts/enemy_path.gd.i
+data/Player/Assets/Animations/Dash/Armature_dash_02.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_bad_512x512_00.png.d
+data/UI/UI_Sprites/Buttons/UI_Button_hover_fire.png.i
+data/Smoke.tres.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_17.png.i
+data/3D_Props/Fences_and_Walls/tamagaki_corner.tscn.i
+data/Shadertest/TEST/Body.png.import.i
+data/UI/ui_hud_char_healthbar_filled_393x50px.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_19.png.i
+data/UI/UI_Sprites/CyanCircleFill.png.import.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_button_right_pressed.png.i
+data/UI/UI_Sprites/Mizu.png.i
+data/UI/UI_Sprites/HUD/Final/ui_hud_weapons_ofuda_spiritual_v4.png.i
+data/Player/Script/player.gd.i
+data/Player/Assets/Animations/Dash/Armature_dash_21.png.i
+data/UI/UI_Sprites/HUD/ui_hud_enemy evil_tree_empty.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_details...512x512_1_.png.d
+data/3D_Props/Fences_and_Walls/GlbFiles/-wall_ghj.png.i
+data/UI/ui_hud_sakura_icon_empty.png.i
+data/3D_Props/Fences_and_Walls/Twall_ghj.png.i
+data/UI/ui_hud_sakura_hit_vignette_1920x1080px.png.i
+data/3D_Props/ColumnsPillarsStelae/StonePillarLarge.tscn.i
+data/Player/Assets/Animations/Idle/Armature_Idle_03.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_1.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_right_pressed.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_05.png.i
+data/3D_Props/Fences_and_Walls/_wall.glb.import.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_18.png.i
+data/Shadertest/TEST/Flame1.png.import.i
+data/Sounds/hitsound.wav.i
+data/3D_Props/Trees/Meshes_and_Materials/TreeSmall.res.i
+data/UI/UI_Sprites/FrameMidGray.png.import.i
+data/UI/UI_Sprites/FrameLightGray.png.import.i
+data/UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil_pressed.png.i
+data/3D_Props/LevelProps/Meshes_and_Materials/env_lamp_stone.glb.i
+data/Player/Assets/Animations/Idle/Armature_Idle_01.png.i
+data/Player/Assets/ofuda-sarutahiko-wood.jpg.import.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_18.png.i
+data/UI/UI_Sprites/Upgrade/ui_hud_sakura_icon_filled.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_16.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_4_9.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_17.png.i
+data/Sounds/Whisper Out Of Nowhere 005.wav.d
+data/UI/UI_Scripts/FailScreen.gd.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_13.png.i
+data/3D_Props/Fences_and_Walls/-wall_ghj.png.import.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_6.png.i
+data/Enemies/Scenes/DefenderParentSmallBoss.tscn.i
+data/UI/UI_Sprites/Kitsune_Mask.png.i
+data/UI/UI_Sprites/ui_hud_char_icon_200x200px.png.i
+data/UI/UI_Sprites/Masks/kizune mask.leander.png.d
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_skillpoint_sprite_250x250px_v2.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete_v3.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_20.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#4.png.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_512x512_3.png.d
+data/Arenas/Tutorial/Tutorial.tscn.i
+data/3D_Props/BossTree.tscn.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-range_0.png.i
+data/2D_Assets/GroundTextures/GroundTexture_lava_painterly_monochrome_bg_512x512-90.png.i
+data/UI/UI_Sprites/VioletFill.png.i
+data/Shadertest/sumi-e_fox.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_01.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_06.png.i
+data/Projectiles/VFX/New/vfx_projectile_divine.tscn.i
+data/Systems/autoload.tscn.i
+data/TitleFont.tres.i
+data/Sounds/shoot.wav.import.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_5.png.i
+data/Projectiles/Script/shockwave_both.gd.i
+data/UI/UI_Sprites/ArenaFrames/UI_Water_Tempel_Frame_Background.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_2.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash-damage_#4.5.1.png.i
+data/UI/UI_Sprites/ArrowBtnPlaceholderWhite_90.png.import.i
+data/2D_Assets/MouseCursor/mouse_cursor__fire_frame2.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_right_hovered.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_02.png.i
+data/2D_Assets/MouseCursor/blue/mouse_curser_blue_frame3.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_11.png.i
+data/Projectiles/VFX/Materials/ExplosionBoss.tres.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_3.png.i
+data/Sounds/magic-sparkle-190030.wav.i
+data/icon.svg.import.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_02.png.i
+data/Sounds/Enemy_Die_01.wav.d
+data/2D_Assets/GroundTexture_Stone...512x512_6.png.d
+data/Player/Assets/Animations/Attack/Armature_attack_12.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_complete.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash-cooldown_#4.4.2.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_fire_range.png.i
+data/Enemies/Scenes/SpawnPointSmallBoss.tscn.i
+data/Sounds/SwitchScreen.wav.d
+data/UI/UI_Sprites/Buttons/UI_Button_hover_earth.png.i
+data/3D_Props/LevelProps/Meshes_and_Materials/env_lamp_stone_aaaaaaaaaaaaaaaaaaaa.jpg.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_4.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Movement_1.png.i
+data/UI/UI_Sprites/GoldenBar.png.import.i
+data/3D_Props/mesh_library.tres.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_20.png.i
+data/UI/UI_Sprites/ui_upgrades_complete_speechbubble_grey.png.d
+data/Projectiles/VFX/New/Flame01.png.d
+data/UI/UI_Sprites/HUD/Final/ui_hud_weapons_ofuda_fire_v3.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#3.3.png.i
+data/FlashTextSettings.tres.i
+data/Levels/Scenes/spawner.tscn.i
+data/Sounds/Main.wav.d
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_4_.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.3.1.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_17.png.i
+data/Sounds/shockwave.wav.import.i
+data/UI/UI_Scripts/hud.gd.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_5.png.i
+data/UI/UI_Sprites/Background_01.jpg.i
+data/Enemies/Scripts/EnemyDefender.gd.i
+data/UI/UI_Sprites/ArenaFrames/Description_Arena_Setting.png.i
+data/Levels/Assets/Layer_11.png.import.i
+data/3D_Props/Fences_and_Walls/GlbFiles/+wall.glb.import.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_bad_512x512_00.png.i
+data/Font.tres.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grasswalkway_details_512x512_2_.png.i
+data/UI/UI_Sprites/Buttons/UI_Button_water.png.i
+data/Player/Scenes/pla7AA0.tmp.i
+data/Projectiles/VFX/New/Flare00.PNG.i
+data/Player/Assets/Animations/Dash/Armature_dash_16.png.i
+data/2D_Assets/GroundTextures/WaveTile_512x512_02.png.i
+data/Enemies/Assets/Enemy_Death.png.import.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_00.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Stone...512x512_._.png.d
+data/3D_Props/Fences_and_Walls/-wall.glb.import.i
+data/3D_Props/Fences_and_Walls/gate_ghj.png.i
+data/Sounds/hitsound.wav.d
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_6.png.d
+data/Shadertest/sumi-e_fox.png.import.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_15.png.i
+data/Player/Assets/idle_main_character.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_pressed_water.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_00.png.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_6.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.2.1.png.i
+data/3D_Props/FeuerzungeParent.tscn.i
+data/UI/UI_Sprites/UI_Button_hover.png.d
+data/UI/UI_Scripts/ArenaSettingsScreen.gd.i
+data/3D_Props/Fences_and_Walls/GlbFiles/Lwall_ghj.png.i
+data/Player/Assets/hit-2_main_character.png.d
+data/2D_Assets/MouseCursor/mouse_cursor_ghost_frame2.png.import.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Firerate_1.png.i
+data/UI/UI_Sprites/UI Arena/UI_Wind_Tempel.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_1.png.d
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_01.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_512x512_tiled.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_08.png.i
+data/Levels/Assets/Sakurabaum_Schattiert.png.import.i
+data/UI/UI_Sprites/ArenaStyleBar.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#4.1.png.i
+data/UI/UI_Sprites/UI Arena/MenuScreen_Earth.png.i
+data/Arenas/Tutorial/TutorialTrigger.gd.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.4.0.png.i
+data/Sounds/Battlemusic_Defend.wav.i
+data/2D_Assets/MouseCursor/mouse_cursor_ghost_frame3.png.import.i
+data/Player/Assets/Animations/Walk/Armature_walk_16.png.i
+data/UI/UI_Sprites/Masks/kizune mask.robert.png.i
+data/Systems/autoload.gd.i
+data/UI/Scenes/win_screen.tscn.i
+data/3D_Props/Stones/env_big_rock_stone.glb.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-range_3.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_8_02.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_512x512_tiled_2_90.png.d
+data/Cloudspawner1.gd.i
+data/UI/UI_Sprites/HUD/Final/ui_hud_weapons_ofuda_spiritual_105x142px.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Upgrades_Icon_Healthpoints_on.png.i
+data/3D_Props/SJ_mesh_library.tres.i
+data/Levels/Assets/gate.am.fbx.import.i
+data/3D_Props/mesh_library.tres.d
+data/Sounds/Dashsound.wav.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_details_512x512_bad_03.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_11.png.i
+data/UI/UI_Sprites/Kitsune_Mask_40x40.png.import.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete_speechbubble_grey.png.d
+data/Enemies/Assets/char_enemy_Sogenbi_w_115x115px.png.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_512x512_2_new.png.i
+data/Levels/Scenes/die_scene.tscn.i
+data/Sounds/Main.wav.import.i
+data/Levels/Assets/image.jpg.import.i
+data/Player/Assets/Animations/Dash/Armature_dash_00.png.i
+data/icon.svg.i
+data/Sounds/Player_Hurt_01.wav.import.i
+data/2D_Assets/MouseCursor/mouse_cursor__fire_frame2.png.import.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_512x512.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_08.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/gate_ghj.png.import.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Movement_2.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_13.png.i
+data/UI/UI_Sprites/Upgrade/UI_Upgrades_Icon_Movementspeed_none.png.i
+data/2D_Assets/GroundTextures/GroundTexture_water_512x512_3_.png.d
+data/3D_Props/env_grass_copac.jpg.i
+data/Sounds/Shoot_01.wav.i
+data/Enemies/Assets/char_enemy_Kanibozu_attack_Spritesheet.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_5.png.i
+data/Levels/Scenes/game.tscn.i
+data/Sounds/Shoot_02.wav.d
+data/UI/UI_Sprites/UI Arena/UI_Water_Tempel_pfeil_pressed.png.i
+data/Player/Assets/walk_main_character.png.d
+data/3D_Props/Fences_and_Walls/-wall.glb.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash-cooldown_0.png.i
+data/UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil_pressed.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Stone...512x512_._.png.i
+data/Projectiles/VFX/New/Flame02.png.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.3.2.png.i
+data/Levels/Assets/Layer_11.png.d
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_0.png.i
+data/3D_Props/ColumnsPillarsStelae/env_big_piller.glb.i
+data/Projectiles/VFX/New/vfx_projectile_spiritual.tscn.i
+data/Enemies/Scenes/NewEnemies/Enemy_Melee.tscn.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_3_.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Border_512x512.png.d
+data/Player/Assets/walk_main_character.png.import.i
+data/3D_Props/Fences_and_Walls/gate_ghj.png.import.i
+data/3D_Props/char_Boss_Jubokko_512x512.png.d
+data/Player/Assets/Animations/Idle/Armature_Idle_06.png.i
+data/UI/UI_Sprites/PanelDarkGray.png.import.i
+data/Enemies/Shader/Enemy_shader_red.tres.i
+data/3D_Props/SakuraTree_01.png.i
+data/UI/UI_Sprites/Buttons/UI_Button_wind.png.i
+data/Enemies/Scripts/EnemyBomber.gd.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_04.png.i
+data/Sounds/Shoot_02.wav.import.i
+data/3D_Props/Stones/env_big_rock_stone.glb.import.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_13.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_complete_v3.png.i
+data/3D_Props/Bushes/env_small_bush_copac.jpg.i
+data/Player/Assets/Animations/Idle/Armature_Idle_11.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_shockwave_range_on.png.i
+data/Projectiles/VFX/New/FX_CloudAlpha04.png.d
+data/PermanentMarker-Regular.ttf.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash-cooldown_#4.4.3.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_icon_dash_cooldown_on.png.i
+data/3D_Props/Trees/Meshes_and_Materials/TreeSmall.res.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash_#4.1.png.i
+data/3D_Props/TreeElements/Meshes_and_Materials/JubbokkoHousing.res.i
+data/Projectiles/VFX/Materials/ExplosionMaterial.tres.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_5.png.i
+data/UI/UI_Sprites/Upgrade/ui_updates_skillpoint_sprite_250x250px_v2.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_complete_speechbubble_brown.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_24.png.i
+data/Sounds/Whisper Out Of Nowhere 002.wav.i
+data/UI/UI_Sprites/Masks/kizune mask.jannik.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_24.png.i
+data/UI/UI_Sprites/UI Arena/UI_Checkmark.png.i
+data/Sounds/die enemy.wav.d
+data/3D_Props/Trees/env_small_tree.glb.d
+data/UI/UI_Sprites/Masks/kizune mask.jennifer.png.d
+data/3D_Props/Fences_and_Walls/GlbFiles/_wall.glb.import.i
+data/Projectiles/Scene/projectile_red.tscn.i
+data/UI/UI_Sprites/UI Arena/UI_Wind_Tempel_pfeil_pressed.png.i
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing_good_abcccc.jpg.i
+data/Player/Assets/dash_main_character.png.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#3.0.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash_3.png.i
+data/GameModes/Scripts/gamemode_survival.gd.i
+data/Player/Assets/Illustration138.png.import.i
+data/Arenas/Arena_01/Arena01.gd.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_03.png.i
+data/UI/UI_Sprites/ArenaStyleBar.png.import.i
+data/UI/UI_Sprites/GoldenCircle.png.import.i
+data/3D_Props/LevelProps/Meshes_and_Materials/env_Shimenawa.glb.i
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing_good.glb.d
+data/UI/UI_Sprites/UI Arena/Video/Defend.ogv.d
+data/3D_Props/Bushes/env_big_bush_copac.jpg.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_4_.png.d
+data/3D_Props/Stones/env_big_rock_stone_wxz.jpg.import.i
+data/UI/UI_Sprites/ArrowBtnPlaceholderWhite.png.i
+data/Projectiles/VFX/New/Flame02.png.i
+data/3D_Props/LevelProps/LanternStone_BlueLight.tscn.i
+data/Fire.tscn.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Firerate_3.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_2.png.i
+data/Sounds/Whisper Out Of Nowhere 001.wav.i
+data/UI/UI_Sprites/Masks/kizune mask.steve.png.d
+data/Enemies/Scenes/DefenderParent.tscn.i
+data/UI/UI_Sprites/Upgrade/ui_hud_char_hit_vignette_1920x1080px.png.d
+data/Player/Assets/Animations/Dash/Armature_dash_06.png.i
+data/Enemies/Assets/char_enemy_Sogenbi_w_115x115px.png.png.import.i
+data/GameModes/Scenes/gamemodeDefend.tscn.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_09.png.i
+data/Shadertest/Ghostshader.gdshader.i
+data/Player/Assets/Animations/Attack/Armature_attack_06.png.i
+data/UI/UI_Sprites/UI Arena/MenuScreen_Fire.png.d
+data/Enemies/Scripts/DefenderParent.gd.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_4.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_toGrass...-512x512_1.png.i
+data/3D_Props/TreeElements/Meshes_and_Materials/JubbokkoHousing.res.d
+data/UI/UI_Sprites/ArenaFrames/UI_Button_hover_earth.png.i
+data/simpleparticles.tres.i
+data/Levels/Assets/gate.am.fbx.i
+data/Levels/Assets/YujiMai-Regular.ttf.import.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Damage_0.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_12.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Button_wind.png.i
+data/UI/UI_Sprites/UI Arena/Plain_MenuScreen.png.i
+data/Sounds/hitsound.wav.import.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_bad_details_512x512.png.d
+data/GameModes/Scripts/gamemodeAttackDefend.gd.i
+data/GameModes/Scripts/gamemodeDefend.gd.i
+data/UI/UI_Sprites/Masks/Kitsune_mask_gray_relief.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_512x512_tiled_2.png.d
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_4.png.i
+data/3D_Props/smallBossTree.gd.i
+data/Player/Assets/hit-1_main_character.png.i
+data/UI/UI_Sprites/ArenaDescriptionFrame.png.i
+data/UI/UI_Sprites/UI_Button_pressed.png.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_15.png.i
+data/3D_Props/Stones/env_small_rock_stone_wxz copy.jpg.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_14.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_dash_#4.2.png.i
+data/Projectiles/Script/EnemyProjectile.gd.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_1.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_14.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete_speechbubble_brown.png.i
+data/FeuerzungeParent.gd.i
+data/Player/Assets/Animations/Dash/Armature_dash_22.png.i
+data/UpgradeTextStatsNumbers.tres.i
+data/3D_Props/Fences_and_Walls/GlbFiles/Twall_ghj.png.import.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.3.3.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_02.png.d
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone_details...512x512_1_.png.i
+data/UI/Scenes/arena_settings_screen.tscn.i
+data/Player/Assets/Animations/Attack/Armature_attack_17.png.i
+data/2D_Assets/GroundTextures/GroundTexture_water_512x512_4_.png.d
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_21.png.i
+data/Player/Assets/Dash.png.import.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_512x512_.png.d
+data/2D_Assets/GroundTexture_Stone_4x4.png.d
+data/2D_Assets/GroundTextures/GroundTexture_water_512x512_4_.png.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_3.png.i
+data/3D_Props/Stones/Meshes_Textures_and_Materials/env_small_rock_stone_wxz copy.jpg.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_pearls_fill.png.i
+data/UI/UI_Sprites/UI Arena/Checkmark_Placeholder.png.i
+data/UI/UI_Sprites/ui_setting_bar_filled.png.i
+data/Enemies/Assets/Unbenannt.png.d
+data/Enemies/Assets/Unbenannt_17.png.i
+data/Projectiles/VFX/Materials/TranspBall.png.i
+data/Projectiles/VFX/ShootParticles.tscn.i
+data/Projectiles/VFX/Materials/Impact.tres.i
+data/Player/Assets/Illustration139_1.png.import.i
+data/2D_Assets/GroundTextures/GroundTexture_Sand_512x512_2.png.d
+data/Projectiles/VFX/impact.gd.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_12.png.i
+data/Sounds/Sakura_Hit_Sound.wav.i
+data/UI/UI_Sprites/MenuScreen_0.png.d
+data/UI/UI_Sprites/GreenCircleFill.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Clouds_bad_details_512x512.png.i
+data/Shadertest/TEST/Flame3.png.i
+data/UI/UI_Sprites/ArenaFrame.png.import.i
+data/Shadertest/Shadertest.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_4_.png.d
+data/UI/MenuScreen.png.i
+data/3D_Props/Stones/small_rock_00.res.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_details_512x512_4_9.png.d
+data/UI/UI_Sprites/HUD/ui_hud_weapons_ofuda_fire.png.i
+data/3D_Props/TreeElements/Meshes_and_Materials/env_treehousing_bad.glb.i
+data/Levels/Scripts/game_mode_screen.gd.i
+data/Player/Assets/Animations/Idle/Armature_Idle_00.png.i
+data/3D_Props/ColumnsPillarsStelae/env_small_piller_abcccc copy.jpg.i
+data/Enemies/Assets/char_enemy_Ao Bozu_shoot_Spritesheet.png.i
+data/.hgignore.i
+data/UpgradeTextStats.tres.i
+data/2D_Assets/MouseCursor/red/mouse_curser_red_frame2.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_12.png.i
+data/Player/Assets/Animations/Dash/Armature_dash_04.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_01.png.d
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_18.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_11.png.i
+data/3D_Props/Fences_and_Walls/Lwall.glb.import.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Damage_3.png.i
+data/UI/UI_Sprites/UI Arena/UI_Water_Tempel_ Description.png.i
+data/Player/Assets/hit-1_main_character.png.import.i
+data/UI/MenuScreen.png.d
+data/2D_Assets/GroundTextures/GroundTexture_Stone_4x4.png.i
+data/FireBlue.tscn.i
+data/GameModes/Scripts/gamemode_defend.gd.i
+data/GameModes/Scenes/GamemodeAttackDefend.tscn.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_06.png.i
+data/Levels/Scenes/main.tscn.i
+data/2D_Assets/GroundTextures/Grass/GroundTexture_Grass_bad_512x512_00.png.d
+data/2D_Assets/GroundTextures/GroundTexture_Water_Waves_details_512x512.png.d
+data/Player/Assets/Animations/Attack/Armature_attack_23.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Lava_512x512_SumiE_2.png.d
+data/Sounds/battlemusic_Survive.wav.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_1.png.d
+data/3D_Props/Fences_and_Walls/tamagaki_t_intersection.tscn.i
+data/Shadertest/TEST/Body.png.i
+data/Level_1/Assets/gate.am.fbx.i
+data/UI/UI_Sprites/ui_upgrades_complete.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-damage_2.png.i
+data/3D_Props/Trees/env_big_tree_copac.jpg.i
+data/UI/UI_Sprites/UI Arena/MenuScreen_Earth.png.d
+data/Player/Assets/Animations/Attack/Armature_attack_09.png.i
+data/Gras.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_painterly_lava_512x512.png.d
+data/Enemies/Scenes/Enemy_Meelee.tscn.i
+data/FireArena3.gd.i
+data/UI/UI_Sprites/Masks/kizune mask.andreea.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_7.png.i
+data/3D_Props/ColumnsPillarsStelae/env_statue.glb.i
+data/UI/UI_Sprites/GoldenBar.png.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_08.png.i
+data/Sounds/Enemy_Die_01.wav.i
+data/UI/UI_Sprites/Buttons/UI_Button_hover_wind.png.i
+data/Enemies/Assets/Enemy_Attack_blue.png.i
+data/3D_Props/Fences_and_Walls/GlbFiles/Lwall.glb.i
+data/3D_Props/Fences_and_Walls/GlbFiles/Lwall.glb.import.i
+data/Player/Assets/special-attack_main_character.png.import.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Dash_0.png.i
+data/UI/UI_Sprites/GreenFill.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Water_Waves_512x512.png.i
+data/3D_Props/Feuerzunge.gd.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Shookwave-cost_2.png.i
+data/Floor_Mockup_M1.png.i
+data/UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete_v3.png.d
+data/Projectiles/VFX/Materials/SakuraLeaf.png.i
+data/3D_Props/ColumnsPillarsStelae/env_statue_aaaaaaaaaaaaaa copy.jpg.i
+data/Systems/upgradesystem.tscn.i
+data/UI/UI_Sprites/Chi.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#2.1.png.i
+data/3D_Props/TreeElements/Meshes_and_Materials/SakuraHousing.res.i
+data/2D_Assets/GroundTextures/GroundTexture_water_ultramarin_512x512.png.i
+data/2D_Assets/MouseCursor/mouse_cursor__fire_frame1.png.i
+data/Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_11.png.i
+data/2D_Assets/MouseCursor/red/mouse_curser_red_frame1.png.i
+data/3D_Props/Fences_and_Walls/TamagakiCorner.res.i
+data/Sounds/magic-sparkle-190030.wav.d
+data/Player/Assets/Animations/Attack/Armature_attack_21.png.i
+data/UI/UI_Sprites/UI Arena/MenuScreen_Water.png.d
+data/Levels/Scenes/game_mode_screen.tscn.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_8.png.i
+data/Player/Assets/Dash.png.i
+data/3D_Props/Trees/env_small_tree_copac.jpg.i
+data/UI/ui_hud_char_hit_vignette_1920x1080px.png.i
+data/ChargeSoul.tscn.i
+data/UI/UI_Sprites/Buttons/UI_Button_pressed_wind.png.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_23.png.i
+data/3D_Props/Fences_and_Walls/tamagaki_straight_pillars.tscn.i
+data/Player/Assets/Animations/Dash/Armature_dash_09.png.i
+data/Enemies/Scenes/Enemy_Melee.tscn.i
+data/3D_Props/Fences_and_Walls/Torii.tscn.i
+data/Player/Assets/Animations/Idle/Armature_Idle_09.png.i
+data/UI/UI_Sprites/UI Arena/Video/Attack&Defend.ogv.i
+data/Projectiles/VFX/New/tex_bullet_vfx.png.i
+data/UI/UI_Sprites/Upgrade/ui_upgrades_button_left_hovered.png.i
+data/3D_Props/Fences_and_Walls/Tamagaki_T_Intersection.res.i
+data/Player/Assets/Animations/Walk/Armature_walk_17.png.i
+data/Arenas/Arena_02/Arena_02.gd.i
+data/UI/UI_Sprites/Kitsune Productions_Name_Frame.png.i
+data/UI/UI_Sprites/UI Arena/UI_Earth_Tempel_hover.png.i
+data/UI/UI_Sprites/UI Arena/UI_Window_with_Yokai_Wind_Tempel.png.i
+data/3D_Props/Fences_and_Walls/Twall.glb.i
+data/Player/Assets/Animations/Hit-2/Armature_hit_2_24.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Sand_512x512_new_00.png.d
+data/UI/UI_Sprites/Buttons/UI_Button_pressed_earth.png.i
+data/Shadertest/Noisetexture.tres.i
+data/3D_Props/Stones/MidRockProp.tscn.i
+data/3D_Props/Trees/LargeTree.tscn.i
+data/Player/Assets/Animations/Hit-1/Armature_hit_1_12.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Lava_512x512_SummiE_3.png.d
+data/Player/Assets/Animations/Attack/Armature_attack_02.png.i
+data/UI/UI_Sprites/Buttons/UI_Button_pressed_water.png.i
+data/UI/UI_Sprites/ArenaFrames/UI_Tempel_Frame.png.i
+data/Game/Scenes/game.tscn.i
+data/Projectiles/VFX/New/tex_pixel_vfx.png.i
+data/Enemies/Assets/Enemy_Attack_red.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Grass_details_512x512_2.png.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#4.png.import.i
+data/3D_Props/Bushes/env_small_bush.glb.i
+data/Enemies/Scenes/NewEnemies/Enemy_Defender.tscn.i
+data/2D_Assets/GroundTexture_Stone...512x512_6.png.i
+data/2D_Assets/GroundTextures/Stone/GroundTexture_Stone...details_512x512_5_.png.d
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#3.1.png.i
+data/UI/UI_Sprites/UI Arena/MenuScreen_Wind.png.d
+data/3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiCrossIntersection.res.i
+data/3D_Props/Feuerzunge.tscn.i
+data/2D_Assets/GroundTextures/GroundTexture_Lava...512.x512_SumiE.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_00.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#4.0.png.i
+data/Player/Assets/Animations/Attack/Armature_attack_03.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_08.png.i
+data/UI/Scenes/pause_screen.tscn.i
+data/Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_7.png.i
+data/UI/UI_Sprites/Upgrade/psd_ui_concept_#5.2.png.i
+data/Player/Assets/Animations/Shockwave/Armature_special-attack_20.png.i
+data/3D_Props/Fences_and_Walls/TamagakiStraight.res.i
+data/3D_Props/Bushes/env_medium_bush_copac.jpg.i
+data/UI/UI_Sprites/Kitsune_Mask_40x40.png.i
+data/2D_Assets/GroundTextures/GroundTexture_Stone...512x512_6.png.i
+data/Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_7.png.i
+data/Player/Assets/Animations/Idle/Armature_Idle_08.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_22.png.i
+data/Player/Assets/Animations/Walk/Armature_walk_19.png.i
+data/Player/Assets/special-attack_main_character.png.i
+data/UI/UI_Sprites/Upgrade/Final/UI_Health_1.png.i
+data/UI/UI_Sprites/FrameLightGray.png.i
+data/2D_Assets/MouseCursor/mouse_cursor__fire_frame3.png.i
+data/Projectiles/VFX/New/ShockwaveTextureSmall.png.i
+data/2D_Assets/GroundTextures/GroundTexture_water_ultramarin_512x512.png.d
+data/Level_1/Assets/gate.am.fbx.import.i
+data/UI/UI_Sprites/Kitsune_Mask_25x25.png.i
+data/3D_Props/LevelProps/Meshes_and_Materials/LanternStoneRedBlack.res.i

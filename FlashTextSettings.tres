@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cn1a1tk4nbruc"]
+
+[ext_resource type="FontFile" uid="uid://u07bm4bnyh1u" path="res://PermanentMarker-Regular.ttf" id="1_ryj67"]
+
+[resource]
+font = ExtResource("1_ryj67")
+font_size = 36
+shadow_size = 10
+shadow_color = Color(0, 0, 0, 1)

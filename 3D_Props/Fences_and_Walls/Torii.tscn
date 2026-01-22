@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://clejtd45g5op8"]
+
+[ext_resource type="ArrayMesh" uid="uid://sommgk0sc4wn" path="res://3D_Props/Fences_and_Walls/Meshes_and_Materials/Torii.res" id="1_ws1ng"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_4hw5k"]
+height = 2.5
+radius = 0.244787
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_uyvjn"]
+height = 2.5
+radius = 0.245
+
+[node name="Torii" type="StaticBody3D"]
+collision_layer = 8
+
+[node name="ToriiMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = ExtResource("1_ws1ng")
+
+[node name="ToriiColliderColumn_01" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.135, 1.25, 0)
+shape = SubResource("CylinderShape3D_4hw5k")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="ToriiColliderColumn_01"]
+carve_navigation_mesh = true
+
+[node name="\'ToriiColliderColumn_02" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.135, 1.275, 0)
+shape = SubResource("CylinderShape3D_uyvjn")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="\'ToriiColliderColumn_02"]
+carve_navigation_mesh = true

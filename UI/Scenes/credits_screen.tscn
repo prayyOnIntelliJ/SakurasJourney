@@ -1,0 +1,184 @@
+[gd_scene load_steps=18 format=3 uid="uid://di3eu2f3nc8lt"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/CreditsScreen.gd" id="1_kdufe"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="2_kknma"]
+[ext_resource type="Texture2D" uid="uid://ve8c2bwjo0g" path="res://UI/UI_Sprites/MenuScreen_0.png" id="2_sblal"]
+[ext_resource type="Texture2D" uid="uid://dtsbsay5is0jx" path="res://UI/UI_Sprites/UI_Button.png" id="3_iacu4"]
+[ext_resource type="Texture2D" uid="uid://dsmtwxgnhjsgb" path="res://UI/UI_Sprites/Masks/kitsune mask.Nefeli.png" id="4_4vp8b"]
+[ext_resource type="Texture2D" uid="uid://dlsbhd7rv2mwu" path="res://UI/UI_Sprites/Masks/kizune mask.steve.png" id="4_76hvi"]
+[ext_resource type="Texture2D" uid="uid://bm7myvt1ga85q" path="res://UI/UI_Sprites/UI_Button_pressed.png" id="4_87o57"]
+[ext_resource type="Texture2D" uid="uid://crpgsi1ufsilg" path="res://UI/UI_Sprites/UI_Button_hover.png" id="5_cpirb"]
+[ext_resource type="Texture2D" uid="uid://b0vjc87088k6v" path="res://UI/UI_Sprites/Masks/kizune mask.robert.png" id="5_tjcev"]
+[ext_resource type="Texture2D" uid="uid://b3biqj5sp2l2e" path="res://UI/UI_Sprites/Masks/kizune mask.jannik.png" id="6_c6tic"]
+[ext_resource type="Script" path="res://UI/Scenes/Button_Wobbel.gd" id="7_83q74"]
+[ext_resource type="Texture2D" uid="uid://t2vcbn1vpkm0" path="res://UI/UI_Sprites/Masks/kizune mask.jennifer.png" id="7_s36ii"]
+[ext_resource type="Texture2D" uid="uid://dikjcaqdetsve" path="res://UI/UI_Sprites/Masks/kizune mask.andreea.png" id="8_kefgu"]
+[ext_resource type="Texture2D" uid="uid://bh4thv4sdksqo" path="res://UI/UI_Sprites/Masks/kizune mask.leander.png" id="10_6cwlo"]
+
+[sub_resource type="Animation" id="Animation_w0ou3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5kul4"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xgu8g"]
+_data = {
+"RESET": SubResource("Animation_w0ou3"),
+"Wobbel": SubResource("Animation_5kul4")
+}
+
+[node name="CreditsScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kdufe")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_sblal")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 68.0
+offset_top = -2.0
+offset_right = 1683.0
+offset_bottom = 1076.0
+text = "                                    Producer : Steve Betkier
+
+Gamedesign : Robert Schmieder
+
+                                    Engineering : Jannik Kluge
+
+Artlead: Jennifer Braun
+
+                                    3D Art : Andreea Mihalcea
+
+2D Art : Nefeli Papandreou
+
+                                    2D Art : Leander Seidler"
+label_settings = ExtResource("2_kknma")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Steve" type="TextureRect" parent="Label"]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 109.0
+offset_right = 1500.0
+offset_bottom = 309.0
+texture = ExtResource("4_76hvi")
+expand_mode = 1
+
+[node name="Robert" type="TextureRect" parent="Label"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 215.0
+offset_right = 500.0
+offset_bottom = 415.0
+texture = ExtResource("5_tjcev")
+expand_mode = 1
+
+[node name="Jannik" type="TextureRect" parent="Label"]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 324.0
+offset_right = 1500.0
+offset_bottom = 524.0
+texture = ExtResource("6_c6tic")
+expand_mode = 1
+
+[node name="Jennifer" type="TextureRect" parent="Label"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 434.0
+offset_right = 500.0
+offset_bottom = 634.0
+texture = ExtResource("7_s36ii")
+expand_mode = 1
+
+[node name="Andreea" type="TextureRect" parent="Label"]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 539.0
+offset_right = 1500.0
+offset_bottom = 739.0
+texture = ExtResource("8_kefgu")
+expand_mode = 1
+
+[node name="Nefeli" type="TextureRect" parent="Label"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 648.0
+offset_right = 500.0
+offset_bottom = 848.0
+texture = ExtResource("4_4vp8b")
+expand_mode = 1
+
+[node name="Leander" type="TextureRect" parent="Label"]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 767.0
+offset_right = 1500.0
+offset_bottom = 967.0
+texture = ExtResource("10_6cwlo")
+expand_mode = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 907.0
+offset_right = 458.0
+offset_bottom = 1057.0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("3_iacu4")
+texture_pressed = ExtResource("4_87o57")
+texture_hover = ExtResource("5_cpirb")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_83q74")
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Back"
+label_settings = ExtResource("2_kknma")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TextureButton"]
+libraries = {
+"": SubResource("AnimationLibrary_xgu8g")
+}
+
+[connection signal="pressed" from="TextureButton" to="." method="onTextureButtonPressed"]

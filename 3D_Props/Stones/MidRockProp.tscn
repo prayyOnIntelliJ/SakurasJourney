@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c661v3x1sjf5"]
+
+[ext_resource type="ArrayMesh" uid="uid://cw7vpmg0mrs7a" path="res://3D_Props/Stones/Meshes_Textures_and_Materials/small_rock_00.res" id="1_2t03s"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_m3stn"]
+radius = 1.3218
+height = 3.8434
+
+[node name="MidRockProp" type="StaticBody3D"]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+collision_layer = 9
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_2t03s")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05461, 0)
+shape = SubResource("CapsuleShape3D_m3stn")

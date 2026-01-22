@@ -1,0 +1,1024 @@
+[gd_scene load_steps=54 format=3 uid="uid://deagsh5bm33jl"]
+
+[ext_resource type="Script" path="res://UI/UI_Scripts/UpgradeScreen.gd" id="1_kb1gl"]
+[ext_resource type="Texture2D" uid="uid://nyd837k86vek" path="res://UI/UI_Sprites/Upgrade/Final/UI_Upgrades_Icon_Healthpoints_none.png" id="2_loqgv"]
+[ext_resource type="Texture2D" uid="uid://d38np6x80i4gw" path="res://UI/UI_Sprites/Upgrade/Final/UI_Upgrades_Icon_Healthpoints_on.png" id="3_jto1b"]
+[ext_resource type="Texture2D" uid="uid://bvhk3ha6rc3ip" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_damage_none.png" id="4_nn4ou"]
+[ext_resource type="Texture2D" uid="uid://bn3jsr5ryueq" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_damage_on.png" id="5_o0yoy"]
+[ext_resource type="Texture2D" uid="uid://dlo3vhbmx4f6i" path="res://UI/UI_Sprites/Upgrade/Final/UI_Upgrades_Icon_Movementspeed_none.png" id="6_s1bxx"]
+[ext_resource type="Texture2D" uid="uid://nymmvabo2qah" path="res://UI/UI_Sprites/Upgrade/Final/UI_Upgrades_Icon_Movementspeed_on.png" id="7_di6ut"]
+[ext_resource type="Texture2D" uid="uid://tewvydbunj04" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_fire_range_none.png" id="8_cuulq"]
+[ext_resource type="Texture2D" uid="uid://dffxqhssdwpll" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_fire_range_on.png" id="9_nedc7"]
+[ext_resource type="Texture2D" uid="uid://8vfvhmkkt0nl" path="res://UI/UI_Sprites/Upgrade/psd_ui_concept_dash-damage_#4.5.0.png" id="10_88nne"]
+[ext_resource type="Texture2D" uid="uid://cnl3rvhxu7pfq" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_dash_none.png" id="10_cldgc"]
+[ext_resource type="Texture2D" uid="uid://piq8646sdrow" path="res://UI/UI_Sprites/Upgrade/psd_ui_concept_#2.3.0.png" id="11_aiga3"]
+[ext_resource type="Texture2D" uid="uid://sjxuvu2dk2aq" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_dash_on.png" id="11_ajdmq"]
+[ext_resource type="Texture2D" uid="uid://b0dnab4c1nxfx" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_dash_cooldown_none.png" id="12_36eg5"]
+[ext_resource type="Texture2D" uid="uid://cm6ukormd7o06" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_dash_cooldown_on.png" id="13_ptm4w"]
+[ext_resource type="Texture2D" uid="uid://3ymimfnp5rtr" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_shockwave_charge_none.png" id="18_pt2ka"]
+[ext_resource type="Texture2D" uid="uid://cc8hayxmus17n" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_shockwave_charge_on.png" id="19_2n6sf"]
+[ext_resource type="Texture2D" uid="uid://dqv7lrbnt4yd7" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_shockwave_range_none.png" id="24_31y88"]
+[ext_resource type="Texture2D" uid="uid://csj1nyh8ic4ow" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_icon_shockwave_range_on.png" id="25_q8gjh"]
+[ext_resource type="Texture2D" uid="uid://6j078t3txdil" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_complete_speechbubble_grey.png" id="26_ivwj5"]
+[ext_resource type="Texture2D" uid="uid://clgj27p7rh6t7" path="res://UI/UI_Sprites/Upgrade/psd_ui_concept_dash-damage_#4.5.1.png" id="27_7uhlx"]
+[ext_resource type="Texture2D" uid="uid://dmbqejtyjhiuj" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_skillpoint_sprite_250x250px_v2.png" id="27_r0kna"]
+[ext_resource type="Texture2D" uid="uid://fqrkl23w50ak" path="res://UI/UI_Sprites/Upgrade/psd_ui_concept_dash-damage_#4.5.2.png" id="28_vu72w"]
+[ext_resource type="Texture2D" uid="uid://c57vstwnplomx" path="res://UI/UI_Sprites/Upgrade/psd_ui_concept_dash-damage_#4.5.3.png" id="29_15ek7"]
+[ext_resource type="Texture2D" uid="uid://dv1b73mk1656e" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_left_not_pressed.png" id="29_37q6b"]
+[ext_resource type="Texture2D" uid="uid://cs1t7fqgtpmam" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_left_pressed.png" id="30_1tn50"]
+[ext_resource type="Texture2D" uid="uid://cs2a7iffayjom" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_left_hovered.png" id="31_j76xx"]
+[ext_resource type="Texture2D" uid="uid://dxuwqa0akg2q6" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_right_not_pressed.png" id="32_tl1qc"]
+[ext_resource type="Texture2D" uid="uid://rip3r3tebvgv" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_right_pressed.png" id="33_hrflt"]
+[ext_resource type="Texture2D" uid="uid://7aqmwc2r4eo1" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_button_right_hovered.png" id="34_7rmq7"]
+[ext_resource type="Texture2D" uid="uid://ctfsl7egoljpy" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_pearls_empty.png" id="35_d3fnn"]
+[ext_resource type="Texture2D" uid="uid://bmwyenj7sh1je" path="res://UI/UI_Sprites/Upgrade/psd_ui_concept_#2.3.1.png" id="35_p0js5"]
+[ext_resource type="Texture2D" uid="uid://b6rsoa7psnord" path="res://UI/UI_Sprites/Upgrade/psd_ui_concept_#2.3.2.png" id="36_as3k1"]
+[ext_resource type="Texture2D" uid="uid://dj22cy1elqkxb" path="res://UI/UI_Sprites/Upgrade/Final/ui_upgrades_pearls_fill.png" id="36_f520q"]
+[ext_resource type="Texture2D" uid="uid://pyuihghuc15e" path="res://UI/UI_Sprites/Upgrade/psd_ui_concept_#2.3.3.png" id="37_2bkh8"]
+[ext_resource type="PackedScene" uid="uid://cjlas3c3qbpoc" path="res://catgold.tscn" id="39_8g77f"]
+[ext_resource type="LabelSettings" uid="uid://paqpv48rfjs2" path="res://UpgradeTextCat.tres" id="43_3padu"]
+[ext_resource type="Texture2D" uid="uid://3v6vaflk1pfq" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil.png" id="44_no5hw"]
+[ext_resource type="Texture2D" uid="uid://c8ew346w6qt7w" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil_pressed.png" id="45_0ayar"]
+[ext_resource type="LabelSettings" uid="uid://c5mph6ywd7eiy" path="res://TitleFont.tres" id="45_n0262"]
+[ext_resource type="Texture2D" uid="uid://dorpx48k484wk" path="res://UI/UI_Sprites/UI Arena/UI_Fire_Tempel_pfeil_hover.png" id="46_mwq8o"]
+[ext_resource type="Texture2D" uid="uid://dxrfvnjbyr5bs" path="res://UI/UI_Sprites/UI_Button.png" id="47_3fbt6"]
+[ext_resource type="LabelSettings" uid="uid://b0eedv6heb2n3" path="res://UpgradeTextStats.tres" id="47_tdu4f"]
+[ext_resource type="Texture2D" uid="uid://3m87xfk6u1d1" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil.png" id="47_x7030"]
+[ext_resource type="Texture2D" uid="uid://c70xl25xsi58w" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil_pressed.png" id="48_1doxg"]
+[ext_resource type="LabelSettings" uid="uid://bvarq0q2v6t5n" path="res://UpgradeTextStatsNumbers.tres" id="48_45rdy"]
+[ext_resource type="Texture2D" uid="uid://c3kgl6dddi55h" path="res://UI/UI_Sprites/UI_Button_pressed.png" id="48_xwdqy"]
+[ext_resource type="Texture2D" uid="uid://geokni00e6v8" path="res://UI/UI_Sprites/UI Arena/UI_Earth_Tempel_pfeil_hover.png" id="49_i1l67"]
+[ext_resource type="Texture2D" uid="uid://dcqe5pp0ix0rj" path="res://UI/UI_Sprites/UI_Button_hover.png" id="49_vcmpy"]
+[ext_resource type="Script" path="res://UI/Scenes/Button_Wobbel.gd" id="55_cr3wb"]
+
+[sub_resource type="Animation" id="Animation_k43rf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_uwdeq"]
+resource_name = "Wobbel"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4gnv7"]
+_data = {
+"RESET": SubResource("Animation_k43rf"),
+"Wobbel": SubResource("Animation_uwdeq")
+}
+
+[node name="UpgradeScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kb1gl")
+healthIcon = Array[Texture2D]([ExtResource("2_loqgv"), ExtResource("3_jto1b"), ExtResource("3_jto1b"), ExtResource("3_jto1b")])
+projectileDamageIcon = Array[Texture2D]([ExtResource("4_nn4ou"), ExtResource("5_o0yoy"), ExtResource("5_o0yoy"), ExtResource("5_o0yoy")])
+movementSpeedIcon = Array[Texture2D]([ExtResource("6_s1bxx"), ExtResource("7_di6ut"), ExtResource("7_di6ut"), ExtResource("7_di6ut")])
+firerateIcon = Array[Texture2D]([ExtResource("8_cuulq"), ExtResource("9_nedc7"), ExtResource("9_nedc7"), ExtResource("9_nedc7")])
+maxDashIcon = Array[Texture2D]([ExtResource("10_cldgc"), ExtResource("11_ajdmq"), ExtResource("11_ajdmq"), ExtResource("11_ajdmq")])
+dashCooldownIcon = Array[Texture2D]([ExtResource("12_36eg5"), ExtResource("13_ptm4w"), ExtResource("13_ptm4w"), ExtResource("13_ptm4w")])
+dashDamageIcon = Array[Texture2D]([ExtResource("10_88nne"), ExtResource("27_7uhlx"), ExtResource("28_vu72w"), ExtResource("29_15ek7")])
+shockwaveCostIcon = Array[Texture2D]([ExtResource("18_pt2ka"), ExtResource("19_2n6sf"), ExtResource("19_2n6sf"), ExtResource("19_2n6sf")])
+shockwaveDamageIcon = Array[Texture2D]([ExtResource("11_aiga3"), ExtResource("35_p0js5"), ExtResource("36_as3k1"), ExtResource("37_2bkh8")])
+shockwaveRangeIcon = Array[Texture2D]([ExtResource("24_31y88"), ExtResource("25_q8gjh"), ExtResource("25_q8gjh"), ExtResource("25_q8gjh")])
+
+[node name="UpgradesystemBackround" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("26_ivwj5")
+expand_mode = 1
+
+[node name="Skillpointtexture" type="TextureRect" parent="UpgradesystemBackround"]
+layout_mode = 0
+offset_left = 1627.0
+offset_top = 114.0
+offset_right = 1787.0
+offset_bottom = 274.0
+texture = ExtResource("27_r0kna")
+expand_mode = 1
+
+[node name="Skillpointslabel" type="Label" parent="UpgradesystemBackround/Skillpointtexture"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 6.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 18
+text = "0"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Health" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_bottom = 540.0
+
+[node name="HealthIcon" type="TextureRect" parent="Health"]
+layout_mode = 2
+offset_left = 715.0
+offset_top = 354.0
+offset_right = 843.0
+offset_bottom = 482.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_loqgv")
+stretch_mode = 2
+
+[node name="HealthMinusButton" type="TextureButton" parent="Health/HealthIcon"]
+layout_mode = 0
+offset_left = -67.0
+offset_top = 19.0
+offset_right = 33.0
+offset_bottom = 119.0
+texture_normal = ExtResource("29_37q6b")
+texture_pressed = ExtResource("30_1tn50")
+texture_hover = ExtResource("31_j76xx")
+
+[node name="HealthPlusButton" type="TextureButton" parent="Health/HealthIcon"]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 19.0
+offset_right = 210.0
+offset_bottom = 119.0
+texture_normal = ExtResource("32_tl1qc")
+texture_pressed = ExtResource("33_hrflt")
+texture_hover = ExtResource("34_7rmq7")
+
+[node name="Healthlvl" type="Label" parent="Health"]
+visible = false
+layout_mode = 0
+offset_left = -31.0
+offset_top = 328.0
+offset_right = 28.0
+offset_bottom = 380.0
+text = "0/3
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HealthProgressBar" type="TextureProgressBar" parent="Health"]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 450.0
+offset_right = 827.0
+offset_bottom = 509.0
+max_value = 3.0
+texture_under = ExtResource("35_d3fnn")
+texture_progress = ExtResource("36_f520q")
+texture_progress_offset = Vector2(17, 0)
+
+[node name="HealthIconHoverText" type="Label" parent="Health"]
+visible = false
+layout_mode = 0
+offset_left = 729.0
+offset_top = 397.0
+offset_right = 829.0
+offset_bottom = 420.0
+text = "Healthpoints"
+
+[node name="Projectile" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_bottom = 540.0
+
+[node name="ProjectileDamage" type="TextureRect" parent="Projectile"]
+layout_mode = 2
+offset_left = 991.0
+offset_top = 354.0
+offset_right = 1119.0
+offset_bottom = 482.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_nn4ou")
+stretch_mode = 2
+
+[node name="ProjectileMinusButton" type="TextureButton" parent="Projectile/ProjectileDamage"]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 19.0
+offset_right = 34.0
+offset_bottom = 119.0
+texture_normal = ExtResource("29_37q6b")
+texture_pressed = ExtResource("30_1tn50")
+texture_hover = ExtResource("31_j76xx")
+
+[node name="ProjectilePlusButton" type="TextureButton" parent="Projectile/ProjectileDamage"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 19.0
+offset_right = 211.0
+offset_bottom = 119.0
+texture_normal = ExtResource("32_tl1qc")
+texture_pressed = ExtResource("33_hrflt")
+texture_hover = ExtResource("34_7rmq7")
+
+[node name="Projectilelvl" type="Label" parent="Projectile"]
+visible = false
+layout_mode = 0
+offset_left = -32.0
+offset_top = 332.0
+offset_right = 27.0
+offset_bottom = 384.0
+text = "0/3
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProjectilDamageProgressBar" type="TextureProgressBar" parent="Projectile"]
+layout_mode = 0
+offset_left = 996.0
+offset_top = 450.0
+offset_right = 1102.0
+offset_bottom = 509.0
+max_value = 3.0
+texture_under = ExtResource("35_d3fnn")
+texture_progress = ExtResource("36_f520q")
+texture_progress_offset = Vector2(17, 0)
+
+[node name="Movement" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 275.0
+offset_right = 275.0
+offset_bottom = 540.0
+
+[node name="MovementIcon" type="TextureRect" parent="Movement"]
+layout_mode = 2
+offset_left = 1266.0
+offset_top = 354.0
+offset_right = 1394.0
+offset_bottom = 482.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("6_s1bxx")
+stretch_mode = 2
+
+[node name="MovementMinusButton" type="TextureButton" parent="Movement/MovementIcon"]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 19.0
+offset_right = 34.0
+offset_bottom = 119.0
+texture_normal = ExtResource("29_37q6b")
+texture_pressed = ExtResource("30_1tn50")
+texture_hover = ExtResource("31_j76xx")
+
+[node name="MovementPlusButton" type="TextureButton" parent="Movement/MovementIcon"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 19.0
+offset_right = 211.0
+offset_bottom = 119.0
+texture_normal = ExtResource("32_tl1qc")
+texture_pressed = ExtResource("33_hrflt")
+texture_hover = ExtResource("34_7rmq7")
+
+[node name="Movementlvl" type="Label" parent="Movement"]
+visible = false
+layout_mode = 0
+offset_left = -31.0
+offset_top = 328.0
+offset_right = 28.0
+offset_bottom = 380.0
+text = "0/3
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MovementProgressBar" type="TextureProgressBar" parent="Movement"]
+layout_mode = 0
+offset_left = 1272.0
+offset_top = 450.0
+offset_right = 1378.0
+offset_bottom = 509.0
+max_value = 3.0
+texture_under = ExtResource("35_d3fnn")
+texture_progress = ExtResource("36_f520q")
+texture_progress_offset = Vector2(17, 0)
+
+[node name="Firerate" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_bottom = 540.0
+
+[node name="FirerateIcon" type="TextureRect" parent="Firerate"]
+layout_mode = 2
+offset_left = 1266.0
+offset_top = 354.0
+offset_right = 1394.0
+offset_bottom = 482.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("8_cuulq")
+stretch_mode = 2
+
+[node name="FirerateMinusButton" type="TextureButton" parent="Firerate/FirerateIcon"]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 19.0
+offset_right = 34.0
+offset_bottom = 119.0
+texture_normal = ExtResource("29_37q6b")
+texture_pressed = ExtResource("30_1tn50")
+texture_hover = ExtResource("31_j76xx")
+
+[node name="FireratePlusButton" type="TextureButton" parent="Firerate/FirerateIcon"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 19.0
+offset_right = 211.0
+offset_bottom = 119.0
+texture_normal = ExtResource("32_tl1qc")
+texture_pressed = ExtResource("33_hrflt")
+texture_hover = ExtResource("34_7rmq7")
+
+[node name="Fireratelvl" type="Label" parent="Firerate"]
+visible = false
+layout_mode = 0
+offset_left = -31.0
+offset_top = 328.0
+offset_right = 28.0
+offset_bottom = 380.0
+text = "0/3
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FirerateProgressBar" type="TextureProgressBar" parent="Firerate"]
+layout_mode = 0
+offset_left = 1272.0
+offset_top = 450.0
+offset_right = 1378.0
+offset_bottom = 509.0
+max_value = 3.0
+texture_under = ExtResource("35_d3fnn")
+texture_progress = ExtResource("36_f520q")
+texture_progress_offset = Vector2(17, 0)
+
+[node name="MaxDash" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 779.0
+offset_top = 382.0
+offset_right = 779.0
+offset_bottom = 922.0
+
+[node name="MaxDashIcon" type="TextureRect" parent="MaxDash"]
+layout_mode = 2
+offset_left = -64.0
+offset_top = 200.0
+offset_right = 64.0
+offset_bottom = 328.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("10_cldgc")
+stretch_mode = 2
+
+[node name="MaxDashMinusButton" type="TextureButton" parent="MaxDash/MaxDashIcon"]
+layout_mode = 0
+offset_left = -67.0
+offset_top = 20.0
+offset_right = 33.0
+offset_bottom = 120.0
+texture_normal = ExtResource("29_37q6b")
+texture_pressed = ExtResource("30_1tn50")
+texture_hover = ExtResource("31_j76xx")
+
+[node name="MaxDashPlusButton" type="TextureButton" parent="MaxDash/MaxDashIcon"]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 20.0
+offset_right = 210.0
+offset_bottom = 120.0
+texture_normal = ExtResource("32_tl1qc")
+texture_pressed = ExtResource("33_hrflt")
+texture_hover = ExtResource("34_7rmq7")
+
+[node name="Maxdashlvl" type="Label" parent="MaxDash"]
+visible = false
+layout_mode = 0
+offset_left = -31.0
+offset_top = 328.0
+offset_right = 28.0
+offset_bottom = 380.0
+text = "0/3
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MaxDashProgressBar" type="TextureProgressBar" parent="MaxDash"]
+layout_mode = 0
+offset_left = -58.0
+offset_top = 297.0
+offset_right = 48.0
+offset_bottom = 356.0
+max_value = 3.0
+texture_under = ExtResource("35_d3fnn")
+texture_progress = ExtResource("36_f520q")
+texture_progress_offset = Vector2(17, 0)
+
+[node name="DashCooldown" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 1055.0
+offset_top = 382.0
+offset_right = 1055.0
+offset_bottom = 922.0
+
+[node name="DashCooldownIcon" type="TextureRect" parent="DashCooldown"]
+layout_mode = 2
+offset_left = -64.0
+offset_top = 200.0
+offset_right = 64.0
+offset_bottom = 328.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("12_36eg5")
+stretch_mode = 2
+
+[node name="DashCooldownMinusButton" type="TextureButton" parent="DashCooldown/DashCooldownIcon"]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 20.0
+offset_right = 34.0
+offset_bottom = 120.0
+texture_normal = ExtResource("29_37q6b")
+texture_pressed = ExtResource("30_1tn50")
+texture_hover = ExtResource("31_j76xx")
+
+[node name="DashCooldownPlusButton" type="TextureButton" parent="DashCooldown/DashCooldownIcon"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 20.0
+offset_right = 211.0
+offset_bottom = 120.0
+texture_normal = ExtResource("32_tl1qc")
+texture_pressed = ExtResource("33_hrflt")
+texture_hover = ExtResource("34_7rmq7")
+
+[node name="Dashcooldownlvl" type="Label" parent="DashCooldown"]
+visible = false
+layout_mode = 0
+offset_left = -31.0
+offset_top = 328.0
+offset_right = 28.0
+offset_bottom = 380.0
+text = "0/3
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DashCooldownProgressBar" type="TextureProgressBar" parent="DashCooldown"]
+layout_mode = 0
+offset_left = -59.0
+offset_top = 297.0
+offset_right = 47.0
+offset_bottom = 356.0
+max_value = 3.0
+texture_under = ExtResource("35_d3fnn")
+texture_progress = ExtResource("36_f520q")
+texture_progress_offset = Vector2(17, 0)
+
+[node name="ShockwaveCost" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 1052.0
+offset_top = 606.0
+offset_right = 1052.0
+offset_bottom = 1146.0
+
+[node name="ShockwaveCostIcon" type="TextureRect" parent="ShockwaveCost"]
+layout_mode = 2
+offset_left = -61.0
+offset_top = 205.0
+offset_right = 67.0
+offset_bottom = 333.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("18_pt2ka")
+stretch_mode = 2
+
+[node name="ShockwaveCostMinusButton" type="TextureButton" parent="ShockwaveCost/ShockwaveCostIcon"]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 19.0
+offset_right = 34.0
+offset_bottom = 119.0
+texture_normal = ExtResource("29_37q6b")
+texture_pressed = ExtResource("30_1tn50")
+texture_hover = ExtResource("31_j76xx")
+
+[node name="ShockwaveCostPlusButton" type="TextureButton" parent="ShockwaveCost/ShockwaveCostIcon"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 19.0
+offset_right = 211.0
+offset_bottom = 119.0
+texture_normal = ExtResource("32_tl1qc")
+texture_pressed = ExtResource("33_hrflt")
+texture_hover = ExtResource("34_7rmq7")
+
+[node name="Shockwavecostlvl" type="Label" parent="ShockwaveCost"]
+visible = false
+layout_mode = 0
+offset_left = -31.0
+offset_top = 328.0
+offset_right = 28.0
+offset_bottom = 380.0
+text = "0/3
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShockwaveProgressBar" type="TextureProgressBar" parent="ShockwaveCost"]
+layout_mode = 0
+offset_left = -56.0
+offset_top = 301.0
+offset_right = 50.0
+offset_bottom = 360.0
+max_value = 3.0
+texture_under = ExtResource("35_d3fnn")
+texture_progress = ExtResource("36_f520q")
+texture_progress_offset = Vector2(17, 0)
+
+[node name="DashDamage" type="Control" parent="."]
+visible = false
+layout_mode = 2
+anchors_preset = 0
+offset_left = 785.0
+offset_top = 2000.0
+offset_right = 785.0
+offset_bottom = 2540.0
+
+[node name="DashDamageIcon" type="TextureRect" parent="DashDamage"]
+layout_mode = 2
+offset_left = -64.0
+offset_top = 200.0
+offset_right = 64.0
+offset_bottom = 328.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("10_88nne")
+expand_mode = 1
+
+[node name="DashDamageMinusButton" type="TextureButton" parent="DashDamage/DashDamageIcon"]
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_left = -71.0
+offset_top = 115.0
+offset_right = 29.0
+offset_bottom = 215.0
+rotation = -1.5708
+texture_normal = ExtResource("44_no5hw")
+texture_pressed = ExtResource("45_0ayar")
+texture_hover = ExtResource("46_mwq8o")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="DashDamagePlusButton" type="TextureButton" parent="DashDamage/DashDamageIcon"]
+self_modulate = Color(0, 1, 0, 1)
+layout_mode = 0
+offset_left = 203.0
+offset_top = 20.0
+offset_right = 303.0
+offset_bottom = 120.0
+rotation = 1.5708
+texture_normal = ExtResource("47_x7030")
+texture_pressed = ExtResource("48_1doxg")
+texture_hover = ExtResource("49_i1l67")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="DashDamageLabel" type="Label" parent="DashDamage/DashDamageIcon"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -77.0
+offset_top = -64.0
+offset_right = 77.0
+offset_bottom = 4.0
+grow_horizontal = 2
+text = "Dash Damage"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShockwaveDamage" type="Control" parent="."]
+visible = false
+layout_mode = 2
+anchors_preset = 0
+offset_left = 1297.0
+offset_top = 1981.0
+offset_right = 1297.0
+offset_bottom = 2521.0
+
+[node name="ShockwaveDamageIcon" type="TextureRect" parent="ShockwaveDamage"]
+layout_mode = 2
+offset_left = -64.0
+offset_top = 200.0
+offset_right = 64.0
+offset_bottom = 328.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("11_aiga3")
+expand_mode = 1
+
+[node name="ShockwaveDamageMinusButton" type="TextureButton" parent="ShockwaveDamage/ShockwaveDamageIcon"]
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_left = -76.0
+offset_top = 116.0
+offset_right = 24.0
+offset_bottom = 216.0
+rotation = -1.5708
+texture_normal = ExtResource("44_no5hw")
+texture_pressed = ExtResource("45_0ayar")
+texture_hover = ExtResource("46_mwq8o")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ShockwaveDamagePlusButton" type="TextureButton" parent="ShockwaveDamage/ShockwaveDamageIcon"]
+self_modulate = Color(0, 1, 0, 1)
+layout_mode = 0
+offset_left = 215.0
+offset_top = 23.0
+offset_right = 315.0
+offset_bottom = 123.0
+rotation = 1.5708
+texture_normal = ExtResource("47_x7030")
+texture_pressed = ExtResource("48_1doxg")
+texture_hover = ExtResource("49_i1l67")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ShockwaveDamageLabel" type="Label" parent="ShockwaveDamage/ShockwaveDamageIcon"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -77.0
+offset_top = -64.0
+offset_right = 77.0
+offset_bottom = 4.0
+grow_horizontal = 2
+text = "Shockwave Damage"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShockwaveRange" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 771.0
+offset_top = 610.0
+offset_right = 771.0
+offset_bottom = 1150.0
+
+[node name="ShockwaveRangeIcon" type="TextureRect" parent="ShockwaveRange"]
+layout_mode = 2
+offset_left = -57.0
+offset_top = 201.0
+offset_right = 71.0
+offset_bottom = 329.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("24_31y88")
+stretch_mode = 2
+
+[node name="ShockwaveRangeMinusButton" type="TextureButton" parent="ShockwaveRange/ShockwaveRangeIcon"]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 19.0
+offset_right = 34.0
+offset_bottom = 119.0
+texture_normal = ExtResource("29_37q6b")
+texture_pressed = ExtResource("30_1tn50")
+texture_hover = ExtResource("31_j76xx")
+
+[node name="ShockwaveRangePlusButton" type="TextureButton" parent="ShockwaveRange/ShockwaveRangeIcon"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 19.0
+offset_right = 211.0
+offset_bottom = 119.0
+texture_normal = ExtResource("32_tl1qc")
+texture_pressed = ExtResource("33_hrflt")
+texture_hover = ExtResource("34_7rmq7")
+
+[node name="Shockwaverangelvl" type="Label" parent="ShockwaveRange"]
+visible = false
+layout_mode = 0
+offset_left = -31.0
+offset_top = 328.0
+offset_right = 28.0
+offset_bottom = 380.0
+text = "0/3
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShockwaveRangeProgressBar" type="TextureProgressBar" parent="ShockwaveRange"]
+layout_mode = 0
+offset_left = -51.0
+offset_top = 298.0
+offset_right = 55.0
+offset_bottom = 357.0
+max_value = 3.0
+texture_under = ExtResource("35_d3fnn")
+texture_progress = ExtResource("36_f520q")
+texture_progress_offset = Vector2(17, 0)
+
+[node name="UpgardeScreenLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1460.0
+offset_top = 752.0
+offset_right = -247.0
+offset_bottom = -268.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Upgrades
+"
+label_settings = ExtResource("43_3padu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CharacterLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1042.0
+offset_top = 287.0
+offset_right = -582.0
+offset_bottom = -733.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Character
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DashLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1043.0
+offset_top = 515.0
+offset_right = -582.0
+offset_bottom = -505.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Dash"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShockwaveLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1042.0
+offset_top = 743.0
+offset_right = -582.0
+offset_bottom = -276.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Shockwave
+"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -914.0
+offset_top = -176.0
+offset_right = -514.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(200, 75)
+texture_normal = ExtResource("47_3fbt6")
+texture_pressed = ExtResource("48_xwdqy")
+texture_hover = ExtResource("49_vcmpy")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("55_cr3wb")
+
+[node name="BackButtonLabel" type="Label" parent="BackButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back"
+label_settings = ExtResource("45_n0262")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BackButton"]
+libraries = {
+"": SubResource("AnimationLibrary_4gnv7")
+}
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 232.0
+offset_top = 346.0
+offset_right = 629.0
+offset_bottom = 398.0
+label_settings = ExtResource("47_tdu4f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Label"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 119.0
+offset_right = 394.0
+offset_bottom = 573.0
+theme_override_constants/separation = 20
+
+[node name="HealthLabel" type="Label" parent="Label/VBoxContainer"]
+layout_mode = 2
+text = "Healthpoints :"
+label_settings = ExtResource("47_tdu4f")
+vertical_alignment = 1
+
+[node name="ProjectileLabel" type="Label" parent="Label/VBoxContainer"]
+layout_mode = 2
+text = "ProjectileDamage :"
+label_settings = ExtResource("47_tdu4f")
+vertical_alignment = 1
+
+[node name="FirerateLabel" type="Label" parent="Label/VBoxContainer"]
+layout_mode = 2
+text = "Firerate :"
+label_settings = ExtResource("47_tdu4f")
+vertical_alignment = 1
+
+[node name="MovementLabel" type="Label" parent="Label/VBoxContainer"]
+layout_mode = 2
+text = "Movementspeed :"
+label_settings = ExtResource("47_tdu4f")
+vertical_alignment = 1
+
+[node name="MaxDashLabel" type="Label" parent="Label/VBoxContainer"]
+layout_mode = 2
+text = "Max Dash Stacks :"
+label_settings = ExtResource("47_tdu4f")
+vertical_alignment = 1
+
+[node name="DashCooldownLabel" type="Label" parent="Label/VBoxContainer"]
+layout_mode = 2
+text = "Dash Cooldown :"
+label_settings = ExtResource("47_tdu4f")
+vertical_alignment = 1
+
+[node name="ShockwaveCostLabel" type="Label" parent="Label/VBoxContainer"]
+layout_mode = 2
+text = "Shockwave Charge :"
+label_settings = ExtResource("47_tdu4f")
+vertical_alignment = 1
+
+[node name="ShockwaveRangeLabel" type="Label" parent="Label/VBoxContainer"]
+layout_mode = 2
+text = "Shockwave Range :"
+label_settings = ExtResource("47_tdu4f")
+vertical_alignment = 1
+
+[node name="Bonus" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 259.0
+offset_top = 1.0
+offset_right = 656.0
+offset_bottom = 53.0
+label_settings = ExtResource("45_n0262")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Label/Bonus"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 119.0
+offset_right = 61.0
+offset_bottom = 573.0
+theme_override_constants/separation = 20
+
+[node name="HealthLabel" type="Label" parent="Label/Bonus/VBoxContainer"]
+layout_mode = 2
+label_settings = ExtResource("48_45rdy")
+vertical_alignment = 1
+
+[node name="ProjectileLabel" type="Label" parent="Label/Bonus/VBoxContainer"]
+layout_mode = 2
+label_settings = ExtResource("48_45rdy")
+vertical_alignment = 1
+
+[node name="FirerateLabel" type="Label" parent="Label/Bonus/VBoxContainer"]
+layout_mode = 2
+label_settings = ExtResource("48_45rdy")
+vertical_alignment = 1
+
+[node name="MovementLabel" type="Label" parent="Label/Bonus/VBoxContainer"]
+layout_mode = 2
+label_settings = ExtResource("48_45rdy")
+vertical_alignment = 1
+
+[node name="MaxDashLabel" type="Label" parent="Label/Bonus/VBoxContainer"]
+layout_mode = 2
+label_settings = ExtResource("48_45rdy")
+vertical_alignment = 1
+
+[node name="DashCooldownLabel" type="Label" parent="Label/Bonus/VBoxContainer"]
+layout_mode = 2
+label_settings = ExtResource("48_45rdy")
+vertical_alignment = 1
+
+[node name="ShockwaveCostLabel" type="Label" parent="Label/Bonus/VBoxContainer"]
+layout_mode = 2
+label_settings = ExtResource("48_45rdy")
+vertical_alignment = 1
+
+[node name="ShockwaveRangeLabel" type="Label" parent="Label/Bonus/VBoxContainer"]
+layout_mode = 2
+label_settings = ExtResource("48_45rdy")
+vertical_alignment = 1
+
+[node name="Node2D" parent="." instance=ExtResource("39_8g77f")]
+position = Vector2(1694, 930)
+
+[connection signal="pressed" from="Health/HealthIcon/HealthMinusButton" to="." method="onHealthMinusButtonPressed"]
+[connection signal="pressed" from="Health/HealthIcon/HealthPlusButton" to="." method="onHealthPlusButtonPressed"]
+[connection signal="pressed" from="Projectile/ProjectileDamage/ProjectileMinusButton" to="." method="onProjectileMinusButtonPressed"]
+[connection signal="pressed" from="Projectile/ProjectileDamage/ProjectilePlusButton" to="." method="onProjectilePlusButtonPressed"]
+[connection signal="pressed" from="Movement/MovementIcon/MovementMinusButton" to="." method="onMovementMinusButtonPressed"]
+[connection signal="pressed" from="Movement/MovementIcon/MovementPlusButton" to="." method="onMovementPlusButtonPressed"]
+[connection signal="pressed" from="Firerate/FirerateIcon/FirerateMinusButton" to="." method="onFirerateMinusButtonPressed"]
+[connection signal="pressed" from="Firerate/FirerateIcon/FireratePlusButton" to="." method="onFireratePlusButtonPressed"]
+[connection signal="pressed" from="MaxDash/MaxDashIcon/MaxDashMinusButton" to="." method="onMaxDashMinusButtonPressed"]
+[connection signal="pressed" from="MaxDash/MaxDashIcon/MaxDashPlusButton" to="." method="onMaxDashPlusButtonPressed"]
+[connection signal="pressed" from="DashCooldown/DashCooldownIcon/DashCooldownMinusButton" to="." method="onDashCooldownMinusButtonPressed"]
+[connection signal="pressed" from="DashCooldown/DashCooldownIcon/DashCooldownPlusButton" to="." method="onDashCooldownPlusButtonPressed"]
+[connection signal="pressed" from="ShockwaveCost/ShockwaveCostIcon/ShockwaveCostMinusButton" to="." method="onShockwaveCostMinusButtonPressed"]
+[connection signal="pressed" from="ShockwaveCost/ShockwaveCostIcon/ShockwaveCostPlusButton" to="." method="onShockwaveCostPlusButtonPressed"]
+[connection signal="pressed" from="DashDamage/DashDamageIcon/DashDamageMinusButton" to="." method="onDashDamageMinusButtonPressed"]
+[connection signal="pressed" from="DashDamage/DashDamageIcon/DashDamagePlusButton" to="." method="onDashDamagePlusButtonPressed"]
+[connection signal="pressed" from="ShockwaveDamage/ShockwaveDamageIcon/ShockwaveDamageMinusButton" to="." method="onShockwaveDamageMinusButtonPressed"]
+[connection signal="pressed" from="ShockwaveDamage/ShockwaveDamageIcon/ShockwaveDamagePlusButton" to="." method="onShockwaveDamagePlusButtonPressed"]
+[connection signal="pressed" from="ShockwaveRange/ShockwaveRangeIcon/ShockwaveRangeMinusButton" to="." method="onShockwaveRangeMinusButtonPressed"]
+[connection signal="pressed" from="ShockwaveRange/ShockwaveRangeIcon/ShockwaveRangePlusButton" to="." method="onShockwaveRangePlusButtonPressed"]
+[connection signal="pressed" from="BackButton" to="." method="onBackButtonPressed"]

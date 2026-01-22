@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgqofbdx14c5m"]
+
+[ext_resource type="Script" path="res://Enemies/Scripts/SpawnPointSmallBoss.gd" id="1_7fp6a"]
+
+[node name="spawnPointSmallBoss" type="Node3D"]
+script = ExtResource("1_7fp6a")

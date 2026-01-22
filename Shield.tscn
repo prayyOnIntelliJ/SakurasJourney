@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://x3wikg5ufr1d"]
+
+[ext_resource type="Shader" uid="uid://1fcpehqygmfe" path="res://Shield.tres" id="1_dr3ok"]
+[ext_resource type="Texture2D" uid="uid://bj5s2wgna5wjw" path="res://Projectiles/VFX/TranspBall.png" id="2_myntn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mrl0u"]
+render_priority = 0
+shader = ExtResource("1_dr3ok")
+shader_parameter/Scanline_scroll_speed = 1.0
+shader_parameter/Scanline_scale = 10.0
+shader_parameter/Scanline_Color = Color(0.445717, 0.00013828, 0.445713, 0.470588)
+shader_parameter/Fresnel_power = 5.0
+shader_parameter/Fresnel_color = Color(0.366814, 9.16891e-05, 0.366812, 1)
+shader_parameter/Scanline_texture = ExtResource("2_myntn")
+
+[sub_resource type="SphereMesh" id="SphereMesh_brky8"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8tdaq"]
+
+[node name="Node3D" type="StaticBody3D"]
+collision_layer = 32
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_mrl0u")
+mesh = SubResource("SphereMesh_brky8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_8tdaq")

@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://bfmsfav1dacj4"]
+
+[ext_resource type="Texture2D" uid="uid://b44rcbtxqbks1" path="res://Projectiles/VFX/New/FX_CloudAlpha04.png" id="1_uurcm"]
+
+[sub_resource type="Curve" id="Curve_d5fim"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.0942029, 0.120879), 0.0, 0.0, 0, 0, Vector2(0.891304, 0.131868), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_jmoqq"]
+curve = SubResource("Curve_d5fim")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jmxed"]
+emission_shape = 3
+emission_box_extents = Vector3(5, 0, 5)
+spread = 0.0
+initial_velocity_max = 2.0
+gravity = Vector3(0, 0, 0)
+color = Color(1, 1, 1, 0.6)
+alpha_curve = SubResource("CurveTexture_jmoqq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6d3ca"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_uurcm")
+billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_8ddxb"]
+material = SubResource("StandardMaterial3D_6d3ca")
+size = Vector2(10, 10)
+
+[node name="Clouds" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+amount = 50
+lifetime = 30.0
+explosiveness = 0.98
+visibility_aabb = AABB(-4, -4, -4, 40, 40, 40)
+process_material = SubResource("ParticleProcessMaterial_jmxed")
+draw_pass_1 = SubResource("QuadMesh_8ddxb")

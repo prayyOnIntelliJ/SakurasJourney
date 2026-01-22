@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://csxijcty3b1oa"]
+
+[ext_resource type="ArrayMesh" uid="uid://c27cho2h4b356" path="res://3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiCrossIntersection.res" id="1_ts30v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_etakv"]
+size = Vector3(1, 6.725, 23.35)
+
+[node name="TamagakiCrossIntersection" type="StaticBody3D"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+collision_layer = 8
+
+[node name="CrossIntersectionMesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ts30v")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="CrossIntersectionMesh"]
+
+[node name="IntersectionCollider01" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.45, 0)
+shape = SubResource("BoxShape3D_etakv")
+
+[node name="IntersectionCollider02" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 3.35, 0.153)
+shape = SubResource("BoxShape3D_etakv")

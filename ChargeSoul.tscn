@@ -1,0 +1,72 @@
+[gd_scene load_steps=14 format=3 uid="uid://cpfgo6phjvavs"]
+
+[ext_resource type="Shader" uid="uid://dqraealp8lmdy" path="res://Fire.tres" id="1_dbgn3"]
+[ext_resource type="Script" path="res://ChargeSoul.gd" id="1_oplfm"]
+[ext_resource type="Texture2D" uid="uid://ct4nbrxsp5nqd" path="res://Projectiles/VFX/New/Voronoi01.png" id="2_vswwn"]
+[ext_resource type="Texture2D" uid="uid://b80wluldo4c1v" path="res://Projectiles/VFX/New/Flame02.png" id="3_il6ff"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_l4cqo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5vjvh"]
+render_priority = 0
+shader = ExtResource("1_dbgn3")
+shader_parameter/Dissolvetiling = Vector2(0.25, 0.2)
+shader_parameter/Dissolvespeed = Vector2(0, 0.2)
+shader_parameter/Dissolveamount = 0.2
+shader_parameter/MainTex = ExtResource("3_il6ff")
+shader_parameter/Dissolvetexture = ExtResource("2_vswwn")
+
+[sub_resource type="Curve" id="Curve_o8lh8"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_817wj"]
+curve = SubResource("Curve_o8lh8")
+
+[sub_resource type="Curve" id="Curve_yw5iy"]
+_data = [Vector2(0, 1), 0.0, -1.0, 0, 1, Vector2(1, 0), -1.0, 0.0, 1, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_ddybq"]
+curve = SubResource("Curve_yw5iy")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rldhq"]
+angle_min = -360.0
+angle_max = 360.0
+gravity = Vector3(0, 5, 0)
+damping_min = 0.5
+damping_max = 1.0
+scale_min = 0.5
+scale_max = 0.75
+scale_curve = SubResource("CurveTexture_ddybq")
+color = Color(4, 4, 0.5, 0.8)
+alpha_curve = SubResource("CurveTexture_817wj")
+
+[sub_resource type="QuadMesh" id="QuadMesh_7c386"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ifito"]
+
+[node name="Chargesoul" type="CharacterBody3D"]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_oplfm")
+
+[node name="ChargeSoul" type="Area3D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ChargeSoul"]
+shape = SubResource("SphereShape3D_l4cqo")
+
+[node name="Flames" type="GPUParticles3D" parent="ChargeSoul"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.21731, 0)
+material_override = SubResource("ShaderMaterial_5vjvh")
+amount = 50
+lifetime = 0.2
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_rldhq")
+draw_pass_1 = SubResource("QuadMesh_7c386")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_ifito")
+
+[connection signal="body_entered" from="ChargeSoul" to="." method="onChargeSoulBodyEntered"]

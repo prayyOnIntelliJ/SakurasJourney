@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://bhygo01yc2523"]
+
+[node name="PlayerSpawnPoint" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 13.1426)

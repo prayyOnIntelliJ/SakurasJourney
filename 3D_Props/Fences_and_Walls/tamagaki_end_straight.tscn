@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2u2tgrg6xbq8"]
+
+[ext_resource type="ArrayMesh" uid="uid://bky84xupu5nar" path="res://3D_Props/Fences_and_Walls/Meshes_and_Materials/TamagakiEndStraight.res" id="1_2e87r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_siyqo"]
+size = Vector3(18, 4.6, 1)
+
+[node name="TamagakiEndStraight" type="StaticBody3D"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+collision_layer = 8
+
+[node name="EndMesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_2e87r")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="EndMesh"]
+
+[node name="EndCollider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.0937, 2.74219, 0)
+shape = SubResource("BoxShape3D_siyqo")

@@ -1,0 +1,8 @@
+syntax: regexp
+.godot/
+(?i)\.import
+(?i)\.orig
+syntax: glob
+export_presets.cfg
+*.tmp
+*.exe

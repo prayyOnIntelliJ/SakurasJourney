@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://dyrcobtrjqia3"]
+
+[ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Enemies/Scenes/enemy.tscn" id="1_cf0hl"]
+[ext_resource type="Script" path="res://Enemies/Scripts/EnemyBomber.gd" id="2_bt5f2"]
+[ext_resource type="Texture2D" uid="uid://5vb71vtib18m" path="res://Enemies/Assets/char_enemy_Sogenbi_w_115x115px.png.png" id="3_wavoh"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_2tqyp"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ghbh6"]
+viewport_path = NodePath("SubViewport")
+
+[node name="enemy_bomber" instance=ExtResource("1_cf0hl")]
+script = ExtResource("2_bt5f2")
+speed = 10.0
+enemyDamage = 5.0
+
+[node name="Sprite3D" parent="." index="3"]
+texture = SubResource("ViewportTexture_2tqyp")
+
+[node name="Body" parent="Sprite3D/SubViewport" index="0"]
+texture = ExtResource("3_wavoh")
+
+[node name="SpawnParticles" parent="." index="7"]
+texture = SubResource("ViewportTexture_ghbh6")
+
+[connection signal="body_entered" from="Area3D" to="." method="onEnemyBodyEntered"]

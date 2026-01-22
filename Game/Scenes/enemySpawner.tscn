@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://de33w604h8soa"]
+
+[ext_resource type="Script" path="res://Game/Scripts/enemy_spawner.gd" id="1_omg4s"]
+
+[node name="enemySpawner" type="Path3D"]
+script = ExtResource("1_omg4s")
+
+[node name="enemySpawnerFollow" type="PathFollow3D" parent="."]
+transform = Transform3D(-4.37109e-08, 0, -0.999989, 0, 1, 0, 0.999989, 0, -4.37109e-08, 0, 0, 0)
+
+[node name="spawnIntervalTimer" type="Timer" parent="."]
+
+[node name="firstSpawmTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="childControlTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="spawnIntervalTimer" to="." method="onSpawnTimerTimeout"]
+[connection signal="timeout" from="firstSpawmTimer" to="." method="on_first_spawm_timer_timeout"]
+[connection signal="timeout" from="childControlTimer" to="." method="on_child_control_timer_timeout"]

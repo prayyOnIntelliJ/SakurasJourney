@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://pvv5p1d56bkq"]
+
+[ext_resource type="Texture2D" uid="uid://dqvo8iq13svlk" path="res://2D_Assets/GroundTextures/Stone/GroundTexture_Stone_Relief_1024x1024.png" id="1_256mn"]
+
+[node name="SakuraRelief" type="Sprite3D"]
+transform = Transform3D(-0.385, -3.36578e-08, 1.47123e-15, 0, -1.68289e-08, -0.385, 3.36578e-08, -0.385, 1.68289e-08, 0, 0, 0)
+texture = ExtResource("1_256mn")

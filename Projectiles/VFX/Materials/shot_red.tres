@@ -1,0 +1,35 @@
+[gd_resource type="ParticleProcessMaterial" load_steps=5 format=3 uid="uid://clm3hcvoua6g1"]
+
+[sub_resource type="Curve" id="Curve_3esyn"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1e-05, 0.592142), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_07v40"]
+curve = SubResource("Curve_3esyn")
+
+[sub_resource type="Curve" id="Curve_0upjx"]
+_data = [Vector2(0, 0.393725), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_2xl86"]
+curve = SubResource("Curve_0upjx")
+
+[resource]
+particle_flag_disable_z = true
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 1.0
+emission_ring_radius = 1.0
+emission_ring_inner_radius = 1.0
+angle_min = 1.07288e-05
+angle_max = 1.07288e-05
+inherit_velocity_ratio = 1.0
+direction = Vector3(0, 0, 0)
+spread = 0.0
+radial_velocity_min = 1400.0
+radial_velocity_max = 1400.0
+gravity = Vector3(0, 0, 0)
+tangential_accel_min = -2.23517e-06
+tangential_accel_max = -2.23517e-06
+scale_curve = SubResource("CurveTexture_2xl86")
+alpha_curve = SubResource("CurveTexture_07v40")

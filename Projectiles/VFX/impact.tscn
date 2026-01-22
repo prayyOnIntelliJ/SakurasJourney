@@ -1,0 +1,86 @@
+[gd_scene load_steps=9 format=3 uid="uid://cxdqdoewew17b"]
+
+[ext_resource type="Material" uid="uid://dlk7c66ptwylv" path="res://Projectiles/VFX/Materials/Impact.tres" id="1_gxe45"]
+[ext_resource type="Script" path="res://Projectiles/VFX/impact.gd" id="1_vwh6v"]
+[ext_resource type="Texture2D" uid="uid://bj5s2wgna5wjw" path="res://Projectiles/VFX/TranspBall.png" id="2_n2t8e"]
+[ext_resource type="AudioStream" uid="uid://shqn4k2t1655" path="res://Sounds/hitsound.wav" id="4_tqj0u"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_21nf7"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="Animation" id="Animation_dwr76"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/GPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_k4s8o"]
+resource_name = "impact"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/GPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.9),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7ngtg"]
+_data = {
+"RESET": SubResource("Animation_dwr76"),
+"impact": SubResource("Animation_k4s8o")
+}
+
+[node name="Impact" type="Node3D"]
+script = ExtResource("1_vwh6v")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-2.18557e-08, -0.5, -2.18557e-08, 0, -2.18557e-08, 0.5, -0.5, 2.18557e-08, 9.55343e-16, 0, 0, 1.1)
+texture = SubResource("ViewportTexture_21nf7")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="SubViewport"]
+position = Vector2(512, 256)
+amount = 20
+process_material = ExtResource("1_gxe45")
+texture = ExtResource("2_n2t8e")
+explosiveness = 1.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_7ngtg")
+}
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_tqj0u")
+volume_db = -10.0
+max_polyphony = 2

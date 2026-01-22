@@ -1,0 +1,98 @@
+[gd_scene load_steps=12 format=3 uid="uid://bhkkmj4p7ffl7"]
+
+[ext_resource type="Texture2D" uid="uid://1dof1jch6ivi" path="res://UI/UI_Sprites/WhiteTexture.png" id="1_cajh5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_amf2w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bln31"]
+albedo_color = Color(0.637843, 0.637843, 0.637843, 1)
+albedo_texture = ExtResource("1_cajh5")
+metallic = 0.4
+metallic_specular = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_36tof"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_74i53"]
+albedo_color = Color(0.639216, 0.639216, 0.639216, 1)
+albedo_texture = ExtResource("1_cajh5")
+metallic = 0.4
+metallic_specular = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_kyb6o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hh437"]
+albedo_color = Color(0.639216, 0.639216, 0.639216, 1)
+albedo_texture = ExtResource("1_cajh5")
+metallic = 0.4
+metallic_specular = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wltiq"]
+albedo_color = Color(0.639216, 0.639216, 0.639216, 1)
+albedo_texture = ExtResource("1_cajh5")
+metallic = 0.4
+metallic_specular = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d2rlh"]
+size = Vector3(4.25, 5, 4.25)
+
+[sub_resource type="BoxMesh" id="BoxMesh_duhr5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wi7eb"]
+albedo_color = Color(0.639216, 0.639216, 0.639216, 1)
+albedo_texture = ExtResource("1_cajh5")
+metallic = 0.4
+metallic_specular = 1.0
+
+[node name="stonePillar" type="StaticBody3D"]
+collision_layer = 33
+
+[node name="MainPillar" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.5, 0, 0, 0, 4, 0, 0, 0, 2.5, 0, 2.5, 0)
+mesh = SubResource("BoxMesh_amf2w")
+surface_material_override/0 = SubResource("StandardMaterial3D_bln31")
+
+[node name="Pedestal" type="MeshInstance3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 0.5, 0, 0, 0, 4, 0, 0.25, 0)
+mesh = SubResource("BoxMesh_36tof")
+surface_material_override/0 = SubResource("StandardMaterial3D_74i53")
+
+[node name="Pedestal2ndRow" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.5, 0, 0, 0, 0.25, 0, 0, 0, 3.5, 0, 0.625, 0)
+mesh = SubResource("BoxMesh_kyb6o")
+surface_material_override/0 = SubResource("StandardMaterial3D_hh437")
+
+[node name="Chapter" type="MeshInstance3D" parent="."]
+transform = Transform3D(3.5, 0, 0, 0, 0.5, 0, 0, 0, 3.5, 0, 4.575, 0)
+mesh = SubResource("BoxMesh_36tof")
+surface_material_override/0 = SubResource("StandardMaterial3D_wltiq")
+
+[node name="Chapter2ndRow" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 0.25, 0, 0, 0, 3, -0.00961208, 4.255, -0.000100613)
+mesh = SubResource("BoxMesh_kyb6o")
+surface_material_override/0 = SubResource("StandardMaterial3D_hh437")
+
+[node name="PillarColider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.35, 0)
+shape = SubResource("BoxShape3D_d2rlh")
+
+[node name="Inlay" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.125, 0, 0, 0, 2.75, 0, 0, 0, 2, -1.3, 2.5, 0)
+mesh = SubResource("BoxMesh_duhr5")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi7eb")
+
+[node name="Inlay2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.125, 0, 0, 0, 2.75, 0, 0, 0, 2, 1.3, 2.5, 0)
+mesh = SubResource("BoxMesh_duhr5")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi7eb")
+
+[node name="Inlay3" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2.75, 0, 0, 0, 0.125, 0, 2.5, -1.3)
+mesh = SubResource("BoxMesh_duhr5")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi7eb")
+
+[node name="Inlay4" type="MeshInstance3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2.75, 0, 0, 0, 0.125, 0, 2.5, 1.3)
+mesh = SubResource("BoxMesh_duhr5")
+surface_material_override/0 = SubResource("StandardMaterial3D_wi7eb")
+
+[node name="navigationObstacle3d" type="NavigationObstacle3D" parent="."]

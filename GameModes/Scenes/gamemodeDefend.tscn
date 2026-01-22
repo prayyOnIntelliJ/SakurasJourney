@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://otf7ddo6pf05"]
+
+[ext_resource type="Script" path="res://GameModes/Scripts/gamemodeDefend.gd" id="1_ye143"]
+
+[node name="gamemodeDefend" type="Node3D"]
+script = ExtResource("1_ye143")
+sakuraRespawnTimeFrame = 20.0
+
+[node name="gameTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="sakuraRespawnTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="gameTimer" to="." method="onGameTimerTimeout"]
+[connection signal="timeout" from="sakuraRespawnTimer" to="." method="onSakuraRespawnTimerTimeout"]

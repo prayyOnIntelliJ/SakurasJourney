@@ -1,0 +1,122 @@
+[gd_scene load_steps=9 format=3 uid="uid://di8wikgbay2gf"]
+
+[ext_resource type="Material" uid="uid://clm3hcvoua6g1" path="res://Projectiles/VFX/Materials/shot_red.tres" id="2_xe3fl"]
+[ext_resource type="Texture2D" uid="uid://cxxu0vm8h2on" path="res://Projectiles/VFX/Materials/TranspBall.png" id="3_c6olt"]
+[ext_resource type="AudioStream" uid="uid://1t1fku0p7si7" path="res://Sounds/die enemy.wav" id="4_1yy53"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_ebr81"]
+
+[sub_resource type="Animation" id="Animation_bjdjr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/GPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Area3D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ykex7"]
+resource_name = "emit"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SubViewport/GPUParticles2D:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Area3D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(1, 1, 1), Vector3(20, 20, 20)]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.7),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"queue_free"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tmh1w"]
+_data = {
+"RESET": SubResource("Animation_bjdjr"),
+"emit": SubResource("Animation_ykex7")
+}
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_q2ago"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[node name="Shockwave_both" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Area3D" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 6
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_ebr81")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite3D")
+libraries = {
+"": SubResource("AnimationLibrary_tmh1w")
+}
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 1, 0)
+modulate = Color(0.597922, 0.000268955, 0.600046, 1)
+texture = SubResource("ViewportTexture_q2ago")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+size = Vector2i(4000, 4000)
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Sprite3D/SubViewport"]
+position = Vector2(2000, 2000)
+amount = 300
+process_material = ExtResource("2_xe3fl")
+texture = ExtResource("3_c6olt")
+lifetime = 0.7
+one_shot = true
+explosiveness = 1.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_1yy53")

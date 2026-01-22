@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://5acpkx2stm4y"]
+
+[ext_resource type="Script" path="res://3D_Props/FeuerzungeParent.gd" id="1_d11xf"]
+
+[node name="FeuerzungeParent" type="Node3D"]
+script = ExtResource("1_d11xf")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4096.0
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="on_timer_timeout"]

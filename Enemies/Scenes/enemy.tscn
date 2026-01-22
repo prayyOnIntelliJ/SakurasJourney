@@ -1,0 +1,667 @@
+[gd_scene load_steps=85 format=3 uid="uid://bbipqdxxcqbec"]
+
+[ext_resource type="Script" path="res://Enemies/Scripts/enemy.gd" id="1_m5y5g"]
+[ext_resource type="AudioStream" uid="uid://bppqsmwaoh2ee" path="res://Sounds/Whisper Out Of Nowhere 001.wav" id="4_qqbmm"]
+[ext_resource type="Texture2D" uid="uid://dexxidw6l8ynr" path="res://Enemies/Assets/Enemy_Attack_red.png" id="4_yig00"]
+[ext_resource type="AudioStream" uid="uid://csc0tfh0ucmkl" path="res://Sounds/Whisper Out Of Nowhere 002.wav" id="5_drrfj"]
+[ext_resource type="Texture2D" uid="uid://cr58hn46pynli" path="res://Enemies/Assets/Enemy_Attack_blue.png" id="5_iqgad"]
+[ext_resource type="Texture2D" uid="uid://cymnb55gsd2ib" path="res://Enemies/Assets/Enemy_Death.png" id="6_2e7ao"]
+[ext_resource type="Texture2D" uid="uid://bbyfl0nb0rk4f" path="res://Enemies/Assets/char_enemy_Nobiagari_idle_Spritesheet.png" id="6_15x1t"]
+[ext_resource type="AudioStream" uid="uid://cjjs8obu20l3a" path="res://Sounds/Whisper Out Of Nowhere 003.wav" id="6_xbagg"]
+[ext_resource type="AudioStream" uid="uid://bl0u8ntg1pyuc" path="res://Sounds/Whisper Out Of Nowhere 004.wav" id="7_itaie"]
+[ext_resource type="AudioStream" uid="uid://bbxyc0g4j0j2l" path="res://Sounds/Whisper Out Of Nowhere 005.wav" id="8_cyb6a"]
+[ext_resource type="Texture2D" uid="uid://qrwesc0bu4l0" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_0.png" id="8_warg2"]
+[ext_resource type="Texture2D" uid="uid://blg145sekb44y" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_1.png" id="9_u80fy"]
+[ext_resource type="Texture2D" uid="uid://sgpwryy1rev8" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_2.png" id="10_curyp"]
+[ext_resource type="Texture2D" uid="uid://d2w67e2w4utsu" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_3.png" id="11_sdlcr"]
+[ext_resource type="Texture2D" uid="uid://chlicla1y7q7d" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_4.png" id="12_ahglq"]
+[ext_resource type="Texture2D" uid="uid://x3pgjdbpsryp" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_5.png" id="13_l5cyn"]
+[ext_resource type="Texture2D" uid="uid://8xlx30h4vt15" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_6.png" id="14_mwxj7"]
+[ext_resource type="AudioStream" uid="uid://dj3xbjwch3fqh" path="res://Sounds/hitsound.wav" id="15_kgr03"]
+[ext_resource type="Texture2D" uid="uid://dl7jf5765ichy" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_7.png" id="15_leyuy"]
+[ext_resource type="Texture2D" uid="uid://3kn4ea7gtah" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Idle/Armature_idelanimation_8.png" id="16_b1kaq"]
+[ext_resource type="Texture2D" uid="uid://cu707xlj8db1r" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_0.png" id="18_wtpin"]
+[ext_resource type="Texture2D" uid="uid://1t3du5wap2kg" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_1.png" id="19_rcq4t"]
+[ext_resource type="Texture2D" uid="uid://bdvaloilj3gmp" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_2.png" id="20_2yxvn"]
+[ext_resource type="PackedScene" uid="uid://bg1d13jx6d3bx" path="res://Projectiles/VFX/SpawnParticles.tscn" id="20_5swph"]
+[ext_resource type="Texture2D" uid="uid://8th5okxvben5" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_3.png" id="21_3f3ra"]
+[ext_resource type="Texture2D" uid="uid://c6xy7h5v84axe" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_4.png" id="22_wqt4t"]
+[ext_resource type="Texture2D" uid="uid://cag77pdtcw36b" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_5.png" id="23_scnmb"]
+[ext_resource type="Texture2D" uid="uid://cycrh72x473f0" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_6.png" id="24_8j7rj"]
+[ext_resource type="Texture2D" uid="uid://cfe1h1xvhp245" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_7.png" id="25_tt4ph"]
+[ext_resource type="Texture2D" uid="uid://kblaidf4ts3v" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_0.png" id="26_3w36m"]
+[ext_resource type="Texture2D" uid="uid://ck0msxrtue68x" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_00.png" id="26_e120b"]
+[ext_resource type="Texture2D" uid="uid://b18dccn22dmug" path="res://Enemies/Assets/Animations/Nobiagari (defender)/Shoot/Armature_shootanimation_8.png" id="26_ntvc1"]
+[ext_resource type="Texture2D" uid="uid://dqxsm3ssc8pld" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_01.png" id="27_nl24c"]
+[ext_resource type="Texture2D" uid="uid://b1er8nkbdv7ly" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_1.png" id="27_r48t6"]
+[ext_resource type="Texture2D" uid="uid://b1xofw8io5e54" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_2.png" id="28_3og4o"]
+[ext_resource type="Texture2D" uid="uid://cgdfxxo6w0ftb" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_02.png" id="28_oqdfj"]
+[ext_resource type="Texture2D" uid="uid://7mqjk4wsef4q" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_03.png" id="29_caem1"]
+[ext_resource type="Texture2D" uid="uid://bk0dlnn286kbr" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_3.png" id="29_jtw8q"]
+[ext_resource type="Texture2D" uid="uid://dc8o0a1dvqfnr" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_4.png" id="30_s01jl"]
+[ext_resource type="Texture2D" uid="uid://bi4ans3cvdnxr" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_04.png" id="30_s6p5p"]
+[ext_resource type="Texture2D" uid="uid://do8uanatgaira" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_5.png" id="31_aju4w"]
+[ext_resource type="Texture2D" uid="uid://vy7ykycl1tgd" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_05.png" id="31_hjeqn"]
+[ext_resource type="Texture2D" uid="uid://2mvxol4kivl2" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_06.png" id="32_ewxry"]
+[ext_resource type="Texture2D" uid="uid://cmxpo78fw2ayb" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_6.png" id="32_ykcrr"]
+[ext_resource type="Texture2D" uid="uid://dtfeudf8oyboy" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_07.png" id="33_eg7oe"]
+[ext_resource type="Texture2D" uid="uid://bmiggumugighr" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_7.png" id="33_ld8d5"]
+[ext_resource type="Texture2D" uid="uid://dwvjpu55h4qgf" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Attack/Armature_attackanimation_8.png" id="34_4u2kg"]
+[ext_resource type="Texture2D" uid="uid://crakct5sw6144" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_08.png" id="34_gw01i"]
+[ext_resource type="Texture2D" uid="uid://c5e7gr1rm5ore" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_09.png" id="35_egb5w"]
+[ext_resource type="Texture2D" uid="uid://o5nklmokb0p" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_0.png" id="35_tymj0"]
+[ext_resource type="Texture2D" uid="uid://c0f6ae8wek8ca" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_1.png" id="36_6n4pe"]
+[ext_resource type="Texture2D" uid="uid://bonmmh4enj6k" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_10.png" id="36_hyko0"]
+[ext_resource type="Texture2D" uid="uid://b0l3hxnk36ogy" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_11.png" id="37_e0gcd"]
+[ext_resource type="Texture2D" uid="uid://dopsow2v3ota" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_2.png" id="37_jfplp"]
+[ext_resource type="Texture2D" uid="uid://tk4x4s2s7ifu" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_12.png" id="38_lng8e"]
+[ext_resource type="Texture2D" uid="uid://thrn035pnovn" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_3.png" id="38_wswuo"]
+[ext_resource type="Texture2D" uid="uid://cgexyyyfrtxad" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_13.png" id="39_fjoeu"]
+[ext_resource type="Texture2D" uid="uid://cgobxw8jh44j" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_4.png" id="39_v50tv"]
+[ext_resource type="Texture2D" uid="uid://dy68ouk8yb4mu" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_5.png" id="40_3m5nx"]
+[ext_resource type="Texture2D" uid="uid://2rsqdihk3t01" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_14.png" id="40_p1fs8"]
+[ext_resource type="Texture2D" uid="uid://dmguyx2en51je" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_15.png" id="41_12hlx"]
+[ext_resource type="Texture2D" uid="uid://dhnh2qxi7606q" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_6.png" id="41_g2mvt"]
+[ext_resource type="Texture2D" uid="uid://cbnv7i3043m1q" path="res://Enemies/Assets/Animations/Ao Bozu (shooter)/Armature_shooting_animation_16.png" id="42_81bhq"]
+[ext_resource type="Texture2D" uid="uid://cseje8l31eo0u" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_7.png" id="42_wvlqb"]
+[ext_resource type="Texture2D" uid="uid://b5tmtu7283yx2" path="res://Enemies/Assets/Animations/Kanibozu (Melee)/Walk/Armature_walkanimation_8.png" id="43_ld3ei"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fsbhq"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2k4f5"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_6bjsn"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="Animation" id="Animation_vkhuk"]
+resource_name = "Attack_Blue"
+step = 0.05
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [false],
+"method": &"set_physics_process"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../..:collision_layer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../VFX-Sprite:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../VFX-Sprite:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 17]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../VFX-Sprite:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_iqgad")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../VFX-Sprite:hframes")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [13]
+}
+
+[sub_resource type="Animation" id="Animation_s81xc"]
+resource_name = "Attack_Red"
+step = 0.05
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [false],
+"method": &"set_physics_process"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../..:collision_layer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../VFX-Sprite:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../../VFX-Sprite:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 17]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../VFX-Sprite:texture")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_yig00")]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../../VFX-Sprite:hframes")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [13]
+}
+
+[sub_resource type="Animation" id="Animation_0p6fx"]
+resource_name = "Hit"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 0.25, 1.0, 0.25, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_xrd8f"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_kkou0"]
+resource_name = "Spawn"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../..:collision_layer")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("..:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../Area3D:monitoring")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_k6brt"]
+resource_name = "Walk"
+length = 1.8
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(64, 64), Vector2(64, 69), Vector2(64, 64), Vector2(64, 69), Vector2(64, 64), Vector2(64, 69), Vector2(64, 64)]
+}
+
+[sub_resource type="Animation" id="Animation_eu015"]
+resource_name = "death"
+length = 3.0
+step = 0.05
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [false],
+"method": &"set_physics_process"
+}, {
+"args": [],
+"method": &"queue_free"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../VFX-Sprite:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.05),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../../VFX-Sprite:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 17]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("..:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../../VFX-Sprite:texture")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_2e7ao")]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../../AudioStreamPlayer2D:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../..:collision_layer")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("../..:collision_mask")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("../../Area3D:monitoring")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_1nkbw"]
+resource_name = "defender_idle"
+loop_mode = 1
+step = 0.1111
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.111111, 0.222222, 0.333333, 0.333433, 0.444444, 0.555556, 0.666667, 0.777778, 0.888889),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("6_15x1t"), ExtResource("8_warg2"), ExtResource("9_u80fy"), ExtResource("10_curyp"), ExtResource("11_sdlcr"), ExtResource("11_sdlcr"), ExtResource("12_ahglq"), ExtResource("13_l5cyn"), ExtResource("14_mwxj7"), ExtResource("15_leyuy"), ExtResource("16_b1kaq")]
+}
+
+[sub_resource type="Animation" id="Animation_wo7lk"]
+resource_name = "defender_shoot"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.0556, 0.1111, 0.1666, 0.1667, 0.2222, 0.2778, 0.3333, 0.3889, 0.4445),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("6_15x1t"), ExtResource("18_wtpin"), ExtResource("19_rcq4t"), ExtResource("20_2yxvn"), ExtResource("11_sdlcr"), ExtResource("21_3f3ra"), ExtResource("22_wqt4t"), ExtResource("23_scnmb"), ExtResource("24_8j7rj"), ExtResource("25_tt4ph"), ExtResource("26_ntvc1")]
+}
+
+[sub_resource type="Animation" id="Animation_okcl0"]
+resource_name = "melee_attack"
+length = 0.5
+step = 0.05
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"attack"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Body:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.0556, 0.1111, 0.1666, 0.1667, 0.2222, 0.2778, 0.3333, 0.3889, 0.4445),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("6_15x1t"), ExtResource("26_3w36m"), ExtResource("27_r48t6"), ExtResource("28_3og4o"), ExtResource("11_sdlcr"), ExtResource("29_jtw8q"), ExtResource("30_s01jl"), ExtResource("31_aju4w"), ExtResource("32_ykcrr"), ExtResource("33_ld8d5"), ExtResource("34_4u2kg")]
+}
+
+[sub_resource type="Animation" id="Animation_xlfds"]
+resource_name = "melee_walk"
+loop_mode = 1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.0556, 0.1111, 0.1666, 0.1667, 0.2222, 0.2778, 0.3333, 0.3889, 0.4445),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("6_15x1t"), ExtResource("35_tymj0"), ExtResource("36_6n4pe"), ExtResource("37_jfplp"), ExtResource("11_sdlcr"), ExtResource("38_wswuo"), ExtResource("39_v50tv"), ExtResource("40_3m5nx"), ExtResource("41_g2mvt"), ExtResource("42_wvlqb"), ExtResource("43_ld3ei")]
+}
+
+[sub_resource type="Animation" id="Animation_2nfpy"]
+resource_name = "shooter_shoot"
+length = 0.5
+step = 0.029
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0294118, 0.0588235, 0.0882353, 0.117647, 0.147059, 0.176471, 0.205882, 0.235294, 0.264706, 0.294118, 0.323529, 0.352941, 0.382353, 0.411765, 0.441176, 0.46885),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("26_e120b"), ExtResource("27_nl24c"), ExtResource("28_oqdfj"), ExtResource("29_caem1"), ExtResource("30_s6p5p"), ExtResource("31_hjeqn"), ExtResource("32_ewxry"), ExtResource("33_eg7oe"), ExtResource("34_gw01i"), ExtResource("35_egb5w"), ExtResource("36_hyko0"), ExtResource("37_e0gcd"), ExtResource("38_lng8e"), ExtResource("39_fjoeu"), ExtResource("40_p1fs8"), ExtResource("41_12hlx"), ExtResource("42_81bhq")]
+}
+
+[sub_resource type="Animation" id="Animation_b10ni"]
+resource_name = "shooter_walk"
+length = 0.3
+loop_mode = 1
+step = 0.025
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(64, 64), Vector2(64, 69), Vector2(64, 64), Vector2(64, 69), Vector2(64, 64), Vector2(64, 69), Vector2(64, 64)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4isr3"]
+_data = {
+"Attack_Blue": SubResource("Animation_vkhuk"),
+"Attack_Red": SubResource("Animation_s81xc"),
+"Hit": SubResource("Animation_0p6fx"),
+"RESET": SubResource("Animation_xrd8f"),
+"Spawn": SubResource("Animation_kkou0"),
+"Walk": SubResource("Animation_k6brt"),
+"death": SubResource("Animation_eu015"),
+"defender_idle": SubResource("Animation_1nkbw"),
+"defender_shoot": SubResource("Animation_wo7lk"),
+"melee_attack": SubResource("Animation_okcl0"),
+"melee_walk": SubResource("Animation_xlfds"),
+"shooter_shoot": SubResource("Animation_2nfpy"),
+"shooter_walk": SubResource("Animation_b10ni")
+}
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_co67w"]
+streams_count = 5
+stream_0/stream = ExtResource("4_qqbmm")
+stream_1/stream = ExtResource("5_drrfj")
+stream_2/stream = ExtResource("6_xbagg")
+stream_3/stream = ExtResource("7_itaie")
+stream_4/stream = ExtResource("8_cyb6a")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ghbh6"]
+viewport_path = NodePath("SubViewport")
+
+[node name="enemy" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_m5y5g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_fsbhq")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1.59, 0, 0, 0, 1.59, 0, 0, 0, 1.59, 0, 0, 0)
+collision_layer = 2
+collision_mask = 5
+monitoring = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("CapsuleShape3D_2k4f5")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+visible = false
+billboard = 1
+texture = SubResource("ViewportTexture_6bjsn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite3D"]
+root_node = NodePath("../SubViewport")
+libraries = {
+"": SubResource("AnimationLibrary_4isr3")
+}
+autoplay = "Spawn"
+next/Hit = &"idle"
+next/defender_shoot = &"defender_idle"
+next/melee_attack = &"melee_walk"
+next/shooter_shoot = &"shooter_walk"
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+size = Vector2i(200, 200)
+
+[node name="Body" type="Sprite2D" parent="Sprite3D/SubViewport"]
+position = Vector2(64, 64)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_co67w")
+volume_db = -5.0
+bus = &"soundEffects"
+
+[node name="VFX-Sprite" type="Sprite3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+billboard = 1
+render_priority = 1
+texture = ExtResource("5_iqgad")
+hframes = 13
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_kgr03")
+max_polyphony = 4
+bus = &"soundEffects"
+
+[node name="SpawnParticles" parent="." instance=ExtResource("20_5swph")]
+texture = SubResource("ViewportTexture_ghbh6")
+
+[connection signal="animation_finished" from="Sprite3D/AnimationPlayer" to="." method="onAnimationFinished"]
