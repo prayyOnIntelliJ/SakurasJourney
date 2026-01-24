@@ -1,7 +1,7 @@
 # 🌸 Sakura’s Journey – Temples of Corruption
 
 [![Engine](https://img.shields.io/badge/Engine-Godot%204.3-478cbf)](https://godotengine.org)
-[![Role](https://img.shields.io/badge/Role-Lead%20Game%20Engineer-blue)](https://www.jannikkluge.com/about)
+[![Role](https://img.shields.io/badge/Role-Lead%20Game%20Engineer-blue)](https://www.jannikkluge.com/#/about)
 [![Language](https://img.shields.io/badge/Language-GDScript-355570)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
 [![Project](https://img.shields.io/badge/Project-Playable%20on%20itch.io-orange)](https://s4g.itch.io/sakuras-journey)
 
@@ -12,7 +12,7 @@
 **Sakura’s Journey** is a fast-paced twin-stick arena shooter with tactical defense elements.  
 The game was developed as part of the *School4Games* program and focuses on intense combat, enemy wave control, and system-driven gameplay.
 
-🔗 **Project page:** https://www.jannikkluge.com/projects/SakurasJourney  
+🔗 **Project page:** https://www.jannikkluge.com/#/projects/SakurasJourney  
 🌐 **Portfolio:** https://www.jannikkluge.com
 
 ---
@@ -55,7 +55,7 @@ I worked as **Lead Game Engineer**, responsible for the technical foundation and
 - **TortoiseHG** – Version control and collaboration  
 
 More tools and engines I work with:  
-➡️ https://www.jannikkluge.com/tools-and-engines
+➡️ https://www.jannikkluge.com/#/tools-and-engines
 
 ---
 
@@ -75,7 +75,7 @@ More tools and engines I work with:
 ## 🚀 Play the Game
 
 You can find more information, downloads, and videos here:  
-➡️ https://www.jannikkluge.com/projects/SakurasJourney
+➡️ https://www.jannikkluge.com/#/projects/SakurasJourney
 
 ---
 
