@@ -84,5 +84,5 @@ You can find more information, downloads, and videos here:
 If you want to learn more about my work or collaborate:
 
 🌐 Portfolio: https://www.jannikkluge.com  
-📧 Email: *jannikkluge2006@gmail.com*  
+📧 Email: *contact@jannikkluge.com*  
 💼 GitHub: https://github.com/prayyOnIntelliJ
