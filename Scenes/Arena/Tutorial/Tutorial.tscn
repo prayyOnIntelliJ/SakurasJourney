@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=3 uid="uid://dm8qt2l5qp88a"]
 
-[ext_resource type="Script" path="res://Scenes/Arenas/Tutorial/Tutorial.gd" id="1_dj6ng"]
+[ext_resource type="Script" path="res://Scenes/Arena/Tutorial/Tutorial.gd" id="1_dj6ng"]
 [ext_resource type="PackedScene" uid="uid://b53fh0q57fqku" path="res://Scenes/Environment/tamagaki_corner.tscn" id="2_pnkxa"]
 [ext_resource type="PackedScene" uid="uid://b2u2tgrg6xbq8" path="res://Scenes/Environment/tamagaki_end_straight.tscn" id="3_40ttf"]
 [ext_resource type="PackedScene" uid="uid://clejtd45g5op8" path="res://Scenes/Environment/Torii.tscn" id="4_jpp74"]
 [ext_resource type="PackedScene" uid="uid://bx7aj7kqeylhr" path="res://Scenes/Environment/tamagaki_straight_pillars.tscn" id="6_wvhba"]
 [ext_resource type="PackedScene" uid="uid://dbytfxyu67583" path="res://Scenes/Arena/Tutorial/TutorialTrigger.tscn" id="6_xjudh"]
 [ext_resource type="PackedScene" uid="uid://bhygo01yc2523" path="res://Scenes/Player/PlayerSpawnPoint.tscn" id="7_d71jl"]
-[ext_resource type="Script" path="res://Scenes/Arenas/Tutorial/Enemies.gd" id="7_li1c4"]
+[ext_resource type="Script" path="res://Scenes/Arena/Tutorial/Enemies.gd" id="7_li1c4"]
 [ext_resource type="PackedScene" uid="uid://kwnns2mrk2fm" path="res://Scenes/Arena/Tutorial/enemy_tutorial.tscn" id="7_no62f"]
 [ext_resource type="MeshLibrary" uid="uid://bop8xff5uh26e" path="res://Assets/VFX/mesh_library.tres" id="8_467ij"]
 

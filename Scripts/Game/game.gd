@@ -107,7 +107,6 @@ func onStartGame(difficultyLevel) -> void:
 	UI.musicPlayerBattleMusic.stream = battleMusic[$UI/ArenaSelectionScreen.getCurrentArenaIndex()]
 	UI.musicPlayerBattleMusic.play()
 	player.global_position = levels.getSpawnPoint()
-
 # -------------------TUTORIAL HANDLING-------------------
 # [ ? ] Handle tutorial level start
 func onArenaSelectionScreenStartTutorialLevel() -> void:

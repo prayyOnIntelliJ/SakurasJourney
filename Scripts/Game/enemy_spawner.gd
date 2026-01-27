@@ -2,9 +2,9 @@ extends Path3D
 
 #----------------------PRELOAD SCENES----------------------
 # [ ? ] Preload enemy scenes for different types of enemies
-@onready var enemyBomberScene = preload("res://Scenes/Enemies/Enemy_Bomber.tscn")
-@onready var enemyMeleeScene = preload("res://Scenes/Enemies/Enemy_Melee.tscn")
-@onready var enemyShooterScene = preload("res://Scenes/Enemies/Enemy_Shooter.tscn")
+@onready var enemyBomberScene = preload("res://Scenes/Enemies/NewEnemies/Enemy_Bomber.tscn")
+@onready var enemyMeleeScene = preload("res://Scenes/Enemies/NewEnemies/Enemy_Melee.tscn")
+@onready var enemyShooterScene = preload("res://Scenes/Enemies/NewEnemies/Enemy_Shooter.tscn")
 @onready var pathFollow = $enemySpawnerFollow
 @onready var firstSpawnTimer = $firstSpawmTimer
 @onready var spawnIntervalTimer = $spawnIntervalTimer
@@ -106,6 +106,7 @@ func spawnEnemy():
 	
 	# [ ? ] Set up the spawn object and enemy properties
 	enemy.setSpawnObject(spawnObject)
+	print("SpawnEnemy: ", spawnObject)
 	enemy.setEnemyPropertiesExternal(localEnemyHealth, localEnemyDamage, localEnemySpeed, localEnemyAcceleration)
 	
 	# [ ? ] Select the target based on the targeted group
@@ -150,6 +151,7 @@ func setDifficulty(difficulty):
 # [ ? ] Set the spawn object for the projectiles etc.
 func setSpawnObject(object):
 	spawnObject = object
+	print("Spawner, set: ", spawnObject)
 
 # [ ? ] Emit the enemy death signal when an enemy dies
 func sendEnemyDeath():

@@ -90,7 +90,6 @@ func _physics_process(delta: float) -> void:
 
 		move_and_slide()  # Perform movement
 
-
 #----------------------COMBAT SYSTEM----------------------
 # [ ? ] Handles when the enemy is hit by damage (e.g., from the projectile)
 func handleHit(damage: float):
@@ -170,6 +169,7 @@ func setDifficulty(difficulty: int):
 
 # [ ? ] Spawns the enemy, playing spawn animation and showing particle effects
 func enemySpawn():
+	print(spawnObject)
 	var spawnParticle = spawnParticleEffect.instantiate()  # Create spawn particle
 	spawnParticle.setColor(gradient)  # Set color gradient for the particle
 	spawnParticle.global_position = global_position  # Set spawn position
@@ -192,6 +192,7 @@ func setWalkingBehaviour():
 # [ ? ] Sets the spawn object and triggers the enemy spawn process
 func setSpawnObject(object):
 	spawnObject = object
+	print("Enemy: ", spawnObject)
 	enemySpawn()  # Trigger enemy spawn
 
 

@@ -8,7 +8,7 @@
 viewport_path = NodePath("Sprite3D/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ghbh6"]
-viewport_path = NodePath("SubViewport")
+viewport_path = NodePath("Sprite3D/SubViewport")
 
 [node name="enemy_defender" instance=ExtResource("1_6cy7p")]
 script = ExtResource("2_e341s")
@@ -18,6 +18,7 @@ projectileSpeed = 10.0
 enemyDamage = 20.0
 
 [node name="Sprite3D" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 texture = SubResource("ViewportTexture_o0rf3")
 
 [node name="SubViewport" parent="Sprite3D" index="1"]

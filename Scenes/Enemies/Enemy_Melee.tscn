@@ -8,7 +8,7 @@
 viewport_path = NodePath("Sprite3D/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ghbh6"]
-viewport_path = NodePath("SubViewport")
+viewport_path = NodePath("Sprite3D/SubViewport")
 
 [node name="enemy_meelee" instance=ExtResource("1_sq8yk")]
 script = ExtResource("2_h0mck")

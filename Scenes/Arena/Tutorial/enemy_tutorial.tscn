@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://kwnns2mrk2fm"]
 
-[ext_resource type="Script" path="res://Scenes/Arenas/Tutorial/enemy_tutorial.gd" id="1_03fbh"]
+[ext_resource type="Script" path="res://Scenes/Arena/Tutorial/enemy_tutorial.gd" id="1_03fbh"]
 [ext_resource type="Texture2D" uid="uid://cr58hn46pynli" path="res://Assets/Enemies/Enemy_Attack_blue.png" id="2_6ft2i"]
 [ext_resource type="Texture2D" uid="uid://dexxidw6l8ynr" path="res://Assets/Enemies/Enemy_Attack_red.png" id="3_cmx6d"]
 [ext_resource type="Texture2D" uid="uid://cymnb55gsd2ib" path="res://Assets/Enemies/Enemy_Death.png" id="4_qtkkh"]

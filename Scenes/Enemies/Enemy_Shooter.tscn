@@ -1,15 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctjpq10f6xoow"]
+[gd_scene load_steps=6 format=3 uid="uid://ctjpq10f6xoow"]
 
 [ext_resource type="PackedScene" uid="uid://bbipqdxxcqbec" path="res://Scenes/Enemies/enemy.tscn" id="1_mn6u1"]
 [ext_resource type="Script" path="res://Scripts/Enemies/EnemyShooter.gd" id="2_b6dbn"]
-[ext_resource type="Texture2D" uid="uid://cr58hn46pynli" path="res://Assets/Enemies/Enemy_Attack_blue.png" id="3_6wsdo"]
 [ext_resource type="Texture2D" uid="uid://2umxeh0x03x0" path="res://Assets/Enemies/Animations/Ao Bozu (shooter)/Armature_shooting_animation_16.png" id="3_d88vh"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ihed2"]
 viewport_path = NodePath("Sprite3D/SubViewport")
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_ghbh6"]
-viewport_path = NodePath("SubViewport")
+viewport_path = NodePath("Sprite3D/SubViewport")
 
 [node name="enemy_shooter" instance=ExtResource("1_mn6u1")]
 script = ExtResource("2_b6dbn")
@@ -19,6 +18,7 @@ projectileSpeed = 5.0
 speed = 10.0
 
 [node name="Sprite3D" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 texture = SubResource("ViewportTexture_ihed2")
 
 [node name="SubViewport" parent="Sprite3D" index="1"]
@@ -29,7 +29,7 @@ position = Vector2(150, 150)
 texture = ExtResource("3_d88vh")
 
 [node name="VFX-Sprite" parent="." index="5"]
-texture = ExtResource("3_6wsdo")
+transform = Transform3D(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 [node name="SpawnParticles" parent="." index="7"]
 texture = SubResource("ViewportTexture_ghbh6")
