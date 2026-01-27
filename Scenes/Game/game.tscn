@@ -98,19 +98,15 @@ layout_mode = 1
 [node name="UI_Audio" type="AudioStreamPlayer2D" parent="UI"]
 stream = ExtResource("16_oun87")
 volume_db = -10.0
-bus = &"soundEffects"
 
 [node name="Buttonclick" type="AudioStreamPlayer2D" parent="UI/UI_Audio"]
 stream = ExtResource("17_3csfi")
-bus = &"soundEffects"
 
 [node name="Musicplayer" type="AudioStreamPlayer2D" parent="UI"]
 stream = ExtResource("18_0jdm0")
 volume_db = -10.0
-bus = &"music"
 
 [node name="Battlemusic" type="AudioStreamPlayer2D" parent="UI/Musicplayer"]
-bus = &"music"
 
 [node name="Levels" type="Node3D" parent="."]
 script = ExtResource("13_mr4uw")

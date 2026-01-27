@@ -1,6 +1,6 @@
 [gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bnbe2hbj6habt"]
 
-[ext_resource type="FontFile" uid="uid://khf0c1niqdu" path="res://PermanentMarker-Regular.ttf" id="1_fq58t"]
+[ext_resource type="FontFile" uid="uid://ba0hga7l4oi0n" path="res://Assets/Fonts/PermanentMarker-Regular.ttf" id="1_fq58t"]
 
 [resource]
 font = ExtResource("1_fq58t")

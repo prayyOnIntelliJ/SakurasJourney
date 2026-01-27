@@ -1,6 +1,6 @@
 [gd_scene load_steps=35 format=3 uid="uid://bf44oksn2iwli"]
 
-[ext_resource type="Script" path="res://Scenes/Arenas/Arena_04/Arena_04.gd" id="1_vmpua"]
+[ext_resource type="Script" path="res://Scripts/Arena/Arena_04.gd" id="1_vmpua"]
 [ext_resource type="MeshLibrary" uid="uid://bop8xff5uh26e" path="res://Assets/VFX/mesh_library.tres" id="2_ivkff"]
 [ext_resource type="PackedScene" uid="uid://bx7aj7kqeylhr" path="res://Scenes/Environment/tamagaki_straight_pillars.tscn" id="4_xnyvf"]
 [ext_resource type="PackedScene" uid="uid://dhtlmcsgnfapj" path="res://Scenes/Environment/LanternStone_BlueLight.tscn" id="5_8hien"]

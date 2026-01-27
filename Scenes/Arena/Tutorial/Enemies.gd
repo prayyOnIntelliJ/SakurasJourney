@@ -2,7 +2,7 @@ extends Node3D
 
 
 #----------------------VARIABLES----------------------
-var enemyScene = preload("res://Arenas/Tutorial/enemy_tutorial.tscn")
+var enemyScene = preload("res://Scenes/Arena/Tutorial/enemy_tutorial.tscn")
 var enemy
 @onready var resetTimer = $resetEnemyTimer
 
