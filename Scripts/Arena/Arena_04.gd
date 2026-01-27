@@ -1,9 +1,7 @@
-extends Node3D
+extends ArenaBase
 
 
 #----------------------SIGNALS----------------------
-signal gameOver
-signal gameWon
 signal updateSakuraTreeHP(health)
 signal updateBossTreeHP(health)
 signal passMaxGameTime(maxTime)
@@ -13,52 +11,17 @@ signal setMaxBossTreeHP(health)
 
 
 #----------------------VARIABLES----------------------
-var player
-var enemySpawners
-var defenders
-var difficulty
-var spawnObject
 @export var attackPhaseTimeFrame : float = 20.0
 @export var attackSpawnerIndices = []
 @export var defendSpawnerIndices = []
-
-const PLAYER_DEFAULT_POSITION: Vector3 = Vector3(0.0, 1.7, 0.0)
 
 
 #----------------------INITIALIZATION----------------------
 # [ ? ] Initializes the defenders and enemy spawners, and starts the attack phase timer
 func _ready() -> void:
 	initializeDefenders()
-	initializeEnemySpawners()
 	$AttackPhaseTimer.wait_time = attackPhaseTimeFrame
 	$AttackPhaseTimer.start()
-
-
-#----------------------SETUP FUNCTIONS----------------------
-# [ ? ] Initializes the defenders and sets up the player's target for each defender
-func initializeDefenders():
-	defenders = $DefenderParent.get_children()
-	$DefenderParent.setupTarget(player)
-	
-	if(defenders.is_empty()):
-		push_error("No defenders found under DefenderParent")
-		return
-	
-	for defender in defenders:
-		if(defender.has_method("setupTarget")):
-			defender.setupTarget(player)
-		else:
-			push_error("Warning: No method 'setupTarget' found in ", defender.name)
-
-
-# [ ? ] Initializes the enemy spawners and sets their difficulty and spawn object
-func initializeEnemySpawners():
-	enemySpawners = $SpawnPaths.get_children()
-	
-	for spawner in enemySpawners:
-		spawner.setDifficulty(difficulty)
-		spawner.setSpawnObject(spawnObject)
-
 
 #----------------------GAME STATE HANDLERS----------------------
 # [ ? ] Emits the gameOver signal when the game is over
@@ -85,28 +48,16 @@ func on_attack_phase_timer_timeout() -> void:
 #----------------------SETUP FUNCTIONS----------------------
 # [ ? ] Sets up the player and relevant game objects like the Boss Tree and Sakura Tree
 func setupPlayer(playerInstance):
-	self.player = playerInstance
+	super(playerInstance)
 	$gamemodeAttackDefend.setupPlayer(player)
 	$gamemodeAttackDefend.setupBossTree(getBossTree())
 	$gamemodeAttackDefend.setupSakuraTree(getSakuraTree())
 	$gamemodeAttackDefend.setArrowPointer($ArrowPointer)
 	$gamemodeAttackDefend.arrowPointer.initArrowPointer(player, getBossTree())
-	for spawner in $SpawnPaths.get_children():
-		spawner.setupSoulTarget(player)
-
-# [ ? ] Sets up the target for all enemy spawners
-func setupTarget(target):
-	enemySpawners = $SpawnPaths
-	for spawner in enemySpawners.get_children():
-		spawner.setupTarget(target)
-
-# [ ? ] Sets the game's difficulty level
-func setDifficulty(difficulty: int):
-	self.difficulty = difficulty
 
 # [ ? ] Sets the spawn object for various game components like defenders and spawners
 func setSpawnObject(object):
-	spawnObject = object
+	super(object)
 	$DefenderParent.setSpawnObject(object)
 	getBossTree().setSpawnObject(object)
 	for spawner in enemySpawners.get_children():

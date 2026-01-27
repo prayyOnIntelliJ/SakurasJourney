@@ -1,29 +1,14 @@
-extends Node3D
+extends ArenaBase
 
 
 #----------------------SIGNALS----------------------
-signal gameOver
-signal gameWon
-signal updateGameTimer(time)
 signal updateSakuraTreeHP(health)
 signal passMaxGameTime(maxTime)
 signal flashTextMessage(message, displayTime, textColor)
 
-
-#----------------------VARIABLES----------------------
-var game
-var enemySpawners
-var difficulty
-var spawnObject
-var player
-
-const PLAYER_DEFAULT_POSITION: Vector3 = Vector3(0.0, 1.7, 0.0)
-
-
 #----------------------INITIALIZATION----------------------
 func _ready() -> void:
 	# [ ? ] Initializes enemy spawners and sets up tree spawn points
-	initializeEnemySpawners()
 	setupTreeSpawnPoints()
 
 
@@ -35,29 +20,12 @@ func setupTarget(target):
 		spawner.setupTarget(target)
 		spawner.setSpawnObject(spawnObject)
 
-
-func initializeEnemySpawners():
-	# [ ? ] Initializes the enemy spawners
-	enemySpawners = $SpawnPaths.get_children()
-	
-	for spawner in enemySpawners:
-		spawner.setDifficulty(difficulty)
-		spawner.setSpawnObject(spawnObject)
-
-
-func setDifficulty(difficulty: int):
-	# [ ? ] Sets the difficulty level for the game
-	self.difficulty = difficulty
-
-
 func setupPlayer(playerInstance):
 	# [ ? ] Sets up the player instance and initializes related game features
-	self.player = playerInstance
+	super(playerInstance)
 	$gamemode_defend.setupPlayer(player)
 	$gamemode_defend.setupTree(getSakuraTree())
 	$ArrowPointer.initArrowPointer(player, getSakuraTree())
-	for spawner in $SpawnPaths.get_children():
-		spawner.setupSoulTarget(player)
 
 
 func setupTreeSpawnPoints():
@@ -65,12 +33,6 @@ func setupTreeSpawnPoints():
 	var sakuraSpawnPoints = $SakuraSpawnPoints.get_children()
 	if (sakuraSpawnPoints != null):
 		$gamemode_defend.setupTreeSpawnPoints(sakuraSpawnPoints)
-
-
-func setSpawnObject(object):
-	# [ ? ] Sets the spawn object for enemies
-	spawnObject = object
-
 
 #----------------------GAME STATE HANDLERS----------------------
 func onGamemodeDefendGameOver() -> void:
