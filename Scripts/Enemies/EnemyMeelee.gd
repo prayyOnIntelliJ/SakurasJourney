@@ -1,4 +1,4 @@
-extends Baseenemy
+extends EnemyBase
 
 #----------------------VARIABLES----------------------
 @export var attackRange: float = 3.0 # [ ? ] Maximum distance to initiate attack, should not be less than 2.9

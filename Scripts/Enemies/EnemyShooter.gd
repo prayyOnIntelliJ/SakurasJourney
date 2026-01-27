@@ -1,4 +1,4 @@
-extends Baseenemy
+extends EnemyBase
 
 #----------------------VARIABLES----------------------
 # [ ? ] Maximum range at which the enemy can shoot

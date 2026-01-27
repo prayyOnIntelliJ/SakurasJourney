@@ -1,6 +1,6 @@
 [gd_scene load_steps=85 format=3 uid="uid://bbipqdxxcqbec"]
 
-[ext_resource type="Script" path="res://Scripts/Enemies/enemy.gd" id="1_m5y5g"]
+[ext_resource type="Script" path="res://Scripts/Enemies/EnemyBase.gd" id="1_m5y5g"]
 [ext_resource type="AudioStream" uid="uid://cmse5froub7sn" path="res://Audio/Whisper Out Of Nowhere 001.wav" id="4_qqbmm"]
 [ext_resource type="Texture2D" uid="uid://dexxidw6l8ynr" path="res://Assets/Enemies/Enemy_Attack_red.png" id="4_yig00"]
 [ext_resource type="AudioStream" uid="uid://jngtds8oefg5" path="res://Audio/Whisper Out Of Nowhere 002.wav" id="5_drrfj"]

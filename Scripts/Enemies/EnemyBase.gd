@@ -1,5 +1,5 @@
 extends CharacterBody3D
-class_name Baseenemy
+class_name EnemyBase
 
 
 #----------------------SIGNALS----------------------

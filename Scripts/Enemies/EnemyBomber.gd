@@ -1,4 +1,4 @@
-extends Baseenemy
+extends EnemyBase
 
 
 #----------------------INITIALIZATION----------------------

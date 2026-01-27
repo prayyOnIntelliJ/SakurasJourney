@@ -43,7 +43,7 @@ func setSpawnObject(object):
 		spawner.setDifficulty(difficulty)
 		spawner.setSpawnObject(object)
 	for defenderSpawner in $DefenderParent.get_children():
-		if (defenderSpawner is Baseenemy):
+		if (defenderSpawner is EnemyBase):
 			defenderSpawner.setSpawnObject(object)
 
 #----------------------GAME STATE HANDLERS----------------------

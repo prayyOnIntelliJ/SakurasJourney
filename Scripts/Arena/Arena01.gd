@@ -13,7 +13,6 @@ var numEnemies : int = 0
 var allSpawnersDeactivated = false
 
 #----------------------INITIALIZATION----------------------
-
 func _process(delta: float) -> void:
 	# [ ? ] Checks if the number of enemies is within the threshold for respawn
 	CheckEnemyNumber()
