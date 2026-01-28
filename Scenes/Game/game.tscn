@@ -41,7 +41,7 @@ maxShockwaveChargeBase = 100
 [node name="MouseCursor" parent="." instance=ExtResource("3_f1dnf")]
 process_mode = 3
 
-[node name="UI" type="Control" parent="."]
+[node name="UI" type="Control" parent="." node_paths=PackedStringArray("Hud", "winScreen", "failScreen", "pauseScreen", "settingsScreen", "titleScreen", "creditsScreen", "arenaSelectionScreen", "arenaSettingsScreen", "upgradeScreen", "buttonClick", "UIAudio", "musicPlayer", "musicPlayerBattleMusic")]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -50,6 +50,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_2hofh")
+Hud = NodePath("Hud")
+winScreen = NodePath("WinScreen")
+failScreen = NodePath("FailScreen")
+pauseScreen = NodePath("PauseScreen")
+settingsScreen = NodePath("SettingsScreen")
+titleScreen = NodePath("TitleScreen")
+creditsScreen = NodePath("CreditsScreen")
+arenaSelectionScreen = NodePath("ArenaSelectionScreen")
+arenaSettingsScreen = NodePath("ArenaSettingsScreen")
+upgradeScreen = NodePath("UpgradeScreen")
+buttonClick = NodePath("UI_Audio/Buttonclick")
+UIAudio = NodePath("UI_Audio")
+musicPlayer = NodePath("Musicplayer")
+musicPlayerBattleMusic = NodePath("Musicplayer")
 
 [node name="Hud" parent="UI" instance=ExtResource("3_74t1y")]
 visible = false

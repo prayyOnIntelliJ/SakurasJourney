@@ -8,21 +8,24 @@ signal clearLevel
 #----------------------VARIABLES----------------------
 var player
 
-@onready var buttonClick = $UI_Audio/Buttonclick
-@onready var upgradeScreen = $UpgradeScreen
-@onready var winScreen = $WinScreen
-@onready var failScreen = $FailScreen
-@onready var pauseScreen = $PauseScreen
-@onready var settingsScreen = $SettingsScreen
-@onready var titleScreen = $TitleScreen
-@onready var creditsScreen = $CreditsScreen
-@onready var arenaSelectionScreen = $ArenaSelectionScreen
-@onready var arenaSettingsScreen = $ArenaSettingsScreen
-@onready var Hud = $Hud
+@export_category("UI References")
+@export_group("Screens")
+@export var Hud: Control
+@export var winScreen: Control
+@export var failScreen: Control
+@export var pauseScreen: Control
+@export var settingsScreen: Control
+@export var titleScreen: Control
+@export var creditsScreen: Control
+@export var arenaSelectionScreen: Control
+@export var arenaSettingsScreen: Control
+@export var upgradeScreen: Control
 
-@onready var UIAudio = $UI_Audio
-@onready var musicPlayer = $Musicplayer
-@onready var musicPlayerBattleMusic = $Musicplayer/Battlemusic
+@export_group("Audio")
+@export var buttonClick: AudioStreamPlayer2D
+@export var UIAudio: AudioStreamPlayer2D
+@export var musicPlayer: AudioStreamPlayer2D
+@export var musicPlayerBattleMusic: AudioStreamPlayer2D
 
 
 #----------------------INITIALIZATION----------------------

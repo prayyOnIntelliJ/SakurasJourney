@@ -24,6 +24,7 @@ signal passMaxGameTime(maxTime)
 signal flashTextMessage(message, displayTime, textColor)
 
 # -------------------ARENA SPAWN POINTS-------------------
+@export_group("SpawnPoints")
 @export var spawnPointArena1: Vector3
 @export var spawnPointArena2: Vector3
 @export var spawnPointArena3: Vector3
