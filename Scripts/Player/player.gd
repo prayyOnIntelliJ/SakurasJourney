@@ -110,9 +110,7 @@ var spawnObject
 # ---------------------- PROCESS LOOP ----------------------
 func _physics_process(delta: float) -> void:
 	handleMovement(delta)
-	handleKeyAction()
 	handleDashStacks()
-	handleSpriteFlipping()
 	handleDashCollisions()
 	setShockwaveActiveIfReady()
 	updateCursorLocation3D()
@@ -149,27 +147,28 @@ func handleAnimations(direction):
 
 # [ ? ] Flip sprite based on direction
 func handleSpriteFlipping():
-	if(gameStats.isGameRunning()):
-		if(input_dir.x > 0 && isFacingLeft):
-			playerSprite.flip_h = true
-			isFacingLeft = false
-		elif(input_dir.x < 0 && !isFacingLeft):
-			playerSprite.flip_h = false
-			isFacingLeft = true
+	if(input_dir.x > 0 && isFacingLeft):
+		playerSprite.flip_h = true
+		isFacingLeft = false
+	elif(input_dir.x < 0 && !isFacingLeft):
+		playerSprite.flip_h = false
+		isFacingLeft = true
 
+func _input(event: InputEvent) -> void:
+	if (!gameStats.isGameRunning()): return
+	
+	handleSpriteFlipping()
 
-# ---------------------- INPUT ----------------------
-# [ ? ] Input handling for actions
-func handleKeyAction():
-	if(gameStats.isGameRunning()):
-		if(Input.is_action_just_pressed("dash")):
-			performDash()
-		if(Input.is_action_just_pressed("switch_weapon")):
-			switchWeapon()
-		if(Input.is_action_pressed("shoot")):
-			shoot()
-		if(Input.is_action_just_pressed("shockwave")):
-			performShockwave()
+	if (event.is_action_pressed("dash")):
+		performDash()
+	if (event.is_action_pressed("shockwave")):
+		performShockwave()
+	if (event.is_action_pressed("switch_weapon")):
+		switchWeapon()
+	if (event.is_action_pressed("shoot")):
+		toggleShoot(true)
+	if (event.is_action_released("shoot")):
+		toggleShoot(false)
 
 
 # ---------------------- DASH ----------------------
@@ -243,12 +242,18 @@ func onDashtimerTimeout() -> void:
 
 # ---------------------- SHOOTING & WEAPON ----------------------
 # [ ? ] Shooting mechanic
+func toggleShoot(shouldShoot: bool) -> void:
+	if (shouldShoot):
+		shoot()
+	else:
+		if (!shootTimer.is_stopped()):
+			shootTimer.stop()
+			shootTimer.wait_time = fireRate
+
 func shoot():
-	if (canShoot):
-		canShoot = false
-		shootTimer.start(fireRate)
-		playerAnimation.play("Attack")
-		setupProjectile()
+	playerAnimation.play("Attack")
+	setupProjectile()
+	shootTimer.start(fireRate)
 
 
 # [ ? ] Setup and spawn projectile
@@ -282,7 +287,7 @@ func switchWeapon():
 
 # [ ? ] Handles the fire rate timer timeout
 func onFireRateTimerTimeout():
-	canShoot = true
+	shoot()
 
 # ---------------------- SHOCKWAVE ----------------------
 # [ ? ] Perform shockwave ability
