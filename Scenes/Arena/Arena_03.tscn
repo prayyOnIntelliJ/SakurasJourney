@@ -1,9 +1,10 @@
-[gd_scene load_steps=36 format=3 uid="uid://cg3o03gmq6ej7"]
+[gd_scene load_steps=37 format=3 uid="uid://cg3o03gmq6ej7"]
 
 [ext_resource type="Script" path="res://Scripts/Arena/Arena_03.gd" id="1_f632i"]
 [ext_resource type="PackedScene" uid="uid://bt6kihi4qb3gv" path="res://Scenes/Boss/BossTree.tscn" id="2_5h2xc"]
 [ext_resource type="PackedScene" uid="uid://bi6cxbnvhc1bt" path="res://Scenes/GameModes/GamemodeAttack.tscn" id="2_ggapv"]
 [ext_resource type="MeshLibrary" uid="uid://bop8xff5uh26e" path="res://Assets/VFX/mesh_library.tres" id="2_m3mgb"]
+[ext_resource type="Resource" uid="uid://d2fg4elghhhx3" path="res://Scripts/Resources/GameStats.tres" id="2_xjdvm"]
 [ext_resource type="PackedScene" uid="uid://dgqofbdx14c5m" path="res://Scenes/Enemies/SpawnPointSmallBoss.tscn" id="3_8mqch"]
 [ext_resource type="PackedScene" uid="uid://clejtd45g5op8" path="res://Scenes/Environment/Torii.tscn" id="3_vtylb"]
 [ext_resource type="PackedScene" uid="uid://ss8ur5y8ouj6" path="res://Scenes/Environment/SmallRockProp.tscn" id="4_ccrce"]
@@ -82,6 +83,7 @@ size = Vector3(14, 2, 62)
 
 [node name="Arena_03" type="Node3D"]
 script = ExtResource("1_f632i")
+difficultySettings = ExtResource("2_xjdvm")
 
 [node name="gamemodeAttack" parent="." instance=ExtResource("2_ggapv")]
 

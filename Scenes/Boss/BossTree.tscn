@@ -99,7 +99,6 @@ shape = SubResource("CylinderShape3D_fhrps")
 
 [node name="hitSoundPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_2q7r1")
-bus = &"soundEffects"
 
 [node name="Shield" parent="." instance=ExtResource("5_u36ro")]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.266957, 1.5581, -0.346404)

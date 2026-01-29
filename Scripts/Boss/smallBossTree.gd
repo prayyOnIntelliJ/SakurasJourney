@@ -7,7 +7,6 @@ var currentBossTreeHP
 var target
 var spawnObject
 @onready var difficultyModifiers := [1.0, 1.2, 1.4, 1.6]
-var difficultyLevel: int
 
 
 #----------------------SIGNALS----------------------
@@ -52,9 +51,6 @@ func setSpawnObject(object):
 func getMaxHealth():
 	return maxHealth
 
-func setDifficulty(difficulty):
-	self.difficultyLevel = difficulty
-
 func initializeStats():
-	maxHealth *= difficultyModifiers[difficultyLevel]
+	maxHealth *= difficultyModifiers[ArenaSettings.getDifficultyLevel()]
 	currentBossTreeHP = maxHealth

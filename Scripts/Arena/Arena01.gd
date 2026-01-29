@@ -25,7 +25,7 @@ func initializeEnemySpawners():
 	for spawner in enemySpawner:
 		spawner.connect("onEnemySpawn", addEnemy)
 		spawner.connect("onEnemyDeath", substractEnemy)
-		spawner.setDifficulty(difficulty)
+		spawner.setDifficulty(ArenaSettings.getDifficultyLevel())
 		spawner.setSpawnObject(spawnObject)
 		
 	print("Arena: ", spawnObject)

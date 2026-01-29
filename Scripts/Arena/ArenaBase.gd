@@ -9,7 +9,6 @@ signal updateGameTimer(time)
 #----------------------VARIABLES----------------------
 var game
 var player
-var difficulty
 var spawnObject
 var enemySpawners
 var defenders
@@ -27,7 +26,7 @@ func initializeEnemySpawners():
 	enemySpawners = $SpawnPaths.get_children()
 	
 	for spawner in enemySpawners:
-		spawner.setDifficulty(difficulty)
+		spawner.setDifficulty(ArenaSettings.getDifficultyLevel())
 		spawner.setSpawnObject(spawnObject)
 
 #----------------------DEFENDER INITIALIZATION----------------------
@@ -52,13 +51,10 @@ func setupTarget(target):
 	for spawner in enemySpawners.get_children():
 		spawner.setupTarget(target)
 
-# [ ? ] Sets the game's difficulty level
-func setDifficulty(difficulty: int):
-	self.difficulty = difficulty
-
 func setSpawnObject(object):
 	# [ ? ] Sets the spawn object for the enemy spawners
 	spawnObject = object
+	print("ArenaBase: Set to " + str(object))
 	
 func setupPlayer(playerInstance):
 	# [ ? ] Sets up the player instance and initializes related game features

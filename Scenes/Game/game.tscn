@@ -24,9 +24,14 @@
 [ext_resource type="AudioStream" uid="uid://dwtnsfks5kcmn" path="res://Audio/Buttonclick.wav" id="17_3csfi"]
 [ext_resource type="AudioStream" uid="uid://bn8t5i5gwjsn0" path="res://Audio/Main.wav" id="18_0jdm0"]
 
-[node name="Game" type="Node3D"]
+[node name="Game" type="Node3D" node_paths=PackedStringArray("UI", "player", "levels", "objectsInGame", "musicPlayer")]
 process_mode = 1
 script = ExtResource("1_3umri")
+UI = NodePath("UI")
+player = NodePath("Player")
+levels = NodePath("Levels")
+objectsInGame = NodePath("ObjectsInGame")
+musicPlayer = NodePath("UI/Musicplayer")
 currentSkillPoints = 0
 battleMusic = Array[AudioStreamWAV]([ExtResource("2_3imx0"), ExtResource("3_k1dnd"), ExtResource("4_0mrxh"), ExtResource("5_x5cjf"), null])
 

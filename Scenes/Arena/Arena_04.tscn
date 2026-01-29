@@ -1,6 +1,7 @@
-[gd_scene load_steps=35 format=3 uid="uid://bf44oksn2iwli"]
+[gd_scene load_steps=36 format=3 uid="uid://bf44oksn2iwli"]
 
 [ext_resource type="Script" path="res://Scripts/Arena/Arena_04.gd" id="1_vmpua"]
+[ext_resource type="Resource" uid="uid://d2fg4elghhhx3" path="res://Scripts/Resources/GameStats.tres" id="2_7ahg8"]
 [ext_resource type="MeshLibrary" uid="uid://bop8xff5uh26e" path="res://Assets/VFX/mesh_library.tres" id="2_ivkff"]
 [ext_resource type="PackedScene" uid="uid://bx7aj7kqeylhr" path="res://Scenes/Environment/tamagaki_straight_pillars.tscn" id="4_xnyvf"]
 [ext_resource type="PackedScene" uid="uid://dhtlmcsgnfapj" path="res://Scenes/Environment/LanternStone_BlueLight.tscn" id="5_8hien"]
@@ -87,6 +88,7 @@ script = ExtResource("1_vmpua")
 attackPhaseTimeFrame = 30.0
 attackSpawnerIndices = [0, 1, 2]
 defendSpawnerIndices = [3, 4, 5]
+difficultySettings = ExtResource("2_7ahg8")
 
 [node name="AttackPhaseTimer" type="Timer" parent="."]
 
@@ -606,11 +608,11 @@ light_color = Color(0.852051, 0.964512, 0.92836, 1)
 
 [node name="Cloudspawner2" parent="." instance=ExtResource("16_v7mqw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8, 0)
-startTimer = 0.5
+script = null
 
 [node name="Cloudspawner" parent="." instance=ExtResource("16_v7mqw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8, 0)
-startTimer = 0.1
+script = null
 
 [node name="SpawnFires" type="Node3D" parent="."]
 

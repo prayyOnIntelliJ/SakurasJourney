@@ -61,7 +61,7 @@ func setSpawnObject(object):
 	$DefenderParent.setSpawnObject(object)
 	getBossTree().setSpawnObject(object)
 	for spawner in enemySpawners.get_children():
-		spawner.setDifficulty(difficulty)
+		spawner.setDifficulty(ArenaSettings.getDifficultyLevel())
 		spawner.setSpawnObject(object)
 	for defenderSpawner in $DefenderParent.get_children():
 		if defenderSpawner is EnemyBase:

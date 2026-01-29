@@ -25,7 +25,6 @@ var bossTree75HP
 var percentageIndex: int = 0
 var percentageArray: Array
 var canHaveStats: bool
-var difficultyLevel: int
 
 var smallBossTreeScene = preload("res://Scenes/Boss/smallBossTree.tscn")
 var smallBossTree
@@ -43,7 +42,7 @@ func _ready() -> void:
 # [ ? ] Initializes boss stats based on difficulty and sets max health
 func initializeStats():
 	if (canHaveStats):
-		maxHealth *= difficultyModifiers[difficultyLevel]
+		maxHealth *= difficultyModifiers[ArenaSettings.getDifficultyLevel()]
 	else:
 		maxHealth *= difficultyModifiers[0]
 	currentBossTreeHP = maxHealth
@@ -172,14 +171,6 @@ func setSpawnObject(object):
 # [ ? ] Assigns an arrow pointer to track the target
 func setArrowPointer(arrowPointer):
 	self.arrowPointer = arrowPointer
-
-
-# [ ? ] Sets the difficulty for small bosses based on current difficulty level
-func setDifficulty(difficulty):
-	self.difficultyLevel = difficulty
-	for child in get_children():
-		if (child.has_method("spawnSmallBoss")):
-			child.setDifficulty(difficulty)
 
 
 #----------------------SHIELD CONTROL----------------------

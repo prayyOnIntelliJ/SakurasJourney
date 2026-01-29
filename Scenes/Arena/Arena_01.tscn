@@ -1,8 +1,9 @@
-[gd_scene load_steps=24 format=3 uid="uid://jkfi32u5hm5b"]
+[gd_scene load_steps=25 format=3 uid="uid://jkfi32u5hm5b"]
 
 [ext_resource type="Script" path="res://Scripts/Arena/Arena01.gd" id="1_hcsqy"]
 [ext_resource type="PackedScene" uid="uid://wnds11tbium1" path="res://Scenes/GameModes/gamemodeSurvival.tscn" id="2_1jm1p"]
 [ext_resource type="MeshLibrary" uid="uid://bop8xff5uh26e" path="res://Assets/VFX/mesh_library.tres" id="2_k3p10"]
+[ext_resource type="Resource" uid="uid://d2fg4elghhhx3" path="res://Scripts/Resources/GameStats.tres" id="2_sdqgn"]
 [ext_resource type="PackedScene" uid="uid://b53fh0q57fqku" path="res://Scenes/Environment/tamagaki_corner.tscn" id="3_akqcy"]
 [ext_resource type="PackedScene" uid="uid://bx7aj7kqeylhr" path="res://Scenes/Environment/tamagaki_straight_pillars.tscn" id="4_gsmoy"]
 [ext_resource type="PackedScene" uid="uid://clejtd45g5op8" path="res://Scenes/Environment/Torii.tscn" id="6_tkp7p"]
@@ -62,6 +63,7 @@ size = Vector3(24.581, 4.97, 24.4199)
 script = ExtResource("1_hcsqy")
 maxEnemyNumber = 100
 enemyRespawnThreshold = 20
+difficultySettings = ExtResource("2_sdqgn")
 
 [node name="gamemodeSurvival" parent="." instance=ExtResource("2_1jm1p")]
 gameLength = 150.0

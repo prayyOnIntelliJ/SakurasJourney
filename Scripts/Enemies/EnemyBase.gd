@@ -169,7 +169,6 @@ func setDifficulty(difficulty: int):
 
 # [ ? ] Spawns the enemy, playing spawn animation and showing particle effects
 func enemySpawn():
-	print(spawnObject)
 	var spawnParticle = spawnParticleEffect.instantiate()  # Create spawn particle
 	spawnParticle.setColor(gradient)  # Set color gradient for the particle
 	spawnParticle.global_position = global_position  # Set spawn position

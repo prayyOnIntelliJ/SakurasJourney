@@ -6,7 +6,6 @@ var player
 var tree
 var currentTime
 var gameLength
-var difficulty
 var game
 var playerSpawnPoint
 var badTreeMaxHealth
@@ -107,8 +106,8 @@ func setActiveLevel(levelScene: PackedScene):
 	
 	target.append(player)
 	newLevel.setupTarget(target)
-	newLevel.setDifficulty(difficulty)
 	newLevel.setSpawnObject(spawnObject)
+	print("Levels " + str(spawnObject))
 	newLevel.setupPlayer(player)
 	
 	# Check if new level has a Sakura tree and connect signals
@@ -173,11 +172,6 @@ func setCurrentTime(time):
 # [ ? ] Clear the level when UI requests it
 func onUIClearLevel() -> void:
 	clearLevel()
-
-# -------------------DIFFICULTY HANDLING-------------------
-# [ ? ] Set the game difficulty
-func setDifficulty(difficulty):
-	self.difficulty = difficulty
 
 # -------------------HEALTH UPDATES-------------------
 # [ ? ] Update the health of the Sakura tree

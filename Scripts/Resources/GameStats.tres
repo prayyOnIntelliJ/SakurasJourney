@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="DifficultyResource" load_steps=2 format=3 uid="uid://d2fg4elghhhx3"]
+
+[ext_resource type="Script" path="res://Scripts/Resources/GameStats.gd" id="1_2imrs"]
+
+[resource]
+script = ExtResource("1_2imrs")
+difficultyLevel = 0

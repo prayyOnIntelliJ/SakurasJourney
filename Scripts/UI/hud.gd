@@ -18,7 +18,6 @@ extends Control
 
 #----------------------GAME STATE----------------------
 var player
-var isGameRunning = false
 var dashStackResetTime
 var dashStacks
 @export var shockwaveshader: ShaderMaterial
@@ -149,12 +148,6 @@ func setPlayer(playerInstance):
 # [ ? ] Sets up player reference
 func setupPlayer(playerInstance):
 	self.player = playerInstance
-
-
-# [ ? ] Updates if the game is currently running
-func updateGameState(status: bool):
-	isGameRunning = status
-
 
 #----------------------EVENT HANDLER----------------------
 # [ ? ] Initializes everything when game starts

@@ -1,8 +1,6 @@
 extends Node3D
 
 # -------------------GAME-------------------
-var isGameRunning: bool = false
-var difficulty
 var selectedArena: int
 var completedArenas = [false, false, false, false]
 
@@ -11,14 +9,19 @@ signal retryGame
 
 # -------------------NODES-------------------
 @onready var playerScene = preload("res://Scenes/Player/player.tscn")
-@onready var UI = $UI
-@onready var player = $Player
-@onready var levels = $Levels
-@onready var objectsInGame = $ObjectsInGame
-@onready var musicPlayer = $UI/Musicplayer
+@export_category("References")
+@export var UI: Control
+@export var player: CharacterBody3D
+@export var levels: Node3D
+@export var objectsInGame: Node3D
+@export var musicPlayer: AudioStreamPlayer2D
+
+var gameStats: GameStats = preload("res://Scripts/Resources/GameStats.tres")
 
 # -------------------UPGRADE SYSTEM-------------------
+@export_category("SkillPoints")
 @export var currentSkillPoints := 3
+@export_category("Audio")
 @export var battleMusic : Array[AudioStreamWAV]
 
 # -------------------LEVELS-------------------
@@ -39,13 +42,11 @@ func _ready() -> void:
 
 # [ ? ] Update game status during each frame
 func _process(delta: float) -> void:
-	if (isGameRunning):
+	if (gameStats.isGameRunning()):
 		updateTimer()
-		checkInputs()
-
-# [ ? ] Handle input actions
-func checkInputs():
-	if (Input.is_action_just_pressed("quit")):
+		
+func _input(event: InputEvent) -> void:
+	if (event.is_action_pressed("quit")):
 		setScreen($UI/PauseScreen)
 		pauseGame.emit()
 
@@ -63,25 +64,18 @@ func changeToLooseScreen():
 # -------------------LEVEL AND GAME OVER HANDLING-------------------
 # [ ? ] Handle game win situation
 func onLevelsGameWon() -> void:
-	isGameRunning = false
-	updateGameState()
+	gameStats.setIsGameRunning(false)
 	updateGamePausing()
-	updateSkillPointsForDifficulty(difficulty, selectedArena)
+	updateSkillPointsForDifficulty(ArenaSettings.getDifficultyLevel(), selectedArena)
 	changeToWinScreen()
 	clearGameObjects()
 
 # [ ? ] Handle game over situation
 func onLevelsGameOver() -> void:
-	isGameRunning = false
 	changeToLooseScreen()
-	updateGameState()
+	gameStats.setIsGameRunning(false)
 	updateGamePausing()
 	clearGameObjects()
-
-# [ ? ] Update game status when the game is running or paused
-func updateGameState():
-	player.updateGameState(isGameRunning)
-	UI.Hud.updateGameState(isGameRunning)
 
 # -------------------TIMER AND UI UPDATES-------------------
 # [ ? ] Update the timer displayed in the UI
@@ -91,18 +85,16 @@ func updateTimer():
 # -------------------START GAME HANDLING-------------------
 # [ ? ] Start the game with selected difficulty and settings
 func onStartGame(difficultyLevel) -> void:
-	isGameRunning = true
+	gameStats.setIsGameRunning(true)
 	levels.clearLevel()
 	$UI/Hud.setDashStackResetTime(player.getDashStackResetTime())
 	$UI/Hud.setDashCounter(player.getMaxDashStacks())
 	updateGamePausing()
 	checkIfSpawnPointIsSet(selectedArena)
-	difficulty = difficultyLevel
 	passObjects()
 	setScreen(UI.Hud)
-	levels.setDifficulty(difficulty)
+	ArenaSettings.setDifficultyLevel(difficultyLevel)
 	levels.setActiveLevel(levelArray[selectedArena])
-	updateGameState()
 	UI.musicPlayer.stop()
 	UI.musicPlayerBattleMusic.stream = battleMusic[$UI/ArenaSelectionScreen.getCurrentArenaIndex()]
 	UI.musicPlayerBattleMusic.play()
@@ -114,15 +106,9 @@ func onArenaSelectionScreenStartTutorialLevel() -> void:
 	levels.startTutorialLevel(tutorialLevel)
 	player.global_position = levels.getSpawnPoint()
 	setScreen($UI/Hud)
-	isGameRunning = true
 	updateGamePausing()
 	player.visible = true
-	updateGameState()
-
-# -------------------SETUP METHODS-------------------
-# [ ? ] Set UI object reference
-func setUIObject(object):
-	object = UI
+	gameStats.setIsGameRunning(true)
 
 # [ ? ] Handle retry from the fail screen
 func onFailScreenTryAgainEmitted() -> void:
@@ -137,7 +123,7 @@ func passObjects():
 
 # [ ? ] Update game pause state based on game running status
 func updateGamePausing():
-	if (isGameRunning):
+	if (gameStats.isGameRunning()):
 		get_tree().paused = false
 	else:
 		get_tree().paused = true

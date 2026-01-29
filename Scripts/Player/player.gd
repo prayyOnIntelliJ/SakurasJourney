@@ -42,7 +42,6 @@ var maxWalkingSpeed: float
 var currentSpeed: float
 var isFacingLeft: bool = true
 var input_dir
-var isGameRunning: bool = false
 var isDashing : bool = false
 var currentDashStacks : int
 var dashCooldown : float
@@ -64,6 +63,7 @@ var shockwaveCharge: int = 0
 var projectileOneName : String = "Fire"
 var projectileTwoName : String = "Ice"
 var tween
+var gameStats: GameStats = preload("res://Scripts/Resources/GameStats.tres")
 
 # ---------------------- LEVEL MODIFIERS ----------------------
 @export var movementLevel := 0
@@ -123,7 +123,7 @@ func _physics_process(delta: float) -> void:
 # ---------------------- MOVEMENT ----------------------
 # [ ? ] Handle player input and movement
 func handleMovement(delta):
-	if(isGameRunning):
+	if(gameStats.isGameRunning()):
 		input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 		var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 		if(direction == Vector3.ZERO && isDashing):
@@ -149,7 +149,7 @@ func handleAnimations(direction):
 
 # [ ? ] Flip sprite based on direction
 func handleSpriteFlipping():
-	if(isGameRunning):
+	if(gameStats.isGameRunning()):
 		if(input_dir.x > 0 && isFacingLeft):
 			playerSprite.flip_h = true
 			isFacingLeft = false
@@ -161,7 +161,7 @@ func handleSpriteFlipping():
 # ---------------------- INPUT ----------------------
 # [ ? ] Input handling for actions
 func handleKeyAction():
-	if(isGameRunning):
+	if(gameStats.isGameRunning()):
 		if(Input.is_action_just_pressed("dash")):
 			performDash()
 		if(Input.is_action_just_pressed("switch_weapon")):
@@ -375,12 +375,6 @@ func setStats():
 	currentDashStacks = maxDashStacks
 	currentPlayerHP = maxPlayerHP
 	updateDashStacks.emit(currentDashStacks)
-
-
-# [ ? ] Updates the game state
-func updateGameState(status: bool):
-	isGameRunning = status
-
 
 # [ ? ] Resets the stats of the player
 func resetGameStats():

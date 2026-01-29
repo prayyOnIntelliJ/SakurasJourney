@@ -30,7 +30,6 @@ func setupTarget(target):
 
 # [ ? ] Sets the difficulty of the game and updates the boss tree difficulty
 func setDifficulty(difficulty: int):
-	super(difficulty)
 	$BossTree.setDifficulty(difficulty)
 
 
@@ -40,7 +39,7 @@ func setSpawnObject(object):
 	$DefenderParent.setSpawnObject(object)
 	getBossTree().setSpawnObject(object)
 	for spawner in enemySpawners:
-		spawner.setDifficulty(difficulty)
+		spawner.setDifficulty(ArenaSettings.getDifficultyLevel())
 		spawner.setSpawnObject(object)
 	for defenderSpawner in $DefenderParent.get_children():
 		if (defenderSpawner is EnemyBase):
