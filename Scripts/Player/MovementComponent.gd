@@ -60,6 +60,7 @@ func calculate_movement(
 		"direction": direction
 	}
 
+
 func perform_dash(cursor_location: Vector3, current_position: Vector3):
 	if (!is_dashing && current_dash_stacks > 0):
 		dash_direction = (cursor_location - current_position).normalized()

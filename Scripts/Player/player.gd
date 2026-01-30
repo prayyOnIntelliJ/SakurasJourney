@@ -36,7 +36,6 @@ enum weaponTypes { RED_WEAPON, BLUE_WEAPON }
 
 # ---------------------- PLAYER STATS & VARIABLES ----------------------
 var currentSpeed: float
-var isFacingLeft: bool = true
 var input_dir
 var isDashing : bool = false
 var dashCooldown : float
@@ -138,12 +137,10 @@ func handleAnimations(direction) -> void:
 
 # [ ? ] Flip sprite based on direction
 func handleSpriteFlipping():
-	if(input_dir.x > 0 && isFacingLeft):
+	if(input_dir.x > 0):
 		playerSprite.flip_h = true
-		isFacingLeft = false
-	elif(input_dir.x < 0 && !isFacingLeft):
+	else:
 		playerSprite.flip_h = false
-		isFacingLeft = true
 
 func _input(event: InputEvent) -> void:
 	if (!gameStats.isGameRunning()): return

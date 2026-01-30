@@ -770,6 +770,8 @@ audio_stream = NodePath("../PlayerAudioPlayer2D")
 animation_player = NodePath("../AnimationPlayer/playerAnimationPlayer")
 dash_sound = ExtResource("5_h224h")
 
+[node name="HealthComponent" type="Node" parent="."]
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_lb4y3")
 
@@ -880,7 +882,6 @@ position = Vector2(960, 540)
 texture = ExtResource("17_h5h4s")
 
 [connection signal="current_dash_stacks_changed" from="MovementComponent" to="." method="on_movement_component_current_dash_stacks_changed"]
-[connection signal="body_entered" from="dashArea3D" to="." method="onDashArea3DEntered"]
 [connection signal="body_entered" from="dashArea3D" to="MovementComponent" method="on_dash_area_3d_body_entered"]
 [connection signal="timeout" from="Timer/stackTimer" to="." method="onStackTimerTimeout"]
 [connection signal="timeout" from="Timer/stackTimer" to="MovementComponent" method="on_stack_timer_timeout"]
