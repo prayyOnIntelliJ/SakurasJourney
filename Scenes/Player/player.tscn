@@ -1,4 +1,4 @@
-[gd_scene load_steps=219 format=3 uid="uid://csh1ujf7i2gcv"]
+[gd_scene load_steps=221 format=3 uid="uid://csh1ujf7i2gcv"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_47ujg"]
 [ext_resource type="AudioStream" uid="uid://dcs570jfkfqgy" path="res://Audio/Shoot_01.wav" id="2_oaaaq"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://d2shxwfkusvb2" path="res://Assets/Player/dash_main_character.png" id="6_1svrp"]
 [ext_resource type="AudioStream" uid="uid://dlk6oetdr22xf" path="res://Audio/Player_Hurt_01.wav" id="6_htljt"]
 [ext_resource type="Material" uid="uid://cwwdcea3ajxl3" path="res://Assets/Enemies/Shader/Energyshader.tres" id="7_cbt0w"]
+[ext_resource type="Script" path="res://Scripts/Player/MovementComponent.gd" id="8_0xtvd"]
+[ext_resource type="PackedScene" uid="uid://dyp2d20iw7jmd" path="res://Scenes/Projectiles/shockwave_dash.tscn" id="9_ep5tx"]
 [ext_resource type="LabelSettings" uid="uid://cs8ix88ic0t6w" path="res://Scripts/UI/Label-Settings.tres" id="10_7cing"]
 [ext_resource type="Texture2D" uid="uid://crrr617mfxmbh" path="res://Assets/Projectiles/Materials/shield1.png" id="12_i85dx"]
 [ext_resource type="Texture2D" uid="uid://dy5td1ynb33ik" path="res://Assets/Player/Animations/Attack/Armature_attack_00.png" id="14_pav5q"]
@@ -748,7 +750,6 @@ maxWalkingSpeedBase = 325.0
 dashLengthInSeconds = 0.6
 dashCooldownBase = 3.0
 maxDashStacksBase = 1
-stackResetInSeconds = 3.0
 maxPlayerHPBase = 150
 shockwaveRangeBase = Vector3(20, 20, 20)
 dashDamageBase = 30.0
@@ -756,6 +757,18 @@ shockwaveshader = ExtResource("7_cbt0w")
 redProjectileColor = Color(0.988235, 0, 0.231373, 1)
 blueProjectileColor = Color(0.470588, 0.807843, 1, 1)
 sounds = Array[AudioStreamWAV]([ExtResource("2_oaaaq"), ExtResource("3_a84eh"), ExtResource("4_lqr50"), ExtResource("5_h224h"), ExtResource("6_htljt")])
+
+[node name="MovementComponent" type="Node" parent="." node_paths=PackedStringArray("dash_timer", "dash_stack_timer", "dash_area", "audio_stream", "animation_player")]
+script = ExtResource("8_0xtvd")
+max_speed = 3.0
+dash_speed = 30.0
+shockwave_dash_scene = ExtResource("9_ep5tx")
+dash_timer = NodePath("../Timer/dashTimer")
+dash_stack_timer = NodePath("../Timer/stackTimer")
+dash_area = NodePath("../dashArea3D")
+audio_stream = NodePath("../PlayerAudioPlayer2D")
+animation_player = NodePath("../AnimationPlayer/playerAnimationPlayer")
+dash_sound = ExtResource("5_h224h")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_lb4y3")
@@ -860,14 +873,17 @@ libraries = {
 
 [node name="PlayerAudioPlayer2D" type="AudioStreamPlayer2D" parent="."]
 max_polyphony = 4
-bus = &"soundEffects"
 
 [node name="hitVignette" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(960, 540)
 texture = ExtResource("17_h5h4s")
 
+[connection signal="current_dash_stacks_changed" from="MovementComponent" to="." method="on_movement_component_current_dash_stacks_changed"]
 [connection signal="body_entered" from="dashArea3D" to="." method="onDashArea3DEntered"]
+[connection signal="body_entered" from="dashArea3D" to="MovementComponent" method="on_dash_area_3d_body_entered"]
 [connection signal="timeout" from="Timer/stackTimer" to="." method="onStackTimerTimeout"]
+[connection signal="timeout" from="Timer/stackTimer" to="MovementComponent" method="on_stack_timer_timeout"]
 [connection signal="timeout" from="Timer/shootTimer" to="." method="onFireRateTimerTimeout"]
 [connection signal="timeout" from="Timer/dashTimer" to="." method="onDashtimerTimeout"]
+[connection signal="timeout" from="Timer/dashTimer" to="MovementComponent" method="on_dash_timer_timeout"]

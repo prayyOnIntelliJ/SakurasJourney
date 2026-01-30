@@ -3,7 +3,7 @@ extends Node3D
 #----------------------VARIABLE DECLARATION----------------------
 @onready var weaponType
 @onready var animation = $AnimationPlayer.get_animation("emit")
-var shockwaveDamage
+@export var shockwave_damage: float = 100
 var shockwaveRange
 var shockwaveModifier
 var spawnObject
@@ -18,10 +18,10 @@ func _ready() -> void:
 #----------------------COLLISION HANDLING----------------------
 func onShockwaveBodyEntered(body: Node3D) -> void:
 	if (body.has_method("handleShockwaveHit")):
-		body.handleShockwaveHit(shockwaveDamage)
+		body.handleShockwaveHit(shockwave_damage)
 		var shockwave = shockwaveDashScene.instantiate()
 		shockwave.global_position = body.global_position
-		shockwave.shockwaveDamage = shockwaveDamage
+		shockwave.shockwaveDamage = shockwave_damage
 		shockwave.shockwaveRange = Vector3(5, 5, 5)
 		spawnObject.add_child(shockwave)
 	elif (body.has_method("destroyProjectile")):

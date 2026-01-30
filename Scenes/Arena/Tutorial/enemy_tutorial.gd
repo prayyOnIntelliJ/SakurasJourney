@@ -47,7 +47,6 @@ func _ready() -> void:
 
 
 #----------------------COMBAT SYSTEM----------------------
-# [ ? ] Handles damage taken during the tutorial, playing hit animation or dying if health reaches 0
 func handleTutorialHit(damage: float):
 	currentHealth -= damage
 	
@@ -57,7 +56,6 @@ func handleTutorialHit(damage: float):
 		$Sprite3D/AnimationPlayer.play("Hit")
 
 
-# [ ? ] Handles damage from shockwaves, playing hit animation or dying if health reaches 0
 func handleShockwaveHit(damage: float):
 	currentHealth -= damage
 	

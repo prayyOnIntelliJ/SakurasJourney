@@ -2,7 +2,7 @@ extends CharacterBody3D
 
 # ---------------------- SIGNALS ----------------------
 signal dashAvailability(available: bool)
-signal updateDashStacks(dashStacks)
+signal current_dash_stacks_changed(dashStacks)
 signal updatePlayerHealth(health)
 signal updateShockwaveCharge(charge)
 signal gameEnd
@@ -17,11 +17,9 @@ enum weaponTypes { RED_WEAPON, BLUE_WEAPON }
 # ---------------------- EXPORTED VARIABLES ----------------------
 @export var accelerationBase: float
 @export var maxWalkingSpeedBase: float
-@export var dashSpeed : int
 @export var dashLengthInSeconds : float
 @export var dashCooldownBase: float
 @export var maxDashStacksBase: int
-@export var stackResetInSeconds : float
 @export var fireRateBase: float = 0.4
 @export var maxPlayerHPBase : int = 100
 @export var maxShockwaveChargeBase: int = 10
@@ -37,16 +35,11 @@ enum weaponTypes { RED_WEAPON, BLUE_WEAPON }
 @export var sounds: Array[AudioStreamWAV]
 
 # ---------------------- PLAYER STATS & VARIABLES ----------------------
-var acceleration: float
-var maxWalkingSpeed: float
 var currentSpeed: float
 var isFacingLeft: bool = true
 var input_dir
 var isDashing : bool = false
-var currentDashStacks : int
 var dashCooldown : float
-var maxDashStacks : int
-var dashDirection
 var fireRate: float
 var maxPlayerHP: int
 var maxShockwaveCharge: int
@@ -58,7 +51,6 @@ var projectileDamage: float
 var projectile
 var weaponType : weaponTypes
 var canShoot: bool = true
-var shockwaveIsUsable: bool = false
 var shockwaveCharge: int = 0
 var projectileOneName : String = "Fire"
 var projectileTwoName : String = "Ice"
@@ -100,6 +92,7 @@ var shockwaveDashScene = preload("res://Scenes/Projectiles/shockwave_dash.tscn")
 @onready var dashArea = $dashArea3D
 @onready var shootTimer = $Timer/shootTimer
 @onready var hitAnimations = ["Hit_01", "Hit_02"]
+@onready var movement_comp: MovementComponent = $MovementComponent
 
 # ---------------------- OBJECT REFERENCES ----------------------
 var mouseCursor
@@ -108,34 +101,32 @@ var spawnObject
 
 
 # ---------------------- PROCESS LOOP ----------------------
+func _ready() -> void:
+	movement_comp.set_player_ref(self)
+
 func _physics_process(delta: float) -> void:
-	handleMovement(delta)
-	handleDashStacks()
-	handleDashCollisions()
-	setShockwaveActiveIfReady()
-	updateCursorLocation3D()
-
-	move_and_slide()
-
-
-# ---------------------- MOVEMENT ----------------------
-# [ ? ] Handle player input and movement
-func handleMovement(delta):
 	if(gameStats.isGameRunning()):
 		input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-		var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-		if(direction == Vector3.ZERO && isDashing):
-			direction = dashDirection
-		if(isDashing):
-			velocity = dashDirection * dashSpeed
-		else:
-			currentSpeed = min(currentSpeed + acceleration, maxWalkingSpeed) if direction else 0
-			velocity = direction * currentSpeed * delta if direction else Vector3.ZERO
-		handleAnimations(direction)
+		
+		var result = movement_comp.calculate_movement(
+			currentSpeed,
+			input_dir,
+			transform.basis,
+			delta
+		)
+
+		velocity = result.velocity
+		currentSpeed = result.speed
+		
+		movement_comp.handle_dash_collisions()
+
+		updateCursorLocation3D()
+		handleAnimations(result.direction)
+		move_and_slide()
 
 
 # [ ? ] Animation handling for movement
-func handleAnimations(direction):
+func handleAnimations(direction) -> void:
 	if(!playerAnimation.current_animation in ["Attack", "Special", "Dash"] &&
 			!hitAnimation.current_animation in ["Hit_01", "Hit_02"]
 			):
@@ -160,7 +151,7 @@ func _input(event: InputEvent) -> void:
 	handleSpriteFlipping()
 
 	if (event.is_action_pressed("dash")):
-		performDash()
+		movement_comp.perform_dash(getCursorLocation3D(), global_position)
 	if (event.is_action_pressed("shockwave")):
 		performShockwave()
 	if (event.is_action_pressed("switch_weapon")):
@@ -169,76 +160,6 @@ func _input(event: InputEvent) -> void:
 		toggleShoot(true)
 	if (event.is_action_released("shoot")):
 		toggleShoot(false)
-
-
-# ---------------------- DASH ----------------------
-# [ ? ] Dash mechanic
-func performDash():
-	if (!isDashing && currentDashStacks > 0):
-		dashTimer.start(dashLengthInSeconds)
-		
-		dashDirection = (getCursorLocation3D() - global_position).normalized()
-
-		isDashing = true
-		currentDashStacks -= 1
-		audio.stream = sounds[3]
-		audio.play()
-		playerAnimation.play("Dash")
-		updateDashStacks.emit(currentDashStacks)
-
-
-# [ ? ] Disable collisions while dashing
-func handleDashCollisions():
-	var state = isDashing
-	set_collision_layer_value(1, !state)
-	set_collision_mask_value(2, !state)
-	dashArea.monitoring = state
-
-
-# [ ? ] Manage dash stacks and cooldown
-func handleDashStacks():
-	if (
-		currentDashStacks < maxDashStacks && 
-		stackTimer.time_left == 0
-	):
-		stackTimer.start(stackResetInSeconds)
-
-	if(stackTimer.time_left > 0):
-		HUD.updateDashAvailability(stackResetInSeconds - stackTimer.time_left)
-
-
-# [ ? ] Handles the dash stacks when the timer timeouts
-func onStackTimerTimeout() -> void:
-	currentDashStacks += 1
-	updateDashStacks.emit(currentDashStacks)
-
-
-# [ ? ] Manage dash stacks and cooldown
-func onDashArea3DEntered(body: Node3D) -> void:
-	if(!body.has_method("deactivateDashCollision")):
-		var shockwave = shockwaveDashScene.instantiate()
-		if(isDashing && body.has_method("handleHit")):
-			body.handleHit(dashDamage)
-			spawnMiniShockwaveOnDash(shockwave)
-		elif(isDashing && body.has_method("handleTutorialHit")):
-			body.handleTutorialHit(projectileDamage)
-			spawnMiniShockwaveOnDash(shockwave)
-			
-
-
-# [ ? ] Spawns a mini shockwave on collision when dashing
-func spawnMiniShockwaveOnDash(shockwave):
-	shockwave.global_position = global_position
-	shockwave.shockwaveDamage = shockwaveDamage
-	shockwave.shockwaveRange = Vector3(5,5,5)
-	shockwave.setSpawnObject(spawnObject)
-	spawnObject.add_child(shockwave)
-
-
-
-func onDashtimerTimeout() -> void:
-	isDashing = false
-	velocity = Vector3.ZERO
 
 # ---------------------- SHOOTING & WEAPON ----------------------
 # [ ? ] Shooting mechanic
@@ -292,7 +213,7 @@ func onFireRateTimerTimeout():
 # ---------------------- SHOCKWAVE ----------------------
 # [ ? ] Perform shockwave ability
 func performShockwave():
-	if(shockwaveIsUsable):
+	if(shockwaveCharge >= maxShockwaveCharge):
 		var shockwave = shockwaveScene.instantiate()
 		shockwave.global_position = global_position
 		shockwave.shockwaveDamage = shockwaveDamage
@@ -305,18 +226,10 @@ func performShockwave():
 
 # [ ? ] Reset shockwave values
 func resetShockwaveUsability():
-	shockwaveIsUsable = false
 	shockwaveCharge = 0
 	updateShockwaveCharge.emit(shockwaveCharge)
 	$PlayerSprite3D/SubViewport/Sprite2D.material = null
 	playerAnimation.play("Special")
-
-
-# [ ? ] If the current charge is greater than the max charge, the shockwave will be usable
-func setShockwaveActiveIfReady():
-	if(shockwaveCharge >= maxShockwaveCharge):
-		$PlayerSprite3D/SubViewport/Sprite2D.material = shockwaveshader
-		shockwaveIsUsable = true
 
 
 # [ ? ] Adds shockwave charge
@@ -324,6 +237,8 @@ func addShockwaveCharge():
 	if(shockwaveCharge < maxShockwaveCharge):
 		shockwaveCharge += shockwaveChargePerKill
 		updateShockwaveCharge.emit(shockwaveCharge)
+	else:
+		$PlayerSprite3D/SubViewport/Sprite2D.material = shockwaveshader
 
 # ---------------------- HEALTH ----------------------
 # [ ? ] Handle damage when colliding with enemy
@@ -366,20 +281,19 @@ func onStartGame(difficulty) -> void:
 
 # [ ? ] Calculates the stats based on a modifier
 func setStats():
-	maxWalkingSpeed = maxWalkingSpeedBase * movementModifier[movementLevel]
-	acceleration = accelerationBase * standardModifier[movementLevel]
+	movement_comp.max_speed = maxWalkingSpeedBase * movementModifier[movementLevel]
+	movement_comp.acceleration = accelerationBase * standardModifier[movementLevel]
 	projectileDamage = projectileDamageBase * standardModifier[projectileDamageLevel]
 	fireRate = fireRateBase * timeModifier[fireRateLevel]
-	maxDashStacks = maxDashStacksBase + dashModifier[dashChargeLevel]
+	movement_comp.max_dash_stacks = maxDashStacksBase + dashModifier[dashChargeLevel]
 	dashCooldown = dashCooldownBase * timeModifier[dashCooldownLevel]
 	dashDamage = dashDamageBase * standardModifier[dashDamageLevel]
 	maxShockwaveCharge = maxShockwaveChargeBase * timeModifier[shockwaveChargeLevel]
 	shockwaveRange =  shockwaveRangeBase * standardModifier[shockwaveRangeLevel]
 	maxPlayerHP = maxPlayerHPBase * standardModifier[healthLevel]
 	shockwaveDamage = shockwaveDamageBase * standardModifier[shockwaveDamageLevel]
-	currentDashStacks = maxDashStacks
+	movement_comp.current_dash_stacks = movement_comp.max_dash_stacks
 	currentPlayerHP = maxPlayerHP
-	updateDashStacks.emit(currentDashStacks)
 
 # [ ? ] Resets the stats of the player
 func resetGameStats():
@@ -391,7 +305,7 @@ func resetGameStats():
 	hitAnimation.play("RESET")
 	playerAnimation.stop()
 	$Timer/stackTimer.stop()
-	HUD.updateDashAvailability(stackResetInSeconds)
+	HUD.updateDashAvailability(movement_comp.stack_reset_in_seconds)
 	$PlayerSprite3D/SubViewport/Sprite2D.material = null
 
 
@@ -439,8 +353,12 @@ func shakeCamera(shakeAmount):
 # ---------------------- GETTER METHODS ----------------------
 # [ ? ] Returns the time that needs to pass to get a dash stack
 func getDashStackResetTime():
-	return stackResetInSeconds
+	return movement_comp.stack_reset_in_seconds
 
 # [ ? ] Returns the maximum number of dash stacks
 func getMaxDashStacks():
-	return maxDashStacks
+	return movement_comp.max_dash_stacks
+
+
+func on_movement_component_current_dash_stacks_changed(new_dash_stacks: int) -> void:
+	current_dash_stacks_changed.emit(new_dash_stacks)

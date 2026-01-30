@@ -242,3 +242,7 @@ func onFlashMessageDisplay(message, displayTime, textColor):
 # [ ? ] Clears flash message when timer ends
 func onFlashTextTimerTimeout() -> void:
 	flashMessage.text = ""
+
+
+func on_player_current_dash_stacks_changed(dashStacks: Variant) -> void:
+	dashStackCounter.text = str(dashStacks)
