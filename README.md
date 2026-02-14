@@ -17,7 +17,7 @@ The game was developed as part of the *School4Games* program and focuses on inte
 
 ---
 
-## 🎮 About the Game
+## About the Game
 
 In *Sakura’s Journey*, players take on the role of **Kitsune Hime**, a fox-masked priestess bound to a divine spirit.  
 Corrupted Yokai have taken over sacred temples, and it is the player’s task to cleanse them by surviving enemy waves, protecting key objectives, and defeating powerful bosses.
@@ -30,7 +30,7 @@ The game combines:
 
 ---
 
-## 👨‍💻 My Role – Lead Game Engineer
+## My Role – Lead Game Engineer
 
 I worked as **Lead Game Engineer**, responsible for the technical foundation and gameplay systems of the project.
 
@@ -48,7 +48,7 @@ I worked as **Lead Game Engineer**, responsible for the technical foundation and
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 
 - **Godot Engine 4.3** – Core engine and scene system  
 - **GDScript** – Gameplay logic and systems  
@@ -59,7 +59,7 @@ More tools and engines I work with:
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ![Gameplay Screenshot](githubdocs/Gameplay.png)  
 *Arena combat and player abilities*
@@ -72,14 +72,14 @@ More tools and engines I work with:
 
 ---
 
-## 🚀 Play the Game
+## Play the Game
 
 You can find more information, downloads, and videos here:  
 ➡️ https://www.jannikkluge.com/#/projects/SakurasJourney
 
 ---
 
-## 🤝 Contact
+## Contact
 
 If you want to learn more about my work or collaborate:
 
