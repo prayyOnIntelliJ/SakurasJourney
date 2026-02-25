@@ -57,12 +57,13 @@ signal onEnemyDeath
 #----------------------INITIALIZATION----------------------
 # [ ? ] Ensure the path has points and set up timers for spawn intervals
 func _ready() -> void:
-	if (curve.point_count == 0):
-		push_error("The Path3D needs to have points to spawn Enemies.")
+	assert(curve.point_count > 0, "The Path3D needs to have points to spawn Enemies.")
 	
 	firstSpawnTimer.wait_time = firstSpawnTimeFrame
 	spawnIntervalTimer.wait_time = spawnInterval
 	firstSpawnTimer.start()
+	
+	spawnObject = ArenaSettings.getSpawnObject()
 
 #----------------------TIMERS----------------------
 # [ ? ] Adjust spawn interval based on difficulty
@@ -105,8 +106,6 @@ func spawnEnemy():
 		enemy = enemyShooterScene.instantiate()
 	
 	# [ ? ] Set up the spawn object and enemy properties
-	enemy.setSpawnObject(spawnObject)
-	print("SpawnEnemy: ", spawnObject)
 	enemy.setEnemyPropertiesExternal(localEnemyHealth, localEnemyDamage, localEnemySpeed, localEnemyAcceleration)
 	
 	# [ ? ] Select the target based on the targeted group
@@ -129,7 +128,6 @@ func spawnEnemy():
 	enemy.global_position = pathFollow.global_position
 	
 	# [ ? ] Apply difficulty settings
-	enemy.setDifficulty(difficulty)
 	enemy.connect("enemyDied", sendEnemyDeath)
 	onEnemySpawn.emit()
 	spawnObject.add_child(enemy)
@@ -151,7 +149,6 @@ func setDifficulty(difficulty):
 # [ ? ] Set the spawn object for the projectiles etc.
 func setSpawnObject(object):
 	spawnObject = object
-	print("Spawner, set: ", spawnObject)
 
 # [ ? ] Emit the enemy death signal when an enemy dies
 func sendEnemyDeath():

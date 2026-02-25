@@ -73,6 +73,8 @@ func _ready() -> void:
 	initializeStats()  # Initialize the stats based on difficulty
 	enemyVulnerability = randi_range(0, 1)  # Randomly set the vulnerability type
 	initializeEnemyProperties()  # Initialize the enemy properties
+	spawnObject = ArenaSettings.getSpawnObject()
+	enemySpawn()
 
 
 #----------------------GAME STATE HANDLERS----------------------
@@ -186,14 +188,6 @@ func on_animation_player_animation_finished(anim_name: StringName) -> void:
 # [ ? ] Placeholder for setting the walk animation
 func setWalkingBehaviour():
 	pass
-
-
-# [ ? ] Sets the spawn object and triggers the enemy spawn process
-func setSpawnObject(object):
-	spawnObject = object
-	print("Enemy: ", spawnObject)
-	enemySpawn()  # Trigger enemy spawn
-
 
 # [ ? ] Spawns the charge soul item when the enemy dies
 func spawnChargeSoul():

@@ -13,11 +13,13 @@ var weapon_type : weapon_types
 @export_group("References")
 @export var animation_player: AnimationPlayer
 @export var shoot_timer: Timer
+@export var projectile_red_scene: PackedScene
+@export var projectile_blue_scene: PackedScene
+var spawnObject: Node
+var player_ref
 
-var projectileScene_red = preload("res://Scenes/Projectiles/projectile_red.tscn")
-var projectileScene_blue = preload("res://Scenes/Projectiles/projectile_blue.tscn")
-var projectile
-
+func _ready() -> void:
+	spawnObject = ArenaSettings.getSpawnObject()
 
 func toggle_shoot(shouldShoot: bool) -> void:
 	if (shouldShoot):
@@ -35,29 +37,32 @@ func shoot():
 
 # [ ? ] Setup and spawn projectile
 func setup_projectile():
+	var projectile
+	
 	if(weapon_type == weapon_types.BLUE_WEAPON):
-		projectile = projectileScene_blue.instantiate()
+		projectile = projectile_blue_scene.instantiate()
 	elif(weapon_type == weapon_types.RED_WEAPON):
-		projectile = projectileScene_red.instantiate()
-	projectile.global_position = $Node3D.global_position + Vector3(0.2, 0, 0).rotated(Vector3(0, 1, 0), $Node3D.rotation.y + 1.5708)
-	projectile.linear_velocity = Vector3(projectile_speed, 0, 0).rotated(Vector3(0,1,0), $Node3D.rotation.y + 1.5708)
-	projectile.rotation = $Node3D.rotation
+		projectile = projectile_red_scene.instantiate()
+		
+	projectile.global_position = $"../Node3D".global_position + Vector3(0.2, 0, 0).rotated(Vector3(0, 1, 0), $"../Node3D".rotation.y + 1.5708)
+	projectile.linear_velocity = Vector3(projectile_speed, 0, 0).rotated(Vector3(0,1,0), $"../Node3D".rotation.y + 1.5708)
+	projectile.rotation = $"../Node3D".rotation
 	projectile.weapon_type = weapon_type
 	projectile.projectileDamage = projectile_damage
-	projectile.setPlayer(self)
+	projectile.setPlayer(player_ref)
 	projectile.setSpawnObject(spawnObject)
 	spawnObject.add_child(projectile)
 
 
 # [ ? ] Switch between weapon types
-func switch_wapon():
-	if (weapon_type == weapon_types.BLUE_WEAPON):
-		weapon_type = weapon_types.RED_WEAPON
-	elif (weapon_type == weapon_types.RED_WEAPON):
-		weapon_type = weapon_types.BLUE_WEAPON
+func switch_weapon():
+	weapon_type = 1 - weapon_type
 	on_current_weapon_updated.emit(weapon_type)
 
 
 # [ ? ] Handles the fire rate timer timeout
 func onFireRateTimerTimeout():
 	shoot()
+
+func set_player_ref(player_ref: CharacterBody3D) -> void:
+	self.player_ref = player_ref

@@ -6,7 +6,7 @@ extends RigidBody3D
 @export var cameraShakeOnCollision: float = 20.0
 const QUEUE_FREE_TIME : float = 2.0
 
-var weaponType
+var weapon_type
 var spawnObject
 var player
 var shootParticle = preload("res://Assets/Projectiles/ShootParticles.tscn")
@@ -21,7 +21,7 @@ func _ready() -> void:
 func onProjectileCollision(body: Node) -> void:
 	spawnImpactParticle()
 	
-	if (body.has_method("handleHit") && body.enemyVulnerability == weaponType):
+	if (body.has_method("handleHit") && body.enemyVulnerability == weapon_type):
 		body.handleHit(projectileDamage)
 		linear_velocity = Vector3.ZERO
 		deactivateFunctionality()

@@ -8,6 +8,8 @@ signal updateShockwaveCharge(charge)
 signal gameEnd
 signal updateCurrentWeapon(weapon)
 
+signal on_dash_pressed()
+
 # ---------------------- EXPORTED VARIABLES ----------------------
 @export var accelerationBase: float
 @export var maxWalkingSpeedBase: float
@@ -29,7 +31,7 @@ signal updateCurrentWeapon(weapon)
 
 # ---------------------- PLAYER STATS & VARIABLES ----------------------
 var currentSpeed: float
-var input_dir
+var input_dir: Vector2 = Vector2(0, 0)
 var isDashing : bool = false
 var dashCooldown : float
 var fireRate: float
@@ -91,6 +93,7 @@ var spawnObject
 # ---------------------- PROCESS LOOP ----------------------
 func _ready() -> void:
 	movement_comp.set_player_ref(self)
+	combat_comp.set_player_ref(self)
 
 func _physics_process(delta: float) -> void:
 	if(gameStats.is_game_running()):
@@ -302,9 +305,9 @@ func on_movement_component_current_dash_stacks_changed(new_dash_stacks: int) -> 
 
 func on_combat_component_on_current_weapon_updated(new_type: CombatComponent.weapon_types) -> void:
 	match (new_type):
-		combat_comp.new_type.RED_WEAPON:
+		combat_comp.weapon_types.RED_WEAPON:
 			setText(projectileOneName, 2, redProjectileColor)
 			mouseCursor.switchMouseColorToRed()
-		combat_comp.new_type.BLUE_WEAPON:
+		combat_comp.weapon_types.BLUE_WEAPON:
 			setText(projectileTwoName, 2, blueProjectileColor)
 			mouseCursor.switchMouseColorToBlue()

@@ -17,6 +17,7 @@ signal retryGame
 @export var musicPlayer: AudioStreamPlayer2D
 
 var gameStats: GameStats = preload("res://Scripts/Resources/GameStats.tres")
+@onready var SpawnObject = $ObjectsInGame
 
 # -------------------UPGRADE SYSTEM-------------------
 @export_category("SkillPoints")
@@ -190,9 +191,7 @@ func checkIfSpawnPointIsSet(arenaIndex: int):
 		levels.spawnPointArena3,
 		levels.spawnPointArena4
 	]
-	if (spawnPoints[arenaIndex] == Vector3.ZERO):
-		push_warning("Spawn point for arena ", arenaIndex, " is not set or at (0,0,0)!")
-
+	assert (spawnPoints[arenaIndex] != Vector3.ZERO, "Spawn point for arena " + str(arenaIndex) + " is not set or at (0,0,0)!")
 
 # -------------------OBJECT HANDLING-------------------
 # [ ? ] Pass necessary objects on game initialization
@@ -201,7 +200,7 @@ func passObjectsOnReady():
 
 	UI.setPlayer(player)
 	UI.upgradeScreen.setGameObject(self)
-	gameStats.set_spawn_object($ObjectsInGame)
+	
 
 # [ ? ] Clear all game objects from the scene
 func clearGameObjects():

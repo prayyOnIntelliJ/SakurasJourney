@@ -1,4 +1,4 @@
-[gd_scene load_steps=222 format=3 uid="uid://csh1ujf7i2gcv"]
+[gd_scene load_steps=224 format=3 uid="uid://csh1ujf7i2gcv"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_47ujg"]
 [ext_resource type="AudioStream" uid="uid://dcs570jfkfqgy" path="res://Audio/Shoot_01.wav" id="2_oaaaq"]
@@ -13,6 +13,8 @@
 [ext_resource type="PackedScene" uid="uid://dyp2d20iw7jmd" path="res://Scenes/Projectiles/shockwave_dash.tscn" id="9_ep5tx"]
 [ext_resource type="Script" path="res://Scenes/Player/CombatComponent.gd" id="10_0nhsu"]
 [ext_resource type="LabelSettings" uid="uid://cs8ix88ic0t6w" path="res://Scripts/UI/Label-Settings.tres" id="10_7cing"]
+[ext_resource type="PackedScene" uid="uid://btmjroxtaogpl" path="res://Scenes/Projectiles/projectile_red.tscn" id="11_jeep7"]
+[ext_resource type="PackedScene" uid="uid://c1w31aqovn3vh" path="res://Scenes/Projectiles/projectile_blue.tscn" id="12_ev8pv"]
 [ext_resource type="Texture2D" uid="uid://crrr617mfxmbh" path="res://Assets/Projectiles/Materials/shield1.png" id="12_i85dx"]
 [ext_resource type="Texture2D" uid="uid://dy5td1ynb33ik" path="res://Assets/Player/Animations/Attack/Armature_attack_00.png" id="14_pav5q"]
 [ext_resource type="Texture2D" uid="uid://c747djdlblwoe" path="res://Assets/Player/Animations/Attack/Armature_attack_01.png" id="15_rqkpk"]
@@ -770,11 +772,12 @@ audio_stream = NodePath("../PlayerAudioPlayer2D")
 animation_player = NodePath("../AnimationPlayer/playerAnimationPlayer")
 dash_sound = ExtResource("5_h224h")
 
-[node name="CombatComponent" type="Node" parent="."]
+[node name="CombatComponent" type="Node" parent="." node_paths=PackedStringArray("animation_player", "shoot_timer")]
 script = ExtResource("10_0nhsu")
-fire_rate = null
-projectile_speed = null
-projectile_damage = null
+animation_player = NodePath("../AnimationPlayer/playerAnimationPlayer")
+shoot_timer = NodePath("../Timer/shootTimer")
+projectile_red_scene = ExtResource("11_jeep7")
+projectile_blue_scene = ExtResource("12_ev8pv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_lb4y3")
@@ -890,6 +893,6 @@ texture = ExtResource("17_h5h4s")
 [connection signal="body_entered" from="dashArea3D" to="MovementComponent" method="on_dash_area_3d_body_entered"]
 [connection signal="timeout" from="Timer/stackTimer" to="." method="onStackTimerTimeout"]
 [connection signal="timeout" from="Timer/stackTimer" to="MovementComponent" method="on_stack_timer_timeout"]
-[connection signal="timeout" from="Timer/shootTimer" to="." method="onFireRateTimerTimeout"]
+[connection signal="timeout" from="Timer/shootTimer" to="CombatComponent" method="onFireRateTimerTimeout"]
 [connection signal="timeout" from="Timer/dashTimer" to="." method="onDashtimerTimeout"]
 [connection signal="timeout" from="Timer/dashTimer" to="MovementComponent" method="on_dash_timer_timeout"]
