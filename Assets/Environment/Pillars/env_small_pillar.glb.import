@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://5id1vm8c5fmg"
-path="res://.godot/imported/env_small_piller.glb-61724775727aa7478b3e27a68c05b4e8.scn"
+path="res://.godot/imported/env_small_pillar.glb-ad2cb30004cfc16988bfd11da5192672.scn"
 
 [deps]
 
-source_file="res://Assets/Environment/Pillars/env_small_piller.glb"
-dest_files=["res://.godot/imported/env_small_piller.glb-61724775727aa7478b3e27a68c05b4e8.scn"]
+source_file="res://Assets/Environment/Pillars/env_small_pillar.glb"
+dest_files=["res://.godot/imported/env_small_pillar.glb-ad2cb30004cfc16988bfd11da5192672.scn"]
 
 [params]
 

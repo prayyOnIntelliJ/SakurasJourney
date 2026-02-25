@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://dbytfxyu67583"]
 
-[ext_resource type="Script" path="res://Scenes/Arenas/Tutorial/TutorialTrigger.gd" id="1_0nali"]
+[ext_resource type="Script" path="res://Scenes/Arena/Tutorial/TutorialTrigger.gd" id="1_0nali"]
 [ext_resource type="Shader" uid="uid://l3uk1yi37v6o" path="res://Assets/VFX/simpleparticles.tres" id="2_sxhcc"]
 [ext_resource type="Texture2D" uid="uid://b6r7y831hrsqv" path="res://Assets/Projectiles/New/Flare00.PNG" id="3_axq0p"]
 
