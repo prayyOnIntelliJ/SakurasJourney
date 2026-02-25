@@ -13,7 +13,7 @@ config_version=5
 config/name="Sakura's Journey"
 run/main_scene="res://Scenes/Game/game.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-boot_splash/image="res://2D_Assets/S4G-logo-png.png"
+boot_splash/image="res://Assets/SplashScreen/S4G-logo-png.png"
 boot_splash/fullsize=false
 config/icon="res://Assets/UI/UI_Sprites/HUD/ui_hud_char_icon_200x200px.png"
 config/windows_native_icon="res://icon.ico"
@@ -21,7 +21,7 @@ config/windows_native_icon="res://icon.ico"
 [autoload]
 
 ArenaSettings="*res://ArenaSettings.gd"
-FPS="res://Game/Scripts/FPS.gd"
+Fps="res://Scripts/Game/FPS.gd"
 
 [display]
 
