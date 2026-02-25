@@ -38,7 +38,6 @@ battleMusic = Array[AudioStreamWAV]([ExtResource("2_3imx0"), ExtResource("3_k1dn
 [node name="Player" parent="." instance=ExtResource("16_33i35")]
 process_mode = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
-dashLengthInSeconds = 0.3
 maxShockwaveChargeBase = 100
 
 [node name="MouseCursor" parent="." instance=ExtResource("3_f1dnf")]

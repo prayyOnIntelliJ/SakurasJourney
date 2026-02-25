@@ -42,7 +42,7 @@ func _ready() -> void:
 
 # [ ? ] Update game status during each frame
 func _process(delta: float) -> void:
-	if (gameStats.isGameRunning()):
+	if (gameStats.is_game_running()):
 		updateTimer()
 		
 func _input(event: InputEvent) -> void:
@@ -64,7 +64,7 @@ func changeToLooseScreen():
 # -------------------LEVEL AND GAME OVER HANDLING-------------------
 # [ ? ] Handle game win situation
 func onLevelsGameWon() -> void:
-	gameStats.setIsGameRunning(false)
+	gameStats.set_is_game_running(false)
 	updateGamePausing()
 	updateSkillPointsForDifficulty(ArenaSettings.getDifficultyLevel(), selectedArena)
 	changeToWinScreen()
@@ -73,7 +73,7 @@ func onLevelsGameWon() -> void:
 # [ ? ] Handle game over situation
 func onLevelsGameOver() -> void:
 	changeToLooseScreen()
-	gameStats.setIsGameRunning(false)
+	gameStats.set_is_game_running(false)
 	updateGamePausing()
 	clearGameObjects()
 
@@ -85,7 +85,7 @@ func updateTimer():
 # -------------------START GAME HANDLING-------------------
 # [ ? ] Start the game with selected difficulty and settings
 func onStartGame(difficultyLevel) -> void:
-	gameStats.setIsGameRunning(true)
+	gameStats.set_is_game_running(true)
 	levels.clearLevel()
 	$UI/Hud.setDashStackResetTime(player.getDashStackResetTime())
 	$UI/Hud.setDashCounter(player.getMaxDashStacks())
@@ -108,7 +108,7 @@ func onArenaSelectionScreenStartTutorialLevel() -> void:
 	setScreen($UI/Hud)
 	updateGamePausing()
 	player.visible = true
-	gameStats.setIsGameRunning(true)
+	gameStats.set_is_game_running(true)
 
 # [ ? ] Handle retry from the fail screen
 func onFailScreenTryAgainEmitted() -> void:
@@ -123,7 +123,7 @@ func passObjects():
 
 # [ ? ] Update game pause state based on game running status
 func updateGamePausing():
-	if (gameStats.isGameRunning()):
+	if (gameStats.is_game_running()):
 		get_tree().paused = false
 	else:
 		get_tree().paused = true
@@ -197,10 +197,11 @@ func checkIfSpawnPointIsSet(arenaIndex: int):
 # -------------------OBJECT HANDLING-------------------
 # [ ? ] Pass necessary objects on game initialization
 func passObjectsOnReady():
-	player.passObjects($MouseCursor, $UI/Hud, $ObjectsInGame)
+	player.passObjects($MouseCursor, $UI/Hud)
 
 	UI.setPlayer(player)
 	UI.upgradeScreen.setGameObject(self)
+	gameStats.set_spawn_object($ObjectsInGame)
 
 # [ ? ] Clear all game objects from the scene
 func clearGameObjects():
