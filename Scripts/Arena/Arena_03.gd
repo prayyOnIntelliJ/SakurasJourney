@@ -19,7 +19,6 @@ func setupPlayer(playerInstance):
 	$gamemodeAttack.setupPlayer(player)
 	$ArrowPointer.initArrowPointer(player, getBossTree())
 	$gamemodeAttack.setupArrowPointer($ArrowPointer)
-	print("Arena 03", player)
 
 
 # [ ? ] Sets up the enemy spawners and boss tree targets

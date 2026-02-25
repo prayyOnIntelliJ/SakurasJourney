@@ -60,7 +60,6 @@ func checkWinLooseConditions():
 # [ ? ] Sets up the player instance
 func setupPlayer(playerInstance):
 	player = playerInstance
-	print("HP", player.currentPlayerHP)
 
 # [ ? ] Sets up the tree instance
 func setupTree(treeInstance):
@@ -69,11 +68,6 @@ func setupTree(treeInstance):
 # [ ? ] Sets up the spawn points for the tree and checks for null reference
 func setupTreeSpawnPoints(spawnPointsInstance):
 	treeSpawnPoints = spawnPointsInstance
-	if (treeSpawnPoints == null):
-		print("NULL REFERENCE EXCEPTION")
-	else:
-		print("spawn points transmitted successfully")
-
 
 #-------------------TIMER FUNCTIONS-------------------
 # [ ? ] Sets the flag when the game time is over

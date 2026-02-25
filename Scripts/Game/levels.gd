@@ -107,7 +107,6 @@ func setActiveLevel(levelScene: PackedScene):
 	target.append(player)
 	newLevel.setupTarget(target)
 	newLevel.setSpawnObject(spawnObject)
-	print("Levels " + str(spawnObject))
 	newLevel.setupPlayer(player)
 	
 	# Check if new level has a Sakura tree and connect signals

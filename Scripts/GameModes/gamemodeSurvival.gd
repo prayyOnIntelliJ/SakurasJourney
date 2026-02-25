@@ -46,7 +46,6 @@ func checkWinLooseConditions():
 # [ ? ] Sets the player instance for the game
 func setupPlayer(playerInstance):
 	player = playerInstance
-	print("gamemode", player)
 
 
 #-------------------TIMER HANDLING-------------------

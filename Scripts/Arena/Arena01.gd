@@ -28,10 +28,6 @@ func initializeEnemySpawners():
 		spawner.setDifficulty(ArenaSettings.getDifficultyLevel())
 		spawner.setSpawnObject(spawnObject)
 		
-	print("Arena: ", spawnObject)
-		
-	print("Initialized")
-		
 func setupPlayer(playerInstance):
 	# [ ? ] Sets up the player, assigns it to the survival gamemode, and configures enemy spawners
 	super.setupPlayer(playerInstance)

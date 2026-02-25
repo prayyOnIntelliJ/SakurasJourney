@@ -54,7 +54,6 @@ func setupTarget(target):
 func setSpawnObject(object):
 	# [ ? ] Sets the spawn object for the enemy spawners
 	spawnObject = object
-	print("ArenaBase: Set to " + str(object))
 	
 func setupPlayer(playerInstance):
 	# [ ? ] Sets up the player instance and initializes related game features
