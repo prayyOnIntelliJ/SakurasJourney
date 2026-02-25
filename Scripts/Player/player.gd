@@ -8,16 +8,9 @@ signal updateShockwaveCharge(charge)
 signal gameEnd
 signal updateCurrentWeapon(weapon)
 
-# ---------------------- CONSTANTS ----------------------
-const PROJECTILE_SPEED : float = 25.0
-
-# ---------------------- ENUMS ----------------------
-enum weaponTypes { RED_WEAPON, BLUE_WEAPON }
-
 # ---------------------- EXPORTED VARIABLES ----------------------
 @export var accelerationBase: float
 @export var maxWalkingSpeedBase: float
-@export var dashLengthInSeconds : float
 @export var dashCooldownBase: float
 @export var maxDashStacksBase: int
 @export var fireRateBase: float = 0.4
@@ -45,10 +38,7 @@ var maxShockwaveCharge: int
 var currentPlayerHP: int
 var shockwaveDamage: float
 var shockwaveRange: Vector3
-var dashDamage: float
 var projectileDamage: float
-var projectile
-var weaponType : weaponTypes
 var canShoot: bool = true
 var shockwaveCharge: int = 0
 var projectileOneName : String = "Fire"
@@ -74,9 +64,7 @@ var gameStats: GameStats = preload("res://Scripts/Resources/GameStats.tres")
 @onready var timeModifier := [1.0, 0.9, 0.8, 0.7]
 @onready var dashModifier := [0, 1, 2, 3, 4]
 
-# ---------------------- SCENE REFERENCES ----------------------
-var projectileScene_red = preload("res://Scenes/Projectiles/projectile_red.tscn")
-var projectileScene_blue = preload("res://Scenes/Projectiles/projectile_blue.tscn")
+# ---------------------- SCENE REFERENCES ----------------------2
 var shockwaveScene = preload("res://Scenes/Projectiles/shockwave.tscn")
 var shockwaveDashScene = preload("res://Scenes/Projectiles/shockwave_dash.tscn")
 
@@ -92,6 +80,7 @@ var shockwaveDashScene = preload("res://Scenes/Projectiles/shockwave_dash.tscn")
 @onready var shootTimer = $Timer/shootTimer
 @onready var hitAnimations = ["Hit_01", "Hit_02"]
 @onready var movement_comp: MovementComponent = $MovementComponent
+@onready var combat_comp: CombatComponent = $CombatComponent
 
 # ---------------------- OBJECT REFERENCES ----------------------
 var mouseCursor
@@ -104,7 +93,7 @@ func _ready() -> void:
 	movement_comp.set_player_ref(self)
 
 func _physics_process(delta: float) -> void:
-	if(gameStats.isGameRunning()):
+	if(gameStats.is_game_running()):
 		input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 		
 		var result = movement_comp.calculate_movement(
@@ -143,7 +132,7 @@ func handleSpriteFlipping():
 		playerSprite.flip_h = false
 
 func _input(event: InputEvent) -> void:
-	if (!gameStats.isGameRunning()): return
+	if (!gameStats.is_game_running()): return
 	
 	handleSpriteFlipping()
 
@@ -152,60 +141,11 @@ func _input(event: InputEvent) -> void:
 	if (event.is_action_pressed("shockwave")):
 		performShockwave()
 	if (event.is_action_pressed("switch_weapon")):
-		switchWeapon()
+		combat_comp.switch_weapon()
 	if (event.is_action_pressed("shoot")):
-		toggleShoot(true)
+		combat_comp.toggle_shoot(true)
 	if (event.is_action_released("shoot")):
-		toggleShoot(false)
-
-# ---------------------- SHOOTING & WEAPON ----------------------
-# [ ? ] Shooting mechanic
-func toggleShoot(shouldShoot: bool) -> void:
-	if (shouldShoot):
-		shoot()
-	else:
-		if (!shootTimer.is_stopped()):
-			shootTimer.stop()
-			shootTimer.wait_time = fireRate
-
-func shoot():
-	playerAnimation.play("Attack")
-	setupProjectile()
-	shootTimer.start(fireRate)
-
-
-# [ ? ] Setup and spawn projectile
-func setupProjectile():
-	if(weaponType == weaponTypes.BLUE_WEAPON):
-		projectile = projectileScene_blue.instantiate()
-	elif(weaponType == weaponTypes.RED_WEAPON):
-		projectile = projectileScene_red.instantiate()
-	projectile.global_position = $Node3D.global_position + Vector3(0.2, 0, 0).rotated(Vector3(0, 1, 0), $Node3D.rotation.y + 1.5708)
-	projectile.linear_velocity = Vector3(PROJECTILE_SPEED, 0, 0).rotated(Vector3(0,1,0), $Node3D.rotation.y + 1.5708)
-	projectile.rotation = $Node3D.rotation
-	projectile.weaponType = weaponType
-	projectile.projectileDamage = projectileDamage
-	projectile.setPlayer(self)
-	projectile.setSpawnObject(spawnObject)
-	spawnObject.add_child(projectile)
-
-
-# [ ? ] Switch between weapon types
-func switchWeapon():
-	if (weaponType == weaponTypes.BLUE_WEAPON):
-		weaponType = weaponTypes.RED_WEAPON
-		mouseCursor.switchMouseColorToRed()
-		setText(projectileOneName,2, redProjectileColor)
-	elif (weaponType == weaponTypes.RED_WEAPON):
-		weaponType = weaponTypes.BLUE_WEAPON
-		mouseCursor.switchMouseColorToBlue()
-		setText(projectileTwoName, 2, blueProjectileColor)
-	updateCurrentWeapon.emit(weaponType)
-
-
-# [ ? ] Handles the fire rate timer timeout
-func onFireRateTimerTimeout():
-	shoot()
+		combat_comp.toggle_shoot(false)
 
 # ---------------------- SHOCKWAVE ----------------------
 # [ ? ] Perform shockwave ability
@@ -284,7 +224,7 @@ func setStats():
 	fireRate = fireRateBase * timeModifier[fireRateLevel]
 	movement_comp.max_dash_stacks = maxDashStacksBase + dashModifier[dashChargeLevel]
 	dashCooldown = dashCooldownBase * timeModifier[dashCooldownLevel]
-	dashDamage = dashDamageBase * standardModifier[dashDamageLevel]
+	movement_comp.dash_damage = dashDamageBase * standardModifier[dashDamageLevel]
 	maxShockwaveCharge = maxShockwaveChargeBase * timeModifier[shockwaveChargeLevel]
 	shockwaveRange =  shockwaveRangeBase * standardModifier[shockwaveRangeLevel]
 	maxPlayerHP = maxPlayerHPBase * standardModifier[healthLevel]
@@ -295,7 +235,7 @@ func setStats():
 # [ ? ] Resets the stats of the player
 func resetGameStats():
 	currentPlayerHP = maxPlayerHP
-	weaponType = weaponTypes.BLUE_WEAPON
+	combat_comp.weapon_type = combat_comp.weapon_types.BLUE_WEAPON
 	mouseCursor.switchMouseColorToBlue()
 	shockwaveCharge = 0
 	updateShockwaveCharge.emit(shockwaveCharge)
@@ -307,10 +247,9 @@ func resetGameStats():
 
 
 # [ ? ] Objects are set in game.gd
-func passObjects(mouseCursorObject, HUDObject, spawnObject):
+func passObjects(mouseCursorObject, HUDObject):
 	self.mouseCursor = mouseCursorObject
 	self.HUD = HUDObject
-	self.spawnObject = spawnObject
 	setStats()
 
 
@@ -359,3 +298,13 @@ func getMaxDashStacks():
 
 func on_movement_component_current_dash_stacks_changed(new_dash_stacks: int) -> void:
 	current_dash_stacks_changed.emit(new_dash_stacks)
+
+
+func on_combat_component_on_current_weapon_updated(new_type: CombatComponent.weapon_types) -> void:
+	match (new_type):
+		combat_comp.new_type.RED_WEAPON:
+			setText(projectileOneName, 2, redProjectileColor)
+			mouseCursor.switchMouseColorToRed()
+		combat_comp.new_type.BLUE_WEAPON:
+			setText(projectileTwoName, 2, blueProjectileColor)
+			mouseCursor.switchMouseColorToBlue()
