@@ -59,19 +59,6 @@ More tools and engines I work with:
 
 ---
 
-## Screenshots
-
-![Gameplay Screenshot](githubdocs/Gameplay.png)  
-*Arena combat and player abilities*
-
-![Wave Defense](githubdocs/WaveDefense.png)  
-*Enemy wave system and UI*
-
-![Boss Fight](githubdocs/Bossfight.png)  
-*Boss encounter inside a corrupted temple*
-
----
-
 ## Play the Game
 
 You can find more information, downloads, and videos here:  
