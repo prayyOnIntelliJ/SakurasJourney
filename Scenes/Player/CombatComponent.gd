@@ -7,7 +7,7 @@ enum weapon_types { RED_WEAPON, BLUE_WEAPON }
 
 var weapon_type : weapon_types
 
-@export var fire_rate: float = 1
+@export var fire_rate: float = 0.5
 @export var projectile_speed: int = 25
 @export var projectile_damage: int = 10
 @export_group("References")
@@ -17,22 +17,28 @@ var weapon_type : weapon_types
 @export var projectile_blue_scene: PackedScene
 var spawnObject: Node
 var player_ref
+var should_shoot: bool = false
 
 func _ready() -> void:
 	spawnObject = ArenaSettings.getSpawnObject()
 
 func toggle_shoot(shouldShoot: bool) -> void:
 	if (shouldShoot):
-		shoot()
+		should_shoot = true
+		if (shoot_timer.is_stopped()):
+			shoot()
 	else:
 		if (!shoot_timer.is_stopped()):
-			shoot_timer.stop()
-			shoot_timer.wait_time = fire_rate
+			should_shoot = false
 
 func shoot():
-	animation_player.play("Attack")
-	setup_projectile()
-	shoot_timer.start(fire_rate)
+	if (should_shoot):
+		animation_player.play("Attack")
+		setup_projectile()
+		shoot_timer.start(fire_rate)
+	else:
+		shoot_timer.stop()
+		shoot_timer.wait_time = fire_rate
 
 
 # [ ? ] Setup and spawn projectile

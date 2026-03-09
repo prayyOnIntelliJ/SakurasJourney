@@ -8,7 +8,7 @@ signal updateShockwaveCharge(charge)
 signal gameEnd
 signal updateCurrentWeapon(weapon)
 
-signal on_dash_pressed()
+signal on_dash_pressed
 
 # ---------------------- EXPORTED VARIABLES ----------------------
 @export var accelerationBase: float
