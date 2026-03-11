@@ -35,11 +35,12 @@ The game combines:
 I worked as **Lead Game Engineer**, responsible for the technical foundation and gameplay systems of the project.
 
 ### Core Responsibilities
-- Designed and implemented core gameplay systems  
-- Player movement, shooting mechanics, and combat flow  
-- Enemy AI behavior and wave spawning logic  
-- Upgrade and progression systems  
-- Game state management and feature integration  
+- Designed and implemented [core gameplay systems](https://github.com/prayyOnIntelliJ/SakurasJourney/blob/main/Scripts/Game/game.gd) as well as the [level system](https://github.com/prayyOnIntelliJ/SakurasJourney/blob/main/Scripts/Game/levels.gd)
+- [Player movement](https://github.com/prayyOnIntelliJ/SakurasJourney/blob/main/Scripts/Player/MovementComponent.gd), [shooting mechanics and combat flow](https://github.com/prayyOnIntelliJ/SakurasJourney/blob/main/Scripts/Player/CombatComponent.gd)  
+- [Enemy](https://github.com/prayyOnIntelliJ/SakurasJourney/blob/main/Scripts/Enemies/EnemyBase.gd) AI behavior and [wave spawning logic](https://github.com/prayyOnIntelliJ/SakurasJourney/blob/main/Scripts/Game/enemy_spawner.gd)  
+- [Upgrade and progression systems](https://github.com/prayyOnIntelliJ/SakurasJourney/blob/main/Scripts/UI/UpgradeScreen.gd)  
+- Game state management and feature integration
+- [UI](https://github.com/prayyOnIntelliJ/SakurasJourney/blob/main/Scripts/Game/ui.gd) Integration
 
 ### Technical Ownership
 - Defined the game’s technical architecture  
