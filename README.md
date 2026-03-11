@@ -5,7 +5,7 @@
 [![Language](https://img.shields.io/badge/Language-GDScript-355570)](https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/index.html)
 [![Project](https://img.shields.io/badge/Project-Playable%20on%20itch.io-orange)](https://s4g.itch.io/sakuras-journey)
 
-![Cover Image](githubdocs/CoverImage.png)
+<img width="1920" height="1080" alt="CoverImage" src="https://github.com/user-attachments/assets/a74b26ec-3ea2-4ec2-b376-397690659211" />
 
 [Watch the Trailer](https://www.youtube.com/watch?v=ZSyVVhhGdMc)
 
